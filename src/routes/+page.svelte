@@ -42,6 +42,9 @@
 	let highlightNotables = false;
 	let hideUnidentified = false;
 
+	// Ascendancy selection
+	let selectedAscendancy = "bloodmage"
+
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
 
@@ -274,6 +277,20 @@
 		<label><input type="checkbox" bind:checked={highlightKeystones} /> Highlight Keystones</label>
 		<label><input type="checkbox" bind:checked={highlightNotables} /> Highlight Notables</label>
 		<label><input type="checkbox" bind:checked={hideUnidentified} /> Hide Unidentified</label>
+		<select name="ascendancies" id="asc-select" bind:value={selectedAscendancy}>
+			<option value="bloodmage" selected>Witch - Bloodmage</option>
+			<option value="infernalist">With - Infernalist</option>
+			<option value="stormweaver">Sorc - Stormweaver</option>
+			<option value="chronomancer">Sorc - Chronomancer</option>
+			<option value="invoker">Monk - Invoker</option>
+			<option value="chayula">Monk - Acolyte of Chayula</option>
+			<option value="titan">Warrior - Titan</option>
+			<option value="warbringer">Warrior - Warbringer</option>
+			<option value="deadeye" >Ranger - Deadeye</option>
+			<option value="pathfinder">Ranger - Pathfinder</option>
+			<option value="witchhunter">Mercenary - Witchhunter</option>
+			<option value="legionnaire">Mercenary - Gem. Legionnaire</option>
+		  </select>
 	</div>
 </div>
 
@@ -308,7 +325,7 @@
 		<img
 			bind:this={imageEl}
 			onload={handleImageLoad}
-			src="{base}/skill-tree.png"
+			src="{base}/trees/{selectedAscendancy}.png"
 			alt="Interactive"
 			draggable="false"
 			style="
