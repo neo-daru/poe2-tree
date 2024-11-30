@@ -58,7 +58,6 @@
 	// State for filters
 	let highlightKeystones = false;
 	let highlightNotables = false;
-<<<<<<< HEAD
 	let highlightSmalls = false;
 	let hideUnidentified = false;
 	let hideUnselected = false;
@@ -77,9 +76,6 @@
 
 	let searchResultsDisplayEl: HTMLDivElement | null = null;
 	let searchResultsSpanEl: HTMLSpanElement | null = null;
-=======
-	let hideUnidentified = true;
->>>>>>> main
 
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
