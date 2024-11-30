@@ -58,7 +58,8 @@
 	// State for filters
 	let highlightKeystones = false;
 	let highlightNotables = false;
-	let hideUnidentified = true;
+	let highlightSmalls = false;
+	let hideUnidentified = false;
 
 	// State for selected nodes display
 	let showSelectedNodesDisplay = false;
@@ -377,8 +378,10 @@
 	<p>Check out the Github repository for how to contribute to this project.</p>
 	<!-- Filters -->
 	<div class="filters">
-		<label><input type="checkbox" bind:checked={highlightKeystones} /> Highlight Keystones</label>
-		<label><input type="checkbox" bind:checked={highlightNotables} /> Highlight Notables</label>
+		<p>Highlight:</p>
+		<label><input type="checkbox" bind:checked={highlightKeystones} /> Keystones</label>
+		<label><input type="checkbox" bind:checked={highlightNotables} /> Notables</label>
+		<label><input type="checkbox" bind:checked={highlightSmalls} /> Smalls</label>
 		<label><input type="checkbox" bind:checked={hideUnidentified} /> Hide Unidentified</label>
 	</div>
 </div>
@@ -485,7 +488,7 @@
 
 		<!-- Display hoverable regions with lighter color -->
 		{#if hasLoaded}
-			{#each ['notables', 'keystones'] as kind}
+			{#each ['notables', 'keystones', 'smalls'] as kind}
 				{#each nodes[kind] as node}
 					{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
 						<!-- svelte-ignore a11y_no_static_element_interactions -->
@@ -493,11 +496,13 @@
 						<div
 							class:notable={node.id.startsWith('N')}
 							class:keystone={node.id.startsWith('K')}
+							class:small={node.id.startsWith('S')}
 							class:unidentified={nodesDesc[node.id].name === node.id}
 							class:search-result={searchResults.includes(node.id)}
 							class:selected={selectedNodes.includes(node.id)}
 							class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
 							class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
+							class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
 							style="
 								  width: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
 								  height: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
@@ -620,6 +625,7 @@
 		left: 0;
 	}
 
+	.small,
 	.notable,
 	.keystone {
 		position: absolute;
@@ -645,12 +651,25 @@
 		border-color: rgba(255, 0, 100, 1);
 	}
 
+	.small {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+
+	.small.unidentified {
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 100, 100, 1);
+	}
+
 	.notable.selected {
 		background-color: rgba(255, 255, 0, 0.6);
 	}
 
 	.keystone.selected {
 		background-color: rgba(0, 255, 0, 0.6);
+	}
+
+	.small.selected {
+		background-color: rgba(255, 255, 255, 0.6);
 	}
 
 	.highlighted-keystone {
@@ -660,7 +679,9 @@
 	.highlighted-notable {
 		border: 1px solid yellow;
 	}
-
+	.highlighted-small {
+		border: 1px solid yellow;
+	}
 	@keyframes glow {
 		0% {
 			box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
@@ -674,7 +695,7 @@
 	}
 
 	.search-result {
-		border: 4px solid rgba(255, 0, 0, 0.8);
+		border: 15px solid rgba(255, 0, 0, 0.8);
 		animation: glow 2s infinite;
 	}
 
