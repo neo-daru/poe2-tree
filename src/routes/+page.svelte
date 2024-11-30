@@ -272,11 +272,7 @@
 
 	<h1>Path of Exile 2 Skill Tree Preview</h1>
 	<p>Check out the Github repository for how to contribute to this project.</p>
-	<!-- Filters -->
-	<div class="filters">
-		<label><input type="checkbox" bind:checked={highlightKeystones} /> Highlight Keystones</label>
-		<label><input type="checkbox" bind:checked={highlightNotables} /> Highlight Notables</label>
-		<label><input type="checkbox" bind:checked={hideUnidentified} /> Hide Unidentified</label>
+	<div class="ascendancy-dropdown">
 		<select name="ascendancies" id="asc-select" bind:value={selectedAscendancy}>
 			<option value="bloodmage" selected>Witch - Bloodmage</option>
 			<option value="infernalist">With - Infernalist</option>
@@ -291,6 +287,13 @@
 			<option value="witchhunter">Mercenary - Witchhunter</option>
 			<option value="legionnaire">Mercenary - Gem. Legionnaire</option>
 		  </select>
+	</div>
+	<!-- Filters -->
+	<div class="filters">
+		<label><input type="checkbox" bind:checked={highlightKeystones} /> Highlight Keystones</label>
+		<label><input type="checkbox" bind:checked={highlightNotables} /> Highlight Notables</label>
+		<label><input type="checkbox" bind:checked={hideUnidentified} /> Hide Unidentified</label>
+		
 	</div>
 </div>
 
@@ -436,6 +439,18 @@
 	.search-bar span {
 		margin-left: 10px;
 		font-size: 16px;
+	}
+
+	.ascendancy-dropdown {
+		display: inline-block;
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		select {
+			padding: 5px;
+			font-size: 16px;
+		}
 	}
 
 	.filters {
