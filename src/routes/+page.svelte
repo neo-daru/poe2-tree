@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { type NodePosition, type TooltipContent, loadData } from '$lib';
 	import { onMount, tick } from 'svelte';
+	import { browser } from '$app/environment';
 
 	let { positions: nodes, nodesDescription: nodesDesc } = loadData();
 
@@ -36,6 +37,23 @@
 
 	// State for selected nodes
 	let selectedNodes: string[] = [];
+
+	// Load saved selected nodes from localStorage on component initialization
+	if (browser) {
+		const savedSelectedNodes = localStorage.getItem('selectedSkillNodes');
+		if (savedSelectedNodes) {
+			try {
+				selectedNodes = JSON.parse(savedSelectedNodes);
+			} catch (error) {
+				console.error('Error parsing saved selected nodes:', error);
+			}
+		}
+	}
+
+	// Reactive statement to save selected nodes to localStorage whenever they change
+	$: if (browser) {
+		localStorage.setItem('selectedSkillNodes', JSON.stringify(selectedNodes));
+	}
 
 	// State for filters
 	let highlightKeystones = false;
@@ -237,6 +255,10 @@
 
 	function clearSelectedNodes() {
 		selectedNodes = [];
+		// Clear localStorage when all nodes are cleared
+		if (browser) {
+			localStorage.removeItem('selectedSkillNodes');
+		}
 	}
 
 	// Add event listeners for global mouse events to handle panning
