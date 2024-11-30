@@ -356,6 +356,12 @@
 
 <!-- Top Bar Section -->
 <div class="top-bar">
+	<!-- Disclaimer tesxt top-left corner -->
+	<div class="disclaimer-text">
+		<p>This is a pre-launch community project, which</p>
+		<p>means it's missing many nodes</p>
+		<p>and may not be 100% accurate</p>
+	</div>
 	<!-- GitHub link to the top-right corner -->
 	<div class="github-text">
 		<p>Check out the Github repository</p>
@@ -571,6 +577,12 @@
 		margin: 5px 0;
 		font-size: 16px;
 		text-align: center;
+	}
+	.disclaimer-text {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		text-wrap: balance;
 	}
 
 	.github-text {
