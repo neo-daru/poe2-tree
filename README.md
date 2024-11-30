@@ -50,7 +50,7 @@ The UI/UX is quite basic and can be improved in many ways, if you have any ideas
 
 # Mapped Sources
 
-## Dreamcore Youtube
+## Dreamcore YouTube
 
 - [Int Area](https://www.youtube.com/watch?v=tI0xJb1HEYw)
 - [Str/Int Area](https://www.youtube.com/watch?v=XfriM2XvruQb)
