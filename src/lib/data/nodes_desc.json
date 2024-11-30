@@ -9,7 +9,7 @@
 	},
 	"K3": {
 		"name": "Eldritch Battery",
-		"stats": ["Converts all Energy Shield to Mana", "Confirmed to not be this in EA"]
+		"stats": ["Converts all Energy Shield to Mana"]
 	},
 	"K4": {
 		"name": "Chaos Inoculation",
@@ -146,9 +146,8 @@
 		"stats": []
 	},
 	"N7": {
-		"name": "Burnout",
-		"stats": [
-			"Ignites you inflict deal Damage 15% faster"]
+		"name": "N7",
+		"stats": []
 	},
 	"N8": {
 		"name": "N8",
@@ -171,10 +170,8 @@
 		"stats": ["60% increased maximum Energy Shield", "20% slower start of Energy Shield Recharge"]
 	},
 	"N13": {
-		"name": "Electric Amplification",
-		"stats": [
-			"Damage Penetrates 18% Lightning Resistance",
-			"25% increased Lightning Exposure Effect"]
+		"name": "N13",
+		"stats": []
 	},
 	"N14": {
 		"name": "N14",
@@ -613,11 +610,8 @@
 		"stats": []
 	},
 	"N116": {
-		"name": "Breath of Lightning",
-		"stats": [
-			"Damage Penetrates 15% Lightning Resistance",
-			"+10 to Intelligence"
-		]
+		"name": "N116",
+		"stats": []
 	},
 	"N117": {
 		"name": "Spectral Ward",
@@ -677,11 +671,8 @@
 		"stats": []
 	},
 	"N129": {
-		"name": "Breath of Cold",
-		"stats": [
-			"Damage Penetrates 15% Cold Resistance",
-			"+10 to Dexterity"
-		]
+		"name": "N129",
+		"stats": []
 	},
 	"N130": {
 		"name": "N130",
@@ -1076,8 +1067,10 @@
 		"stats": []
 	},
 	"N219": {
-		"name": "N219",
-		"stats": []
+		"name": "First Strike",
+		"stats": [
+			"50% increased Damage with Daggers against Enemies that are on Full Life"
+		]
 	},
 	"N220": {
 		"name": "N220",
@@ -1091,7 +1084,7 @@
 		"name": "Flow State",
 		"stats": [
 			"15% increased Mana Regeneration Rate",
-			"5% increased Attack and Cast Speed"
+			"5% increased Attack and Cast Speed"			
 		]
 	},
 	"N223": {
@@ -1119,16 +1112,20 @@
 		"stats": []
 	},
 	"N229": {
-		"name": "N229",
-		"stats": []
+		"name": "Life from Death",
+		"stats": [
+			"Recover 3% of Life on Kill"
+		]
 	},
 	"N230": {
 		"name": "N230",
 		"stats": []
 	},
 	"N231": {
-		"name": "N231",
-		"stats": []
+		"name": "Unbroken Concentration",
+		"stats": [
+			"40% increased Stun Threshold if you haven't been stunned recently"
+		]
 	},
 	"N232": {
 		"name": "Immaterial",
@@ -1234,8 +1231,13 @@
 		"stats": []
 	},
 	"N253": {
-		"name": "N253",
-		"stats": []
+		"name": "Step Like Mist",
+		"stats": [
+			"4% increased Movenment Speed",
+			"14% increaased Evasion Rating",
+			"14% increased maximum Energy Shield",
+			"+5 to Dexterity and Intelligence"
+		]
 	},
 	"N254": {
 		"name": "Lust for Power",
@@ -1437,10 +1439,8 @@
 		"stats": ["15% increased Evasion Rating", "15% increased maximum Energy Shield"]
 	},
 	"N299": {
-		"name": "Blinding Strike",
-		"stats": [
-			"24% increased Attack Damage",
-			"10% chance to Blind Enemies on Hit with Attacks"]
+		"name": "N299",
+		"stats": []
 	},
 	"N300": {
 		"name": "N300",
@@ -1924,10 +1924,8 @@
 		"stats": ["20% more Damage against Heavy Stunned Enemies with Maces"]
 	},
 	"N411": {
-		"name": "Death from Afar",
-		"stats": [
-			"Projectiles have 25% increased Critical Hit Chance against Enemies further then 6m",
-			"Projectiles deal 25% increased Damage with Hits against Enemies further then 6m"]
+		"name": "N411",
+		"stats": []
 	},
 	"N412": {
 		"name": "Vigilance",
@@ -1988,10 +1986,8 @@
 		"stats": []
 	},
 	"N425": {
-		"name": "Stand and Deliver",
-		"stats": [
-			"Projectiles have 40% increased Critical Damage Bonus against Enemies within 2m",
-			"Projectiles deal 25% increased Damage with Hits against Enemies within 2m"]
+		"name": "N425",
+		"stats": []
 	},
 	"N426": {
 		"name": "Back in Action",
@@ -2505,9 +2501,8 @@
 		"stats": []
 	},
 	"N539": {
-		"name": "Advanced Munitions",
-		"stats": [
-			"25% increased chance to inflict Ailments with Projectiles"]
+		"name": "N539",
+		"stats": []
 	},
 	"N540": {
 		"name": "N540",
@@ -2585,7 +2580,7 @@
 		]
 	},
 	"N557": {
-		"name": "Fast Metabolism",
+		"name": "Metabolism",
 		"stats": ["Life Leech effects are not removed when Unreserved Life is Filled"]
 	},
 	"N558": {
@@ -2658,37 +2653,5 @@
 	"N573": {
 		"name": "Stance Breaker",
 		"stats": ["50% reduced Enemy Chance to Block Sword Attacks"]
-	},
-	"N574": {
-		"name": "Dark Entries",
-		"stats": ["+1 to Level of all Chaos Skills"]
-	},
-	"N575": {
-		"name": "Building Toxins",
-		"stats": ["25% reduced Poison Duration", "Can Poison enemies an additional time"]
-	},
-	"N576": {
-		"name": "Escalating Toxins",
-		"stats": ["10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"]
-	},
-	"N577": {
-		"name": "N577",
-		"stats": []
-	},
-	"N578": {
-		"name": "N578",
-		"stats": []
-	},
-	"N579": {
-		"name": "N579",
-		"stats": []
-	},
-	"N580": {
-		"name": "N580",
-		"stats": []
-	},
-	"N581": {
-		"name": "N581",
-		"stats": []
 	}
 }
