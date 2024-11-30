@@ -2684,5 +2684,9 @@
 	"N581": {
 		"name": "N581",
 		"stats": []
+	},
+	"N582": {
+		"name": "Savoured Blood",
+		"stats": ["50% increased amount of Life Leeched", "Leech Life 20% slower"]
 	}
 }
