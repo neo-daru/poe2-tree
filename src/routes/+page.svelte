@@ -60,6 +60,8 @@
 	let highlightNotables = false;
 	let highlightSmalls = false;
 	let hideUnidentified = false;
+	let hideUnselected = false;
+	let hideSmall = false;
 
 	// State for selected nodes display
 	let showSelectedNodesDisplay = false;
@@ -354,7 +356,11 @@
 
 <!-- Top Bar Section -->
 <div class="top-bar">
-	<!-- Moved the GitHub link to the top-right corner -->
+	<!-- GitHub link to the top-right corner -->
+	<div class="github-text">
+		<p>Check out the Github repository</p>
+		<p>to see how to contribute to this project</p>
+	</div>
 	<div class="github-link">
 		<a href="https://github.com/marcoaaguiar/poe2-tree" target="_blank" rel="noopener noreferrer">
 			<!-- GitHub SVG Icon -->
@@ -375,14 +381,19 @@
 	</div>
 
 	<h1>Path of Exile 2 Skill Tree Preview</h1>
-	<p>Check out the Github repository for how to contribute to this project.</p>
+
 	<!-- Filters -->
 	<div class="filters">
-		<p>Highlight:</p>
-		<label><input type="checkbox" bind:checked={highlightKeystones} /> Keystones</label>
-		<label><input type="checkbox" bind:checked={highlightNotables} /> Notables</label>
-		<label><input type="checkbox" bind:checked={highlightSmalls} /> Smalls</label>
-		<label><input type="checkbox" bind:checked={hideUnidentified} /> Hide Unidentified</label>
+		<p><b>Highlight:</b></p>
+		<label><input type="checkbox" bind:checked={highlightKeystones} />Keystones</label>
+		<label><input type="checkbox" bind:checked={highlightNotables} />Notables</label>
+		<label><input type="checkbox" bind:checked={highlightSmalls} />Smalls</label>
+	</div>
+	<div class="filters">
+		<p><b>Hide:</b></p>
+		<label><input type="checkbox" bind:checked={hideUnidentified} />Unidentified</label>
+		<label><input type="checkbox" bind:checked={hideUnselected} />Unselected</label>
+		<label><input type="checkbox" bind:checked={hideSmall} />Smalls</label>
 	</div>
 </div>
 
@@ -394,7 +405,7 @@
 		onmouseenter={handleSearchResultsMouseEnter}
 		onmouseleave={handleSearchResultsMouseLeave}
 		onclick={handleSearchResultsClick}
-		style="cursor: pointer;">Search results: {searchResults.length}</span
+		style="cursor: pointer; margin-right: 10px;">Search Results: {searchResults.length}</span
 	>
 
 	<!-- Search Results Display -->
@@ -424,7 +435,7 @@
 		onmouseenter={handleSelectedNodesMouseEnter}
 		onmouseleave={handleSelectedNodesMouseLeave}
 		onclick={handleSelectedNodesClick}
-		style="cursor: pointer;">Selected Nodes: {selectedNodes.length}</span
+		style="cursor: pointer;">Selected Nodes: {selectedNodes.length}/122</span
 	>
 
 	<!-- Selected Nodes Display -->
@@ -433,15 +444,18 @@
 			{#if selectedNodes.length > 0}
 				<button onclick={clearSelectedNodes}>Clear Selected Nodes</button>
 				<ul>
+					<!-- Only display non small nodes -->
 					{#each selectedNodes as nodeId}
-						<li>
-							<strong>{nodesDesc[nodeId].name}</strong>
-							<ul>
-								{#each nodesDesc[nodeId].stats as stat}
-									<li>{stat}</li>
-								{/each}
-							</ul>
-						</li>
+						{#if !nodeId.startsWith('S')}
+							<li>
+								<strong>{nodesDesc[nodeId].name}</strong>
+								<ul>
+									{#each nodesDesc[nodeId].stats as stat}
+										<li>{stat}</li>
+									{/each}
+								</ul>
+							</li>
+						{/if}
 					{/each}
 				</ul>
 			{:else}
@@ -490,30 +504,34 @@
 		{#if hasLoaded}
 			{#each ['notables', 'keystones', 'smalls'] as kind}
 				{#each nodes[kind] as node}
-					{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
-						<!-- svelte-ignore a11y_no_static_element_interactions -->
-						<!-- svelte-ignore a11y_click_events_have_key_events -->
-						<div
-							class:notable={node.id.startsWith('N')}
-							class:keystone={node.id.startsWith('K')}
-							class:small={node.id.startsWith('S')}
-							class:unidentified={nodesDesc[node.id].name === node.id}
-							class:search-result={searchResults.includes(node.id)}
-							class:selected={selectedNodes.includes(node.id)}
-							class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
-							class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
-							class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
-							style="
+					{#if !(hideSmall && node.id.startsWith('S'))}
+						{#if !(hideUnselected && !selectedNodes.includes(node.id))}
+							{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
+								<!-- svelte-ignore a11y_no_static_element_interactions -->
+								<!-- svelte-ignore a11y_click_events_have_key_events -->
+								<div
+									class:notable={node.id.startsWith('N')}
+									class:keystone={node.id.startsWith('K')}
+									class:small={node.id.startsWith('S')}
+									class:unidentified={nodesDesc[node.id].name === node.id}
+									class:search-result={searchResults.includes(node.id)}
+									class:selected={selectedNodes.includes(node.id)}
+									class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
+									class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
+									class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
+									style="
 								  width: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
 								  height: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
 								  left: {node.x * imageEl.naturalWidth * scale - (baseNodeSize * scale) / 2}px;
 								  top: {node.y * imageEl.naturalHeight * scale - (baseNodeSize * scale) / 2}px;
 							  "
-							onmousedown={(event) => event.stopPropagation()}
-							onclick={() => toggleNodeSelection(node)}
-							onmouseenter={() => handleMouseEnter(node)}
-							onmouseleave={handleMouseLeave}
-						></div>
+									onmousedown={(event) => event.stopPropagation()}
+									onclick={() => toggleNodeSelection(node)}
+									onmouseenter={() => handleMouseEnter(node)}
+									onmouseleave={handleMouseLeave}
+								></div>
+							{/if}
+						{/if}
 					{/if}
 				{/each}
 			{/each}
@@ -555,10 +573,17 @@
 		text-align: center;
 	}
 
-	.github-link {
+	.github-text {
 		position: absolute;
 		top: 10px;
 		right: 10px;
+		text-wrap: balance;
+	}
+
+	.github-link {
+		position: absolute;
+		top: 80px;
+		right: 140px;
 	}
 
 	.github-link a {
@@ -578,7 +603,6 @@
 	.search-bar {
 		text-align: center;
 		margin-bottom: 10px;
-		margin-top: 10px;
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -599,7 +623,7 @@
 
 	.filters {
 		display: inline-block;
-		margin-top: 20px;
+		margin-top: 10px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -695,7 +719,7 @@
 	}
 
 	.search-result {
-		border: 15px solid rgba(255, 0, 0, 0.8);
+		border: 3px solid rgba(255, 0, 0, 0.8);
 		animation: glow 2s infinite;
 	}
 
