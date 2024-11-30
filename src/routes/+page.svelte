@@ -56,10 +56,10 @@
 	}
 
 	// State for filters
-	let highlightKeystones = false;
-	let highlightNotables = false;
+	let highlightKeystones = true;
+	let highlightNotables = true;
 	let highlightSmalls = false;
-	let hideUnidentified = false;
+	let hideUnidentified = true;
 	let hideUnselected = false;
 	let hideSmall = false;
 
