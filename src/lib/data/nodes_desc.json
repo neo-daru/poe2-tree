@@ -610,8 +610,11 @@
 		"stats": []
 	},
 	"N116": {
-		"name": "N116",
-		"stats": []
+		"name": "Breath of Lightning",
+		"stats": [
+			"Damage Penetrates 15% Lightning Resistance",
+			"+10 to Intelligence"
+		]
 	},
 	"N117": {
 		"name": "Spectral Ward",
@@ -671,8 +674,11 @@
 		"stats": []
 	},
 	"N129": {
-		"name": "N129",
-		"stats": []
+		"name": "Breath of Cold",
+		"stats": [
+			"Damage Penetrates 15% Cold Resistance",
+			"+10 to Dexterity"
+		]
 	},
 	"N130": {
 		"name": "N130",
