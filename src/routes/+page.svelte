@@ -40,7 +40,21 @@
 	// State for filters
 	let highlightKeystones = false;
 	let highlightNotables = false;
-	let hideUnidentified = false;
+	let hideUnidentified = true;
+
+	// State for selected nodes display
+	let showSelectedNodesDisplay = false;
+	let isSelectedNodesDisplayPinned = false;
+
+	let selectedNodesDisplayEl: HTMLDivElement | null = null;
+	let selectedNodesSpanEl: HTMLSpanElement | null = null;
+
+	// State for search results display
+	let showSearchResultsDisplay = false;
+	let isSearchResultsDisplayPinned = false;
+
+	let searchResultsDisplayEl: HTMLDivElement | null = null;
+	let searchResultsSpanEl: HTMLSpanElement | null = null;
 
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
@@ -221,6 +235,10 @@
 		}
 	}
 
+	function clearSelectedNodes() {
+		selectedNodes = [];
+	}
+
 	// Add event listeners for global mouse events to handle panning
 	onMount(() => {
 		const handleMove = (event: MouseEvent) => {
@@ -238,11 +256,77 @@
 		window.addEventListener('mousemove', handleMove);
 		window.addEventListener('mouseup', handleUp);
 
+		// Handle clicks outside the selected nodes and search results display
+		const handleClickOutside = (event: MouseEvent) => {
+			const clickedOutsideSelectedNodes =
+				isSelectedNodesDisplayPinned &&
+				!selectedNodesDisplayEl?.contains(event.target as Node) &&
+				!selectedNodesSpanEl?.contains(event.target as Node);
+
+			const clickedOutsideSearchResults =
+				isSearchResultsDisplayPinned &&
+				!searchResultsDisplayEl?.contains(event.target as Node) &&
+				!searchResultsSpanEl?.contains(event.target as Node);
+
+			if (clickedOutsideSelectedNodes) {
+				isSelectedNodesDisplayPinned = false;
+				showSelectedNodesDisplay = false;
+			}
+
+			if (clickedOutsideSearchResults) {
+				isSearchResultsDisplayPinned = false;
+				showSearchResultsDisplay = false;
+			}
+		};
+
+		document.addEventListener('click', handleClickOutside);
+
 		return () => {
 			window.removeEventListener('mousemove', handleMove);
 			window.removeEventListener('mouseup', handleUp);
+			document.removeEventListener('click', handleClickOutside);
 		};
 	});
+
+	function handleSelectedNodesMouseEnter() {
+		showSelectedNodesDisplay = true;
+	}
+
+	function handleSelectedNodesMouseLeave() {
+		if (!isSelectedNodesDisplayPinned) {
+			showSelectedNodesDisplay = false;
+		}
+	}
+
+	function handleSelectedNodesClick(event: MouseEvent) {
+		isSelectedNodesDisplayPinned = !isSelectedNodesDisplayPinned;
+		if (!isSelectedNodesDisplayPinned) {
+			showSelectedNodesDisplay = false;
+		} else {
+			showSelectedNodesDisplay = true;
+		}
+		event.stopPropagation();
+	}
+
+	function handleSearchResultsMouseEnter() {
+		showSearchResultsDisplay = true;
+	}
+
+	function handleSearchResultsMouseLeave() {
+		if (!isSearchResultsDisplayPinned) {
+			showSearchResultsDisplay = false;
+		}
+	}
+
+	function handleSearchResultsClick(event: MouseEvent) {
+		isSearchResultsDisplayPinned = !isSearchResultsDisplayPinned;
+		if (!isSearchResultsDisplayPinned) {
+			showSearchResultsDisplay = false;
+		} else {
+			showSearchResultsDisplay = true;
+		}
+		event.stopPropagation();
+	}
 </script>
 
 <!-- Top Bar Section -->
@@ -280,8 +364,66 @@
 <!-- Search and Filter Section -->
 <div class="search-bar">
 	<input type="text" placeholder="Search..." bind:value={searchTerm} />
-	<span>Search results: {searchResults.length}</span>
-	<span>Selected Nodes: {selectedNodes.length}</span>
+	<span
+		bind:this={searchResultsSpanEl}
+		onmouseenter={handleSearchResultsMouseEnter}
+		onmouseleave={handleSearchResultsMouseLeave}
+		onclick={handleSearchResultsClick}
+		style="cursor: pointer;">Search results: {searchResults.length}</span
+	>
+
+	<!-- Search Results Display -->
+	{#if showSearchResultsDisplay}
+		<div class="info-display" bind:this={searchResultsDisplayEl}>
+			{#if searchResults.length > 0}
+				<ul>
+					{#each searchResults as nodeId}
+						<li>
+							<strong>{nodesDesc[nodeId].name}</strong>
+							<ul>
+								{#each nodesDesc[nodeId].stats as stat}
+									<li>{stat}</li>
+								{/each}
+							</ul>
+						</li>
+					{/each}
+				</ul>
+			{:else}
+				<p>No search results.</p>
+			{/if}
+		</div>
+	{/if}
+
+	<span
+		bind:this={selectedNodesSpanEl}
+		onmouseenter={handleSelectedNodesMouseEnter}
+		onmouseleave={handleSelectedNodesMouseLeave}
+		onclick={handleSelectedNodesClick}
+		style="cursor: pointer;">Selected Nodes: {selectedNodes.length}</span
+	>
+
+	<!-- Selected Nodes Display -->
+	{#if showSelectedNodesDisplay}
+		<div class="info-display" bind:this={selectedNodesDisplayEl}>
+			{#if selectedNodes.length > 0}
+				<button onclick={clearSelectedNodes}>Clear Selected Nodes</button>
+				<ul>
+					{#each selectedNodes as nodeId}
+						<li>
+							<strong>{nodesDesc[nodeId].name}</strong>
+							<ul>
+								{#each nodesDesc[nodeId].stats as stat}
+									<li>{stat}</li>
+								{/each}
+							</ul>
+						</li>
+					{/each}
+				</ul>
+			{:else}
+				<p>No nodes selected.</p>
+			{/if}
+		</div>
+	{/if}
 </div>
 
 <!-- Skill Tree Container -->
@@ -409,6 +551,12 @@
 	.search-bar {
 		text-align: center;
 		margin-bottom: 10px;
+		margin-top: 10px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
 	}
 
 	.search-bar input {
@@ -417,8 +565,9 @@
 	}
 
 	.search-bar span {
-		margin-left: 10px;
 		font-size: 16px;
+		cursor: pointer;
+		position: relative;
 	}
 
 	.filters {
@@ -546,5 +695,68 @@
 				margin: 0 auto;
 			}
 		}
+	}
+
+	.info-display {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(0, 0, 0, 0.9);
+		border: 1px solid #444;
+		z-index: 100;
+		padding: 10px;
+		max-height: 300px;
+		overflow-y: auto;
+		width: 300px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+		color: #fff;
+		border-radius: 8px;
+	}
+
+	.info-display ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.info-display li {
+		margin-bottom: 10px;
+	}
+
+	.info-display strong {
+		font-size: 16px;
+		color: #f0e7e5;
+	}
+
+	.info-display ul ul {
+		margin-top: 5px;
+		margin-left: 15px;
+	}
+
+	.info-display ul ul li {
+		font-size: 14px;
+		color: #7d7aad;
+	}
+
+	.info-display p {
+		color: #7d7aad;
+		font-size: 14px;
+	}
+
+	/* Style for the clear button */
+	.info-display button {
+		background-color: rgba(0, 0, 0, 0.9);
+		color: white;
+		border: 1px solid #444;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		border-radius: 4px;
+		font-family: 'Fontin SmallCaps', sans-serif;
+	}
+
+	.info-display button:hover {
+		background-color: #c9302c;
 	}
 </style>
