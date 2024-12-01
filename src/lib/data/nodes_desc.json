@@ -4296,8 +4296,8 @@
 		"stats": []
 	},
 	"S388": {
-		"name": "S388",
-		"stats": []
+		"name": "Lightning Penetration",
+		"stats": ["Damage Penetrates 6% Lightning Resistance"]
 	},
 	"S389": {
 		"name": "S389",
@@ -4332,8 +4332,8 @@
 		"stats": []
 	},
 	"S397": {
-		"name": "S397",
-		"stats": []
+		"name": "Lightning Penetration",
+		"stats": ["Damage Penetrates 6% Lightning Resistance"]
 	},
 	"S398": {
 		"name": "S398",
@@ -4385,11 +4385,11 @@
 	},
 	"S410": {
 		"name": "Cold Penetration",
-		"stats": ["Damage Penetrates 4% Cold Resistance"]
+		"stats": ["Damage Penetrates 6% Cold Resistance"]
 	},
 	"S411": {
-		"name": "S411",
-		"stats": []
+		"name": "Cold Penetration",
+		"stats": ["Damage Penetrates 6% Cold Resistance"]
 	},
 	"S412": {
 		"name": "Attribute",
@@ -4465,7 +4465,7 @@
 	},
 	"S430": {
 		"name": "Fire Penetration",
-		"stats": ["Damage Penetrates 4% Fire Resistance"]
+		"stats": ["Damage Penetrates 6% Fire Resistance"]
 	},
 	"S431": {
 		"name": "Attribute",
@@ -4496,8 +4496,8 @@
 		"stats": []
 	},
 	"S438": {
-		"name": "S438",
-		"stats": []
+		"name": "Fire Penetration",
+		"stats": ["Damage Penetrates 6% Fire Resistance"]
 	},
 	"S439": {
 		"name": "S439",
@@ -5436,8 +5436,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S673": {
-		"name": "S673",
-		"stats": []
+		"name": "Mana Regeneration",
+		"stats": ["10% increased Mana Regeneration Rate"]
 	},
 	"S674": {
 		"name": "Mana",
@@ -5468,8 +5468,8 @@
 		"stats": []
 	},
 	"S681": {
-		"name": "S681",
-		"stats": []
+		"name": "Spell Damage",
+		"stats": ["8% increased Spell Damage"]
 	},
 	"S682": {
 		"name": "Attribute",
@@ -5488,8 +5488,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S686": {
-		"name": "Minion Life",
-		"stats": ["Minions have 10% increased maximum Life"]
+		"name": "Mana Regeneration",
+		"stats": ["10% increased Mana Regeneration Rate"]
 	},
 	"S687": {
 		"name": "S687",
@@ -5512,8 +5512,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S692": {
-		"name": "S692",
-		"stats": []
+		"name": "Spell Damage",
+		"stats": ["8% increased Spell Damage"]
 	},
 	"S693": {
 		"name": "Energy Shield Delay",
@@ -5580,8 +5580,8 @@
 		"stats": ["3% increased Attack speed"]
 	},
 	"S709": {
-		"name": "S709",
-		"stats": []
+		"name": "Spell Damage",
+		"stats": ["10% increased Spell Damage"]
 	},
 	"S710": {
 		"name": "Energy Shield",
