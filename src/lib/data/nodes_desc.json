@@ -6089,8 +6089,10 @@
     "stats": []
   },
   "S839": {
-    "name": "S839",
-    "stats": []
+    "name": "Quarterstaff Speed",
+    "stats": [
+	    "4% increased Attack Speed with Staves"
+    ]
   },
   "S840": {
     "name": "S840",
@@ -10386,6 +10388,29 @@
   },
   "S1913": {
     "name": "S1913",
+    "stats": []
+  },
+  "S1914": {
+    "name": "S1914",
+    "stats": []
+  },
+  "S1915": {
+    "name": "Quarterstaff Stun and Knockback",
+    "stats": [
+	    "20% increased Stun Buildup",
+	    "20% increased Knockback Distance"
+    ]
+  },
+  "S1916": {
+    "name": "S1916",
+    "stats": []
+  },
+  "S1917": {
+    "name": "S1917",
+    "stats": []
+  },
+  "S1918": {
+    "name": "S1918",
     "stats": []
   }
 }
