@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { type NodePosition, type TooltipContent, loadData } from '$lib';
+	import { type TreeNode, loadData } from '$lib';
 	import { onMount, tick } from 'svelte';
 	import { browser } from '$app/environment';
 
-	let { positions: nodes, nodesDescription: nodesDesc } = loadData();
+	let { nodes } = loadData();
 
 	let containerEl: HTMLDivElement | null = null;
 	let imageEl: HTMLImageElement | null = null;
@@ -12,7 +12,7 @@
 	let tooltipEl: HTMLDivElement | null = null; // Reference to the tooltip element
 	let hasLoaded = false;
 
-	let tooltipContent: TooltipContent | null = null;
+	let tooltipNode: TreeNode | null = null;
 	let tooltipX = 0;
 	let tooltipY = 0;
 
@@ -41,6 +41,7 @@
 	// Load saved selected nodes from localStorage on component initialization
 	if (browser) {
 		const savedSelectedNodes = localStorage.getItem('selectedSkillNodes');
+
 		if (savedSelectedNodes) {
 			try {
 				selectedNodes = JSON.parse(savedSelectedNodes);
@@ -83,14 +84,49 @@
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
 
-	async function activateTooltip(node: NodePosition) {
-		tooltipContent = nodesDesc[node.id];
+	// composable filter functions
+	function filterSmallNodes(node: TreeNode) {
+		return !hideSmall || node.type !== 'small';
+	}
+
+	function filterUnselectedNodes(node: TreeNode) {
+		return !hideUnselected || !selectedNodes.includes(node.id);
+	}
+
+	function filterUnidentifiedNodes(node: TreeNode) {
+		return !hideUnidentified || node.description.length > 0;
+	}
+
+	function filterAscendancyNodes(node: TreeNode) {
+		return !node.class || (node.class && node.class === selectedAscendancy)
+	}
+
+	const filterFns = [filterSmallNodes, filterUnselectedNodes, filterUnidentifiedNodes, filterAscendancyNodes];
+
+	// filter nodes using active filters
+	function filterNodes(node: TreeNode) {
+		return filterFns.every((filterFn) => filterFn(node));
+	}
+
+	const NODE_SIZE = {
+		notable: 20,
+		small: 10,
+		keystone: 24
+	};
+
+	// calculate node size in pixels based on type
+	function getNodeSize(node: TreeNode) {
+		return NODE_SIZE[node.type];
+	}
+
+	async function activateTooltip(node: TreeNode) {
+		tooltipNode = node;
 
 		if (!imageEl || !containerEl) return;
 
 		// Calculate node position relative to the container, accounting for pan offsets
-		const nodeX = node.x * imageEl.naturalWidth * scale + panOffsetX;
-		const nodeY = node.y * imageEl.naturalHeight * scale + panOffsetY;
+		const nodeX = node.position.x * imageEl.naturalWidth * scale + panOffsetX;
+		const nodeY = node.position.y * imageEl.naturalHeight * scale + panOffsetY;
 
 		// Initial tooltip position
 		tooltipX = nodeX + 20; // Adjust as needed
@@ -141,7 +177,7 @@
 		}
 	}
 
-	function toggleNodeSelection(node: NodePosition) {
+	function toggleNodeSelection(node: TreeNode) {
 		if (selectedNodes.includes(node.id)) {
 			// Deselect node
 			selectedNodes = selectedNodes.filter((id) => id !== node.id);
@@ -165,7 +201,7 @@
 		}
 	}
 
-	function handleMouseEnter(node: NodePosition) {
+	function handleMouseEnter(node: TreeNode) {
 		if (!isPanning) {
 			activateTooltip(node);
 		}
@@ -173,7 +209,7 @@
 
 	function handleMouseLeave() {
 		if (!isPanning) {
-			tooltipContent = null;
+			tooltipNode = null;
 		}
 	}
 
@@ -226,11 +262,11 @@
 
 		const search = text.toLowerCase();
 
-		searchResults = Object.entries(nodesDesc)
+		searchResults = Object.entries(nodes)
 			.filter(
 				([_, values]) =>
 					values.name.toLowerCase().includes(search) ||
-					values.stats.some((value) => value.toLowerCase().includes(search))
+					values.description.some((value) => value.toLowerCase().includes(search))
 			)
 			.map(([key, _]) => key);
 	}
@@ -261,6 +297,7 @@
 
 	function clearSelectedNodes() {
 		selectedNodes = [];
+
 		// Clear localStorage when all nodes are cleared
 		if (browser) {
 			localStorage.removeItem('selectedSkillNodes');
@@ -435,10 +472,10 @@
 				<ul>
 					{#each searchResults as nodeId}
 						<li>
-							<strong>{nodesDesc[nodeId].name}</strong>
+							<strong>{nodes[nodeId].name}</strong>
 							<ul>
-								{#each nodesDesc[nodeId].stats as stat}
-									<li>{stat}</li>
+								{#each nodes[nodeId].description as description}
+									<li>{description}</li>
 								{/each}
 							</ul>
 						</li>
@@ -468,10 +505,10 @@
 					{#each selectedNodes as nodeId}
 						{#if !nodeId.startsWith('S')}
 							<li>
-								<strong>{nodesDesc[nodeId].name}</strong>
+								<strong>{nodes[nodeId].name}</strong>
 								<ul>
-									{#each nodesDesc[nodeId].stats as stat}
-										<li>{stat}</li>
+									{#each nodes[nodeId].description as description}
+										<li>{description}</li>
 									{/each}
 								</ul>
 							</li>
@@ -522,61 +559,48 @@
 
 		<!-- Display hoverable regions with lighter color -->
 		{#if hasLoaded}
-			{#each ['notables', 'keystones', 'smalls', 'ascendancies'] as kind}
-				{#each nodes[kind] as node}
-					{#if !(hideSmall && node.id.startsWith('S'))}
-						{#if !(hideUnselected && !selectedNodes.includes(node.id))}
-							{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
-								{#if (!node.class || (node.class && node.class === selectedAscendancy))}
-								<!-- svelte-ignore a11y_no_static_element_interactions -->
-								<!-- svelte-ignore a11y_click_events_have_key_events -->
-									<div
-										class:notable={node.id.startsWith('N')}
-										class:keystone={node.id.startsWith('K')}
-										class:small={node.id.startsWith('S')}
-										class:ascendancy={node.id.startsWith('A')}
-										class:unidentified={nodesDesc[node.id].name === node.id}
-										class:search-result={searchResults.includes(node.id)}
-										class:selected={selectedNodes.includes(node.id)}
-										class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
-										class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
-										class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
-										style="
-									width: {(baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) * scale}px;
-									height: {(baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) * scale}px;
-									left: {node.x * imageEl.naturalWidth * scale -
-											((baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) *
-												scale) /
-												2}px;
-									top: {node.y * imageEl.naturalHeight * scale -
-											((baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) *
-												scale) /
-												2}px;
-								"
-										onmousedown={(event) => event.stopPropagation()}
-										onclick={() => toggleNodeSelection(node)}
-										onmouseenter={() => handleMouseEnter(node)}
-										onmouseleave={handleMouseLeave}
-									></div>
-								{/if}
-							{/if}
-						{/if}
-					{/if}
-				{/each}
+			{#each Object.values(nodes).filter(filterNodes) as node}
+				<!-- svelte-ignore a11y_no_static_element_interactions -->
+				<!-- svelte-ignore a11y_click_events_have_key_events -->
+				<div
+					class:keystone={node.type === 'keystone'}
+					class:notable={node.type === 'notable'}
+					class:small={node.type === 'small'}
+					class:ascendancy={node.id.startsWith('A')}
+					class:unidentified={node.description.length === 0}
+					class:search-result={searchResults.includes(node.id)}
+					class:selected={selectedNodes.includes(node.id)}
+					class:highlighted-keystone={highlightKeystones && node.type === 'keystone'}
+					class:highlighted-notable={highlightNotables && node.type === 'notable'}
+					class:highlighted-small={highlightSmalls && node.type === 'small'}
+					style="
+						height: {getNodeSize(node) * scale}px;
+						width: {getNodeSize(node) * scale}px;
+						left: {node.position.x * imageEl.naturalWidth * scale - (getNodeSize(node) * scale) / 2}px;
+						top: {node.position.y * imageEl.naturalHeight * scale - (getNodeSize(node) * scale) / 2}px;
+					"
+					onmousedown={(event) => event.stopPropagation()}
+					onclick={() => toggleNodeSelection(node)}
+					onmouseenter={() => handleMouseEnter(node)}
+					onmouseleave={handleMouseLeave}
+				></div>
 			{/each}
 		{/if}
 	</div>
 
 	<!-- Tooltip displayed when a region is hovered -->
-	{#if tooltipContent != null}
+	{#if tooltipNode != null}
 		<div bind:this={tooltipEl} class="tooltip" style="left: {tooltipX}px; top: {tooltipY}px;">
 			<div class="title" style={`background-image: url('${base}/tooltip-header.png');`}>
-				{tooltipContent.name}
+				{tooltipNode.name}
 			</div>
 			<div class="body">
-				{#each tooltipContent.stats as stat}
-					<p class="stat-line">{stat}</p>
+				{#each tooltipNode.description as description}
+					<p class="description-line">{description}</p>
 				{/each}
+			</div>
+			<div class="footer">
+				<span class="node-id">{tooltipNode.id}</span>
 			</div>
 		</div>
 	{/if}
@@ -782,7 +806,7 @@
 			font-size: 1.5rem;
 			color: #f0e7e5; /* Light gold for the title text */
 			text-align: center;
-			margin-bottom: 15px;
+			margin-bottom: 8px;
 			background-size: cover; /* Ensure the image covers the entire title area */
 			background-position: center; /* Center the background image */
 			border-radius: 8px; /* Rounded corners */
@@ -798,11 +822,26 @@
 			font-size: 16px;
 			line-height: 1.5; /* Improve readability */
 			color: #7d7aad; /* Light blue for body text */
-			margin-bottom: 15px; /* Spacing below body */
-			padding: 10px 20px;
+			margin-bottom: 8px; /* Spacing below body */
+			padding: 8px 20px 0;
 
-			.stat-line {
+			.description-line {
 				margin: 0 auto;
+			}
+		}
+
+		.footer {
+			display: flex;
+			font-family: 'Fontin SmallCaps', sans-serif;
+			color: #7d7aad;
+			margin-bottom: 8px;
+			margin-left: 8px;
+			margin-right: 8px;
+
+			.node-id {
+				color: #888;
+				font-size: 12px;
+				margin-left: auto;
 			}
 		}
 	}
