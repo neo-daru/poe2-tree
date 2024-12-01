@@ -11,6 +11,7 @@ export interface NodePosition {
 interface NodePositionStructure {
 	keystones: NodePosition[];
 	notables: NodePosition[];
+	smalls: NodePosition[];
 }
 
 export interface TooltipContent {

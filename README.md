@@ -54,6 +54,7 @@ The UI/UX is quite basic and can be improved in many ways, if you have any ideas
 
 - [Int Area](https://www.youtube.com/watch?v=tI0xJb1HEYw)
 - [Int/Dex Area](https://www.youtube.com/watch?v=aTi9fF6fU24)
+- [Str Area](https://www.youtube.com/watch?v=yPh98i0-oHs)
 - [Str/Int Area](https://www.youtube.com/watch?v=XfriM2XvruQb)
 - [Dex Area](https://www.youtube.com/watch?v=WmAI31iog94)
 - [Dex/Str Area](https://www.youtube.com/watch?v=YOQlMiDNpyQ)
@@ -61,6 +62,10 @@ The UI/UX is quite basic and can be improved in many ways, if you have any ideas
 ## Bajheera Youtube
 
 - [Str/Dex Area](https://www.youtube.com/watch?v=Ec_06V4NOWc)
+
+## Blupa Figma Tree
+
+- [Figma Tree](https://www.figma.com/design/RDJYoGyidY3Xsc21HjcY31/Figma-basics)
 
 ## Path of Exile 2: Endgame Content Reveal
 
@@ -72,6 +77,3 @@ The UI/UX is quite basic and can be improved in many ways, if you have any ideas
 
 # Sources to map
 
-## Dreamcore Youtube
-
-- [Str Area](https://www.youtube.com/watch?v=yPh98i0-oHs)

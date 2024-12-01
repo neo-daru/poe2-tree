@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { type NodePosition, type TooltipContent, loadData } from '$lib';
 	import { onMount, tick } from 'svelte';
+	import { browser } from '$app/environment';
 
 	let { positions: nodes, nodesDescription: nodesDesc } = loadData();
 
@@ -37,10 +38,44 @@
 	// State for selected nodes
 	let selectedNodes: string[] = [];
 
+	// Load saved selected nodes from localStorage on component initialization
+	if (browser) {
+		const savedSelectedNodes = localStorage.getItem('selectedSkillNodes');
+		if (savedSelectedNodes) {
+			try {
+				selectedNodes = JSON.parse(savedSelectedNodes);
+			} catch (error) {
+				console.error('Error parsing saved selected nodes:', error);
+			}
+		}
+	}
+
+	// Reactive statement to save selected nodes to localStorage whenever they change
+	$: if (browser) {
+		localStorage.setItem('selectedSkillNodes', JSON.stringify(selectedNodes));
+	}
+
 	// State for filters
 	let highlightKeystones = false;
 	let highlightNotables = false;
-	let hideUnidentified = true;
+	let highlightSmalls = false;
+	let hideUnidentified = false;
+	let hideUnselected = false;
+	let hideSmall = false;
+
+	// State for selected nodes display
+	let showSelectedNodesDisplay = false;
+	let isSelectedNodesDisplayPinned = false;
+
+	let selectedNodesDisplayEl: HTMLDivElement | null = null;
+	let selectedNodesSpanEl: HTMLSpanElement | null = null;
+
+	// State for search results display
+	let showSearchResultsDisplay = false;
+	let isSearchResultsDisplayPinned = false;
+
+	let searchResultsDisplayEl: HTMLDivElement | null = null;
+	let searchResultsSpanEl: HTMLSpanElement | null = null;
 
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
@@ -197,7 +232,7 @@
 			clampPanOffsets();
 		}
 		if (isZooming && event.touches.length === 2) {
-			const zoomIntensity = 0.02;
+			const zoomIntensity = 0.08;
 			const oldScale = scale;
 			const distance = Math.hypot(
 				event.touches[0].clientX - event.touches[1].clientX,
@@ -279,6 +314,14 @@
 		}
 	}
 
+	function clearSelectedNodes() {
+		selectedNodes = [];
+		// Clear localStorage when all nodes are cleared
+		if (browser) {
+			localStorage.removeItem('selectedSkillNodes');
+		}
+	}
+
 	// Add event listeners for global mouse events to handle panning
 	onMount(() => {
 		const handleMove = (event: MouseEvent) => {
@@ -293,8 +336,32 @@
 			}
 		};
 
+		// Handle clicks outside the selected nodes and search results display
+		const handleClickOutside = (event: MouseEvent) => {
+			const clickedOutsideSelectedNodes =
+				isSelectedNodesDisplayPinned &&
+				!selectedNodesDisplayEl?.contains(event.target as Node) &&
+				!selectedNodesSpanEl?.contains(event.target as Node);
+
+			const clickedOutsideSearchResults =
+				isSearchResultsDisplayPinned &&
+				!searchResultsDisplayEl?.contains(event.target as Node) &&
+				!searchResultsSpanEl?.contains(event.target as Node);
+
+			if (clickedOutsideSelectedNodes) {
+				isSelectedNodesDisplayPinned = false;
+				showSelectedNodesDisplay = false;
+			}
+
+			if (clickedOutsideSearchResults) {
+				isSearchResultsDisplayPinned = false;
+				showSearchResultsDisplay = false;
+			}
+		};
+
 		window.addEventListener('mousemove', handleMove);
 		window.addEventListener('mouseup', handleUp);
+		document.addEventListener('click', handleClickOutside);
 
 		if (imageWrapperEl) {
 			imageWrapperEl.addEventListener('touchmove', handleTouchMove);
@@ -306,6 +373,7 @@
 		return () => {
 			window.removeEventListener('mousemove', handleMove);
 			window.removeEventListener('mouseup', handleUp);
+			document.removeEventListener('click', handleClickOutside);
 			if (imageWrapperEl) {
 				imageWrapperEl.removeEventListener('touchmove', handleTouchMove);
 				imageWrapperEl.removeEventListener('touchstart', handleTouchStart);
@@ -314,45 +382,160 @@
 			}
 		};
 	});
+
+	function handleSelectedNodesMouseEnter() {
+		showSelectedNodesDisplay = true;
+	}
+
+	function handleSelectedNodesMouseLeave() {
+		if (!isSelectedNodesDisplayPinned) {
+			showSelectedNodesDisplay = false;
+		}
+	}
+
+	function handleSelectedNodesClick(event: MouseEvent) {
+		isSelectedNodesDisplayPinned = !isSelectedNodesDisplayPinned;
+		if (!isSelectedNodesDisplayPinned) {
+			showSelectedNodesDisplay = false;
+		} else {
+			showSelectedNodesDisplay = true;
+		}
+		event.stopPropagation();
+	}
+
+	function handleSearchResultsMouseEnter() {
+		showSearchResultsDisplay = true;
+	}
+
+	function handleSearchResultsMouseLeave() {
+		if (!isSearchResultsDisplayPinned) {
+			showSearchResultsDisplay = false;
+		}
+	}
+
+	function handleSearchResultsClick(event: MouseEvent) {
+		isSearchResultsDisplayPinned = !isSearchResultsDisplayPinned;
+		if (!isSearchResultsDisplayPinned) {
+			showSearchResultsDisplay = false;
+		} else {
+			showSearchResultsDisplay = true;
+		}
+		event.stopPropagation();
+	}
 </script>
 
 <!-- Top Bar Section -->
 <div class="top-bar">
-	<!-- Moved the GitHub link to the top-right corner -->
-	<div class="github-link">
-		<a href="https://github.com/marcoaaguiar/poe2-tree" target="_blank" rel="noopener noreferrer">
-			<!-- GitHub SVG Icon -->
-			<svg height="32" viewBox="0 0 16 16" width="32" aria-hidden="true">
-				<path
-					fill-rule="evenodd"
-					d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+	<!-- GitHub link to the top-right corner -->
+	<div>
+		<h1>Path of Exile 2 Skill Tree Preview</h1>
+
+		<!-- Filters -->
+		<div class="filters">
+			<p><b>Highlight:</b></p>
+			<label><input type="checkbox" bind:checked={highlightKeystones} />Keystones</label>
+			<label><input type="checkbox" bind:checked={highlightNotables} />Notables</label>
+			<label><input type="checkbox" bind:checked={highlightSmalls} />Smalls</label>
+		</div>
+		<div class="filters">
+			<p><b>Hide:</b></p>
+			<label><input type="checkbox" bind:checked={hideUnidentified} />Unidentified</label>
+			<label><input type="checkbox" bind:checked={hideUnselected} />Unselected</label>
+			<label><input type="checkbox" bind:checked={hideSmall} />Smalls</label>
+		</div>
+	</div>
+	<div class="github-container">
+		<div class="github-text">
+			<p>Check out the Github repository</p>
+			<p>to see how to contribute to this project</p>
+		</div>
+		<div class="github-link">
+			<a href="https://github.com/marcoaaguiar/poe2-tree" target="_blank" rel="noopener noreferrer">
+				<!-- GitHub SVG Icon -->
+				<svg height="32" viewBox="0 0 16 16" width="32" aria-hidden="true">
+					<path
+						fill-rule="evenodd"
+						d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
 					  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
 					  0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
 					  0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.65 7.65 0 012 0c1.53-1.04
 					  2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
 					  0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
 					  0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"
-				>
-				</path>
-			</svg>
-		</a>
-	</div>
-
-	<h1>Path of Exile 2 Skill Tree Preview</h1>
-	<p>Check out the Github repository for how to contribute to this project.</p>
-	<!-- Filters -->
-	<div class="filters">
-		<label><input type="checkbox" bind:checked={highlightKeystones} /> Highlight Keystones</label>
-		<label><input type="checkbox" bind:checked={highlightNotables} /> Highlight Notables</label>
-		<label><input type="checkbox" bind:checked={hideUnidentified} /> Hide Unidentified</label>
+					>
+					</path>
+				</svg>
+			</a>
+		</div>
 	</div>
 </div>
 
 <!-- Search and Filter Section -->
 <div class="search-bar">
 	<input type="text" placeholder="Search..." bind:value={searchTerm} />
-	<span>Search results: {searchResults.length}</span>
-	<span>Selected Nodes: {selectedNodes.length}</span>
+	<span
+		bind:this={searchResultsSpanEl}
+		onmouseenter={handleSearchResultsMouseEnter}
+		onmouseleave={handleSearchResultsMouseLeave}
+		onclick={handleSearchResultsClick}
+		style="cursor: pointer; margin-right: 10px;">Search Results: {searchResults.length}</span
+	>
+
+	<!-- Search Results Display -->
+	{#if showSearchResultsDisplay}
+		<div class="info-display" bind:this={searchResultsDisplayEl}>
+			{#if searchResults.length > 0}
+				<ul>
+					{#each searchResults as nodeId}
+						<li>
+							<strong>{nodesDesc[nodeId].name}</strong>
+							<ul>
+								{#each nodesDesc[nodeId].stats as stat}
+									<li>{stat}</li>
+								{/each}
+							</ul>
+						</li>
+					{/each}
+				</ul>
+			{:else}
+				<p>No search results.</p>
+			{/if}
+		</div>
+	{/if}
+
+	<span
+		bind:this={selectedNodesSpanEl}
+		onmouseenter={handleSelectedNodesMouseEnter}
+		onmouseleave={handleSelectedNodesMouseLeave}
+		onclick={handleSelectedNodesClick}
+		style="cursor: pointer;">Selected Nodes: {selectedNodes.length}/122</span
+	>
+
+	<!-- Selected Nodes Display -->
+	{#if showSelectedNodesDisplay}
+		<div class="info-display" bind:this={selectedNodesDisplayEl}>
+			{#if selectedNodes.length > 0}
+				<button onclick={clearSelectedNodes}>Clear Selected Nodes</button>
+				<ul>
+					<!-- Only display non small nodes -->
+					{#each selectedNodes as nodeId}
+						{#if !nodeId.startsWith('S')}
+							<li>
+								<strong>{nodesDesc[nodeId].name}</strong>
+								<ul>
+									{#each nodesDesc[nodeId].stats as stat}
+										<li>{stat}</li>
+									{/each}
+								</ul>
+							</li>
+						{/if}
+					{/each}
+				</ul>
+			{:else}
+				<p>No nodes selected.</p>
+			{/if}
+		</div>
+	{/if}
 </div>
 
 <!-- Skill Tree Container -->
@@ -392,30 +575,42 @@
 
 		<!-- Display hoverable regions with lighter color -->
 		{#if hasLoaded}
-			{#each ['notables', 'keystones'] as kind}
+			{#each ['notables', 'keystones', 'smalls'] as kind}
 				{#each nodes[kind] as node}
-					{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
-						<!-- svelte-ignore a11y_no_static_element_interactions -->
-						<!-- svelte-ignore a11y_click_events_have_key_events -->
-						<div
-							class:notable={node.id.startsWith('N')}
-							class:keystone={node.id.startsWith('K')}
-							class:unidentified={nodesDesc[node.id].name === node.id}
-							class:search-result={searchResults.includes(node.id)}
-							class:selected={selectedNodes.includes(node.id)}
-							class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
-							class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
-							style="
-								  width: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
-								  height: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
-								  left: {node.x * imageEl.naturalWidth * scale - (baseNodeSize * scale) / 2}px;
-								  top: {node.y * imageEl.naturalHeight * scale - (baseNodeSize * scale) / 2}px;
+					{#if !(hideSmall && node.id.startsWith('S'))}
+						{#if !(hideUnselected && !selectedNodes.includes(node.id))}
+							{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
+								<!-- svelte-ignore a11y_no_static_element_interactions -->
+								<!-- svelte-ignore a11y_click_events_have_key_events -->
+								<div
+									class:notable={node.id.startsWith('N')}
+									class:keystone={node.id.startsWith('K')}
+									class:small={node.id.startsWith('S')}
+									class:unidentified={nodesDesc[node.id].name === node.id}
+									class:search-result={searchResults.includes(node.id)}
+									class:selected={selectedNodes.includes(node.id)}
+									class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
+									class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
+									class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
+									style="
+								  width: {(baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) * scale}px;
+								  height: {(baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) * scale}px;
+								  left: {node.x * imageEl.naturalWidth * scale -
+										((baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) *
+											scale) /
+											2}px;
+								  top: {node.y * imageEl.naturalHeight * scale -
+										((baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) *
+											scale) /
+											2}px;
 							  "
-							onmousedown={(event) => event.stopPropagation()}
-							onclick={() => toggleNodeSelection(node)}
-							onmouseenter={() => handleMouseEnter(node)}
-							onmouseleave={handleMouseLeave}
-						></div>
+									onmousedown={(event) => event.stopPropagation()}
+									onclick={() => toggleNodeSelection(node)}
+									onmouseenter={() => handleMouseEnter(node)}
+									onmouseleave={handleMouseLeave}
+								></div>
+							{/if}
+						{/if}
 					{/if}
 				{/each}
 			{/each}
@@ -443,6 +638,9 @@
 		padding: 10px;
 		background-color: #000;
 		color: #fff;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.top-bar h1 {
@@ -457,10 +655,31 @@
 		text-align: center;
 	}
 
-	.github-link {
-		position: absolute;
+	.github-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media (max-width: 768px) {
+		.top-bar {
+			flex-direction: column;
+			padding: 20px;
+		}
+		.github-container {
+		margin-top: 10px;
+	}
+	}
+
+	.github-text {
 		top: 10px;
 		right: 10px;
+		text-wrap: balance;
+	}
+
+	.github-link {
+		text-align: center;
+		top: 80px;
+		right: 140px;
 	}
 
 	.github-link a {
@@ -480,6 +699,11 @@
 	.search-bar {
 		text-align: center;
 		margin-bottom: 10px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
 	}
 
 	.search-bar input {
@@ -488,13 +712,14 @@
 	}
 
 	.search-bar span {
-		margin-left: 10px;
 		font-size: 16px;
+		cursor: pointer;
+		position: relative;
 	}
 
 	.filters {
 		display: inline-block;
-		margin-top: 20px;
+		margin-top: 10px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -520,6 +745,7 @@
 		left: 0;
 	}
 
+	.small,
 	.notable,
 	.keystone {
 		position: absolute;
@@ -545,12 +771,25 @@
 		border-color: rgba(255, 0, 100, 1);
 	}
 
+	.small {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+
+	.small.unidentified {
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 100, 100, 1);
+	}
+
 	.notable.selected {
 		background-color: rgba(255, 255, 0, 0.6);
 	}
 
 	.keystone.selected {
 		background-color: rgba(0, 255, 0, 0.6);
+	}
+
+	.small.selected {
+		background-color: rgba(255, 255, 255, 0.6);
 	}
 
 	.highlighted-keystone {
@@ -560,7 +799,9 @@
 	.highlighted-notable {
 		border: 1px solid yellow;
 	}
-
+	.highlighted-small {
+		border: 1px solid yellow;
+	}
 	@keyframes glow {
 		0% {
 			box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
@@ -574,7 +815,7 @@
 	}
 
 	.search-result {
-		border: 4px solid rgba(255, 0, 0, 0.8);
+		border: 3px solid rgba(255, 0, 0, 0.8);
 		animation: glow 2s infinite;
 	}
 
@@ -617,5 +858,68 @@
 				margin: 0 auto;
 			}
 		}
+	}
+
+	.info-display {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(0, 0, 0, 0.9);
+		border: 1px solid #444;
+		z-index: 100;
+		padding: 10px;
+		max-height: 300px;
+		overflow-y: auto;
+		width: 300px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+		color: #fff;
+		border-radius: 8px;
+	}
+
+	.info-display ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.info-display li {
+		margin-bottom: 10px;
+	}
+
+	.info-display strong {
+		font-size: 16px;
+		color: #f0e7e5;
+	}
+
+	.info-display ul ul {
+		margin-top: 5px;
+		margin-left: 15px;
+	}
+
+	.info-display ul ul li {
+		font-size: 14px;
+		color: #7d7aad;
+	}
+
+	.info-display p {
+		color: #7d7aad;
+		font-size: 14px;
+	}
+
+	/* Style for the clear button */
+	.info-display button {
+		background-color: rgba(0, 0, 0, 0.9);
+		color: white;
+		border: 1px solid #444;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		border-radius: 4px;
+		font-family: 'Fontin SmallCaps', sans-serif;
+	}
+
+	.info-display button:hover {
+		background-color: #c9302c;
 	}
 </style>
