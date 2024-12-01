@@ -3,6 +3,7 @@
 	import { type TreeNode, loadData } from '$lib';
 	import { onMount, tick } from 'svelte';
 	import { browser } from '$app/environment';
+	import { Header } from '$lib/components/ui/header';
 
 	let { nodes } = loadData();
 
@@ -345,528 +346,286 @@
 			document.removeEventListener('click', handleClickOutside);
 		};
 	});
-
-	function handleSelectedNodesMouseEnter() {
-		showSelectedNodesDisplay = true;
-	}
-
-	function handleSelectedNodesMouseLeave() {
-		if (!isSelectedNodesDisplayPinned) {
-			showSelectedNodesDisplay = false;
-		}
-	}
-
-	function handleSelectedNodesClick(event: MouseEvent) {
-		isSelectedNodesDisplayPinned = !isSelectedNodesDisplayPinned;
-		if (!isSelectedNodesDisplayPinned) {
-			showSelectedNodesDisplay = false;
-		} else {
-			showSelectedNodesDisplay = true;
-		}
-		event.stopPropagation();
-	}
-
-	function handleSearchResultsMouseEnter() {
-		showSearchResultsDisplay = true;
-	}
-
-	function handleSearchResultsMouseLeave() {
-		if (!isSearchResultsDisplayPinned) {
-			showSearchResultsDisplay = false;
-		}
-	}
-
-	function handleSearchResultsClick(event: MouseEvent) {
-		isSearchResultsDisplayPinned = !isSearchResultsDisplayPinned;
-		if (!isSearchResultsDisplayPinned) {
-			showSearchResultsDisplay = false;
-		} else {
-			showSearchResultsDisplay = true;
-		}
-		event.stopPropagation();
-	}
 </script>
 
-<!-- Top Bar Section -->
-<div class="top-bar">
-	<!-- GitHub link to the top-right corner -->
-	<div class="github-text">
-		<p>Check out the Github repository</p>
-		<p>to see how to contribute to this project</p>
-	</div>
-	<div class="github-link">
-		<a href="https://github.com/marcoaaguiar/poe2-tree" target="_blank" rel="noopener noreferrer">
-			<!-- GitHub SVG Icon -->
-			<svg height="32" viewBox="0 0 16 16" width="32" aria-hidden="true">
-				<path
-					fill-rule="evenodd"
-					d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
-					  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
-					  0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-					  0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.65 7.65 0 012 0c1.53-1.04
-					  2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
-					  0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-					  0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"
-				>
-				</path>
-			</svg>
-		</a>
-	</div>
-
-	<h1>Path of Exile 2 Skill Tree Preview</h1>
-
-	<!-- Filters -->
-	<div class="filters">
-		<p><b>Highlight:</b></p>
-		<label><input type="checkbox" bind:checked={highlightKeystones} />Keystones</label>
-		<label><input type="checkbox" bind:checked={highlightNotables} />Notables</label>
-		<label><input type="checkbox" bind:checked={highlightSmalls} />Smalls</label>
-	</div>
-	<div class="filters">
-		<p><b>Hide:</b></p>
-		<label><input type="checkbox" bind:checked={hideUnidentified} />Unidentified</label>
-		<label><input type="checkbox" bind:checked={hideUnselected} />Unselected</label>
-		<label><input type="checkbox" bind:checked={hideSmall} />Smalls</label>
-	</div>
-</div>
-
-<!-- Search and Filter Section -->
-<div class="search-bar">
-	<input type="text" placeholder="Search..." bind:value={searchTerm} />
-	<span
-		bind:this={searchResultsSpanEl}
-		onmouseenter={handleSearchResultsMouseEnter}
-		onmouseleave={handleSearchResultsMouseLeave}
-		onclick={handleSearchResultsClick}
-		style="cursor: pointer; margin-right: 10px;">Search Results: {searchResults.length}</span
-	>
-
-	<!-- Search Results Display -->
-	{#if showSearchResultsDisplay}
-		<div class="info-display" bind:this={searchResultsDisplayEl}>
-			{#if searchResults.length > 0}
-				<ul>
+<!-- page layout -->
+<div class="grid grid-cols-1 grid-rows-[auto_1fr] h-dvh">
+	<Header />
+	<!-- Tree -->
+	<div class="grid grid-rows-1 grid-cols-[20rem_1fr] min-h-0">
+		<!-- Left Sidebar -->
+		<aside class="h-full grid grid-cols-1 grid-rows-[auto_1fr_1fr] gap-2 p-2 bg-[#111] min-h-0">
+			<!-- Toggleable -->
+			<div class="space-y-4">
+				<div>
+					<b class="block underline underline-offset-2">Highlight:</b>
+					<div class="flex flex-row gap-2 flex-wrap">
+						<label class="whitespace-nowrap">
+							<input type="checkbox" bind:checked={highlightKeystones} />
+							<span>Keystones</span>
+						</label>
+						<label class="whitespace-nowrap">
+							<input type="checkbox" bind:checked={highlightNotables} />
+							<span>Notables</span>
+						</label>
+						<label class="whitespace-nowrap">
+							<input type="checkbox" bind:checked={highlightSmalls} />
+							<span>Smalls</span>
+						</label>
+					</div>
+				</div>
+				<div>
+					<b class="block underline underline-offset-2">Hide:</b>
+					<div class="flex flex-row gap-2 flex-wrap">
+						<label class="whitespace-nowrap">
+							<input type="checkbox" bind:checked={hideUnidentified} />
+							<span>Unidentified</span>
+						</label>
+						<label class="whitespace-nowrap">
+							<input type="checkbox" bind:checked={hideUnselected} />
+							<span>Unselected</span>
+						</label>
+						<label class="whitespace-nowrap">
+							<input type="checkbox" bind:checked={hideSmall} />
+							<span>Smalls</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- Search -->
+			<div class="min-h-0 grid grid-cols-1 grid-rows-[auto_auto_auto_1fr]">
+				<b class="block underline underline-offset-2">Search:</b>
+				<input
+					class="block rounded px-2 text-black"
+					type="text"
+					placeholder="Search..."
+					bind:value={searchTerm}
+				/>
+				<span>Found: {searchResults.length}</span>
+				<ul class="block min-h-0 overflow-y-auto">
 					{#each searchResults as nodeId}
 						<li>
 							<strong>{nodes[nodeId].name}</strong>
 							<ul>
 								{#each nodes[nodeId].description as description}
-									<li>{description}</li>
+									<li class="text-sm text-[#7d7aad]">{description}</li>
 								{/each}
 							</ul>
 						</li>
 					{/each}
 				</ul>
-			{:else}
-				<p>No search results.</p>
-			{/if}
-		</div>
-	{/if}
-
-	<span
-		bind:this={selectedNodesSpanEl}
-		onmouseenter={handleSelectedNodesMouseEnter}
-		onmouseleave={handleSelectedNodesMouseLeave}
-		onclick={handleSelectedNodesClick}
-		style="cursor: pointer;">Selected Nodes: {selectedNodes.length}/122</span
-	>
-
-	<!-- Selected Nodes Display -->
-	{#if showSelectedNodesDisplay}
-		<div class="info-display" bind:this={selectedNodesDisplayEl}>
-			{#if selectedNodes.length > 0}
-				<button onclick={clearSelectedNodes}>Clear Selected Nodes</button>
-				<ul>
-					<!-- Only display non small nodes -->
+			</div>
+			<!-- Selected -->
+			<div class="min-h-0 grid grid-cols-1 grid-rows-[auto_auto_auto_1fr]">
+				<b class="underline underline-offset-2">Selected:</b>
+				<div class="flex flex-row justify-between">
+					<button class="px-4 border rounded border-white border-solid" onclick={clearSelectedNodes}
+					>Clear
+					</button
+					>
+					<span
+					>Selected:
+						{selectedNodes.length} / {undefined} <!-- TODO: count all nodes -->
+					</span>
+				</div>
+				<ul class="block min-h-0 overflow-y-auto">
 					{#each selectedNodes as nodeId}
 						{#if !nodeId.startsWith('S')}
 							<li>
 								<strong>{nodes[nodeId].name}</strong>
 								<ul>
 									{#each nodes[nodeId].description as description}
-										<li>{description}</li>
+										<li class="text-sm text-[#7d7aad]">{description}</li>
 									{/each}
 								</ul>
 							</li>
 						{/if}
 					{/each}
 				</ul>
-			{:else}
-				<p>No nodes selected.</p>
-			{/if}
-		</div>
-	{/if}
-</div>
-
-<!-- Skill Tree Container -->
-<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-<div
-	bind:this={containerEl}
-	class="image-container"
-	role="application"
-	tabindex="-1"
-	onmousedown={handleContainerMousedown}
-	onwheel={handleWheel}
->
-	<div
-		bind:this={imageWrapperEl}
-		class="image-wrapper"
-		style="
+			</div>
+		</aside>
+		<!-- Tree View -->
+		<div class="bg-black">
+			<!-- Skill Tree Container -->
+			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+			<div
+				bind:this={containerEl}
+				class="overflow-hidden relative block w-full h-full outline-none"
+				role="application"
+				tabindex="-1"
+				onmousedown={handleContainerMousedown}
+				onwheel={handleWheel}
+			>
+				<div
+					bind:this={imageWrapperEl}
+					class="absolute top-0 left-0"
+					style="
 			  width: {imageEl ? imageEl.naturalWidth * scale + 'px' : 'auto'};
 			  height: {imageEl ? imageEl.naturalHeight * scale + 'px' : 'auto'};
 			  transform: translate({panOffsetX}px, {panOffsetY}px);
 			  user-select: none;
 			  cursor: {isPanning ? 'grabbing' : 'grab'};
 		  "
-	>
-		<img
-			bind:this={imageEl}
-			onload={handleImageLoad}
-			src="{base}/skill-tree.png"
-			alt="Interactive"
-			draggable="false"
-			style="
-				  pointer-events: none;
-				  max-width: none;
+				>
+					<img
+						class="pointer-events-none max-w-none"
+						bind:this={imageEl}
+						onload={handleImageLoad}
+						src="{base}/skill-tree.png"
+						alt="Interactive"
+						draggable="false"
+						style="
 				  width: {imageEl ? imageEl.naturalWidth * scale + 'px' : 'auto'};
 				  height: {imageEl ? imageEl.naturalHeight * scale + 'px' : 'auto'};
 			  "
-		/>
+					/>
 
-		<!-- Display hoverable regions with lighter color -->
-		{#if hasLoaded}
-			{#each Object.values(nodes).filter(filterNodes) as node}
-				<!-- svelte-ignore a11y_no_static_element_interactions -->
-				<!-- svelte-ignore a11y_click_events_have_key_events -->
-				<div
-					class:keystone={node.type === 'keystone'}
-					class:notable={node.type === 'notable'}
-					class:small={node.type === 'small'}
-					class:unidentified={node.description.length === 0}
-					class:search-result={searchResults.includes(node.id)}
-					class:selected={selectedNodes.includes(node.id)}
-					class:highlighted-keystone={highlightKeystones && node.type === 'keystone'}
-					class:highlighted-notable={highlightNotables && node.type === 'notable'}
-					class:highlighted-small={highlightSmalls && node.type === 'small'}
-					style="
-						height: {getNodeSize(node) * scale}px;
-						width: {getNodeSize(node) * scale}px;
-						left: {node.position.x * imageEl.naturalWidth * scale - (getNodeSize(node) * scale) / 2}px;
-						top: {node.position.y * imageEl.naturalHeight * scale - (getNodeSize(node) * scale) / 2}px;
-					"
-					onmousedown={(event) => event.stopPropagation()}
-					onclick={() => toggleNodeSelection(node)}
-					onmouseenter={() => handleMouseEnter(node)}
-					onmouseleave={handleMouseLeave}
-				></div>
-			{/each}
-		{/if}
-	</div>
+					<!-- Display hoverable regions with lighter color -->
+					{#if hasLoaded}
+						{#each Object.values(nodes).filter(filterNodes) as node}
+							<!-- svelte-ignore a11y_no_static_element_interactions -->
+							<!-- svelte-ignore a11y_click_events_have_key_events -->
+							<div
+								class:keystone={node.type === 'keystone'}
+								class:notable={node.type === 'notable'}
+								class:small={node.type === 'small'}
+								class:unidentified={node.description.length === 0}
+								class:search-result={searchResults.includes(node.id)}
+								class:selected={selectedNodes.includes(node.id)}
+								class:highlighted-keystone={highlightKeystones && node.type === 'keystone'}
+								class:highlighted-notable={highlightNotables && node.type === 'notable'}
+								class:highlighted-small={highlightSmalls && node.type === 'small'}
+								style="
+									height: {getNodeSize(node) * scale}px;
+									width: {getNodeSize(node) * scale}px;
+									left: {node.position.x * imageEl.naturalWidth * scale - (getNodeSize(node) * scale) / 2}px;
+									top: {node.position.y * imageEl.naturalHeight * scale - (getNodeSize(node) * scale) / 2}px;
+								"
+								onmousedown={(event) => event.stopPropagation()}
+								onclick={() => toggleNodeSelection(node)}
+								onmouseenter={() => handleMouseEnter(node)}
+								onmouseleave={handleMouseLeave}
+							></div>
+						{/each}
+					{/if}
+				</div>
 
-	<!-- Tooltip displayed when a region is hovered -->
-	{#if tooltipNode != null}
-		<div bind:this={tooltipEl} class="tooltip" style="left: {tooltipX}px; top: {tooltipY}px;">
-			<div class="title" style={`background-image: url('${base}/tooltip-header.png');`}>
-				{tooltipNode.name}
-			</div>
-			<div class="body">
-				{#each tooltipNode.description as description}
-					<p class="description-line">{description}</p>
-				{/each}
-			</div>
-			<div class="footer">
-				<span class="node-id">{tooltipNode.id}</span>
+				<!-- Tooltip displayed when a region is hovered -->
+				{#if tooltipNode != null}
+					<div
+						bind:this={tooltipEl}
+						class="tooltip absolute min-w-[300px] max-w-[400px] bg-black pointer-events-none opacity-90 z-[1000] rounded-[8px]"
+						style="left: {tooltipX}px; top: {tooltipY}px;"
+					>
+						<div
+							class="title text-2xl text-[#f0e7e5] text-center bg-cover bg-center w-full inline-block mb-[8px] py-[10px] rounded-[8px]"
+							style={`background-image: url('${base}/tooltip-header.png');`}
+						>
+							{tooltipNode.name}
+						</div>
+						<div class="body font-['Fontin SmallCaps', sans-serif] font-light text-[#7d7aad] mb-[8px]"> <!-- TODO padding -->
+							{#each tooltipNode.description as description}
+								<p class="mx-auto my-0">{description}</p>
+							{/each}
+						</div>
+						<div class="flex font-['Fontin SmallCaps', sans-serif] text-[#7d7aad] m-[8px] mt-0">
+							<span class="text-[#888] text-sm ml-auto">{tooltipNode.id}</span>
+						</div>
+					</div>
+				{/if}
 			</div>
 		</div>
-	{/if}
-</div>
+	</div>
+			</div>
 
-<style>
-	.top-bar {
-		position: relative;
-		padding: 10px;
-		background-color: #000;
-		color: #fff;
-	}
+<style lang="postcss">
+          .small,
+          .notable,
+          .keystone {
+              position: absolute;
+              border-radius: 50%;
+              pointer-events: auto;
+          }
 
-	.top-bar h1 {
-		margin: 10px 0;
-		font-size: 24px;
-		text-align: center;
-	}
+          .notable {
+              background-color: rgba(255, 255, 0, 0.2);
+          }
 
-	.top-bar p {
-		margin: 5px 0;
-		font-size: 16px;
-		text-align: center;
-	}
+          .notable.unidentified {
+              background-color: rgba(255, 100, 100, 0.2);
+              border-color: rgba(255, 100, 100, 1);
+          }
 
-	.github-text {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		text-wrap: balance;
-	}
+          .keystone {
+              background-color: rgba(100, 255, 100, 0.2);
+          }
 
-	.github-link {
-		position: absolute;
-		top: 80px;
-		right: 140px;
-	}
+          .keystone.unidentified {
+              background-color: rgba(255, 0, 100, 0.2);
+              border-color: rgba(255, 0, 100, 1);
+          }
 
-	.github-link a {
-		color: #fff;
-		text-decoration: none;
-	}
+          .small {
+              background-color: rgba(255, 255, 255, 0.2);
+          }
 
-	.github-link svg {
-		fill: #fff;
-		transition: fill 0.3s;
-	}
+          .small.unidentified {
+              background-color: rgba(255, 255, 255, 0.2);
+              border-color: rgba(255, 100, 100, 1);
+          }
 
-	.github-link svg:hover {
-		fill: #4078c0;
-	}
+          .notable.selected {
+              background-color: rgba(255, 255, 0, 0.6);
+          }
 
-	.search-bar {
-		text-align: center;
-		margin-bottom: 10px;
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-	}
+          .keystone.selected {
+              background-color: rgba(0, 255, 0, 0.6);
+          }
 
-	.search-bar input {
-		padding: 5px;
-		font-size: 16px;
-	}
+          .small.selected {
+              background-color: rgba(255, 255, 255, 0.6);
+          }
 
-	.search-bar span {
-		font-size: 16px;
-		cursor: pointer;
-		position: relative;
-	}
+          .highlighted-keystone {
+              border: 2px solid green;
+          }
 
-	.filters {
-		display: inline-block;
-		margin-top: 10px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+          .highlighted-notable {
+              border: 1px solid yellow;
+          }
 
-	.filters label {
-		margin-right: 10px;
-		font-size: 14px;
-	}
+          .highlighted-small {
+              border: 1px solid yellow;
+          }
 
-	.image-container {
-		position: relative;
-		display: block;
-		overflow: hidden;
-		outline: none;
-		width: 100vw;
-		height: calc(100vh - 200px); /* Adjust based on top bar height */
-	}
+          @keyframes glow {
+              0% {
+                  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+              }
+              50% {
+                  box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+              }
+              100% {
+                  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+              }
+          }
 
-	.image-wrapper {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+          .search-result {
+              border: 3px solid rgba(255, 0, 0, 0.8);
+              animation: glow 2s infinite;
+          }
 
-	.small,
-	.notable,
-	.keystone {
-		position: absolute;
-		border-radius: 50%;
-		pointer-events: auto;
-	}
+          .tooltip {
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Subtle shadow */
 
-	.notable {
-		background-color: rgba(255, 255, 0, 0.2);
-	}
+              .title {
+                  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+              }
 
-	.notable.unidentified {
-		background-color: rgba(255, 100, 100, 0.2);
-		border-color: rgba(255, 100, 100, 1);
-	}
+              /* Body text style */
 
-	.keystone {
-		background-color: rgba(100, 255, 100, 0.2);
-	}
-
-	.keystone.unidentified {
-		background-color: rgba(255, 0, 100, 0.2);
-		border-color: rgba(255, 0, 100, 1);
-	}
-
-	.small {
-		background-color: rgba(255, 255, 255, 0.2);
-	}
-
-	.small.unidentified {
-		background-color: rgba(255, 255, 255, 0.2);
-		border-color: rgba(255, 100, 100, 1);
-	}
-
-	.notable.selected {
-		background-color: rgba(255, 255, 0, 0.6);
-	}
-
-	.keystone.selected {
-		background-color: rgba(0, 255, 0, 0.6);
-	}
-
-	.small.selected {
-		background-color: rgba(255, 255, 255, 0.6);
-	}
-
-	.highlighted-keystone {
-		border: 2px solid green;
-	}
-
-	.highlighted-notable {
-		border: 1px solid yellow;
-	}
-	.highlighted-small {
-		border: 1px solid yellow;
-	}
-	@keyframes glow {
-		0% {
-			box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-		}
-		50% {
-			box-shadow: 0 0 15px rgba(255, 0, 0, 1);
-		}
-		100% {
-			box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-		}
-	}
-
-	.search-result {
-		border: 3px solid rgba(255, 0, 0, 0.8);
-		animation: glow 2s infinite;
-	}
-
-	.tooltip {
-		position: absolute;
-		min-width: 300px;
-		max-width: 400px;
-		border-radius: 8px;
-		background-color: black; /* Slightly lighter background for the box */
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Subtle shadow */
-		opacity: 0.9;
-		z-index: 1000; /* Ensure tooltip appears above other elements */
-		pointer-events: none; /* Allow clicks to pass through the tooltip */
-
-		/* Title style */
-		.title {
-			font-size: 1.5rem;
-			color: #f0e7e5; /* Light gold for the title text */
-			text-align: center;
-			margin-bottom: 8px;
-			background-size: cover; /* Ensure the image covers the entire title area */
-			background-position: center; /* Center the background image */
-			border-radius: 8px; /* Rounded corners */
-			padding: 10px 0; /* Space inside the title */
-			text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
-			display: inline-block; /* Shrinks to fit the content */
-			width: 100%; /* Adjust to content size */
-		}
-
-		/* Body text style */
-		.body {
-			font-family: 'Fontin SmallCaps', sans-serif;
-			font-size: 16px;
-			line-height: 1.5; /* Improve readability */
-			color: #7d7aad; /* Light blue for body text */
-			margin-bottom: 8px; /* Spacing below body */
-			padding: 8px 20px 0;
-
-			.description-line {
-				margin: 0 auto;
-			}
-		}
-
-		.footer {
-			display: flex;
-			font-family: 'Fontin SmallCaps', sans-serif;
-			color: #7d7aad;
-			margin-bottom: 8px;
-			margin-left: 8px;
-			margin-right: 8px;
-
-			.node-id {
-				color: #888;
-				font-size: 12px;
-				margin-left: auto;
-			}
-		}
-	}
-
-	.info-display {
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: rgba(0, 0, 0, 0.9);
-		border: 1px solid #444;
-		z-index: 100;
-		padding: 10px;
-		max-height: 300px;
-		overflow-y: auto;
-		width: 300px;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-		color: #fff;
-		border-radius: 8px;
-	}
-
-	.info-display ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.info-display li {
-		margin-bottom: 10px;
-	}
-
-	.info-display strong {
-		font-size: 16px;
-		color: #f0e7e5;
-	}
-
-	.info-display ul ul {
-		margin-top: 5px;
-		margin-left: 15px;
-	}
-
-	.info-display ul ul li {
-		font-size: 14px;
-		color: #7d7aad;
-	}
-
-	.info-display p {
-		color: #7d7aad;
-		font-size: 14px;
-	}
-
-	/* Style for the clear button */
-	.info-display button {
-		background-color: rgba(0, 0, 0, 0.9);
-		color: white;
-		border: 1px solid #444;
-		padding: 5px 10px;
-		margin-bottom: 10px;
-		cursor: pointer;
-		border-radius: 4px;
-		font-family: 'Fontin SmallCaps', sans-serif;
-	}
-
-	.info-display button:hover {
-		background-color: #c9302c;
-	}
-</style>
+              .body {
+                  padding: 10px 20px;
+              }
+          }
+			</style>
