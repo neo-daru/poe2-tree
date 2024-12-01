@@ -9,7 +9,7 @@
 	},
 	"K3": {
 		"name": "Eldritch Battery",
-		"stats": ["Converts all Energy Shield to Mana"]
+		"stats": ["Converts all Energy Shield to Mana", "Confirmed to not be this in EA"]
 	},
 	"K4": {
 		"name": "Chaos Inoculation",
@@ -146,8 +146,9 @@
 		"stats": []
 	},
 	"N7": {
-		"name": "N7",
-		"stats": []
+		"name": "Burnout",
+		"stats": [
+			"Ignites you inflict deal Damage 15% faster"]
 	},
 	"N8": {
 		"name": "N8",
@@ -170,8 +171,10 @@
 		"stats": ["60% increased maximum Energy Shield", "20% slower start of Energy Shield Recharge"]
 	},
 	"N13": {
-		"name": "N13",
-		"stats": []
+		"name": "Electric Amplification",
+		"stats": [
+			"Damage Penetrates 18% Lightning Resistance",
+			"25% increased Lightning Exposure Effect"]
 	},
 	"N14": {
 		"name": "N14",
@@ -352,8 +355,11 @@
 		"stats": []
 	},
 	"N54": {
-		"name": "N54",
-		"stats": []
+		"name": "Wither Away",
+		"stats": [
+			"Unwithered enemies are Withered for 8 seconds when they enter your Presence",
+			"20% increased Effect of Withered"
+		]
 	},
 	"N55": {
 		"name": "N55",
@@ -610,8 +616,11 @@
 		"stats": []
 	},
 	"N116": {
-		"name": "N116",
-		"stats": []
+		"name": "Breath of Lightning",
+		"stats": [
+			"Damage Penetrates 15% Lightning Resistance",
+			"+10 to Intelligence"
+		]
 	},
 	"N117": {
 		"name": "Spectral Ward",
@@ -671,8 +680,11 @@
 		"stats": []
 	},
 	"N129": {
-		"name": "N129",
-		"stats": []
+		"name": "Breath of Cold",
+		"stats": [
+			"Damage Penetrates 15% Cold Resistance",
+			"+10 to Dexterity"
+		]
 	},
 	"N130": {
 		"name": "N130",
@@ -873,8 +885,11 @@
 		]
 	},
 	"N176": {
-		"name": "N176",
-		"stats": []
+		"name": "Power of the Dead",
+		"stats": [
+			"Minions deal 15% increased Damage",
+			"Minions have 3% increased Attack and Cast Speed"
+		]
 	},
 	"N177": {
 		"name": "N177",
@@ -965,8 +980,10 @@
 		"stats": []
 	},
 	"N198": {
-		"name": "N198",
-		"stats": []
+		"name": "N198 - Title Missing",
+		"stats": [
+			"6% of Damage taken Recouped as Life"
+		]
 	},
 	"N199": {
 		"name": "Moment of Truth",
@@ -1049,8 +1066,10 @@
 		"stats": []
 	},
 	"N216": {
-		"name": "N216",
-		"stats": []
+		"name": "N216 - Title Missing",
+		"stats": [
+			"15% increased Area of Effect for Staff Attacks"
+		]
 	},
 	"N217": {
 		"name": "Finesse",
@@ -1076,8 +1095,11 @@
 		"stats": []
 	},
 	"N222": {
-		"name": "N222",
-		"stats": []
+		"name": "Flow State",
+		"stats": [
+			"15% increased Mana Regeneration Rate",
+			"5% increased Attack and Cast Speed"
+		]
 	},
 	"N223": {
 		"name": "N223",
@@ -1100,8 +1122,11 @@
 		"stats": ["25% increased Effect of Ignite", "+10 to Strength"]
 	},
 	"N228": {
-		"name": "N228",
-		"stats": []
+		"name": "Leeching Toxins",
+		"stats": [
+			"30% increased Effect of Poison",
+			"Recover 2% of Life on Killing a Poisoned Enemy"
+		]
 	},
 	"N229": {
 		"name": "N229",
@@ -1174,8 +1199,11 @@
 		"stats": []
 	},
 	"N245": {
-		"name": "N245",
-		"stats": []
+		"name": "Flow Like Water",
+		"stats": [
+			"8% increased Attack and Cast Speed",
+			"+5 to Dexterity and Intelligence"
+		]
 	},
 	"N246": {
 		"name": "Primal Growth",
@@ -1216,8 +1244,13 @@
 		"stats": []
 	},
 	"N253": {
-		"name": "N253",
-		"stats": []
+		"name": "N253 - Title Missing",
+		"stats": [
+			"4% increased Movement Speed.",
+			"14% increased Evasion Rating.",
+			"14% increased maximum Energy Shield.",
+			"+5 to Dexterity and Intelligence."
+		]
 	},
 	"N254": {
 		"name": "Lust for Power",
@@ -1235,8 +1268,8 @@
 		"stats": []
 	},
 	"N257": {
-		"name": "N257",
-		"stats": []
+		"name": "Unbound Forces",
+		"stats": ["50% increased Duration of Elemental Ailments on Enemies","50% increased Effect of Chill","15% increased Effect of Shock"]
 	},
 	"N258": {
 		"name": "N258",
@@ -1266,8 +1299,8 @@
 		"stats": []
 	},
 	"N264": {
-		"name": "N264",
-		"stats": []
+		"name": "Serrated Edges",
+		"stats": ["30% increased Attack Damage"]
 	},
 	"N265": {
 		"name": "N265",
@@ -1290,8 +1323,8 @@
 		"stats": []
 	},
 	"N270": {
-		"name": "N270",
-		"stats": []
+		"name": "Cold Penetration",
+		"stats": ["Damage Penetrates 10% Cold Resistance"]
 	},
 	"N271": {
 		"name": "N271",
@@ -1361,12 +1394,12 @@
 		"stats": []
 	},
 	"N286": {
-		"name": "N286",
-		"stats": []
+		"name": "Life on Kill Notable",
+		"stats": ["Gain 20 Life per Enemy Killed"]
 	},
 	"N287": {
-		"name": "N287",
-		"stats": []
+		"name": "Critical Damage Bonus Notable",
+		"stats": ["15% increased Critical Damage Bonus"]
 	},
 	"N288": {
 		"name": "N288",
@@ -1391,8 +1424,8 @@
 		]
 	},
 	"N292": {
-		"name": "N292",
-		"stats": []
+		"name": "Armor Break",
+		"stats": ["Overwhelm 10% Physical Damage Reduction"]
 	},
 	"N293": {
 		"name": "N293",
@@ -1415,12 +1448,14 @@
 		"stats": []
 	},
 	"N298": {
-		"name": "N298",
-		"stats": []
+		"name": "Evasion and Energy Shield",
+		"stats": ["15% increased Evasion Rating", "15% increased maximum Energy Shield"]
 	},
 	"N299": {
-		"name": "N299",
-		"stats": []
+		"name": "Blinding Strike",
+		"stats": [
+			"24% increased Attack Damage",
+			"10% chance to Blind Enemies on Hit with Attacks"]
 	},
 	"N300": {
 		"name": "N300",
@@ -1451,8 +1486,8 @@
 		"stats": []
 	},
 	"N307": {
-		"name": "N307",
-		"stats": []
+		"name": "Honed Instincts",
+		"stats": ["8% increased Attack Speed","6% increased Global Accuracy Rating","+10 to Dexterity"]
 	},
 	"N308": {
 		"name": "Smash",
@@ -1475,8 +1510,8 @@
 		"stats": ["10% increased Stun Buildup", "10% increased Melee Damage", "+10 to Strength"]
 	},
 	"N313": {
-		"name": "N313",
-		"stats": []
+		"name": "Master Fletcher",
+		"stats": ["8% increased Projectile Speed","8% increased Attack Speed with Bows","8% increased Attack Speed with Crossbows"]
 	},
 	"N314": {
 		"name": "Shattering Blow",
@@ -1487,16 +1522,16 @@
 		"stats": []
 	},
 	"N316": {
-		"name": "N316",
-		"stats": []
+		"name": "Elemental Notable",
+		"stats": ["25% increased Elemental Damage"]
 	},
 	"N317": {
 		"name": "Falcon Technique",
 		"stats": ["1% increased Attack Speed per 15 Dexterity"]
 	},
 	"N318": {
-		"name": "N318",
-		"stats": []
+		"name": "Wellspring",
+		"stats": ["25% increased Mana Recovery from Flasks"]
 	},
 	"N319": {
 		"name": "Bolstering Yell",
@@ -1511,20 +1546,20 @@
 		"stats": ["Recover 50% of Life when you Heavy Stun a Rare of Unique Enemy"]
 	},
 	"N322": {
-		"name": "N322",
-		"stats": []
+		"name": "Sweep and Slice",
+		"stats": ["12% increased Damage with One Handed Weapons","12% increased Area of Effect for Attacks"]
 	},
 	"N323": {
-		"name": "N323",
-		"stats": []
+		"name": "No Escape",
+		"stats": ["30% increased Skill Effect Duration"]
 	},
 	"N324": {
-		"name": "N324",
-		"stats": []
+		"name": "Blur",
+		"stats": ["4% increased Movement Speed","16% increased Evasion Rating","+10 to Dexterity"]
 	},
 	"N325": {
-		"name": "N325",
-		"stats": []
+		"name": "Hale Traveller",
+		"stats": ["25% increased Life Recovery from Flasks"]
 	},
 	"N326": {
 		"name": "Admonisher",
@@ -1547,8 +1582,8 @@
 		"stats": []
 	},
 	"N331": {
-		"name": "N331",
-		"stats": []
+		"name": "Ranged",
+		"stats": ["40% increased Projectile Damage"]
 	},
 	"N332": {
 		"name": "N332",
@@ -1559,19 +1594,19 @@
 		"stats": []
 	},
 	"N334": {
-		"name": "N334",
-		"stats": []
+		"name": "Hold Focus",
+		"stats": ["12% increased Effect of your Marks"]
 	},
 	"N335": {
 		"name": "N335",
 		"stats": []
 	},
 	"N336": {
-		"name": "N336",
-		"stats": []
+		"name": "Outmanouver",
+		"stats": ["20% increased Stun buildup","20% increased Freeze Buildup"]
 	},
 	"N337": {
-		"name": "Recentless",
+		"name": "Relentless",
 		"stats": ["15% increased Armour" ,"Regenerate 1% of life per second" ,"+10 to Strength"]
 	},
 	"N338": {
@@ -1583,8 +1618,8 @@
 		"stats": []
 	},
 	"N340": {
-		"name": "N340",
-		"stats": []
+		"name": "Break Focus",
+		"stats": ["12% increased Effect of your Marks"]
 	},
 	"N341": {
 		"name": "N341",
@@ -1689,8 +1724,8 @@
 		]
 	},
 	"N363": {
-		"name": "N363",
-		"stats": []
+		"name": "Flashy Deflection",
+		"stats": ["Prevent +3% of Deflected Attack Damage", "20% increased chance to Deflect"]
 	},
 	"N364": {
 		"name": "N364",
@@ -1720,8 +1755,8 @@
 		"stats": []
 	},
 	"N370": {
-		"name": "N370",
-		"stats": []
+		"name": "Careful Aim",
+		"stats": ["16% increased Projectile Damage", "+5 to Dexterity"]
 	},
 	"N371": {
 		"name": "Unbending",
@@ -1735,8 +1770,8 @@
 		]
 	},
 	"N373": {
-		"name": "N373",
-		"stats": []
+		"name": "Heavy Ammunition",
+		"stats": ["15% increased Stun Buildup"]
 	},
 	"N374": {
 		"name": "N374",
@@ -1747,8 +1782,8 @@
 		"stats": ["+4 to Maximum Rage", "Inherent Rage Loss starts 1 second later"]
 	},
 	"N376": {
-		"name": "N376",
-		"stats": []
+		"name": "Evasion Notable",
+		"stats": ["25% increased Evasion Rating"]
 	},
 	"N377": {
 		"name": "Breaking Blows",
@@ -1766,8 +1801,8 @@
 		"stats": []
 	},
 	"N380": {
-		"name": "N380",
-		"stats": []
+		"name": "Flask Charges Gained Notable",
+		"stats": ["25% increased Flask Charges gained"]
 	},
 	"N381": {
 		"name": "N381",
@@ -1873,8 +1908,8 @@
 		"stats": ["40% increased Bleeding Duration", "20% chance to inflict Bleeding on Hit"]
 	},
 	"N404": {
-		"name": "N404",
-		"stats": []
+		"name": "Evasion Notable",
+		"stats": ["25% increased Evasion Rating"]
 	},
 	"N405": {
 		"name": "Grit",
@@ -1904,8 +1939,10 @@
 		"stats": ["20% more Damage against Heavy Stunned Enemies with Maces"]
 	},
 	"N411": {
-		"name": "N411",
-		"stats": []
+		"name": "Death from Afar",
+		"stats": [
+			"Projectiles have 25% increased Critical Hit Chance against Enemies further then 6m",
+			"Projectiles deal 25% increased Damage with Hits against Enemies further then 6m"]
 	},
 	"N412": {
 		"name": "Vigilance",
@@ -1966,8 +2003,10 @@
 		"stats": []
 	},
 	"N425": {
-		"name": "N425",
-		"stats": []
+		"name": "Stand and Deliver",
+		"stats": [
+			"Projectiles have 40% increased Critical Damage Bonus against Enemies within 2m",
+			"Projectiles deal 25% increased Damage with Hits against Enemies within 2m"]
 	},
 	"N426": {
 		"name": "Back in Action",
@@ -2481,8 +2520,9 @@
 		"stats": []
 	},
 	"N539": {
-		"name": "N539",
-		"stats": []
+		"name": "Advanced Munitions",
+		"stats": [
+			"25% increased chance to inflict Ailments with Projectiles"]
 	},
 	"N540": {
 		"name": "N540",
@@ -2560,7 +2600,7 @@
 		]
 	},
 	"N557": {
-		"name": "Metabolism",
+		"name": "Fast Metabolism",
 		"stats": ["Life Leech effects are not removed when Unreserved Life is Filled"]
 	},
 	"N558": {
@@ -2634,52 +2674,42 @@
 		"name": "Stance Breaker",
 		"stats": ["50% reduced Enemy Chance to Block Sword Attacks"]
 	},
-  "N574": {
-    "name": "Dark Entries",
-    "stats": [
-      "+1 to Level of all Chaos Skills"
-    ]
-  },
-  "N575": {
-    "name": "Building Toxins",
-    "stats": [
-      "25% reduced Poison Duration",
-      "Can Poison enemies an additional time"
-    ]
-  },
-  "N576": {
-    "name": "Escalating Toxins",
-    "stats": [
-      "10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"
-    ]
-  },
-  "N577": {
-    "name": "N577",
-    "stats": []
-  },
-  "N578": {
-    "name": "N578",
-    "stats": []
-  },
-  "N579": {
-    "name": "N579",
-    "stats": []
-  },
-  "N580": {
-    "name": "N580",
-    "stats": []
-  },
-  "N581": {
-    "name": "N581",
-    "stats": []
-  },
-  "N582": {
-    "name": "Savoured Blood",
-    "stats": [
-      "50% increased amount of Life Leeched",
-      "Leech Life 20% slower"
-    ]
-  },
+	"N574": {
+		"name": "Dark Entries",
+		"stats": ["+1 to Level of all Chaos Skills"]
+	},
+	"N575": {
+		"name": "Building Toxins",
+		"stats": ["25% reduced Poison Duration", "Can Poison enemies an additional time"]
+	},
+	"N576": {
+		"name": "Escalating Toxins",
+		"stats": ["10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"]
+	},
+	"N577": {
+		"name": "N577",
+		"stats": []
+	},
+	"N578": {
+		"name": "N578",
+		"stats": []
+	},
+	"N579": {
+		"name": "N579",
+		"stats": []
+	},
+	"N580": {
+		"name": "N580",
+		"stats": []
+	},
+	"N581": {
+		"name": "N581",
+		"stats": []
+	},
+	"N582": {
+		"name": "Savoured Blood",
+		"stats": ["50% increased amount of Life Leeched", "Leech Life 20% slower"]
+	},
   "S1": {
     "name": "S1",
     "stats": []
