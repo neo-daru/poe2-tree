@@ -19,6 +19,7 @@ export interface TreeNode {
 	type: 'keystone' | 'notable' | 'small';
 	position: NodePosition;
 	name: string;
+	class: string;
 	description: string[];
 }
 
@@ -35,6 +36,7 @@ export function loadData(): TreeData {
 	const flattenedNodePositions = [
 		...nodePositions.keystones,
 		...nodePositions.notables,
+		...nodePositions.ascendancies,
 		...nodePositions.smalls
 	];
 
@@ -48,6 +50,7 @@ export function loadData(): TreeData {
 				name,
 				description,
 				type: node.kind,
+				class: node.class,
 				position: {
 					x: node.x,
 					y: node.y

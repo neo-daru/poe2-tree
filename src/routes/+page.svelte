@@ -98,7 +98,12 @@
 	}
 
 	function filterAscendancyNodes(node: TreeNode) {
-		return !node.class || (node.class && node.class === selectedAscendancy)
+		if(node.class) {
+			console.log(node.class)
+			console.log(selectedAscendancy)
+			console.log("----------------")
+		}
+		return !node.class || (node.class === selectedAscendancy)
 	}
 
 	const filterFns = [filterSmallNodes, filterUnselectedNodes, filterUnidentifiedNodes, filterAscendancyNodes];
