@@ -392,7 +392,7 @@
 			<option value="stormweaver">Sorc - Stormweaver</option>
 			<option value="chronomancer">Sorc - Chronomancer</option>
 			<option value="invoker">Monk - Invoker</option>
-			<option value="chayula">Monk - Acolyte of Chayula</option>
+			<option value="acolyte">Monk - Acolyte of Chayula</option>
 			<option value="titan">Warrior - Titan</option>
 			<option value="warbringer">Warrior - Warbringer</option>
 			<option value="deadeye" >Ranger - Deadeye</option>
@@ -522,40 +522,43 @@
 
 		<!-- Display hoverable regions with lighter color -->
 		{#if hasLoaded}
-			{#each ['notables', 'keystones', 'smalls'] as kind}
+			{#each ['notables', 'keystones', 'smalls', 'ascendancies'] as kind}
 				{#each nodes[kind] as node}
 					{#if !(hideSmall && node.id.startsWith('S'))}
 						{#if !(hideUnselected && !selectedNodes.includes(node.id))}
 							{#if !(hideUnidentified && nodesDesc[node.id].name === node.id)}
+								{#if (!node.class || (node.class && node.class === selectedAscendancy))}
 								<!-- svelte-ignore a11y_no_static_element_interactions -->
 								<!-- svelte-ignore a11y_click_events_have_key_events -->
-								<div
-									class:notable={node.id.startsWith('N')}
-									class:keystone={node.id.startsWith('K')}
-									class:small={node.id.startsWith('S')}
-									class:unidentified={nodesDesc[node.id].name === node.id}
-									class:search-result={searchResults.includes(node.id)}
-									class:selected={selectedNodes.includes(node.id)}
-									class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
-									class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
-									class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
-									style="
-								  width: {(baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) * scale}px;
-								  height: {(baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) * scale}px;
-								  left: {node.x * imageEl.naturalWidth * scale -
-										((baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) *
-											scale) /
-											2}px;
-								  top: {node.y * imageEl.naturalHeight * scale -
-										((baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) *
-											scale) /
-											2}px;
-							  "
-									onmousedown={(event) => event.stopPropagation()}
-									onclick={() => toggleNodeSelection(node)}
-									onmouseenter={() => handleMouseEnter(node)}
-									onmouseleave={handleMouseLeave}
-								></div>
+									<div
+										class:notable={node.id.startsWith('N')}
+										class:keystone={node.id.startsWith('K')}
+										class:small={node.id.startsWith('S')}
+										class:ascendancy={node.id.startsWith('A')}
+										class:unidentified={nodesDesc[node.id].name === node.id}
+										class:search-result={searchResults.includes(node.id)}
+										class:selected={selectedNodes.includes(node.id)}
+										class:highlighted-keystone={highlightKeystones && node.id.startsWith('K')}
+										class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
+										class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
+										style="
+									width: {(baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) * scale}px;
+									height: {(baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) * scale}px;
+									left: {node.x * imageEl.naturalWidth * scale -
+											((baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) *
+												scale) /
+												2}px;
+									top: {node.y * imageEl.naturalHeight * scale -
+											((baseNodeSize + node.id.startsWith('K') * 4 - (node.id.startsWith('S') || node.id.startsWith('AS')) * 10) *
+												scale) /
+												2}px;
+								"
+										onmousedown={(event) => event.stopPropagation()}
+										onclick={() => toggleNodeSelection(node)}
+										onmouseenter={() => handleMouseEnter(node)}
+										onmouseleave={handleMouseLeave}
+									></div>
+								{/if}
 							{/if}
 						{/if}
 					{/if}
@@ -689,6 +692,8 @@
 
 	.small,
 	.notable,
+
+	.ascendancy,
 	.keystone {
 		position: absolute;
 		border-radius: 50%;
@@ -699,8 +704,8 @@
 		background-color: rgba(255, 255, 0, 0.2);
 	}
 
-	.notable.unidentified {
-		background-color: rgba(255, 100, 100, 0.2);
+	.notable.unidentified, .ascendancy.unidentified {
+		background-color: rgba(33, 12, 223, 0.2);
 		border-color: rgba(255, 100, 100, 1);
 	}
 
