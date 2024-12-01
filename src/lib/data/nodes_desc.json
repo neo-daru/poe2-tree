@@ -800,8 +800,10 @@
 		"stats": []
 	},
 	"N157": {
-		"name": "N157",
-		"stats": []
+		"name": "Poison Damage Notable",
+		"stats": [
+			"25% increased Effect of Poison"
+		]
 	},
 	"N158": {
 		"name": "Thickened Arteries",
@@ -816,8 +818,10 @@
 		"stats": []
 	},
 	"N161": {
-		"name": "N161",
-		"stats": []
+		"name": "Darkness",
+		"stats": [
+			"25% increased Chaos Damage"
+		]
 	},
 	"N162": {
 		"name": "N162",
@@ -896,8 +900,10 @@
 		"stats": []
 	},
 	"N178": {
-		"name": "N178",
-		"stats": []
+		"name": "Spell Haste",
+		"stats": [
+			"10% increased Cast Speed"
+		]
 	},
 	"N179": {
 		"name": "Mana Blessing",
@@ -908,8 +914,10 @@
 		"stats": []
 	},
 	"N181": {
-		"name": "N181",
-		"stats": []
+		"name": "Spellblade",
+		"stats": [
+			"32% increased Spell Damage"
+		]
 	},
 	"N182": {
 		"name": "N182",
@@ -944,8 +952,10 @@
 		"stats": []
 	},
 	"N189": {
-		"name": "N189",
-		"stats": []
+		"name": "Immortal Infamy",
+		"stats": [
+			"Recover 2% of Life on Kill"
+		]
 	},
 	"N190": {
 		"name": "N190",
@@ -956,8 +966,10 @@
 		"stats": []
 	},
 	"N192": {
-		"name": "N192",
-		"stats": []
+		"name": "Immortal Thirst",
+		"stats": [
+			"25% increased ammount of Mana Leeched"
+		]
 	},
 	"N193": {
 		"name": "Rattling Ball",
@@ -1031,8 +1043,10 @@
 		"stats": []
 	},
 	"N208": {
-		"name": "N208",
-		"stats": []
+		"name": "Killer Instinct",
+		"stats": [
+			"25% increased Attack Damage"
+		]
 	},
 	"N209": {
 		"name": "N209",
@@ -1058,15 +1072,17 @@
 		"stats": []
 	},
 	"N214": {
-		"name": "N214",
-		"stats": []
+		"name": "Tenfold Attack",
+		"stats": [
+			"10% increased Attack speed"
+		]
 	},
 	"N215": {
 		"name": "N215",
 		"stats": []
 	},
 	"N216": {
-		"name": "N216 - Title Missing",
+		"name": "Resonating Impact",
 		"stats": [
 			"15% increased Area of Effect for Staff Attacks"
 		]
@@ -2693,8 +2709,10 @@
 		"stats": ["10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"]
 	},
 	"N577": {
-		"name": "N577",
-		"stats": []
+		"name": "Quaterstaff Speed Notable",
+		"stats": [
+			"10% increased Attack Speed with Staves"
+		]
 	},
 	"N578": {
 		"name": "N578",
@@ -5105,8 +5123,10 @@
     "stats": []
   },
   "S598": {
-    "name": "S598",
-    "stats": []
+    "name": "Life on Kill",
+    "stats": [
+	    "Recpver 1% Life on Kill"
+    ]
   },
   "S599": {
     "name": "S599",
@@ -5413,8 +5433,10 @@
     "stats": []
   },
   "S675": {
-    "name": "S675",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S676": {
     "name": "S676",
@@ -5545,8 +5567,10 @@
     "stats": []
   },
   "S708": {
-    "name": "S708",
-    "stats": []
+    "name": "Attack Speed",
+    "stats": [
+	    "3% increased Attack speed"
+    ]
   },
   "S709": {
     "name": "S709",
