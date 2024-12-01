@@ -513,6 +513,7 @@
 				<!-- Tooltip displayed when a region is hovered -->
 				{#if tooltipNode != null}
 					<div
+						bind:this={tooltipEl}
 						class="absolute max-w-[400px] flex flex-col bg-black pointer-events-none z-[9999] overflow-hidden rounded-xl opacity-90 shadow-2xl"
 						style="left: {tooltipX}px; top: {tooltipY}px;"
 					>
