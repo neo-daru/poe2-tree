@@ -1058,8 +1058,7 @@
 	"N211": {
 		"name": "Open Mind",
 		"stats": [
-            "20% increase Mana Regeneration Rate",
-            "Regenerate 2 Mana per second"
+            "25% increase Mana Regeneration Rate"
         ]
 	},
 	"N212": {
