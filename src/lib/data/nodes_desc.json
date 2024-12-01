@@ -868,8 +868,8 @@
 		"stats": ["15% increased Critical Hit Chance for Spells", "18% increased Physical Damage"]
 	},
 	"N173": {
-		"name": "N173",
-		"stats": []
+		"name": "Entropy",
+		"stats": ["18% increased Chaos Damage", "15% increased Skill Effect Duration"]
 	},
 	"N174": {
 		"name": "Dampening Shield",
@@ -3197,8 +3197,8 @@
 		"stats": ["10% increased Physical Damage"]
 	},
 	"S114": {
-		"name": "S114",
-		"stats": []
+		"name": "Curse Effect",
+		"stats": ["6% increased Effect of your Curses"]
 	},
 	"S115": {
 		"name": "S115",
@@ -5109,8 +5109,8 @@
 		"stats": ["8% increased Armour", "8% increased maximum Energy Shield"]
 	},
 	"S592": {
-		"name": "S592",
-		"stats": []
+		"name": "Minion Damage",
+		"stats": ["Minions deal 10% increased Damage"]
 	},
 	"S593": {
 		"name": "S593",
@@ -5681,8 +5681,8 @@
 		"stats": []
 	},
 	"S735": {
-		"name": "S735",
-		"stats": []
+		"name": "Attack Speed",
+		"stats": ["3% increased Attack and Cast Speed"]
 	},
 	"S736": {
 		"name": "S736",
@@ -5717,8 +5717,8 @@
 		"stats": []
 	},
 	"S744": {
-		"name": "S744",
-		"stats": []
+		"name": "Attack Speed",
+		"stats": ["3% increased Attack and Cast Speed"]
 	},
 	"S745": {
 		"name": "S745",
@@ -5973,8 +5973,8 @@
 		"stats": []
 	},
 	"S808": {
-		"name": "S808",
-		"stats": []
+		"name": "Attack Damage",
+		"stats": ["+10% increased Attack Damage"]
 	},
 	"S809": {
 		"name": "S809",
@@ -6005,8 +6005,8 @@
 		"stats": []
 	},
 	"S816": {
-		"name": "S816",
-		"stats": []
+		"name": "Attack Damage",
+		"stats": ["+10% increased Attack Damage"]
 	},
 	"S817": {
 		"name": "S817",
@@ -6065,8 +6065,8 @@
 		"stats": []
 	},
 	"S831": {
-		"name": "S831",
-		"stats": []
+		"name": "Skill Speed",
+		"stats": ["3% increased Attack and Cast Speed"]
 	},
 	"S832": {
 		"name": "S832",
@@ -6121,8 +6121,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S845": {
-		"name": "S845",
-		"stats": []
+		"name": "Skill Speed",
+		"stats": ["3% increased Attack and Cast Speed"]
 	},
 	"S846": {
 		"name": "S846",
@@ -6157,8 +6157,8 @@
 		"stats": []
 	},
 	"S854": {
-		"name": "S854",
-		"stats": []
+		"name": "Evasion and Energy Shield",
+		"stats": ["+8 to Evasion Rating", "+5 to maximum Energy Shield"]
 	},
 	"S855": {
 		"name": "S855",
@@ -6189,8 +6189,8 @@
 		"stats": []
 	},
 	"S862": {
-		"name": "S862",
-		"stats": []
+		"name": "Evasion and Energy Shield",
+		"stats": ["+8 to Evasion Rating", "+5 to maximum Energy Shield"]
 	},
 	"S863": {
 		"name": "S863",
@@ -6205,8 +6205,8 @@
 		"stats": []
 	},
 	"S866": {
-		"name": "S866",
-		"stats": []
+		"name": "Evasion and Energy Shield",
+		"stats": ["+8 to Evasion Rating", "+5 to maximum Energy Shield"]
 	},
 	"S867": {
 		"name": "S867",
@@ -6225,8 +6225,8 @@
 		"stats": []
 	},
 	"S871": {
-		"name": "S871",
-		"stats": []
+		"name": "Evasion and Energy Shield",
+		"stats": ["+8 to Evasion Rating", "+5 to maximum Energy Shield"]
 	},
 	"S872": {
 		"name": "Attack Damage",
@@ -6577,8 +6577,8 @@
 		"stats": []
 	},
 	"S959": {
-		"name": "S959",
-		"stats": []
+		"name": "Attack Damage",
+		"stats": ["10% increased Attack Damage"]
 	},
 	"S960": {
 		"name": "S960",
@@ -8261,12 +8261,12 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S1380": {
-		"name": "S1380",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["Projectiles deal 12% increased Damage with Hits against Enemies further than 6m"]
 	},
 	"S1381": {
-		"name": "S1381",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["Projectiles deal 12% increased Damage with Hits against Enemies further than 6m"]
 	},
 	"S1382": {
 		"name": "S1382",
@@ -8349,8 +8349,8 @@
 		"stats": []
 	},
 	"S1402": {
-		"name": "S1402",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["Projectiles deal 12% increased Damage with Hits against Enemies within 2m"]
 	},
 	"S1403": {
 		"name": "S1403",
@@ -8441,8 +8441,8 @@
 		"stats": []
 	},
 	"S1425": {
-		"name": "S1425",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["Projectiles deal 12% increased Damage with Hits against Enemies within 2m"]
 	},
 	"S1426": {
 		"name": "S1426",
@@ -10037,8 +10037,8 @@
 		"stats": []
 	},
 	"S1824": {
-		"name": "S1824",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["10% increased Projectile Damage"]
 	},
 	"S1825": {
 		"name": "Attribute",
@@ -10057,8 +10057,8 @@
 		"stats": []
 	},
 	"S1829": {
-		"name": "S1829",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["10% increased Projectile Damage"]
 	},
 	"S1830": {
 		"name": "S1830",
@@ -10113,8 +10113,8 @@
 		"stats": []
 	},
 	"S1843": {
-		"name": "S1843",
-		"stats": []
+		"name": "Bleeding Chance",
+		"stats": ["5% chance to inflict Bleeding on Hit"]
 	},
 	"S1844": {
 		"name": "Attribute",
