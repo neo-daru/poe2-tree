@@ -316,8 +316,6 @@
 </script>
 
 <!-- page layout -->
-<div class="grid grid-cols-1 grid-rows-[auto_1fr]"></div>
-
 <div class="grid grid-cols-1 grid-rows-[auto_1fr] h-dvh">
 	<Header />
 	<!-- Tree -->
