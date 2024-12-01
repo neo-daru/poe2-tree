@@ -352,8 +352,11 @@
 		"stats": []
 	},
 	"N54": {
-		"name": "N54",
-		"stats": []
+		"name": "Wither Away",
+		"stats": [
+			"Unwithered enemies are Withered for 8 seconds when they enter your Presence",
+			"20% increased Effect of Withered"
+		]
 	},
 	"N55": {
 		"name": "N55",
@@ -968,8 +971,10 @@
 		"stats": []
 	},
 	"N198": {
-		"name": "N198",
-		"stats": []
+		"name": "N198 - Title Missing",
+		"stats": [
+			"6% of Damage taken Recouped as Life"
+		]
 	},
 	"N199": {
 		"name": "Moment of Truth",
@@ -1052,8 +1057,10 @@
 		"stats": []
 	},
 	"N216": {
-		"name": "N216",
-		"stats": []
+		"name": "N216 - Title Missing",
+		"stats": [
+			"15% increased Area of Effect for Staff Attacks"
+		]
 	},
 	"N217": {
 		"name": "Finesse",
@@ -1108,8 +1115,11 @@
 		"stats": ["25% increased Effect of Ignite", "+10 to Strength"]
 	},
 	"N228": {
-		"name": "N228",
-		"stats": []
+		"name": "Leeching Toxins",
+		"stats": [
+			"30% increased Effect of Poison",
+			"Recover 2% of Life on Killing a Poisoned Enemy"
+		]
 	},
 	"N229": {
 		"name": "Life from Death",
@@ -1591,7 +1601,7 @@
 		"stats": ["20% increased Stun buildup","20% increased Freeze Buildup"]
 	},
 	"N337": {
-		"name": "Recentless",
+		"name": "Relentless",
 		"stats": ["15% increased Armour" ,"Regenerate 1% of life per second" ,"+10 to Strength"]
 	},
 	"N338": {
@@ -2653,5 +2663,41 @@
 	"N573": {
 		"name": "Stance Breaker",
 		"stats": ["50% reduced Enemy Chance to Block Sword Attacks"]
+	},
+	"N574": {
+		"name": "Dark Entries",
+		"stats": ["+1 to Level of all Chaos Skills"]
+	},
+	"N575": {
+		"name": "Building Toxins",
+		"stats": ["25% reduced Poison Duration", "Can Poison enemies an additional time"]
+	},
+	"N576": {
+		"name": "Escalating Toxins",
+		"stats": ["10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"]
+	},
+	"N577": {
+		"name": "N577",
+		"stats": []
+	},
+	"N578": {
+		"name": "N578",
+		"stats": []
+	},
+	"N579": {
+		"name": "N579",
+		"stats": []
+	},
+	"N580": {
+		"name": "N580",
+		"stats": []
+	},
+	"N581": {
+		"name": "N581",
+		"stats": []
+	},
+	"N582": {
+		"name": "Savoured Blood",
+		"stats": ["50% increased amount of Life Leeched", "Leech Life 20% slower"]
 	}
 }
