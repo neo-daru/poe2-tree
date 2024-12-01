@@ -7458,16 +7458,16 @@
     "stats": []
   },
   "S1174": {
-    "name": "S1174",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1175": {
     "name": "S1175",
     "stats": []
   },
   "S1176": {
-    "name": "S1176",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1177": {
     "name": "S1177",
@@ -7534,8 +7534,8 @@
     "stats": []
   },
   "S1193": {
-    "name": "S1193",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": ["10% increased Projectile Damage"]
   },
   "S1194": {
     "name": "S1194",
@@ -7570,8 +7570,8 @@
     "stats": []
   },
   "S1202": {
-    "name": "S1202",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1203": {
     "name": "S1203",
@@ -7718,8 +7718,8 @@
     "stats": []
   },
   "S1239": {
-    "name": "S1239",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1240": {
     "name": "S1240",
@@ -7738,8 +7738,8 @@
     "stats": []
   },
   "S1244": {
-    "name": "S1244",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1245": {
     "name": "S1245",
@@ -7750,8 +7750,8 @@
     "stats": []
   },
   "S1247": {
-    "name": "S1247",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1248": {
     "name": "S1248",
@@ -7894,8 +7894,8 @@
     "stats": []
   },
   "S1283": {
-    "name": "S1283",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1284": {
     "name": "S1284",
@@ -7914,8 +7914,8 @@
     "stats": []
   },
   "S1288": {
-    "name": "S1288",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1289": {
     "name": "S1289",
@@ -8006,8 +8006,8 @@
     "stats": []
   },
   "S1311": {
-    "name": "S1311",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1312": {
     "name": "S1312",
@@ -8126,12 +8126,12 @@
     "stats": []
   },
   "S1341": {
-    "name": "S1341",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1342": {
-    "name": "S1342",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1343": {
     "name": "S1343",
@@ -8230,8 +8230,8 @@
     "stats": []
   },
   "S1367": {
-    "name": "S1367",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1368": {
     "name": "S1368",
@@ -8242,8 +8242,8 @@
     "stats": []
   },
   "S1370": {
-    "name": "S1370",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1371": {
     "name": "S1371",
@@ -8330,8 +8330,8 @@
     "stats": []
   },
   "S1392": {
-    "name": "S1392",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1393": {
     "name": "S1393",
@@ -8378,8 +8378,8 @@
     "stats": []
   },
   "S1404": {
-    "name": "S1404",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1405": {
     "name": "S1405",
@@ -8398,8 +8398,8 @@
     "stats": []
   },
   "S1409": {
-    "name": "S1409",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1410": {
     "name": "S1410",
@@ -8430,8 +8430,8 @@
     "stats": []
   },
   "S1417": {
-    "name": "S1417",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1418": {
     "name": "S1418",
@@ -8486,20 +8486,20 @@
     "stats": []
   },
   "S1431": {
-    "name": "S1431",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1432": {
-    "name": "S1432",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1433": {
-    "name": "S1433",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1434": {
-    "name": "S1434",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1435": {
     "name": "S1435",
@@ -8742,8 +8742,8 @@
     "stats": []
   },
   "S1495": {
-    "name": "S1495",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1496": {
     "name": "S1496",
@@ -9034,8 +9034,8 @@
     "stats": []
   },
   "S1568": {
-    "name": "S1568",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1569": {
     "name": "S1569",
@@ -9094,8 +9094,8 @@
     "stats": []
   },
   "S1583": {
-    "name": "S1583",
-    "stats": []
+    "name": "Grenade Cooldown Recovery Rate",
+    "stats": ["15% increased Cooldown Recovery Rate for Grenade Skills"]
   },
   "S1584": {
     "name": "S1584",
@@ -9342,8 +9342,8 @@
     "stats": []
   },
   "S1645": {
-    "name": "S1645",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1646": {
     "name": "S1646",
@@ -9614,8 +9614,8 @@
     "stats": []
   },
   "S1713": {
-    "name": "S1713",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1714": {
     "name": "S1714",
@@ -9698,24 +9698,24 @@
     "stats": []
   },
   "S1734": {
-    "name": "S1734",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1735": {
-    "name": "S1735",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1736": {
-    "name": "S1736",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1737": {
-    "name": "S1737",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1738": {
-    "name": "S1738",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1739": {
     "name": "S1739",
