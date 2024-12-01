@@ -705,7 +705,7 @@
 	}
 
 	.notable.unidentified, .ascendancy.unidentified {
-		background-color: rgba(33, 12, 223, 0.2);
+		background-color: rgba(255, 100, 100, 0.2);
 		border-color: rgba(255, 100, 100, 1);
 	}
 
