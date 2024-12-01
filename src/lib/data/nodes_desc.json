@@ -1506,7 +1506,10 @@
 	},
 	"N307": {
 		"name": "Honed Instincts",
-		"stats": ["8% increased Attack Speed","6% increased Global Accuracy Rating","+10 to Dexterity"]
+		"stats": [
+      "8% increased Projectile Seed",
+      "8% increased Attack Speed",
+      "+10 to Dexterity"]
 	},
 	"N308": {
 		"name": "Smash",
@@ -6771,16 +6774,16 @@
     "stats": []
   },
   "S1004": {
-    "name": "S1004",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1005": {
     "name": "S1005",
     "stats": []
   },
   "S1006": {
-    "name": "S1006",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1007": {
     "name": "S1007",
@@ -6823,8 +6826,10 @@
     "stats": []
   },
   "S1017": {
-    "name": "S1017",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1018": {
     "name": "S1018",
@@ -7263,8 +7268,10 @@
     "stats": []
   },
   "S1127": {
-    "name": "S1127",
-    "stats": []
+    "name": "Attribute",
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1128": {
     "name": "S1128",
