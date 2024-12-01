@@ -1317,8 +1317,10 @@
 		"stats": ["40% increased Melee Damage with Hits at Close Range"]
 	},
 	"N263": {
-		"name": "N263",
-		"stats": []
+		"name": "Accuracy",
+		"stats": [
+			"10% increased Global Accuracy Rating"
+		]
 	},
 	"N264": {
 		"name": "Serrated Edges",
@@ -1337,8 +1339,10 @@
 		"stats": []
 	},
 	"N268": {
-		"name": "N268",
-		"stats": []
+		"name": "Martial Artistry",
+		"stats": [
+			"+25% to Critical Strike Multiplier with Staves"
+		]
 	},
 	"N269": {
 		"name": "N269",
@@ -2715,8 +2719,10 @@
 		]
 	},
 	"N578": {
-		"name": "N578",
-		"stats": []
+		"name": "Quarterstaff Damage Notable",
+		"stats": [
+			"25% increased Damage with Staves"
+		]
 	},
 	"N579": {
 		"name": "N579",
@@ -6245,8 +6251,10 @@
     "stats": []
   },
   "S872": {
-    "name": "S872",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S873": {
     "name": "S873",
@@ -6265,8 +6273,10 @@
     "stats": []
   },
   "S877": {
-    "name": "S877",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S878": {
     "name": "S878",
@@ -6341,8 +6351,10 @@
     "stats": []
   },
   "S896": {
-    "name": "S896",
-    "stats": []
+    "name": "Mana Leech",
+    "stats": [
+	    "10% increased amount of Mana Leeched"
+    ]
   },
   "S897": {
     "name": "S897",
@@ -6369,8 +6381,10 @@
     "stats": []
   },
   "S903": {
-    "name": "S903",
-    "stats": []
+    "name": "Mana Leech",
+    "stats": [
+	    "10% increased amount of Mana Leeched"
+    ]
   },
   "S904": {
     "name": "S904",
@@ -6421,8 +6435,10 @@
     "stats": []
   },
   "S916": {
-    "name": "S916",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S917": {
     "name": "S917",
