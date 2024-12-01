@@ -1043,8 +1043,8 @@
 		"stats": ["Minions gain 15% of their Maximum Life as Extra Maximum Energy Shield"]
 	},
 	"N211": {
-		"name": "N211",
-		"stats": []
+		"name": "Open Mind",
+		"stats": ["25% increase Mana Regeneration Rate"]
 	},
 	"N212": {
 		"name": "Covering Ward",
@@ -5425,8 +5425,8 @@
     "stats": []
   },
   "S678": {
-    "name": "S678",
-    "stats": []
+    "name": "Energy Shield Delay",
+    "stats": ["10% faster start of Energy Shield recharge"]
   },
   "S679": {
     "name": "S679",
@@ -5457,8 +5457,8 @@
     "stats": []
   },
   "S686": {
-    "name": "S686",
-    "stats": []
+    "name": "Minion Life",
+    "stats": ["Minions have 10% increased maximum Life"]
   },
   "S687": {
     "name": "S687",
@@ -5485,8 +5485,8 @@
     "stats": []
   },
   "S693": {
-    "name": "S693",
-    "stats": []
+    "name": "Energy Shield Delay",
+    "stats": ["10% faster start of Energy Shield Recharge"]
   },
   "S694": {
     "name": "S694",
@@ -5553,8 +5553,8 @@
     "stats": []
   },
   "S710": {
-    "name": "S710",
-    "stats": []
+    "name": "Energy Shield",
+    "stats": ["+10 to maximum Energy Shield"]
   },
   "S711": {
     "name": "S711",
@@ -5793,8 +5793,8 @@
     "stats": []
   },
   "S770": {
-    "name": "S770",
-    "stats": []
+    "name": "Energy Shield",
+    "stats": ["+10 to maximum Energy Shield"]
   },
   "S771": {
     "name": "S771",
@@ -6845,8 +6845,8 @@
     "stats": []
   },
   "S1033": {
-    "name": "S1033",
-    "stats": []
+    "name": "Evasion",
+    "stats": ["+16 to Evasion Rating"]
   },
   "S1034": {
     "name": "S1034",
@@ -7125,8 +7125,8 @@
     "stats": []
   },
   "S1103": {
-    "name": "S1103",
-    "stats": []
+    "name": "Movement Speed",
+    "stats": ["2% increased Movement Speed"]
   },
   "S1104": {
     "name": "S1104",
@@ -7237,8 +7237,8 @@
     "stats": []
   },
   "S1131": {
-    "name": "S1131",
-    "stats": []
+    "name": "Immobilise Buildup",
+    "stats": ["8% increased Stun Build","8% increased Freeze Buildup"]
   },
   "S1132": {
     "name": "S1132",
@@ -7305,8 +7305,8 @@
     "stats": []
   },
   "S1148": {
-    "name": "S1148",
-    "stats": []
+    "name": "Immobilise Buildup",
+    "stats": ["8% increased Stun Buildup","8% increased Freeze Buildup"]
   },
   "S1149": {
     "name": "S1149",
