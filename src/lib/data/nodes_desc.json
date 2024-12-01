@@ -1516,8 +1516,8 @@
 		"stats": ["10% increased Stun Buildup", "10% increased Melee Damage", "+10 to Strength"]
 	},
 	"N313": {
-		"name": "Master Fletcher",
-		"stats": ["8% increased Projectile Speed","8% increased Attack Speed with Bows","8% increased Attack Speed with Crossbows"]
+		"name": "Clean Shot",
+		"stats": ["15% chance to Pierce an Enemy","15% increased Projectile Damage"]
 	},
 	"N314": {
 		"name": "Shattering Blow",
@@ -1600,8 +1600,8 @@
 		"stats": []
 	},
 	"N334": {
-		"name": "Hold Focus",
-		"stats": ["12% increased Effect of your Marks"]
+		"name": "Mark Cast Speed",
+		"stats": ["Mark Skills have 10% increased Cast Speed"]
 	},
 	"N335": {
 		"name": "N335",
@@ -1625,7 +1625,7 @@
 	},
 	"N340": {
 		"name": "Break Focus",
-		"stats": ["12% increased Effect of your Marks"]
+		"stats": ["Enemies you Mark have 15% reduced Accuracy Rating"]
 	},
 	"N341": {
 		"name": "N341",
@@ -1807,8 +1807,8 @@
 		"stats": []
 	},
 	"N380": {
-		"name": "Flask Charges Gained Notable",
-		"stats": ["25% increased Flask Charges gained"]
+		"name": "Lasting Concoctions",
+		"stats": ["25% increased Flask Effect Duration", "25% increased Flask Charges gained"]
 	},
 	"N381": {
 		"name": "N381",
@@ -6969,8 +6969,8 @@
     "stats": []
   },
   "S1059": {
-    "name": "S1059",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": ["10% increased Projectile Damage"]
   },
   "S1060": {
     "name": "S1060",
@@ -7077,8 +7077,8 @@
     "stats": []
   },
   "S1086": {
-    "name": "S1086",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": ["10% increased Projectile Damage"]
   },
   "S1087": {
     "name": "S1087",
