@@ -5436,8 +5436,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S673": {
-		"name": "S673",
-		"stats": []
+		"name": "Mana Regeneration",
+		"stats": ["10% increased Mana Regeneration Rate"]
 	},
 	"S674": {
 		"name": "Mana",
@@ -5468,8 +5468,8 @@
 		"stats": []
 	},
 	"S681": {
-		"name": "S681",
-		"stats": []
+		"name": "Spell Damage",
+		"stats": ["8% increased Spell Damage"]
 	},
 	"S682": {
 		"name": "Attribute",
