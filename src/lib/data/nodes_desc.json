@@ -1894,8 +1894,8 @@
 		"stats": ["10% increased Area of Effect", "10% increased Cooldown Recovery Rate"]
 	},
 	"N399": {
-		"name": "N399",
-		"stats": []
+		"name": "Ricochet",
+		"stats": ["20% increased Projectile Damage", "Projectiles have 20% chance to Chain an additional time from terrain"]
 	},
 	"N400": {
 		"name": "Vocal Empowerment",
@@ -2306,8 +2306,8 @@
 		"stats": []
 	},
 	"N491": {
-		"name": "N491",
-		"stats": []
+		"name": "Hale Heart",
+		"stats": ["15% increased Life Recovery rate"]
 	},
 	"N492": {
 		"name": "Enraged Reaver",
