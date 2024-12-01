@@ -1894,8 +1894,8 @@
 		"stats": ["10% increased Area of Effect", "10% increased Cooldown Recovery Rate"]
 	},
 	"N399": {
-		"name": "N399",
-		"stats": []
+		"name": "Ricochet",
+		"stats": ["20% increased Projectile Damage", "Projectiles have 20% chance to Chain an additional time from terrain"]
 	},
 	"N400": {
 		"name": "Vocal Empowerment",
@@ -2225,7 +2225,7 @@
 	},
 	"N472": {
 		"name": "Cluster Bombs",
-		"stats": ["Grenade Skills Fire an additional Projectile"]
+		"stats": ["50% increased Grenade Duration", "Grenade Skills Fire an additional Projectile"]
 	},
 	"N473": {
 		"name": "N473",
@@ -2306,8 +2306,8 @@
 		"stats": []
 	},
 	"N491": {
-		"name": "N491",
-		"stats": []
+		"name": "Hale Heart",
+		"stats": ["15% increased Life Recovery rate"]
 	},
 	"N492": {
 		"name": "Enraged Reaver",
@@ -2447,7 +2447,7 @@
 	"N522": {
 		"name": "Perfect Opportunity",
 		"stats": [
-			"25% increased Stun Buildup",
+			"30% increased Stun Buildup",
 			"Damage with Hits is Lucky against Heavy Stunned Enemies"
 		]
 	},
@@ -2623,7 +2623,7 @@
 	},
 	"N561": {
 		"name": "Repeating Explosives",
-		"stats": ["Grenades have 20% change to activate a second time"]
+		"stats": ["Grenades have 15% change to activate a second time"]
 	},
 	"N562": {
 		"name": "Reusable Ammunition",
@@ -9281,8 +9281,8 @@
     "stats": []
   },
   "S1642": {
-    "name": "S1642",
-    "stats": []
+    "name": "Life Regeneration",
+    "stats": ["Regenerate 0.4% of Life per second"]
   },
   "S1643": {
     "name": "S1643",
@@ -9577,8 +9577,8 @@
     "stats": []
   },
   "S1716": {
-    "name": "S1716",
-    "stats": []
+    "name": "Stun Threshold",
+    "stats": ["12% increased Stun Threshold"]
   },
   "S1717": {
     "name": "S1717",
@@ -9685,8 +9685,8 @@
     "stats": []
   },
   "S1743": {
-    "name": "S1743",
-    "stats": []
+    "name": "Stun Buildup",
+    "stats": ["15% increased Stun Buildup"]
   },
   "S1744": {
     "name": "S1744",
