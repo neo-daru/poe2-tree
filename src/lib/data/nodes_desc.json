@@ -2225,7 +2225,7 @@
 	},
 	"N472": {
 		"name": "Cluster Bombs",
-		"stats": ["Grenade Skills Fire an additional Projectile"]
+		"stats": ["50% increased Grenade Duration", "Grenade Skills Fire an additional Projectile"]
 	},
 	"N473": {
 		"name": "N473",
@@ -2447,7 +2447,7 @@
 	"N522": {
 		"name": "Perfect Opportunity",
 		"stats": [
-			"25% increased Stun Buildup",
+			"30% increased Stun Buildup",
 			"Damage with Hits is Lucky against Heavy Stunned Enemies"
 		]
 	},
@@ -2623,7 +2623,7 @@
 	},
 	"N561": {
 		"name": "Repeating Explosives",
-		"stats": ["Grenades have 20% change to activate a second time"]
+		"stats": ["Grenades have 15% change to activate a second time"]
 	},
 	"N562": {
 		"name": "Reusable Ammunition",
