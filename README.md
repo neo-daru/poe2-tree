@@ -62,6 +62,10 @@ The UI/UX is quite basic and can be improved in many ways, if you have any ideas
 
 - [Str/Dex Area](https://www.youtube.com/watch?v=Ec_06V4NOWc)
 
+## Blupa Figma Tree
+
+- [Figma Tree](https://www.figma.com/design/RDJYoGyidY3Xsc21HjcY31/Figma-basics)
+
 ## Path of Exile 2: Endgame Content Reveal
 
 - [Mixed Area](https://www.youtube.com/watch?v=ZpIbaTXJD4g&t=1356s)

@@ -980,8 +980,10 @@
 		"stats": []
 	},
 	"N198": {
-		"name": "N198",
-		"stats": []
+		"name": "N198 - Title Missing",
+		"stats": [
+			"6% of Damage taken Recouped as Life"
+		]
 	},
 	"N199": {
 		"name": "Moment of Truth",
@@ -1064,8 +1066,10 @@
 		"stats": []
 	},
 	"N216": {
-		"name": "N216",
-		"stats": []
+		"name": "N216 - Title Missing",
+		"stats": [
+			"15% increased Area of Effect for Staff Attacks"
+		]
 	},
 	"N217": {
 		"name": "Finesse",
@@ -1240,8 +1244,13 @@
 		"stats": []
 	},
 	"N253": {
-		"name": "N253",
-		"stats": []
+		"name": "N253 - Title Missing",
+		"stats": [
+			"4% increased Movement Speed.",
+			"14% increased Evasion Rating.",
+			"14% increased maximum Energy Shield.",
+			"+5 to Dexterity and Intelligence."
+		]
 	},
 	"N254": {
 		"name": "Lust for Power",
