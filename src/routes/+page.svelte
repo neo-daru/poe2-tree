@@ -166,6 +166,64 @@
 		}
 	}
 
+	let startX = 0;
+	let startY = 0;
+	let isZooming = false;
+	let lastDistance = 0;
+	function handleTouchStart(event: TouchEvent) {
+		if (event.touches.length === 1) {
+			isPanning = true;
+			startX = event.touches[0].clientX - panOffsetX;
+			startY = event.touches[0].clientY - panOffsetY;
+		} else if (event.touches.length === 2) {
+			isZooming = true;
+		}
+	}
+
+	function handleTouchEnd(event: TouchEvent) {
+		if (event.touches.length === 0) {
+			isPanning = false;
+			isZooming = false;
+			lastDistance = 0;
+		}
+	}
+
+	function handleTouchMove(event: TouchEvent) {
+		event.preventDefault();
+		if (!isPanning) return;
+		if (!isZooming && event.touches.length === 1) {
+			panOffsetX = event.touches[0].clientX - startX;
+			panOffsetY = event.touches[0].clientY - startY;
+			clampPanOffsets();
+		}
+		if (isZooming && event.touches.length === 2) {
+			const zoomIntensity = 0.02;
+			const oldScale = scale;
+			const distance = Math.hypot(
+				event.touches[0].clientX - event.touches[1].clientX,
+				event.touches[0].clientY - event.touches[1].clientY
+			);
+			const direction = lastDistance < distance ? 1 : -1;
+			lastDistance = distance;
+			scale += direction * zoomIntensity * scale;
+			scale = Math.max(minScale, Math.min(maxScale, scale));
+
+			if (containerEl && imageEl) {
+				const rect = containerEl.getBoundingClientRect();
+				const mouseX = event.touches[0].clientX - rect.left;
+				const mouseY = event.touches[0].clientY - rect.top;
+
+				const nodeX = (mouseX - panOffsetX) / oldScale;
+				const nodeY = (mouseY - panOffsetY) / oldScale;
+
+				panOffsetX = mouseX - nodeX * scale;
+				panOffsetY = mouseY - nodeY * scale;
+
+				clampPanOffsets();
+			}
+		}
+	}
+
 	function handleImageLoad() {
 		hasLoaded = true;
 
@@ -238,9 +296,22 @@
 		window.addEventListener('mousemove', handleMove);
 		window.addEventListener('mouseup', handleUp);
 
+		if (imageWrapperEl) {
+			imageWrapperEl.addEventListener('touchmove', handleTouchMove);
+			imageWrapperEl.addEventListener('touchstart', handleTouchStart);
+			imageWrapperEl.addEventListener('touchend', handleTouchEnd);
+			imageWrapperEl.addEventListener('touchcancel', handleTouchEnd);
+		}
+
 		return () => {
 			window.removeEventListener('mousemove', handleMove);
 			window.removeEventListener('mouseup', handleUp);
+			if (imageWrapperEl) {
+				imageWrapperEl.removeEventListener('touchmove', handleTouchMove);
+				imageWrapperEl.removeEventListener('touchstart', handleTouchStart);
+				imageWrapperEl.removeEventListener('touchend', handleTouchEnd);
+				imageWrapperEl.removeEventListener('touchcancel', handleTouchEnd);
+			}
 		};
 	});
 </script>
