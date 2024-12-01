@@ -3549,12 +3549,12 @@
     "stats": []
   },
   "S204": {
-    "name": "S204",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S205": {
-    "name": "S205",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S206": {
     "name": "S206",
@@ -3565,32 +3565,32 @@
     "stats": []
   },
   "S208": {
-    "name": "S208",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S209": {
-    "name": "S209",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S210": {
-    "name": "S210",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S211": {
-    "name": "S211",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S212": {
-    "name": "S212",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S213": {
-    "name": "S213",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S214": {
-    "name": "S214",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S215": {
     "name": "S215",
@@ -3753,8 +3753,8 @@
     "stats": []
   },
   "S255": {
-    "name": "S255",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S256": {
     "name": "S256",
@@ -3773,8 +3773,8 @@
     "stats": []
   },
   "S260": {
-    "name": "S260",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S261": {
     "name": "S261",
@@ -3961,8 +3961,8 @@
     "stats": []
   },
   "S307": {
-    "name": "S307",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S308": {
     "name": "S308",
@@ -3977,8 +3977,8 @@
     "stats": []
   },
   "S311": {
-    "name": "S311",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S312": {
     "name": "S312",
@@ -4093,8 +4093,8 @@
     "stats": []
   },
   "S340": {
-    "name": "S340",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S341": {
     "name": "S341",
@@ -4141,8 +4141,8 @@
     "stats": []
   },
   "S352": {
-    "name": "S352",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S353": {
     "name": "S353",
@@ -4521,8 +4521,8 @@
     "stats": []
   },
   "S447": {
-    "name": "S447",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S448": {
     "name": "S448",
@@ -4577,8 +4577,8 @@
     "stats": []
   },
   "S461": {
-    "name": "S461",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S462": {
     "name": "S462",
@@ -4657,8 +4657,8 @@
     "stats": []
   },
   "S481": {
-    "name": "S481",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S482": {
     "name": "S482",
@@ -4821,8 +4821,8 @@
     "stats": []
   },
   "S522": {
-    "name": "S522",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S523": {
     "name": "S523",
@@ -4845,8 +4845,8 @@
     "stats": []
   },
   "S528": {
-    "name": "S528",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S529": {
     "name": "S529",
@@ -5053,8 +5053,8 @@
     "stats": []
   },
   "S580": {
-    "name": "S580",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S581": {
     "name": "S581",
@@ -5109,8 +5109,8 @@
     "stats": []
   },
   "S594": {
-    "name": "S594",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S595": {
     "name": "S595",
@@ -5233,8 +5233,8 @@
     "stats": []
   },
   "S625": {
-    "name": "S625",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S626": {
     "name": "S626",
@@ -5397,8 +5397,8 @@
     "stats": []
   },
   "S666": {
-    "name": "S666",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S667": {
     "name": "S667",
@@ -5593,8 +5593,8 @@
     "stats": []
   },
   "S715": {
-    "name": "S715",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S716": {
     "name": "S716",
@@ -5621,8 +5621,8 @@
     "stats": []
   },
   "S722": {
-    "name": "S722",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S723": {
     "name": "S723",
@@ -6041,8 +6041,8 @@
     "stats": []
   },
   "S827": {
-    "name": "S827",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S828": {
     "name": "Attribute",
@@ -6109,8 +6109,8 @@
     "stats": []
   },
   "S844": {
-    "name": "S844",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S845": {
     "name": "S845",
@@ -6285,8 +6285,8 @@
     "stats": []
   },
   "S888": {
-    "name": "S888",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S889": {
     "name": "S889",
@@ -6529,8 +6529,8 @@
     "stats": []
   },
   "S949": {
-    "name": "S949",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S950": {
     "name": "S950",
@@ -6541,8 +6541,8 @@
     "stats": []
   },
   "S952": {
-    "name": "S952",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S953": {
     "name": "S953",
@@ -6669,8 +6669,8 @@
     "stats": []
   },
   "S984": {
-    "name": "S984",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S985": {
     "name": "S985",
@@ -6881,8 +6881,8 @@
     "stats": []
   },
   "S1037": {
-    "name": "S1037",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1038": {
     "name": "S1038",
@@ -6977,8 +6977,8 @@
     "stats": []
   },
   "S1061": {
-    "name": "S1061",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1062": {
     "name": "S1062",
@@ -7321,8 +7321,8 @@
     "stats": []
   },
   "S1147": {
-    "name": "S1147",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1148": {
     "name": "Immobilise Buildup",
@@ -7521,8 +7521,8 @@
     "stats": []
   },
   "S1197": {
-    "name": "S1197",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1198": {
     "name": "S1198",
@@ -7785,8 +7785,8 @@
     "stats": []
   },
   "S1263": {
-    "name": "S1263",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1264": {
     "name": "S1264",
@@ -7825,8 +7825,8 @@
     "stats": []
   },
   "S1273": {
-    "name": "S1273",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1274": {
     "name": "S1274",
@@ -8029,8 +8029,8 @@
     "stats": []
   },
   "S1324": {
-    "name": "S1324",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1325": {
     "name": "S1325",
@@ -8153,8 +8153,8 @@
     "stats": []
   },
   "S1355": {
-    "name": "S1355",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1356": {
     "name": "S1356",
@@ -8181,8 +8181,8 @@
     "stats": []
   },
   "S1362": {
-    "name": "S1362",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1363": {
     "name": "S1363",
@@ -8265,8 +8265,8 @@
     "stats": []
   },
   "S1383": {
-    "name": "S1383",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1384": {
     "name": "S1384",
@@ -8409,8 +8409,8 @@
     "stats": []
   },
   "S1419": {
-    "name": "S1419",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1420": {
     "name": "S1420",
@@ -8565,8 +8565,8 @@
     "stats": []
   },
   "S1458": {
-    "name": "S1458",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1459": {
     "name": "S1459",
@@ -8741,8 +8741,8 @@
     "stats": []
   },
   "S1502": {
-    "name": "S1502",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1503": {
     "name": "S1503",
@@ -8965,8 +8965,8 @@
     "stats": []
   },
   "S1558": {
-    "name": "S1558",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1559": {
     "name": "S1559",
@@ -9093,16 +9093,16 @@
     "stats": []
   },
   "S1590": {
-    "name": "S1590",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1591": {
     "name": "S1591",
     "stats": []
   },
   "S1592": {
-    "name": "S1592",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1593": {
     "name": "S1593",
@@ -9213,8 +9213,8 @@
     "stats": []
   },
   "S1620": {
-    "name": "S1620",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1621": {
     "name": "S1621",
@@ -9269,8 +9269,8 @@
     "stats": []
   },
   "S1634": {
-    "name": "S1634",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1635": {
     "name": "S1635",
@@ -9329,8 +9329,8 @@
     "stats": ["+5 to any Attribute"]
   },
   "S1649": {
-    "name": "S1649",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1650": {
     "name": "S1650",
@@ -9457,12 +9457,12 @@
     "stats": []
   },
   "S1681": {
-    "name": "S1681",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1682": {
-    "name": "S1682",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1683": {
     "name": "S1683",
@@ -9525,8 +9525,8 @@
     "stats": []
   },
   "S1698": {
-    "name": "S1698",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1699": {
     "name": "S1699",
@@ -9585,8 +9585,8 @@
     "stats": []
   },
   "S1713": {
-    "name": "S1713",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1714": {
     "name": "S1714",
@@ -9669,24 +9669,24 @@
     "stats": []
   },
   "S1734": {
-    "name": "S1734",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1735": {
-    "name": "S1735",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1736": {
-    "name": "S1736",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1737": {
-    "name": "S1737",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1738": {
-    "name": "S1738",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1739": {
     "name": "S1739",
