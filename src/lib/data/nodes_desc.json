@@ -2717,20 +2717,26 @@
 		"stats": ["50% increased amount of Life Leeched", "Leech Life 20% slower"]
 	},
   "S1": {
-    "name": "S1",
-    "stats": []
+    "name": "Lightning Damage",
+    "stats": [
+      "12% increased Lightning Damage"
+    ]
   },
   "S2": {
-    "name": "S2",
-    "stats": []
+    "name": "Lightning Damage",
+    "stats": [
+      "12% increased Lightning Damage"
+    ]
   },
   "S3": {
     "name": "S3",
     "stats": []
   },
   "S4": {
-    "name": "S4",
-    "stats": []
+    "name": "Lightning Damage",
+    "stats": [
+      "12% increased Lightning Damage"
+    ]
   },
   "S5": {
     "name": "S5",
@@ -2773,16 +2779,20 @@
     "stats": []
   },
   "S15": {
-    "name": "S15",
-    "stats": []
+    "name": "Ignite Effect",
+    "stats": [
+      "10% increased Effect of Ignite"
+    ]
   },
   "S16": {
     "name": "S16",
     "stats": []
   },
   "S17": {
-    "name": "S17",
-    "stats": []
+    "name": "Lightning Damage",
+    "stats": [
+      "12% increased Lightning Damage"
+    ]
   },
   "S18": {
     "name": "S18",
@@ -2813,8 +2823,10 @@
     "stats": []
   },
   "S25": {
-    "name": "S25",
-    "stats": []
+    "name": "Ignite Effect",
+    "stats": [
+      "10% increased Effect of Ignite"
+    ]
   },
   "S26": {
     "name": "S26",
@@ -2829,8 +2841,10 @@
     "stats": []
   },
   "S29": {
-    "name": "S29",
-    "stats": []
+    "name": "Ignite Effect",
+    "stats": [
+      "10% increased Effect of Ignite"
+    ]
   },
   "S30": {
     "name": "S30",
@@ -2849,20 +2863,26 @@
     "stats": []
   },
   "S34": {
-    "name": "S34",
-    "stats": []
+    "name": "Lightning Damage",
+    "stats": [
+      "12% increased Lightning Damage"
+    ]
   },
   "S35": {
     "name": "S35",
     "stats": []
   },
   "S36": {
-    "name": "S36",
-    "stats": []
+    "name": "Ignite Chance",
+    "stats": [
+      "20% increased chance to Ignite"
+    ]
   },
   "S37": {
-    "name": "S37",
-    "stats": []
+    "name": "Fire Damage",
+    "stats": [
+      "12% increased Fire Damage"
+    ]
   },
   "S38": {
     "name": "S38",
