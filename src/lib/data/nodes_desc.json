@@ -500,8 +500,12 @@
 		"stats": []
 	},
 	"N88": {
-		"name": "N88",
-		"stats": []
+		"name": "Explosive Impact",
+		"stats": [
+      "15% increased Area of Effect",
+      "Burning Ennemies you kill have 5% chance to Explode, dealing a tenth of their maximum Life as",
+      "Fire Damage"
+    ]
 	},
 	"N89": {
 		"name": "N89",
@@ -2373,8 +2377,10 @@
 		"stats": []
 	},
 	"N507": {
-		"name": "N507",
-		"stats": []
+		"name": "Volatile Grenades",
+		"stats": [
+      "25% reduced Grenade Duration"
+    ]
 	},
 	"N508": {
 		"name": "N508",
@@ -2610,8 +2616,11 @@
 		"stats": ["Life Leech effects are not removed when Unreserved Life is Filled"]
 	},
 	"N558": {
-		"name": "N558",
-		"stats": []
+		"name": "Full Salvo",
+		"stats": [
+      "25% Increased Damage with Crossbows for each type of Ammunition fired in the past 10",
+      "secondes"
+    ]
 	},
 	"N559": {
 		"name": "Apocalypse",
