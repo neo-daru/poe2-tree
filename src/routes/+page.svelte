@@ -4,6 +4,7 @@
 	import { onMount, tick } from 'svelte';
 	import { browser } from '$app/environment';
 	import { Header } from '$lib/components/ui/header';
+	import { TreeNodeTooltip } from '$lib/components/ui/tree-node-tooltip/index.js';
 
 	let { nodes } = loadData();
 
@@ -473,29 +474,13 @@
 
 				<!-- Tooltip displayed when a region is hovered -->
 				{#if tooltipNode != null}
+					<!-- Tooltip wrapper for absolute position -->
 					<div
 						bind:this={tooltipEl}
-						class="absolute max-w-[400px] flex flex-col bg-black pointer-events-none z-[9999] overflow-hidden rounded-xl opacity-90 shadow-2xl"
+						class="absolute w-[400px] pointer-events-none"
 						style="left: {tooltipX}px; top: {tooltipY}px;"
 					>
-						<header class="relative text-2xl bg-red-500 aspect-[999/131]" style="">
-							<img src="/tooltip-header.png" alt="header" />
-							<h1
-								class="whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-							>
-								{tooltipNode.name}
-							</h1>
-						</header>
-						<div class="p-4 pb-2 space-y-2">
-							<div>
-								{#each tooltipNode.description as description}
-									<p class="m-0 font-light text-[#7d7aad]">{description}</p>
-								{/each}
-							</div>
-							<footer class="italic">
-								<span class="text-[#888] text-xs float-right">{tooltipNode.id}</span>
-							</footer>
-						</div>
+						<TreeNodeTooltip node={tooltipNode} />
 					</div>
 				{/if}
 			</div>
