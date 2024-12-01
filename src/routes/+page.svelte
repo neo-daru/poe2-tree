@@ -33,6 +33,7 @@
 
 	// State for search
 	let searchTerm = '';
+	let searchInputEl: HTMLInputElement | null = null;
 	let searchResults: string[] = [];
 
 	// State for selected nodes
@@ -352,6 +353,17 @@
 		}
 		event.stopPropagation();
 	}
+
+	function clearSearchTerm() {
+		searchTerm = '';
+		searchInputEl?.focus();
+	}
+
+	function handleKeydown(event: KeyboardEvent) {
+		if (event.key === 'Escape') {
+			clearSearchTerm();
+		}
+	}
 </script>
 
 <!-- Top Bar Section -->
@@ -399,7 +411,28 @@
 
 <!-- Search and Filter Section -->
 <div class="search-bar">
-	<input type="text" placeholder="Search..." bind:value={searchTerm} />
+	<div class="search-input-container">
+		<input
+			type="text"
+			placeholder="Search..."
+			bind:value={searchTerm}
+			bind:this={searchInputEl}
+			onkeydown={handleKeydown}
+		/>
+		{#if searchTerm}
+			<button class="clear-button" onclick={clearSearchTerm} aria-label="Clear search">
+				<svg viewBox="0 0 20 20" aria-hidden="true">
+					<path
+						d="M4 4 L16 16 M16 4 L4 16"
+						stroke="#000"
+						stroke-width="2"
+						stroke-linecap="round"
+						fill="none"
+					/>
+				</svg>
+			</button>
+		{/if}
+	</div>
 	<span
 		bind:this={searchResultsSpanEl}
 		onmouseenter={handleSearchResultsMouseEnter}
@@ -625,6 +658,43 @@
 		font-size: 16px;
 		cursor: pointer;
 		position: relative;
+	}
+
+	.search-input-container {
+		position: relative;
+		display: inline-block;
+	}
+
+	.search-input-container input {
+		padding-right: 40px;
+	}
+
+	.clear-button {
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		transition:
+			background-color 0.2s ease,
+			color 0.2s ease;
+	}
+
+	.clear-button svg {
+		width: 16px;
+		height: 16px;
+		pointer-events: none;
+	}
+
+	.clear-button:hover {
+		background-color: rgba(0, 0, 0, 0.1);
 	}
 
 	.filters {
