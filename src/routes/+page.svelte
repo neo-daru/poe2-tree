@@ -65,20 +65,6 @@
 	let hideUnselected = false;
 	let hideSmall = false;
 
-	// State for selected nodes display
-	let showSelectedNodesDisplay = false;
-	let isSelectedNodesDisplayPinned = false;
-
-	let selectedNodesDisplayEl: HTMLDivElement | null = null;
-	let selectedNodesSpanEl: HTMLSpanElement | null = null;
-
-	// State for search results display
-	let showSearchResultsDisplay = false;
-	let isSearchResultsDisplayPinned = false;
-
-	let searchResultsDisplayEl: HTMLDivElement | null = null;
-	let searchResultsSpanEl: HTMLSpanElement | null = null;
-
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
 
@@ -315,35 +301,9 @@
 		window.addEventListener('mousemove', handleMove);
 		window.addEventListener('mouseup', handleUp);
 
-		// Handle clicks outside the selected nodes and search results display
-		const handleClickOutside = (event: MouseEvent) => {
-			const clickedOutsideSelectedNodes =
-				isSelectedNodesDisplayPinned &&
-				!selectedNodesDisplayEl?.contains(event.target as Node) &&
-				!selectedNodesSpanEl?.contains(event.target as Node);
-
-			const clickedOutsideSearchResults =
-				isSearchResultsDisplayPinned &&
-				!searchResultsDisplayEl?.contains(event.target as Node) &&
-				!searchResultsSpanEl?.contains(event.target as Node);
-
-			if (clickedOutsideSelectedNodes) {
-				isSelectedNodesDisplayPinned = false;
-				showSelectedNodesDisplay = false;
-			}
-
-			if (clickedOutsideSearchResults) {
-				isSearchResultsDisplayPinned = false;
-				showSearchResultsDisplay = false;
-			}
-		};
-
-		document.addEventListener('click', handleClickOutside);
-
 		return () => {
 			window.removeEventListener('mousemove', handleMove);
 			window.removeEventListener('mouseup', handleUp);
-			document.removeEventListener('click', handleClickOutside);
 		};
 	});
 </script>
