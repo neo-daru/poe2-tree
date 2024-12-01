@@ -9,7 +9,7 @@
 	},
 	"K3": {
 		"name": "Eldritch Battery",
-		"stats": ["Converts all Energy Shield to Mana"]
+		"stats": ["Converts all Energy Shield to Mana", "Confirmed to not be this in EA"]
 	},
 	"K4": {
 		"name": "Chaos Inoculation",
@@ -146,8 +146,9 @@
 		"stats": []
 	},
 	"N7": {
-		"name": "N7",
-		"stats": []
+		"name": "Burnout",
+		"stats": [
+			"Ignites you inflict deal Damage 15% faster"]
 	},
 	"N8": {
 		"name": "N8",
@@ -170,8 +171,10 @@
 		"stats": ["60% increased maximum Energy Shield", "20% slower start of Energy Shield Recharge"]
 	},
 	"N13": {
-		"name": "N13",
-		"stats": []
+		"name": "Electric Amplification",
+		"stats": [
+			"Damage Penetrates 18% Lightning Resistance",
+			"25% increased Lightning Exposure Effect"]
 	},
 	"N14": {
 		"name": "N14",
@@ -613,8 +616,11 @@
 		"stats": []
 	},
 	"N116": {
-		"name": "N116",
-		"stats": []
+		"name": "Breath of Lightning",
+		"stats": [
+			"Damage Penetrates 15% Lightning Resistance",
+			"+10 to Intelligence"
+		]
 	},
 	"N117": {
 		"name": "Spectral Ward",
@@ -674,8 +680,11 @@
 		"stats": []
 	},
 	"N129": {
-		"name": "N129",
-		"stats": []
+		"name": "Breath of Cold",
+		"stats": [
+			"Damage Penetrates 15% Cold Resistance",
+			"+10 to Dexterity"
+		]
 	},
 	"N130": {
 		"name": "N130",
@@ -1073,12 +1082,12 @@
 		"name": "N218",
 		"stats": []
 	},
-	"N219": {
-		"name": "First Strike",
-		"stats": [
-			"50% increased Damage with Daggers against Enemies that are on Full Life"
-		]
-	},
+  "N219": {
+    "name": "First Strike",
+    "stats": [
+      "50% increased Damage with Daggers against Enemies that are on Full Life"
+    ]
+  },
 	"N220": {
 		"name": "N220",
 		"stats": []
@@ -1091,7 +1100,7 @@
 		"name": "Flow State",
 		"stats": [
 			"15% increased Mana Regeneration Rate",
-			"5% increased Attack and Cast Speed"			
+			"5% increased Attack and Cast Speed"
 		]
 	},
 	"N223": {
@@ -1121,22 +1130,22 @@
 			"Recover 2% of Life on Killing a Poisoned Enemy"
 		]
 	},
-	"N229": {
-		"name": "Life from Death",
-		"stats": [
-			"Recover 3% of Life on Kill"
-		]
-	},
+  "N229": {
+    "name": "Life from Death",
+    "stats": [
+      "Recover 3% of Life on Kill"
+    ]
+  },
 	"N230": {
 		"name": "N230",
 		"stats": []
 	},
-	"N231": {
-		"name": "Unbroken Concentration",
-		"stats": [
-			"40% increased Stun Threshold if you haven't been stunned recently"
-		]
-	},
+  "N231": {
+    "name": "Unbroken Concentration",
+    "stats": [
+      "40% increased Stun Threshold if you haven't been stunned recently"
+    ]
+  },
 	"N232": {
 		"name": "Immaterial",
 		"stats": [
@@ -1240,15 +1249,15 @@
 		"name": "N252",
 		"stats": []
 	},
-	"N253": {
-		"name": "Step Like Mist",
-		"stats": [
-			"4% increased Movenment Speed",
-			"14% increaased Evasion Rating",
-			"14% increased maximum Energy Shield",
-			"+5 to Dexterity and Intelligence"
-		]
-	},
+  "N253": {
+    "name": "Step Like Mist",
+    "stats": [
+      "4% increased Movenment Speed",
+      "14% increaased Evasion Rating",
+      "14% increased maximum Energy Shield",
+      "+5 to Dexterity and Intelligence"
+    ]
+  },
 	"N254": {
 		"name": "Lust for Power",
 		"stats": [
@@ -1449,8 +1458,10 @@
 		"stats": ["15% increased Evasion Rating", "15% increased maximum Energy Shield"]
 	},
 	"N299": {
-		"name": "N299",
-		"stats": []
+		"name": "Blinding Strike",
+		"stats": [
+			"24% increased Attack Damage",
+			"10% chance to Blind Enemies on Hit with Attacks"]
 	},
 	"N300": {
 		"name": "N300",
@@ -1934,8 +1945,10 @@
 		"stats": ["20% more Damage against Heavy Stunned Enemies with Maces"]
 	},
 	"N411": {
-		"name": "N411",
-		"stats": []
+		"name": "Death from Afar",
+		"stats": [
+			"Projectiles have 25% increased Critical Hit Chance against Enemies further then 6m",
+			"Projectiles deal 25% increased Damage with Hits against Enemies further then 6m"]
 	},
 	"N412": {
 		"name": "Vigilance",
@@ -1996,8 +2009,10 @@
 		"stats": []
 	},
 	"N425": {
-		"name": "N425",
-		"stats": []
+		"name": "Stand and Deliver",
+		"stats": [
+			"Projectiles have 40% increased Critical Damage Bonus against Enemies within 2m",
+			"Projectiles deal 25% increased Damage with Hits against Enemies within 2m"]
 	},
 	"N426": {
 		"name": "Back in Action",
@@ -2511,8 +2526,9 @@
 		"stats": []
 	},
 	"N539": {
-		"name": "N539",
-		"stats": []
+		"name": "Advanced Munitions",
+		"stats": [
+			"25% increased chance to inflict Ailments with Projectiles"]
 	},
 	"N540": {
 		"name": "N540",
@@ -2590,7 +2606,7 @@
 		]
 	},
 	"N557": {
-		"name": "Metabolism",
+		"name": "Fast Metabolism",
 		"stats": ["Life Leech effects are not removed when Unreserved Life is Filled"]
 	},
 	"N558": {
