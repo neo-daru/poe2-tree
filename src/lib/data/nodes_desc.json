@@ -9281,8 +9281,8 @@
     "stats": []
   },
   "S1642": {
-    "name": "S1642",
-    "stats": []
+    "name": "Life Regeneration",
+    "stats": ["Regenerate 0.4% of Life per second"]
   },
   "S1643": {
     "name": "S1643",
@@ -9577,8 +9577,8 @@
     "stats": []
   },
   "S1716": {
-    "name": "S1716",
-    "stats": []
+    "name": "Stun Threshold",
+    "stats": ["12% increased Stun Threshold"]
   },
   "S1717": {
     "name": "S1717",
@@ -9685,8 +9685,8 @@
     "stats": []
   },
   "S1743": {
-    "name": "S1743",
-    "stats": []
+    "name": "Stun Buildup",
+    "stats": ["15% increased Stun Buildup"]
   },
   "S1744": {
     "name": "S1744",
