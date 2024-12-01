@@ -1057,9 +1057,7 @@
 	},
 	"N211": {
 		"name": "Open Mind",
-		"stats": [
-            "25% increase Mana Regeneration Rate"
-        ]
+		"stats": ["25% increase Mana Regeneration Rate"]
 	},
 	"N212": {
 		"name": "Covering Ward",
