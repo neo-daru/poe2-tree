@@ -526,10 +526,16 @@
 									class:highlighted-notable={highlightNotables && node.id.startsWith('N')}
 									class:highlighted-small={highlightSmalls && node.id.startsWith('S')}
 									style="
-								  width: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
-								  height: {(baseNodeSize + node.id.startsWith('K') * 4) * scale}px;
-								  left: {node.x * imageEl.naturalWidth * scale - (baseNodeSize * scale) / 2}px;
-								  top: {node.y * imageEl.naturalHeight * scale - (baseNodeSize * scale) / 2}px;
+								  width: {(baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) * scale}px;
+								  height: {(baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) * scale}px;
+								  left: {node.x * imageEl.naturalWidth * scale -
+										((baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) *
+											scale) /
+											2}px;
+								  top: {node.y * imageEl.naturalHeight * scale -
+										((baseNodeSize + node.id.startsWith('K') * 4 - node.id.startsWith('S') * 10) *
+											scale) /
+											2}px;
 							  "
 									onmousedown={(event) => event.stopPropagation()}
 									onclick={() => toggleNodeSelection(node)}
