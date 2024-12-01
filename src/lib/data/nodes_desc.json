@@ -5488,8 +5488,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S686": {
-		"name": "Minion Life",
-		"stats": ["Minions have 10% increased maximum Life"]
+		"name": "Mana Regeneration",
+		"stats": ["10% increased Mana Regeneration Rate"]
 	},
 	"S687": {
 		"name": "S687",
@@ -5512,8 +5512,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S692": {
-		"name": "S692",
-		"stats": []
+		"name": "Spell Damage",
+		"stats": ["8% increased Spell Damage"]
 	},
 	"S693": {
 		"name": "Energy Shield Delay",
@@ -5580,8 +5580,8 @@
 		"stats": ["3% increased Attack speed"]
 	},
 	"S709": {
-		"name": "S709",
-		"stats": []
+		"name": "Spell Damage",
+		"stats": ["10% increased Spell Damage"]
 	},
 	"S710": {
 		"name": "Energy Shield",
