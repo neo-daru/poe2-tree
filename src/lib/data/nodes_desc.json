@@ -1082,10 +1082,12 @@
 		"name": "N218",
 		"stats": []
 	},
-	"N219": {
-		"name": "N219",
-		"stats": []
-	},
+  "N219": {
+    "name": "First Strike",
+    "stats": [
+      "50% increased Damage with Daggers against Enemies that are on Full Life"
+    ]
+  },
 	"N220": {
 		"name": "N220",
 		"stats": []
@@ -1128,18 +1130,22 @@
 			"Recover 2% of Life on Killing a Poisoned Enemy"
 		]
 	},
-	"N229": {
-		"name": "N229",
-		"stats": []
-	},
+  "N229": {
+    "name": "Life from Death",
+    "stats": [
+      "Recover 3% of Life on Kill"
+    ]
+  },
 	"N230": {
 		"name": "N230",
 		"stats": []
 	},
-	"N231": {
-		"name": "N231",
-		"stats": []
-	},
+  "N231": {
+    "name": "Unbroken Concentration",
+    "stats": [
+      "40% increased Stun Threshold if you haven't been stunned recently"
+    ]
+  },
 	"N232": {
 		"name": "Immaterial",
 		"stats": [
@@ -1243,15 +1249,15 @@
 		"name": "N252",
 		"stats": []
 	},
-	"N253": {
-		"name": "N253 - Title Missing",
-		"stats": [
-			"4% increased Movement Speed.",
-			"14% increased Evasion Rating.",
-			"14% increased maximum Energy Shield.",
-			"+5 to Dexterity and Intelligence."
-		]
-	},
+  "N253": {
+    "name": "Step Like Mist",
+    "stats": [
+      "4% increased Movement Speed",
+      "14% increased Evasion Rating",
+      "14% increased maximum Energy Shield",
+      "+5 to Dexterity and Intelligence"
+    ]
+  },
 	"N254": {
 		"name": "Lust for Power",
 		"stats": [
