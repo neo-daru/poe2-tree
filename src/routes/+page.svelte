@@ -98,11 +98,6 @@
 	}
 
 	function filterAscendancyNodes(node: TreeNode) {
-		if(node.class) {
-			console.log(node.class)
-			console.log(selectedAscendancy)
-			console.log("----------------")
-		}
 		return !node.class || (node.class === selectedAscendancy)
 	}
 
