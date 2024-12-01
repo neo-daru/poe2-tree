@@ -335,8 +335,11 @@
 		"stats": []
 	},
 	"N49": {
-		"name": "N49",
-		"stats": []
+		"name": "Crushing Storms",
+		"stats": [
+      "16% increased Elemental Damage",
+      "Damage Penetrates 5% Elemental Resistances"
+    ]
 	},
 	"N50": {
 		"name": "N50",
@@ -548,12 +551,12 @@
 		"stats": ["40% increased maximum Energy Shield", "10% reduced maximum Life"]
 	},
 	"N100": {
-		"name": "N100",
-		"stats": []
+		"name": "Mana Bloom",
+		"stats": ["25% increased maximum Mana"]
 	},
 	"N101": {
-		"name": "N101",
-		"stats": []
+		"name": "Arcane Blossom",
+		"stats": ["16% increased Mana Recovery rate"]
 	},
 	"N102": {
 		"name": "N102",
@@ -695,8 +698,8 @@
 		"stats": ["25% reduced Effect of Chill on you", "Unaffected by Chill during Dodge Roll"]
 	},
 	"N132": {
-		"name": "N132",
-		"stats": []
+		"name": "Exploit the Elements",
+		"stats": ["40% increased Damage with Hits agains Enemies affected by Elemental Ailments"]
 	},
 	"N133": {
 		"name": "N133",
@@ -796,8 +799,11 @@
 		]
 	},
 	"N156": {
-		"name": "N156",
-		"stats": []
+		"name": "Critical Overload",
+		"stats": [
+      "10% increased Critical Hit Chance for Spells",
+      "15% increased Spell Damage if you've dealt a Critical Strike Recently"
+    ]
 	},
 	"N157": {
 		"name": "N157",
@@ -863,8 +869,11 @@
 		"stats": ["40% increased maximum Energy Shield", "10% reduced maximum Mana"]
 	},
 	"N172": {
-		"name": "N172",
-		"stats": []
+		"name": "Jagged Shards",
+		"stats": [
+      "15% increased Critical Hit Chance for Spells",
+      "18% increased Physical Damage"
+    ]
 	},
 	"N173": {
 		"name": "N173",
@@ -1023,8 +1032,12 @@
 		]
 	},
 	"N206": {
-		"name": "N206",
-		"stats": []
+		"name": "Raw Destruction",
+		"stats": [
+            "16% increased Spell Damage",
+            "Minions deal 16% increased Damage",
+            "+10 to Intelligence"
+        ]
 	},
 	"N207": {
 		"name": "N207",
@@ -1044,7 +1057,10 @@
 	},
 	"N211": {
 		"name": "Open Mind",
-		"stats": ["25% increase Mana Regeneration Rate"]
+		"stats": [
+            "20% increase Mana Regeneration Rate",
+            "Regenerate 2 Mana per second"
+        ]
 	},
 	"N212": {
 		"name": "Covering Ward",
@@ -3113,8 +3129,8 @@
     "stats": []
   },
   "S95": {
-    "name": "S95",
-    "stats": []
+    "name": "Physical Damage",
+    "stats": ["10% increased Physical Damage"]
   },
   "S96": {
     "name": "S96",
@@ -3129,8 +3145,8 @@
     "stats": []
   },
   "S99": {
-    "name": "S99",
-    "stats": []
+    "name": "Overwhelm Physical",
+    "stats": ["Overwhelm 5% Physical Damage Reduction"]
   },
   "S100": {
     "name": "S100",
@@ -3185,8 +3201,8 @@
     "stats": []
   },
   "S113": {
-    "name": "S113",
-    "stats": []
+    "name": "Physical Damage",
+    "stats": ["10% increased Physical Damage"]
   },
   "S114": {
     "name": "S114",
@@ -3209,8 +3225,8 @@
     "stats": []
   },
   "S119": {
-    "name": "S119",
-    "stats": []
+    "name": "Physical Damage",
+    "stats": ["10% increased Physical Damage"]
   },
   "S120": {
     "name": "S120",
@@ -3225,8 +3241,8 @@
     "stats": []
   },
   "S123": {
-    "name": "S123",
-    "stats": []
+    "name": "Physical Damage",
+    "stats": ["10% increased Physical Damage"]
   },
   "S124": {
     "name": "S124",
@@ -3293,12 +3309,12 @@
     "stats": []
   },
   "S140": {
-    "name": "S140",
-    "stats": []
+    "name": "Elemental Damage",
+    "stats": ["10% increased Elemental Damage"]
   },
   "S141": {
-    "name": "S141",
-    "stats": []
+    "name": "Elemental Damage",
+    "stats": ["10% increased Elemental Damage"]
   },
   "S142": {
     "name": "S142",
@@ -3449,8 +3465,8 @@
     "stats": []
   },
   "S179": {
-    "name": "S179",
-    "stats": []
+    "name": "Elemental Damage",
+    "stats": ["10% increased Elemental Damage"]
   },
   "S180": {
     "name": "S180",
@@ -3681,8 +3697,8 @@
     "stats": []
   },
   "S237": {
-    "name": "S237",
-    "stats": []
+    "name": "Chaos Damage",
+    "stats": ["10% increased Chaos Damage"]
   },
   "S238": {
     "name": "S238",
@@ -4181,8 +4197,8 @@
     "stats": []
   },
   "S362": {
-    "name": "S362",
-    "stats": []
+    "name": "Minion Attack and Cast Speed",
+    "stats": ["Minions have 4% increased Attack and Cast Speed"]
   },
   "S363": {
     "name": "S363",
@@ -4209,8 +4225,8 @@
     "stats": []
   },
   "S369": {
-    "name": "S369",
-    "stats": []
+    "name": "Minion Attack and Cast Speed",
+    "stats": ["Minions have 4% increased Attack and Cast Speed"]
   },
   "S370": {
     "name": "S370",
@@ -4229,8 +4245,8 @@
     "stats": []
   },
   "S374": {
-    "name": "S374",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S375": {
     "name": "S375",
@@ -4273,8 +4289,8 @@
     "stats": []
   },
   "S385": {
-    "name": "S385",
-    "stats": []
+    "name": "Minion Attack and Cast Speed",
+    "stats": ["Minions have 4% increased Attack and Cast Speed"]
   },
   "S386": {
     "name": "S386",
@@ -4373,24 +4389,24 @@
     "stats": []
   },
   "S410": {
-    "name": "S410",
-    "stats": []
+    "name": "Cold Penetration",
+    "stats": ["Damage Penetrates 4% Cold Resistance"]
   },
   "S411": {
     "name": "S411",
     "stats": []
   },
   "S412": {
-    "name": "S412",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S413": {
-    "name": "S413",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S414": {
-    "name": "S414",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S415": {
     "name": "S415",
@@ -4453,16 +4469,16 @@
     "stats": []
   },
   "S430": {
-    "name": "S430",
-    "stats": []
+    "name": "Fire Penetration",
+    "stats": ["Damage Penetrates 4% Fire Resistance"]
   },
   "S431": {
-    "name": "S431",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S432": {
-    "name": "S432",
-    "stats": []
+    "name": "Damage against Ailments",
+    "stats": ["10% increased Damage with Hits against Enemies affected by Elemental Ailments"]
   },
   "S433": {
     "name": "S433",
@@ -4525,8 +4541,8 @@
     "stats": []
   },
   "S448": {
-    "name": "S448",
-    "stats": []
+    "name": "Damage against Ailments",
+    "stats": ["10% increased Damage with Hits against Enemies affected by Elemental Ailments"]
   },
   "S449": {
     "name": "S449",
@@ -4621,12 +4637,12 @@
     "stats": []
   },
   "S472": {
-    "name": "S472",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S473": {
-    "name": "S473",
-    "stats": []
+    "name": "Spell Critical Damage",
+    "stats": ["10% increased Critical Spell Damage Bonus"]
   },
   "S474": {
     "name": "S474",
@@ -4665,16 +4681,16 @@
     "stats": []
   },
   "S483": {
-    "name": "S483",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S484": {
-    "name": "S484",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S485": {
-    "name": "S485",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S486": {
     "name": "S486",
@@ -4689,8 +4705,8 @@
     "stats": []
   },
   "S489": {
-    "name": "S489",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S490": {
     "name": "S490",
@@ -4757,24 +4773,27 @@
     "stats": []
   },
   "S506": {
-    "name": "S506",
-    "stats": []
+    "name": "Spell Critical Chance",
+    "stats": ["8% increased Critical Hit Chance for Spells"]
   },
   "S507": {
-    "name": "S507",
-    "stats": []
+    "name": "Spell Critical Damage",
+    "stats": ["10% increased Critical Spell Damage Bonus"]
   },
   "S508": {
-    "name": "S508",
-    "stats": []
+    "name": "Energy Shield",
+    "stats": ["10% increased Energy Shield"]
   },
   "S509": {
     "name": "S509",
     "stats": []
   },
   "S510": {
-    "name": "S510",
-    "stats": []
+    "name": "Spell and Minion Damage",
+    "stats": [
+      "8% increased Spell Damage",
+      "Minions deal 8% increased Damage"
+    ]
   },
   "S511": {
     "name": "S511",
@@ -4917,8 +4936,8 @@
     "stats": []
   },
   "S546": {
-    "name": "S546",
-    "stats": []
+    "name": "Energy Shield",
+    "stats": ["10% increased Energy Shield"]
   },
   "S547": {
     "name": "S547",
@@ -5021,8 +5040,8 @@
     "stats": []
   },
   "S572": {
-    "name": "S572",
-    "stats": []
+    "name": "Physical Damage",
+    "stats": ["10% increased Physical Damage"]
   },
   "S573": {
     "name": "S573",
@@ -5097,8 +5116,11 @@
     "stats": []
   },
   "S591": {
-    "name": "S591",
-    "stats": []
+    "name": "EnergyShield and Armour",
+    "stats": [
+        "8% increased Armour",
+        "8% increased maximum Energy Shield"
+    ]
   },
   "S592": {
     "name": "S592",
@@ -5141,8 +5163,8 @@
     "stats": []
   },
   "S602": {
-    "name": "S602",
-    "stats": []
+    "name": "Chaos Damage",
+    "stats": ["10% increased Chaos Damage"]
   },
   "S603": {
     "name": "S603",
@@ -5193,8 +5215,11 @@
     "stats": []
   },
   "S615": {
-    "name": "S615",
-    "stats": []
+    "name": "Spell and Minion Damage",
+    "stats": [
+        "8% increased Spell Damage",
+        "Minions deal 8% increased Damage"
+    ]
   },
   "S616": {
     "name": "S616",
@@ -5205,8 +5230,8 @@
     "stats": []
   },
   "S618": {
-    "name": "S618",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S619": {
     "name": "S619",
@@ -5341,12 +5366,12 @@
     "stats": []
   },
   "S652": {
-    "name": "S652",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S653": {
-    "name": "S653",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S654": {
     "name": "S654",
@@ -5357,8 +5382,8 @@
     "stats": []
   },
   "S656": {
-    "name": "S656",
-    "stats": []
+    "name": "Mana Regeneration",
+    "stats": ["10% increased Mana Regeneration Rate"]
   },
   "S657": {
     "name": "S657",
@@ -5385,8 +5410,8 @@
     "stats": []
   },
   "S663": {
-    "name": "S663",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S664": {
     "name": "S664",
@@ -5429,8 +5454,8 @@
     "stats": []
   },
   "S674": {
-    "name": "S674",
-    "stats": []
+    "name": "Mana",
+    "stats": ["8% increased maximum Mana"]
   },
   "S675": {
     "name": "S675",
@@ -5497,8 +5522,8 @@
     "stats": []
   },
   "S691": {
-    "name": "S691",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S692": {
     "name": "S692",
@@ -5509,8 +5534,8 @@
     "stats": ["10% faster start of Energy Shield Recharge"]
   },
   "S694": {
-    "name": "S694",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S695": {
     "name": "S695",
@@ -5661,8 +5686,8 @@
     "stats": []
   },
   "S732": {
-    "name": "S732",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S733": {
     "name": "S733",
@@ -7137,8 +7162,8 @@
     "stats": []
   },
   "S1101": {
-    "name": "S1101",
-    "stats": []
+    "name": "Melee Damage",
+    "stats": ["6% increased Melee Damage"]
   },
   "S1102": {
     "name": "S1102",
@@ -7149,8 +7174,8 @@
     "stats": ["2% increased Movement Speed"]
   },
   "S1104": {
-    "name": "S1104",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1105": {
     "name": "S1105",
@@ -7201,8 +7226,8 @@
     "stats": []
   },
   "S1117": {
-    "name": "S1117",
-    "stats": []
+    "name": "Axe Damage",
+    "stats": ["10% increased Damage with Axes"]
   },
   "S1118": {
     "name": "S1118",
@@ -7453,8 +7478,8 @@
     "stats": []
   },
   "S1180": {
-    "name": "S1180",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1181": {
     "name": "S1181",
