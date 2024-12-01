@@ -76,4 +76,3 @@ The UI/UX is quite basic and can be improved in many ways, if you have any ideas
 - [Int/Dex Area](https://youtu.be/LRL30Ib9RIU?si=EWwrFOF-s8jizDtI&t=1149)
 
 # Sources to map
-
