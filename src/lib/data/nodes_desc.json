@@ -370,8 +370,8 @@
 		"stats": []
 	},
 	"N57": {
-		"name": "N57",
-		"stats": []
+		"name": "Shattered Crystal",
+		"stats": ["60% reduced Ice Crystal Life"]
 	},
 	"N58": {
 		"name": "Dependable Ward",
@@ -417,8 +417,11 @@
 		"stats": []
 	},
 	"N68": {
-		"name": "N68",
-		"stats": []
+		"name": "Sudden Escalation",
+		"stats": [
+			"16% increased Critical Hit Chance for Spells",
+			"8% increased Cast Speed if you've dealt a Critical Hit Recently"
+		]
 	},
 	"N69": {
 		"name": "N69",
@@ -3685,8 +3688,8 @@
 		"stats": []
 	},
 	"S236": {
-		"name": "S236",
-		"stats": []
+		"name": "Physical Damage",
+		"stats": ["10% increased Physical Damage"]
 	},
 	"S237": {
 		"name": "Chaos Damage",
@@ -4757,8 +4760,8 @@
 		"stats": []
 	},
 	"S504": {
-		"name": "S504",
-		"stats": []
+		"name": "Link Cast Speed",
+		"stats": ["Link Skills have 8% increased Cast Speed"]
 	},
 	"S505": {
 		"name": "S505",
@@ -6869,8 +6872,8 @@
 		"stats": []
 	},
 	"S1032": {
-		"name": "S1032",
-		"stats": []
+		"name": "Armour",
+		"stats": ["+20 to Armour"]
 	},
 	"S1033": {
 		"name": "Evasion",
@@ -6945,8 +6948,8 @@
 		"stats": []
 	},
 	"S1051": {
-		"name": "S1051",
-		"stats": []
+		"name": "Melee Damage",
+		"stats": ["10% increased Melee Damage"]
 	},
 	"S1052": {
 		"name": "S1052",
@@ -7013,8 +7016,8 @@
 		"stats": []
 	},
 	"S1068": {
-		"name": "S1068",
-		"stats": []
+		"name": "Melee Damage",
+		"stats": ["10% increased Melee Damage"]
 	},
 	"S1069": {
 		"name": "S1069",
@@ -7053,8 +7056,8 @@
 		"stats": []
 	},
 	"S1078": {
-		"name": "S1078",
-		"stats": []
+		"name": "Life Regeneration",
+		"stats": ["Regenerate 0.4% of Life per second"]
 	},
 	"S1079": {
 		"name": "S1079",
@@ -7305,8 +7308,8 @@
 		"stats": []
 	},
 	"S1141": {
-		"name": "S1141",
-		"stats": []
+		"name": "Attack Area Damage and Area",
+		"stats": ["8% increased Attack Area Damage", "5% increased Area of Effect for Attacks"]
 	},
 	"S1142": {
 		"name": "Attribute",
@@ -7381,8 +7384,8 @@
 		"stats": []
 	},
 	"S1160": {
-		"name": "S1160",
-		"stats": []
+		"name": "Attack Area Damage and Area",
+		"stats": ["8% increased Attack Area Damage", "5% increased Area of Effect for Attacks"]
 	},
 	"S1161": {
 		"name": "S1161",
@@ -7457,8 +7460,8 @@
 		"stats": []
 	},
 	"S1179": {
-		"name": "S1179",
-		"stats": []
+		"name": "One Handed Damage",
+		"stats": ["10% increased Damage with One Handed Weapons"]
 	},
 	"S1180": {
 		"name": "Attribute",
@@ -7481,8 +7484,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S1185": {
-		"name": "S1185",
-		"stats": []
+		"name": "Attack Speed",
+		"stats": ["3% increased Attack Speed with One Handed Weapons"]
 	},
 	"S1186": {
 		"name": "Attribute",
@@ -7565,8 +7568,8 @@
 		"stats": []
 	},
 	"S1206": {
-		"name": "S1206",
-		"stats": []
+		"name": "One Handed Damage",
+		"stats": ["10% increased Damage with One Handed Weapons"]
 	},
 	"S1207": {
 		"name": "S1207",
@@ -7637,8 +7640,8 @@
 		"stats": []
 	},
 	"S1224": {
-		"name": "S1224",
-		"stats": []
+		"name": "One Handed Damage",
+		"stats": ["10% increased Damage with One Handed Weapons"]
 	},
 	"S1225": {
 		"name": "S1225",
@@ -7693,8 +7696,8 @@
 		"stats": []
 	},
 	"S1238": {
-		"name": "S1238",
-		"stats": []
+		"name": "Armour",
+		"stats": ["15% increased Armour"]
 	},
 	"S1239": {
 		"name": "Attribute",
@@ -7933,8 +7936,8 @@
 		"stats": []
 	},
 	"S1298": {
-		"name": "S1298",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1299": {
 		"name": "S1299",
@@ -7949,8 +7952,8 @@
 		"stats": []
 	},
 	"S1302": {
-		"name": "S1302",
-		"stats": []
+		"name": "Slower Rage Decay",
+		"stats": ["Inherent loss of Rage is 10% slower"]
 	},
 	"S1303": {
 		"name": "S1303",
@@ -8001,8 +8004,8 @@
 		"stats": []
 	},
 	"S1315": {
-		"name": "S1315",
-		"stats": []
+		"name": "Melee Damage",
+		"stats": ["10% increased Melee Damage"]
 	},
 	"S1316": {
 		"name": "S1316",
@@ -8061,8 +8064,8 @@
 		"stats": []
 	},
 	"S1330": {
-		"name": "S1330",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1331": {
 		"name": "Attribute",
@@ -8089,8 +8092,8 @@
 		"stats": []
 	},
 	"S1337": {
-		"name": "S1337",
-		"stats": []
+		"name": "Melee Damage against Immobilised",
+		"stats": ["20% increased Melee Damage against Immobilised Enemies"]
 	},
 	"S1338": {
 		"name": "S1338",
@@ -8101,8 +8104,8 @@
 		"stats": []
 	},
 	"S1340": {
-		"name": "S1340",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1341": {
 		"name": "Attribute",
@@ -8117,16 +8120,16 @@
 		"stats": []
 	},
 	"S1344": {
-		"name": "S1344",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1345": {
 		"name": "S1345",
 		"stats": []
 	},
 	"S1346": {
-		"name": "S1346",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1347": {
 		"name": "S1347",
@@ -8293,8 +8296,8 @@
 		"stats": []
 	},
 	"S1388": {
-		"name": "S1388",
-		"stats": []
+		"name": "Totem Placement Speed",
+		"stats": ["20% increased Totem Placement Speed"]
 	},
 	"S1389": {
 		"name": "S1389",
