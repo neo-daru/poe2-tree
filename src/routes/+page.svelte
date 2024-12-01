@@ -425,7 +425,7 @@
 					>
 					<span
 					>Selected:
-						{selectedNodes.length} / {undefined} <!-- TODO: count all nodes -->
+						{selectedNodes.length} / {Object.entries(nodes).filter(([_, n]) => n.description.length > 0).length}
 					</span>
 				</div>
 				<ul class="block min-h-0 overflow-y-auto">
@@ -513,23 +513,24 @@
 				<!-- Tooltip displayed when a region is hovered -->
 				{#if tooltipNode != null}
 					<div
-						bind:this={tooltipEl}
-						class="tooltip absolute min-w-[300px] max-w-[400px] bg-black pointer-events-none opacity-90 z-[1000] rounded-[8px]"
+						class="absolute max-w-[400px] flex flex-col bg-black pointer-events-none z-[9999] overflow-hidden rounded-xl opacity-90 shadow-2xl"
 						style="left: {tooltipX}px; top: {tooltipY}px;"
 					>
-						<div
-							class="title text-2xl text-[#f0e7e5] text-center bg-cover bg-center w-full inline-block mb-[8px] py-[10px] rounded-[8px]"
-							style={`background-image: url('${base}/tooltip-header.png');`}
-						>
-							{tooltipNode.name}
-						</div>
-						<div class="body font-['Fontin SmallCaps', sans-serif] font-light text-[#7d7aad] mb-[8px]"> <!-- TODO padding -->
-							{#each tooltipNode.description as description}
-								<p class="mx-auto my-0">{description}</p>
-							{/each}
-						</div>
-						<div class="flex font-['Fontin SmallCaps', sans-serif] text-[#7d7aad] m-[8px] mt-0">
-							<span class="text-[#888] text-sm ml-auto">{tooltipNode.id}</span>
+						<header class="relative text-2xl bg-red-500 aspect-[999/131]" style="">
+							<img src="/tooltip-header.png" alt="header">
+							<h1 class="whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+								{tooltipNode.name}
+							</h1>
+						</header>
+						<div class="p-4 pb-2 space-y-2">
+							<div>
+								{#each tooltipNode.description as description}
+									<p class="m-0 font-light text-[#7d7aad]">{description}</p>
+								{/each}
+							</div>
+							<footer class="italic">
+								<span class="text-[#888] text-xs float-right">{tooltipNode.id}</span>
+							</footer>
 						</div>
 					</div>
 				{/if}
@@ -613,19 +614,5 @@
           .search-result {
               border: 3px solid rgba(255, 0, 0, 0.8);
               animation: glow 2s infinite;
-          }
-
-          .tooltip {
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Subtle shadow */
-
-              .title {
-                  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
-              }
-
-              /* Body text style */
-
-              .body {
-                  padding: 10px 20px;
-              }
           }
 			</style>
