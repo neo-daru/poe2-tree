@@ -503,8 +503,12 @@
 		"stats": []
 	},
 	"N88": {
-		"name": "N88",
-		"stats": []
+		"name": "Explosive Impact",
+		"stats": [
+      "15% increased Area of Effect",
+      "Burning Ennemies you kill have 5% chance to Explode, dealing a tenth of their maximum Life as",
+      "Fire Damage"
+    ]
 	},
 	"N89": {
 		"name": "N89",
@@ -806,8 +810,10 @@
     ]
 	},
 	"N157": {
-		"name": "N157",
-		"stats": []
+		"name": "Poison Damage Notable",
+		"stats": [
+			"25% increased Effect of Poison"
+		]
 	},
 	"N158": {
 		"name": "Thickened Arteries",
@@ -822,8 +828,10 @@
 		"stats": []
 	},
 	"N161": {
-		"name": "N161",
-		"stats": []
+		"name": "Darkness",
+		"stats": [
+			"25% increased Chaos Damage"
+		]
 	},
 	"N162": {
 		"name": "N162",
@@ -905,8 +913,10 @@
 		"stats": []
 	},
 	"N178": {
-		"name": "N178",
-		"stats": []
+		"name": "Spell Haste",
+		"stats": [
+			"10% increased Cast Speed"
+		]
 	},
 	"N179": {
 		"name": "Mana Blessing",
@@ -917,8 +927,10 @@
 		"stats": []
 	},
 	"N181": {
-		"name": "N181",
-		"stats": []
+		"name": "Spellblade",
+		"stats": [
+			"32% increased Spell Damage"
+		]
 	},
 	"N182": {
 		"name": "N182",
@@ -953,8 +965,10 @@
 		"stats": []
 	},
 	"N189": {
-		"name": "N189",
-		"stats": []
+		"name": "Immortal Infamy",
+		"stats": [
+			"Recover 2% of Life on Kill"
+		]
 	},
 	"N190": {
 		"name": "N190",
@@ -965,8 +979,10 @@
 		"stats": []
 	},
 	"N192": {
-		"name": "N192",
-		"stats": []
+		"name": "Immortal Thirst",
+		"stats": [
+			"25% increased ammount of Mana Leeched"
+		]
 	},
 	"N193": {
 		"name": "Rattling Ball",
@@ -1044,8 +1060,10 @@
 		"stats": []
 	},
 	"N208": {
-		"name": "N208",
-		"stats": []
+		"name": "Killer Instinct",
+		"stats": [
+			"25% increased Attack Damage"
+		]
 	},
 	"N209": {
 		"name": "N209",
@@ -1071,15 +1089,17 @@
 		"stats": []
 	},
 	"N214": {
-		"name": "N214",
-		"stats": []
+		"name": "Tenfold Attack",
+		"stats": [
+			"10% increased Attack speed"
+		]
 	},
 	"N215": {
 		"name": "N215",
 		"stats": []
 	},
 	"N216": {
-		"name": "N216 - Title Missing",
+		"name": "Resonating Impact",
 		"stats": [
 			"15% increased Area of Effect for Staff Attacks"
 		]
@@ -1314,8 +1334,10 @@
 		"stats": ["40% increased Melee Damage with Hits at Close Range"]
 	},
 	"N263": {
-		"name": "N263",
-		"stats": []
+		"name": "Accuracy",
+		"stats": [
+			"10% increased Global Accuracy Rating"
+		]
 	},
 	"N264": {
 		"name": "Serrated Edges",
@@ -1334,8 +1356,10 @@
 		"stats": []
 	},
 	"N268": {
-		"name": "N268",
-		"stats": []
+		"name": "Martial Artistry",
+		"stats": [
+			"+25% to Critical Strike Multiplier with Staves"
+		]
 	},
 	"N269": {
 		"name": "N269",
@@ -2389,8 +2413,10 @@
 		"stats": []
 	},
 	"N507": {
-		"name": "N507",
-		"stats": []
+		"name": "Volatile Grenades",
+		"stats": [
+      "25% reduced Grenade Duration"
+    ]
 	},
 	"N508": {
 		"name": "N508",
@@ -2626,8 +2652,11 @@
 		"stats": ["Life Leech effects are not removed when Unreserved Life is Filled"]
 	},
 	"N558": {
-		"name": "N558",
-		"stats": []
+		"name": "Full Salvo",
+		"stats": [
+      "25% Increased Damage with Crossbows for each type of Ammunition fired in the past 10",
+      "secondes"
+    ]
 	},
 	"N559": {
 		"name": "Apocalypse",
@@ -2709,12 +2738,16 @@
 		"stats": ["10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"]
 	},
 	"N577": {
-		"name": "N577",
-		"stats": []
+		"name": "Quaterstaff Speed Notable",
+		"stats": [
+			"10% increased Attack Speed with Staves"
+		]
 	},
 	"N578": {
-		"name": "N578",
-		"stats": []
+		"name": "Quarterstaff Damage Notable",
+		"stats": [
+			"25% increased Damage with Staves"
+		]
 	},
 	"N579": {
 		"name": "N579",
@@ -2977,28 +3010,28 @@
     "stats": []
   },
   "S57": {
-    "name": "S57",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S58": {
-    "name": "S58",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S59": {
-    "name": "S59",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S60": {
-    "name": "S60",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S61": {
-    "name": "S61",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S62": {
-    "name": "S62",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S63": {
     "name": "S63",
@@ -3057,8 +3090,8 @@
     "stats": []
   },
   "S77": {
-    "name": "S77",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S78": {
     "name": "S78",
@@ -3069,8 +3102,8 @@
     "stats": []
   },
   "S80": {
-    "name": "S80",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S81": {
     "name": "S81",
@@ -3113,8 +3146,8 @@
     "stats": []
   },
   "S91": {
-    "name": "S91",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S92": {
     "name": "S92",
@@ -3217,8 +3250,8 @@
     "stats": []
   },
   "S117": {
-    "name": "S117",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S118": {
     "name": "S118",
@@ -3293,16 +3326,16 @@
     "stats": []
   },
   "S136": {
-    "name": "S136",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S137": {
     "name": "S137",
     "stats": []
   },
   "S138": {
-    "name": "S138",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S139": {
     "name": "S139",
@@ -3325,8 +3358,8 @@
     "stats": []
   },
   "S144": {
-    "name": "S144",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S145": {
     "name": "S145",
@@ -3365,8 +3398,8 @@
     "stats": []
   },
   "S154": {
-    "name": "S154",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S155": {
     "name": "S155",
@@ -3377,8 +3410,8 @@
     "stats": []
   },
   "S157": {
-    "name": "S157",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S158": {
     "name": "S158",
@@ -3397,8 +3430,8 @@
     "stats": []
   },
   "S162": {
-    "name": "S162",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S163": {
     "name": "S163",
@@ -3445,8 +3478,8 @@
     "stats": []
   },
   "S174": {
-    "name": "S174",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S175": {
     "name": "S175",
@@ -3557,20 +3590,20 @@
     "stats": []
   },
   "S202": {
-    "name": "S202",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S203": {
-    "name": "S203",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S204": {
-    "name": "S204",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S205": {
-    "name": "S205",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S206": {
     "name": "S206",
@@ -3581,36 +3614,36 @@
     "stats": []
   },
   "S208": {
-    "name": "S208",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S209": {
-    "name": "S209",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S210": {
-    "name": "S210",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S211": {
-    "name": "S211",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S212": {
-    "name": "S212",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S213": {
-    "name": "S213",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S214": {
-    "name": "S214",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S215": {
-    "name": "S215",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S216": {
     "name": "S216",
@@ -3625,8 +3658,8 @@
     "stats": []
   },
   "S219": {
-    "name": "S219",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S220": {
     "name": "S220",
@@ -3769,8 +3802,8 @@
     "stats": []
   },
   "S255": {
-    "name": "S255",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S256": {
     "name": "S256",
@@ -3789,8 +3822,8 @@
     "stats": []
   },
   "S260": {
-    "name": "S260",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S261": {
     "name": "S261",
@@ -3801,8 +3834,8 @@
     "stats": []
   },
   "S263": {
-    "name": "S263",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S264": {
     "name": "S264",
@@ -3889,8 +3922,8 @@
     "stats": []
   },
   "S285": {
-    "name": "S285",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S286": {
     "name": "S286",
@@ -3933,8 +3966,8 @@
     "stats": []
   },
   "S296": {
-    "name": "S296",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S297": {
     "name": "S297",
@@ -3961,8 +3994,8 @@
     "stats": []
   },
   "S303": {
-    "name": "S303",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S304": {
     "name": "S304",
@@ -3977,8 +4010,8 @@
     "stats": []
   },
   "S307": {
-    "name": "S307",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S308": {
     "name": "S308",
@@ -3993,8 +4026,8 @@
     "stats": []
   },
   "S311": {
-    "name": "S311",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S312": {
     "name": "S312",
@@ -4037,8 +4070,8 @@
     "stats": []
   },
   "S322": {
-    "name": "S322",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S323": {
     "name": "S323",
@@ -4073,8 +4106,8 @@
     "stats": []
   },
   "S331": {
-    "name": "S331",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S332": {
     "name": "S332",
@@ -4109,8 +4142,8 @@
     "stats": []
   },
   "S340": {
-    "name": "S340",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S341": {
     "name": "S341",
@@ -4141,8 +4174,8 @@
     "stats": []
   },
   "S348": {
-    "name": "S348",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S349": {
     "name": "S349",
@@ -4157,16 +4190,16 @@
     "stats": []
   },
   "S352": {
-    "name": "S352",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S353": {
     "name": "S353",
     "stats": []
   },
   "S354": {
-    "name": "S354",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S355": {
     "name": "S355",
@@ -4201,8 +4234,8 @@
     "stats": ["Minions have 4% increased Attack and Cast Speed"]
   },
   "S363": {
-    "name": "S363",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S364": {
     "name": "S364",
@@ -4229,8 +4262,8 @@
     "stats": ["Minions have 4% increased Attack and Cast Speed"]
   },
   "S370": {
-    "name": "S370",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S371": {
     "name": "S371",
@@ -4461,8 +4494,8 @@
     "stats": []
   },
   "S428": {
-    "name": "S428",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S429": {
     "name": "S429",
@@ -4537,8 +4570,8 @@
     "stats": []
   },
   "S447": {
-    "name": "S447",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S448": {
     "name": "Damage against Ailments",
@@ -4573,8 +4606,8 @@
     "stats": []
   },
   "S456": {
-    "name": "S456",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S457": {
     "name": "S457",
@@ -4593,8 +4626,8 @@
     "stats": []
   },
   "S461": {
-    "name": "S461",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S462": {
     "name": "S462",
@@ -4645,8 +4678,8 @@
     "stats": ["10% increased Critical Spell Damage Bonus"]
   },
   "S474": {
-    "name": "S474",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S475": {
     "name": "S475",
@@ -4661,20 +4694,20 @@
     "stats": []
   },
   "S478": {
-    "name": "S478",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S479": {
-    "name": "S479",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S480": {
     "name": "S480",
     "stats": []
   },
   "S481": {
-    "name": "S481",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S482": {
     "name": "S482",
@@ -4693,12 +4726,12 @@
     "stats": ["+5 to any Attribute"]
   },
   "S486": {
-    "name": "S486",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S487": {
-    "name": "S487",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S488": {
     "name": "S488",
@@ -4749,8 +4782,8 @@
     "stats": []
   },
   "S500": {
-    "name": "S500",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S501": {
     "name": "S501",
@@ -4804,8 +4837,8 @@
     "stats": []
   },
   "S513": {
-    "name": "S513",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S514": {
     "name": "S514",
@@ -4840,8 +4873,8 @@
     "stats": []
   },
   "S522": {
-    "name": "S522",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S523": {
     "name": "S523",
@@ -4864,8 +4897,8 @@
     "stats": []
   },
   "S528": {
-    "name": "S528",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S529": {
     "name": "S529",
@@ -4876,12 +4909,12 @@
     "stats": []
   },
   "S531": {
-    "name": "S531",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S532": {
-    "name": "S532",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S533": {
     "name": "S533",
@@ -4964,8 +4997,8 @@
     "stats": []
   },
   "S553": {
-    "name": "S553",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S554": {
     "name": "S554",
@@ -5000,8 +5033,8 @@
     "stats": []
   },
   "S562": {
-    "name": "S562",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S563": {
     "name": "S563",
@@ -5016,8 +5049,8 @@
     "stats": []
   },
   "S566": {
-    "name": "S566",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S567": {
     "name": "S567",
@@ -5072,8 +5105,8 @@
     "stats": []
   },
   "S580": {
-    "name": "S580",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S581": {
     "name": "S581",
@@ -5131,8 +5164,8 @@
     "stats": []
   },
   "S594": {
-    "name": "S594",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S595": {
     "name": "S595",
@@ -5147,16 +5180,18 @@
     "stats": []
   },
   "S598": {
-    "name": "S598",
-    "stats": []
+    "name": "Life on Kill",
+    "stats": [
+	    "Recpver 1% Life on Kill"
+    ]
   },
   "S599": {
     "name": "S599",
     "stats": []
   },
   "S600": {
-    "name": "S600",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S601": {
     "name": "S601",
@@ -5171,8 +5206,8 @@
     "stats": []
   },
   "S604": {
-    "name": "S604",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S605": {
     "name": "S605",
@@ -5195,16 +5230,16 @@
     "stats": []
   },
   "S610": {
-    "name": "S610",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S611": {
     "name": "S611",
     "stats": []
   },
   "S612": {
-    "name": "S612",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S613": {
     "name": "S613",
@@ -5234,12 +5269,12 @@
     "stats": ["+5 to any Attribute"]
   },
   "S619": {
-    "name": "S619",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S620": {
-    "name": "S620",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S621": {
     "name": "S621",
@@ -5258,8 +5293,8 @@
     "stats": []
   },
   "S625": {
-    "name": "S625",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S626": {
     "name": "S626",
@@ -5294,8 +5329,8 @@
     "stats": []
   },
   "S634": {
-    "name": "S634",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S635": {
     "name": "S635",
@@ -5362,8 +5397,8 @@
     "stats": []
   },
   "S651": {
-    "name": "S651",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S652": {
     "name": "Attribute",
@@ -5374,8 +5409,8 @@
     "stats": ["+5 to any Attribute"]
   },
   "S654": {
-    "name": "S654",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S655": {
     "name": "S655",
@@ -5390,8 +5425,8 @@
     "stats": []
   },
   "S658": {
-    "name": "S658",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S659": {
     "name": "S659",
@@ -5422,12 +5457,12 @@
     "stats": []
   },
   "S666": {
-    "name": "S666",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S667": {
-    "name": "S667",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S668": {
     "name": "S668",
@@ -5438,16 +5473,16 @@
     "stats": []
   },
   "S670": {
-    "name": "S670",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S671": {
     "name": "S671",
     "stats": []
   },
   "S672": {
-    "name": "S672",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S673": {
     "name": "S673",
@@ -5458,24 +5493,26 @@
     "stats": ["8% increased maximum Mana"]
   },
   "S675": {
-    "name": "S675",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S676": {
     "name": "S676",
     "stats": []
   },
   "S677": {
-    "name": "S677",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S678": {
     "name": "Energy Shield Delay",
     "stats": ["10% faster start of Energy Shield recharge"]
   },
   "S679": {
-    "name": "S679",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S680": {
     "name": "S680",
@@ -5486,8 +5523,8 @@
     "stats": []
   },
   "S682": {
-    "name": "S682",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S683": {
     "name": "S683",
@@ -5498,8 +5535,8 @@
     "stats": []
   },
   "S685": {
-    "name": "S685",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S686": {
     "name": "Minion Life",
@@ -5558,8 +5595,8 @@
     "stats": []
   },
   "S700": {
-    "name": "S700",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S701": {
     "name": "S701",
@@ -5574,12 +5611,12 @@
     "stats": []
   },
   "S704": {
-    "name": "S704",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S705": {
-    "name": "S705",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S706": {
     "name": "S706",
@@ -5590,8 +5627,10 @@
     "stats": []
   },
   "S708": {
-    "name": "S708",
-    "stats": []
+    "name": "Attack Speed",
+    "stats": [
+	    "3% increased Attack speed"
+    ]
   },
   "S709": {
     "name": "S709",
@@ -5602,24 +5641,24 @@
     "stats": ["+10 to maximum Energy Shield"]
   },
   "S711": {
-    "name": "S711",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S712": {
     "name": "S712",
     "stats": []
   },
   "S713": {
-    "name": "S713",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S714": {
     "name": "S714",
     "stats": []
   },
   "S715": {
-    "name": "S715",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S716": {
     "name": "S716",
@@ -5646,8 +5685,8 @@
     "stats": []
   },
   "S722": {
-    "name": "S722",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S723": {
     "name": "S723",
@@ -5666,8 +5705,8 @@
     "stats": []
   },
   "S727": {
-    "name": "S727",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S728": {
     "name": "S728",
@@ -5690,8 +5729,8 @@
     "stats": ["+5 to any Attribute"]
   },
   "S733": {
-    "name": "S733",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S734": {
     "name": "S734",
@@ -5770,16 +5809,16 @@
     "stats": []
   },
   "S753": {
-    "name": "S753",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S754": {
     "name": "S754",
     "stats": []
   },
   "S755": {
-    "name": "S755",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S756": {
     "name": "S756",
@@ -5854,8 +5893,8 @@
     "stats": []
   },
   "S774": {
-    "name": "S774",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S775": {
     "name": "S775",
@@ -5874,8 +5913,8 @@
     "stats": []
   },
   "S779": {
-    "name": "S779",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S780": {
     "name": "S780",
@@ -5898,8 +5937,8 @@
     "stats": []
   },
   "S785": {
-    "name": "S785",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S786": {
     "name": "S786",
@@ -5914,8 +5953,8 @@
     "stats": []
   },
   "S789": {
-    "name": "S789",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S790": {
     "name": "S790",
@@ -6030,16 +6069,16 @@
     "stats": []
   },
   "S818": {
-    "name": "S818",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S819": {
     "name": "S819",
     "stats": []
   },
   "S820": {
-    "name": "S820",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S821": {
     "name": "S821",
@@ -6066,12 +6105,12 @@
     "stats": []
   },
   "S827": {
-    "name": "S827",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S828": {
-    "name": "S828",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S829": {
     "name": "S829",
@@ -6110,8 +6149,8 @@
     "stats": []
   },
   "S838": {
-    "name": "S838",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S839": {
     "name": "S839",
@@ -6134,8 +6173,8 @@
     "stats": []
   },
   "S844": {
-    "name": "S844",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S845": {
     "name": "S845",
@@ -6234,8 +6273,8 @@
     "stats": []
   },
   "S869": {
-    "name": "S869",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S870": {
     "name": "S870",
@@ -6246,12 +6285,14 @@
     "stats": []
   },
   "S872": {
-    "name": "S872",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S873": {
-    "name": "S873",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S874": {
     "name": "S874",
@@ -6262,12 +6303,14 @@
     "stats": []
   },
   "S876": {
-    "name": "S876",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S877": {
-    "name": "S877",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S878": {
     "name": "S878",
@@ -6278,20 +6321,20 @@
     "stats": []
   },
   "S880": {
-    "name": "S880",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S881": {
     "name": "S881",
     "stats": []
   },
   "S882": {
-    "name": "S882",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S883": {
-    "name": "S883",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S884": {
     "name": "S884",
@@ -6310,8 +6353,8 @@
     "stats": []
   },
   "S888": {
-    "name": "S888",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S889": {
     "name": "S889",
@@ -6322,8 +6365,8 @@
     "stats": []
   },
   "S891": {
-    "name": "S891",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S892": {
     "name": "S892",
@@ -6342,8 +6385,10 @@
     "stats": []
   },
   "S896": {
-    "name": "S896",
-    "stats": []
+    "name": "Mana Leech",
+    "stats": [
+	    "10% increased amount of Mana Leeched"
+    ]
   },
   "S897": {
     "name": "S897",
@@ -6370,8 +6415,10 @@
     "stats": []
   },
   "S903": {
-    "name": "S903",
-    "stats": []
+    "name": "Mana Leech",
+    "stats": [
+	    "10% increased amount of Mana Leeched"
+    ]
   },
   "S904": {
     "name": "S904",
@@ -6386,12 +6433,12 @@
     "stats": []
   },
   "S907": {
-    "name": "S907",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S908": {
-    "name": "S908",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S909": {
     "name": "S909",
@@ -6422,8 +6469,10 @@
     "stats": []
   },
   "S916": {
-    "name": "S916",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+	    "10% increased Attack Damage"
+    ]
   },
   "S917": {
     "name": "S917",
@@ -6442,12 +6491,12 @@
     "stats": []
   },
   "S921": {
-    "name": "S921",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S922": {
-    "name": "S922",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S923": {
     "name": "S923",
@@ -6482,8 +6531,8 @@
     "stats": []
   },
   "S931": {
-    "name": "S931",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S932": {
     "name": "S932",
@@ -6514,76 +6563,76 @@
     "stats": []
   },
   "S939": {
-    "name": "S939",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S940": {
-    "name": "S940",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S941": {
-    "name": "S941",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S942": {
-    "name": "S942",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S943": {
-    "name": "S943",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S944": {
-    "name": "S944",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S945": {
-    "name": "S945",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S946": {
-    "name": "S946",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S947": {
-    "name": "S947",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S948": {
-    "name": "S948",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S949": {
-    "name": "S949",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S950": {
-    "name": "S950",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S951": {
-    "name": "S951",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S952": {
-    "name": "S952",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S953": {
-    "name": "S953",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S954": {
-    "name": "S954",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S955": {
-    "name": "S955",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S956": {
-    "name": "S956",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S957": {
     "name": "S957",
@@ -6606,8 +6655,8 @@
     "stats": []
   },
   "S962": {
-    "name": "S962",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S963": {
     "name": "S963",
@@ -6622,8 +6671,8 @@
     "stats": []
   },
   "S966": {
-    "name": "S966",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S967": {
     "name": "S967",
@@ -6662,8 +6711,8 @@
     "stats": []
   },
   "S976": {
-    "name": "S976",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S977": {
     "name": "S977",
@@ -6694,32 +6743,32 @@
     "stats": []
   },
   "S984": {
-    "name": "S984",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S985": {
-    "name": "S985",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S986": {
-    "name": "S986",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S987": {
-    "name": "S987",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S988": {
-    "name": "S988",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S989": {
     "name": "S989",
     "stats": []
   },
   "S990": {
-    "name": "S990",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S991": {
     "name": "S991",
@@ -6738,8 +6787,8 @@
     "stats": []
   },
   "S995": {
-    "name": "S995",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S996": {
     "name": "S996",
@@ -6794,8 +6843,8 @@
     "stats": []
   },
   "S1009": {
-    "name": "S1009",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1010": {
     "name": "S1010",
@@ -6872,16 +6921,16 @@
     "stats": []
   },
   "S1028": {
-    "name": "S1028",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1029": {
     "name": "S1029",
     "stats": []
   },
   "S1030": {
-    "name": "S1030",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1031": {
     "name": "S1031",
@@ -6908,8 +6957,8 @@
     "stats": []
   },
   "S1037": {
-    "name": "S1037",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1038": {
     "name": "S1038",
@@ -7004,8 +7053,8 @@
     "stats": []
   },
   "S1061": {
-    "name": "S1061",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1062": {
     "name": "S1062",
@@ -7016,8 +7065,8 @@
     "stats": []
   },
   "S1064": {
-    "name": "S1064",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1065": {
     "name": "S1065",
@@ -7192,8 +7241,8 @@
     "stats": []
   },
   "S1108": {
-    "name": "S1108",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1109": {
     "name": "S1109",
@@ -7208,8 +7257,8 @@
     "stats": []
   },
   "S1112": {
-    "name": "S1112",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1113": {
     "name": "S1113",
@@ -7269,9 +7318,7 @@
   },
   "S1127": {
     "name": "Attribute",
-    "stats": [
-      "+5 to any Attribute"
-    ]
+    "stats": ["+5 to any Attribute"]
   },
   "S1128": {
     "name": "S1128",
@@ -7290,8 +7337,8 @@
     "stats": ["8% increased Stun Build","8% increased Freeze Buildup"]
   },
   "S1132": {
-    "name": "S1132",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1133": {
     "name": "S1133",
@@ -7330,8 +7377,8 @@
     "stats": []
   },
   "S1142": {
-    "name": "S1142",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1143": {
     "name": "S1143",
@@ -7350,16 +7397,16 @@
     "stats": []
   },
   "S1147": {
-    "name": "S1147",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1148": {
     "name": "Immobilise Buildup",
     "stats": ["8% increased Stun Buildup","8% increased Freeze Buildup"]
   },
   "S1149": {
-    "name": "S1149",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1150": {
     "name": "S1150",
@@ -7370,8 +7417,8 @@
     "stats": []
   },
   "S1152": {
-    "name": "S1152",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1153": {
     "name": "S1153",
@@ -7486,36 +7533,36 @@
     "stats": ["+5 to any Attribute"]
   },
   "S1181": {
-    "name": "S1181",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1182": {
     "name": "S1182",
     "stats": []
   },
   "S1183": {
-    "name": "S1183",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1184": {
-    "name": "S1184",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1185": {
     "name": "S1185",
     "stats": []
   },
   "S1186": {
-    "name": "S1186",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1187": {
     "name": "S1187",
     "stats": []
   },
   "S1188": {
-    "name": "S1188",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1189": {
     "name": "S1189",
@@ -7550,8 +7597,8 @@
     "stats": []
   },
   "S1197": {
-    "name": "S1197",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1198": {
     "name": "S1198",
@@ -7566,8 +7613,8 @@
     "stats": []
   },
   "S1201": {
-    "name": "S1201",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1202": {
     "name": "Attribute",
@@ -7618,8 +7665,8 @@
     "stats": []
   },
   "S1214": {
-    "name": "S1214",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1215": {
     "name": "S1215",
@@ -7674,8 +7721,8 @@
     "stats": []
   },
   "S1228": {
-    "name": "S1228",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1229": {
     "name": "S1229",
@@ -7726,16 +7773,16 @@
     "stats": []
   },
   "S1241": {
-    "name": "S1241",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1242": {
     "name": "S1242",
     "stats": []
   },
   "S1243": {
-    "name": "S1243",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1244": {
     "name": "Attribute",
@@ -7778,16 +7825,16 @@
     "stats": []
   },
   "S1254": {
-    "name": "S1254",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1255": {
-    "name": "S1255",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1256": {
-    "name": "S1256",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1257": {
     "name": "S1257",
@@ -7798,8 +7845,8 @@
     "stats": []
   },
   "S1259": {
-    "name": "S1259",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1260": {
     "name": "S1260",
@@ -7814,8 +7861,8 @@
     "stats": []
   },
   "S1263": {
-    "name": "S1263",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1264": {
     "name": "S1264",
@@ -7854,12 +7901,12 @@
     "stats": []
   },
   "S1273": {
-    "name": "S1273",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1274": {
-    "name": "S1274",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1275": {
     "name": "S1275",
@@ -7946,8 +7993,8 @@
     "stats": []
   },
   "S1296": {
-    "name": "S1296",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1297": {
     "name": "S1297",
@@ -7986,16 +8033,16 @@
     "stats": []
   },
   "S1306": {
-    "name": "S1306",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1307": {
     "name": "S1307",
     "stats": []
   },
   "S1308": {
-    "name": "S1308",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1309": {
     "name": "S1309",
@@ -8058,8 +8105,8 @@
     "stats": []
   },
   "S1324": {
-    "name": "S1324",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1325": {
     "name": "S1325",
@@ -8086,8 +8133,8 @@
     "stats": []
   },
   "S1331": {
-    "name": "S1331",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1332": {
     "name": "S1332",
@@ -8182,8 +8229,8 @@
     "stats": []
   },
   "S1355": {
-    "name": "S1355",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1356": {
     "name": "S1356",
@@ -8194,8 +8241,8 @@
     "stats": []
   },
   "S1358": {
-    "name": "S1358",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1359": {
     "name": "S1359",
@@ -8210,8 +8257,8 @@
     "stats": []
   },
   "S1362": {
-    "name": "S1362",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1363": {
     "name": "S1363",
@@ -8278,8 +8325,8 @@
     "stats": []
   },
   "S1379": {
-    "name": "S1379",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1380": {
     "name": "S1380",
@@ -8294,8 +8341,8 @@
     "stats": []
   },
   "S1383": {
-    "name": "S1383",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1384": {
     "name": "S1384",
@@ -8354,8 +8401,8 @@
     "stats": []
   },
   "S1398": {
-    "name": "S1398",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1399": {
     "name": "S1399",
@@ -8402,12 +8449,12 @@
     "stats": ["+5 to any Attribute"]
   },
   "S1410": {
-    "name": "S1410",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1411": {
-    "name": "S1411",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1412": {
     "name": "S1412",
@@ -8438,8 +8485,8 @@
     "stats": []
   },
   "S1419": {
-    "name": "S1419",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1420": {
     "name": "S1420",
@@ -8590,12 +8637,12 @@
     "stats": []
   },
   "S1457": {
-    "name": "S1457",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1458": {
-    "name": "S1458",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1459": {
     "name": "S1459",
@@ -8654,8 +8701,8 @@
     "stats": []
   },
   "S1473": {
-    "name": "S1473",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1474": {
     "name": "S1474",
@@ -8714,8 +8761,8 @@
     "stats": []
   },
   "S1488": {
-    "name": "S1488",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1489": {
     "name": "S1489",
@@ -8770,8 +8817,8 @@
     "stats": []
   },
   "S1502": {
-    "name": "S1502",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1503": {
     "name": "S1503",
@@ -8806,8 +8853,8 @@
     "stats": []
   },
   "S1511": {
-    "name": "S1511",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1512": {
     "name": "S1512",
@@ -8898,8 +8945,8 @@
     "stats": []
   },
   "S1534": {
-    "name": "S1534",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1535": {
     "name": "S1535",
@@ -8994,8 +9041,8 @@
     "stats": []
   },
   "S1558": {
-    "name": "S1558",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1559": {
     "name": "S1559",
@@ -9018,8 +9065,8 @@
     "stats": []
   },
   "S1564": {
-    "name": "S1564",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1565": {
     "name": "S1565",
@@ -9046,12 +9093,12 @@
     "stats": []
   },
   "S1571": {
-    "name": "S1571",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1572": {
-    "name": "S1572",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1573": {
     "name": "S1573",
@@ -9122,16 +9169,16 @@
     "stats": []
   },
   "S1590": {
-    "name": "S1590",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1591": {
     "name": "S1591",
     "stats": []
   },
   "S1592": {
-    "name": "S1592",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1593": {
     "name": "S1593",
@@ -9242,8 +9289,8 @@
     "stats": []
   },
   "S1620": {
-    "name": "S1620",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1621": {
     "name": "S1621",
@@ -9282,8 +9329,8 @@
     "stats": []
   },
   "S1630": {
-    "name": "S1630",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1631": {
     "name": "S1631",
@@ -9298,8 +9345,8 @@
     "stats": []
   },
   "S1634": {
-    "name": "S1634",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1635": {
     "name": "S1635",
@@ -9354,12 +9401,12 @@
     "stats": []
   },
   "S1648": {
-    "name": "S1648",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1649": {
-    "name": "S1649",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1650": {
     "name": "S1650",
@@ -9486,12 +9533,12 @@
     "stats": []
   },
   "S1681": {
-    "name": "S1681",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1682": {
-    "name": "S1682",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1683": {
     "name": "S1683",
@@ -9518,8 +9565,8 @@
     "stats": []
   },
   "S1689": {
-    "name": "S1689",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1690": {
     "name": "S1690",
@@ -9554,8 +9601,8 @@
     "stats": []
   },
   "S1698": {
-    "name": "S1698",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1699": {
     "name": "S1699",
@@ -9570,8 +9617,8 @@
     "stats": []
   },
   "S1702": {
-    "name": "S1702",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1703": {
     "name": "S1703",
@@ -9590,8 +9637,8 @@
     "stats": []
   },
   "S1707": {
-    "name": "S1707",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1708": {
     "name": "S1708",
@@ -9730,16 +9777,16 @@
     "stats": []
   },
   "S1742": {
-    "name": "S1742",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1743": {
     "name": "Stun Buildup",
     "stats": ["15% increased Stun Buildup"]
   },
   "S1744": {
-    "name": "S1744",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1745": {
     "name": "S1745",
@@ -9758,8 +9805,8 @@
     "stats": []
   },
   "S1749": {
-    "name": "S1749",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1750": {
     "name": "S1750",
@@ -9862,8 +9909,8 @@
     "stats": []
   },
   "S1775": {
-    "name": "S1775",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1776": {
     "name": "S1776",
@@ -9914,8 +9961,8 @@
     "stats": []
   },
   "S1788": {
-    "name": "S1788",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1789": {
     "name": "S1789",
@@ -9974,8 +10021,8 @@
     "stats": []
   },
   "S1803": {
-    "name": "S1803",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1804": {
     "name": "S1804",
@@ -10062,8 +10109,8 @@
     "stats": []
   },
   "S1825": {
-    "name": "S1825",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1826": {
     "name": "S1826",
@@ -10110,12 +10157,12 @@
     "stats": []
   },
   "S1837": {
-    "name": "S1837",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1838": {
-    "name": "S1838",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1839": {
     "name": "S1839",
@@ -10138,8 +10185,8 @@
     "stats": []
   },
   "S1844": {
-    "name": "S1844",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1845": {
     "name": "S1845",
@@ -10182,8 +10229,8 @@
     "stats": []
   },
   "S1855": {
-    "name": "S1855",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1856": {
     "name": "S1856",
@@ -10230,20 +10277,20 @@
     "stats": []
   },
   "S1867": {
-    "name": "S1867",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1868": {
-    "name": "S1868",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1869": {
-    "name": "S1869",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1870": {
-    "name": "S1870",
-    "stats": []
+    "name": "Attribute",
+    "stats": ["+5 to any Attribute"]
   },
   "S1871": {
     "name": "S1871",
