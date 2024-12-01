@@ -6949,8 +6949,8 @@
     "stats": []
   },
   "S1059": {
-    "name": "S1059",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": ["10% increased Projectile Damage"]
   },
   "S1060": {
     "name": "S1060",
@@ -7057,8 +7057,8 @@
     "stats": []
   },
   "S1086": {
-    "name": "S1086",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": ["10% increased Projectile Damage"]
   },
   "S1087": {
     "name": "S1087",
