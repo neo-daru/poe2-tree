@@ -2772,8 +2772,8 @@
 		"stats": []
 	},
 	"S7": {
-		"name": "S7",
-		"stats": []
+		"name": "Cold Damage",
+		"stats": ["12% increased Cold Damage"]
 	},
 	"S8": {
 		"name": "S8",
@@ -2808,8 +2808,8 @@
 		"stats": ["10% increased Effect of Ignite"]
 	},
 	"S16": {
-		"name": "S16",
-		"stats": []
+		"name": "Cold Damage",
+		"stats": ["12% increased Cold Damage"]
 	},
 	"S17": {
 		"name": "Lightning Damage",
@@ -2896,8 +2896,8 @@
 		"stats": ["12% increased Fire Damage"]
 	},
 	"S38": {
-		"name": "S38",
-		"stats": []
+		"name": "Cold Damage",
+		"stats": ["12% increased Cold Damage"]
 	},
 	"S39": {
 		"name": "S39",
