@@ -4296,8 +4296,8 @@
 		"stats": []
 	},
 	"S388": {
-		"name": "S388",
-		"stats": []
+		"name": "Lightning Penetration",
+		"stats": ["Damage Penetrates 6% Lightning Resistance"]
 	},
 	"S389": {
 		"name": "S389",
@@ -4332,8 +4332,8 @@
 		"stats": []
 	},
 	"S397": {
-		"name": "S397",
-		"stats": []
+		"name": "Lightning Penetration",
+		"stats": ["Damage Penetrates 6% Lightning Resistance"]
 	},
 	"S398": {
 		"name": "S398",
@@ -4385,11 +4385,11 @@
 	},
 	"S410": {
 		"name": "Cold Penetration",
-		"stats": ["Damage Penetrates 4% Cold Resistance"]
+		"stats": ["Damage Penetrates 6% Cold Resistance"]
 	},
 	"S411": {
-		"name": "S411",
-		"stats": []
+		"name": "Cold Penetration",
+		"stats": ["Damage Penetrates 6% Cold Resistance"]
 	},
 	"S412": {
 		"name": "Attribute",
@@ -4465,7 +4465,7 @@
 	},
 	"S430": {
 		"name": "Fire Penetration",
-		"stats": ["Damage Penetrates 4% Fire Resistance"]
+		"stats": ["Damage Penetrates 6% Fire Resistance"]
 	},
 	"S431": {
 		"name": "Attribute",
@@ -4496,8 +4496,8 @@
 		"stats": []
 	},
 	"S438": {
-		"name": "S438",
-		"stats": []
+		"name": "Fire Penetration",
+		"stats": ["Damage Penetrates 6% Fire Resistance"]
 	},
 	"S439": {
 		"name": "S439",
