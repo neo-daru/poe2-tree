@@ -420,12 +420,13 @@
 				<b class="underline underline-offset-2">Selected:</b>
 				<div class="flex flex-row justify-between">
 					<button class="px-4 border rounded border-white border-solid" onclick={clearSelectedNodes}
-					>Clear
-					</button
-					>
+						>Clear
+					</button>
 					<span
-					>Selected:
-						{selectedNodes.length} / {Object.entries(nodes).filter(([_, n]) => n.description.length > 0).length}
+						>Selected:
+						{selectedNodes.length} / {Object.entries(nodes).filter(
+							([_, n]) => n.description.length > 0
+						).length}
 					</span>
 				</div>
 				<ul class="block min-h-0 overflow-y-auto">
@@ -518,8 +519,10 @@
 						style="left: {tooltipX}px; top: {tooltipY}px;"
 					>
 						<header class="relative text-2xl bg-red-500 aspect-[999/131]" style="">
-							<img src="/tooltip-header.png" alt="header">
-							<h1 class="whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+							<img src="/tooltip-header.png" alt="header" />
+							<h1
+								class="whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+							>
 								{tooltipNode.name}
 							</h1>
 						</header>
@@ -538,82 +541,82 @@
 			</div>
 		</div>
 	</div>
-			</div>
+</div>
 
 <style lang="postcss">
-          .small,
-          .notable,
-          .keystone {
-              position: absolute;
-              border-radius: 50%;
-              pointer-events: auto;
-          }
+	.small,
+	.notable,
+	.keystone {
+		position: absolute;
+		border-radius: 50%;
+		pointer-events: auto;
+	}
 
-          .notable {
-              background-color: rgba(255, 255, 0, 0.2);
-          }
+	.notable {
+		background-color: rgba(255, 255, 0, 0.2);
+	}
 
-          .notable.unidentified {
-              background-color: rgba(255, 100, 100, 0.2);
-              border-color: rgba(255, 100, 100, 1);
-          }
+	.notable.unidentified {
+		background-color: rgba(255, 100, 100, 0.2);
+		border-color: rgba(255, 100, 100, 1);
+	}
 
-          .keystone {
-              background-color: rgba(100, 255, 100, 0.2);
-          }
+	.keystone {
+		background-color: rgba(100, 255, 100, 0.2);
+	}
 
-          .keystone.unidentified {
-              background-color: rgba(255, 0, 100, 0.2);
-              border-color: rgba(255, 0, 100, 1);
-          }
+	.keystone.unidentified {
+		background-color: rgba(255, 0, 100, 0.2);
+		border-color: rgba(255, 0, 100, 1);
+	}
 
-          .small {
-              background-color: rgba(255, 255, 255, 0.2);
-          }
+	.small {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
 
-          .small.unidentified {
-              background-color: rgba(255, 255, 255, 0.2);
-              border-color: rgba(255, 100, 100, 1);
-          }
+	.small.unidentified {
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 100, 100, 1);
+	}
 
-          .notable.selected {
-              background-color: rgba(255, 255, 0, 0.6);
-          }
+	.notable.selected {
+		background-color: rgba(255, 255, 0, 0.6);
+	}
 
-          .keystone.selected {
-              background-color: rgba(0, 255, 0, 0.6);
-          }
+	.keystone.selected {
+		background-color: rgba(0, 255, 0, 0.6);
+	}
 
-          .small.selected {
-              background-color: rgba(255, 255, 255, 0.6);
-          }
+	.small.selected {
+		background-color: rgba(255, 255, 255, 0.6);
+	}
 
-          .highlighted-keystone {
-              border: 2px solid green;
-          }
+	.highlighted-keystone {
+		border: 2px solid green;
+	}
 
-          .highlighted-notable {
-              border: 1px solid yellow;
-          }
+	.highlighted-notable {
+		border: 1px solid yellow;
+	}
 
-          .highlighted-small {
-              border: 1px solid yellow;
-          }
+	.highlighted-small {
+		border: 1px solid yellow;
+	}
 
-          @keyframes glow {
-              0% {
-                  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-              }
-              50% {
-                  box-shadow: 0 0 15px rgba(255, 0, 0, 1);
-              }
-              100% {
-                  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-              }
-          }
+	@keyframes glow {
+		0% {
+			box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+		}
+		50% {
+			box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+		}
+		100% {
+			box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+		}
+	}
 
-          .search-result {
-              border: 3px solid rgba(255, 0, 0, 0.8);
-              animation: glow 2s infinite;
-          }
-			</style>
+	.search-result {
+		border: 3px solid rgba(255, 0, 0, 0.8);
+		animation: glow 2s infinite;
+	}
+</style>
