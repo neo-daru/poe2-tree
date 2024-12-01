@@ -1023,8 +1023,8 @@
 		]
 	},
 	"N206": {
-		"name": "N206",
-		"stats": []
+		"name": "Raw Destruction",
+		"stats": ["16% increased Spell Damage","Minions deal 16% increased Damage","+10 to Intelligence"]
 	},
 	"N207": {
 		"name": "N207",
@@ -5501,8 +5501,8 @@
     "stats": []
   },
   "S692": {
-    "name": "S692",
-    "stats": []
+    "name": "Spell and Minion Damage",
+    "stats": ["5% increased Spell Damage","Minions deal 5% increased Damage"]
   },
   "S693": {
     "name": "Energy Shield Delay",
@@ -5569,8 +5569,8 @@
     "stats": []
   },
   "S709": {
-    "name": "S709",
-    "stats": []
+    "name": "Spell and Minion Damage",
+    "stats": ["5% increased Spell Damage","Minions deal 5% increased Damage"]
   },
   "S710": {
     "name": "Energy Shield",
@@ -5809,8 +5809,8 @@
     "stats": []
   },
   "S769": {
-    "name": "S769",
-    "stats": []
+    "name": "Spell and Minion Damage",
+    "stats": ["5% increased Spell Damage","Minions deal 5% increased Damage"]
   },
   "S770": {
     "name": "Energy Shield",
@@ -9457,8 +9457,8 @@
     "stats": []
   },
   "S1681": {
-    "name": "S1681",
-    "stats": []
+    "name": "Spell and Minion Damage",
+    "stats": ["5% increased Spell Damage","Minions deal 5% increased Damage"]
   },
   "S1682": {
     "name": "S1682",
