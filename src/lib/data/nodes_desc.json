@@ -1781,8 +1781,8 @@
 		"stats": ["15% increased Stun Buildup"]
 	},
 	"N374": {
-		"name": "N374",
-		"stats": []
+		"name": "Mass Hysteria",
+		"stats": ["Allies in your Presence have 6% increased Attack Speed"]
 	},
 	"N375": {
 		"name": "Unforgiving",
@@ -2385,8 +2385,8 @@
 		"stats": ["25% increased amount of Life Leeched", "Leech Life 25% faster"]
 	},
 	"N504": {
-		"name": "N504",
-		"stats": []
+		"name": "Natural Immunity",
+		"stats": ["+4 to Ailment Threshold per Dexterity"]
 	},
 	"N505": {
 		"name": "Adrenaline Rush",
@@ -2404,8 +2404,8 @@
 		"stats": ["25% reduced Grenade Duration"]
 	},
 	"N508": {
-		"name": "N508",
-		"stats": []
+		"name": "Two-Pronged Attack",
+		"stats": ["Minions deal 25% increased Damage"]
 	},
 	"N509": {
 		"name": "N509",
@@ -7864,8 +7864,8 @@
 		"stats": []
 	},
 	"S1280": {
-		"name": "S1280",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["10% increased Projectile Damage"]
 	},
 	"S1281": {
 		"name": "S1281",
@@ -7996,8 +7996,8 @@
 		"stats": []
 	},
 	"S1313": {
-		"name": "S1313",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["10% increased Projectile Damage"]
 	},
 	"S1314": {
 		"name": "S1314",
@@ -8160,8 +8160,8 @@
 		"stats": []
 	},
 	"S1354": {
-		"name": "S1354",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["10% increased Projectile Damage"]
 	},
 	"S1355": {
 		"name": "Attribute",
@@ -8236,8 +8236,8 @@
 		"stats": []
 	},
 	"S1373": {
-		"name": "S1373",
-		"stats": []
+		"name": "Life Leech",
+		"stats": ["10% increased amount of Life Leeched]
 	},
 	"S1374": {
 		"name": "S1374",
@@ -8656,8 +8656,8 @@
 		"stats": []
 	},
 	"S1478": {
-		"name": "S1478",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1479": {
 		"name": "S1479",
@@ -8716,8 +8716,8 @@
 		"stats": []
 	},
 	"S1493": {
-		"name": "S1493",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1494": {
 		"name": "S1494",
@@ -8756,8 +8756,8 @@
 		"stats": ["+5 to any Attribute"]
 	},
 	"S1503": {
-		"name": "S1503",
-		"stats": []
+		"name": "Two Handed Damage",
+		"stats": ["12% increased Damage with Two Handed Weapons"]
 	},
 	"S1504": {
 		"name": "S1504",
@@ -9012,8 +9012,8 @@
 		"stats": []
 	},
 	"S1567": {
-		"name": "S1567",
-		"stats": []
+		"name": "Grenade Area",
+		"stats": ["12% increased Grenade Area of Effect"]
 	},
 	"S1568": {
 		"name": "Attribute",
@@ -9148,8 +9148,8 @@
 		"stats": []
 	},
 	"S1601": {
-		"name": "S1601",
-		"stats": []
+		"name": "Grenade Area",
+		"stats": ["12% increased Grenade Area of Effect"]
 	},
 	"S1602": {
 		"name": "S1602",
