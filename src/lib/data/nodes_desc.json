@@ -11783,9 +11783,23 @@
     ]
   },
   "AN21": {
-    "name": "AN21",
+    "name": "Tempest Caller",
     "stats": [
-      "Stormweaver notable"
+      "Grants Skill: Elemental Storm",
+      "Trigger Elemental Storm on Critical Hit with Spells"
+    ]
+  },
+  "AN22": {
+    "name": "Strike Twice",
+    "stats": [
+      "Targets can be affected by two of your Shocks at the same time",
+      "50% less Shock Duration"
+    ]
+  },
+  "AN23": {
+    "name": "Shaper of Storms",
+    "stats": [
+      "All Damage from Hits Contributes to Shock Chance"
     ]
   },
   "AS31": {
@@ -11795,9 +11809,21 @@
     ]
   },
   "AN31": {
-    "name": "AN31",
+    "name": "Footprints in the Sand",
     "stats": [
-      "Chronomancer notable"
+      "Grants Skill: Temporal Rift"
+    ]
+  },
+  "AN32": {
+    "name": "Ultimate Command",
+    "stats": [
+      "Grants Skill: Time Freeze"
+    ]
+  },
+  "AN33": {
+    "name": "Unbound Encore",
+    "stats": [
+      "Grants Skill: Time Snap"
     ]
   },
   "AS41": {
