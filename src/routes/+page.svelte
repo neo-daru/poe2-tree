@@ -6,9 +6,6 @@
 	import { Header } from '$lib/components/ui/header';
 	import { TreeNodeTooltip } from '$lib/components/ui/tree-node-tooltip/index.js';
 
-	let sidebarVisable = true;
-	let smallScreen = false;
-
 	let { nodes } = loadData();
 
 	let containerEl: HTMLDivElement | null = null;
@@ -42,6 +39,9 @@
 
 	// State for selected nodes
 	let selectedNodes: string[] = [];
+
+	// State for sidebar menu show/hide toggle
+	let sidebarVisable = true;
 
 	// Load saved selected nodes from localStorage on component initialization
 	if (browser) {
@@ -354,8 +354,7 @@
 	// Add event listeners for global mouse events to handle panning
 	onMount(() => {
 		const checkScreenSize = () => {
-			smallScreen = window.innerWidth <= 768;
-			if (smallScreen) {
+			if (window.innerWidth <= 768) {
 				sidebarVisable = false;
 			} else {
 				sidebarVisable = true;
@@ -405,18 +404,20 @@
 <div class="grid grid-cols-1 grid-rows-[auto_1fr] h-dvh">
 	<Header />
 	<!-- Tree -->
-	<div class={`grid grid-rows-1 ${sidebarVisable ? 'grid-cols-[20rem_1fr]' : 'grid-cols-1'} min-h-0`}>
+	<div
+		class={`grid grid-rows-1 ${sidebarVisable ? 'grid-cols-[20rem_1fr]' : 'grid-cols-1'} min-h-0`}
+	>
 		<!-- Left Sidebar -->
-		<aside class={`h-full grid grid-cols-1  ${sidebarVisable ? 'bg-[#111]' : 'absolute'} grid-rows-[auto_1fr_1fr] gap-2 p-2  min-h-0`}>
+		<aside
+			class={`h-full grid grid-cols-1  ${sidebarVisable ? 'bg-[#111]' : 'absolute grid-rows-[auto_1fr_1fr]'}  gap-2 p-2  min-h-0`}
+		>
 			<!-- Toggle Button for Aside -->
-			{#if smallScreen}
-				<button
-					class="z-10 p-2 flex bg-[#333] text-white rounded-md hover:bg-[#444]"
-					onclick={toggleSidebar}
-				>
-					<h2 class="-mt-1 text-2xl">{sidebarVisable ? '<' : '>'}</h2>
-				</button>
-			{/if}
+			<button
+				class="flex md:hidden z-10 p-2 bg-[#333] text-white rounded-md hover:bg-[#444]"
+				onclick={toggleSidebar}
+			>
+				<h2 class="-mt-1 text-2xl">{sidebarVisable ? '<' : '>'}</h2>
+			</button>
 			{#if sidebarVisable}
 				<!-- Toggleable -->
 				<div class="space-y-4">
