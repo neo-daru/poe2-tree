@@ -85,6 +85,7 @@
 		return !hideUnidentified || node.description.length > 0;
 	}
 
+	//TODO: move ascandency filter logic to loadData and fix reloading ascendancies on change
 	function filterAscendancyNodes(node: TreeNode) {
 		return !node.class || (node.class === selectedAscendancy)
 	}
