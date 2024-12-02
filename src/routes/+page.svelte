@@ -409,7 +409,7 @@
 	>
 		<!-- Left Sidebar -->
 		<aside
-			class={`h-full grid grid-cols-1  ${sidebarVisable ? 'bg-[#111]' : 'absolute grid-rows-[auto_1fr_1fr]'}  gap-2 p-2  min-h-0`}
+			class={`h-full grid grid-cols-1  ${sidebarVisable ? 'bg-[#111]' : 'absolute'} grid-rows-[auto_auto_auto_1fr] gap-2 p-2  min-h-0`}
 		>
 			<!-- Toggle Button for Aside -->
 			<button
