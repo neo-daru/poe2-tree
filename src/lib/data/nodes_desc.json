@@ -6280,9 +6280,10 @@
     ]
   },
   "S686": {
-    "name": "Mana Regeneration",
+    "name": "Mana Regeneration/Minion Life",
     "stats": [
-      "10% increased Mana Regeneration Rate"
+      "10% increased Mana Regeneration Rate (Sorceress)",
+      "Minions have 10% increased maximum Life (Witch)"
     ]
   },
   "S687": {
@@ -6308,9 +6309,11 @@
     ]
   },
   "S692": {
-    "name": "Spell Damage",
+    "name": "Spell Damage/Spell and Minion Damage",
     "stats": [
-      "8% increased Spell Damage"
+      "8% increased Spell Damage (Sorceress)",
+      "5% increased Spell Damage (Witch)",
+      "Minions deal 5% increased Damage (Witch)"
     ]
   },
   "S693": {
@@ -6390,9 +6393,11 @@
     ]
   },
   "S709": {
-    "name": "Spell Damage",
+    "name": "Spell Damage/Spell and Minion Damage",
     "stats": [
-      "10% increased Spell Damage"
+      "8% increased Spell Damage (Sorceress)",
+      "5% increased Spell Damage (Witch)",
+      "Minions deal 5% increased Damage (Witch)"
     ]
   },
   "S710": {
@@ -6656,8 +6661,12 @@
     "stats": []
   },
   "S769": {
-    "name": "S769",
-    "stats": []
+    "name": "Spell Damage/Spell and Minion Damage",
+    "stats": [
+      "8% increased Spell Damage (Sorceress)",
+      "5% increased Spell Damage (Witch)",
+      "Minions deal 5% increased Damage (Witch)"
+    ]
   },
   "S770": {
     "name": "Energy Shield",

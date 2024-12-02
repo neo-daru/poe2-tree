@@ -246,6 +246,7 @@
 		searchResults = Object.entries(nodes)
 			.filter(
 				([_, values]) =>
+					values.id.includes(search) ||
 					values.name.toLowerCase().includes(search) ||
 					values.description.some((value) => value.toLowerCase().includes(search))
 			)
