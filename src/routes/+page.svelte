@@ -41,6 +41,9 @@
 	// State for selected nodes
 	let selectedNodes: string[] = [];
 
+	// State for sidebar menu show/hide toggle
+	let sidebarVisable = true;
+
 	// Load saved selected nodes from localStorage on component initialization
 	if (browser) {
 		const savedSelectedNodes = localStorage.getItem('selectedSkillNodes');
@@ -230,6 +233,64 @@
 		}
 	}
 
+	let startX = 0;
+	let startY = 0;
+	let isZooming = false;
+	let lastDistance = 0;
+	function handleTouchStart(event: TouchEvent) {
+		if (event.touches.length === 1) {
+			isPanning = true;
+			startX = event.touches[0].clientX - panOffsetX;
+			startY = event.touches[0].clientY - panOffsetY;
+		} else if (event.touches.length === 2) {
+			isZooming = true;
+		}
+	}
+
+	function handleTouchEnd(event: TouchEvent) {
+		if (event.touches.length === 0) {
+			isPanning = false;
+			isZooming = false;
+			lastDistance = 0;
+		}
+	}
+
+	function handleTouchMove(event: TouchEvent) {
+		event.preventDefault();
+		if (!isPanning) return;
+		if (!isZooming && event.touches.length === 1) {
+			panOffsetX = event.touches[0].clientX - startX;
+			panOffsetY = event.touches[0].clientY - startY;
+			clampPanOffsets();
+		}
+		if (isZooming && event.touches.length === 2) {
+			const zoomIntensity = 0.1;
+			const oldScale = scale;
+			const distance = Math.hypot(
+				event.touches[0].clientX - event.touches[1].clientX,
+				event.touches[0].clientY - event.touches[1].clientY
+			);
+			const direction = lastDistance < distance ? 1 : -1;
+			lastDistance = distance;
+			scale += direction * zoomIntensity * scale;
+			scale = Math.max(minScale, Math.min(maxScale, scale));
+
+			if (containerEl && imageEl) {
+				const rect = containerEl.getBoundingClientRect();
+				const mouseX = event.touches[0].clientX - rect.left;
+				const mouseY = event.touches[0].clientY - rect.top;
+
+				const nodeX = (mouseX - panOffsetX) / oldScale;
+				const nodeY = (mouseY - panOffsetY) / oldScale;
+
+				panOffsetX = mouseX - nodeX * scale;
+				panOffsetY = mouseY - nodeY * scale;
+
+				clampPanOffsets();
+			}
+		}
+	}
+
 	function handleImageLoad() {
 		hasLoaded = true;
 
@@ -295,8 +356,20 @@
 		}
 	}
 
+	function toggleSidebar() {
+		sidebarVisable = !sidebarVisable;
+	}
+
 	// Add event listeners for global mouse events to handle panning
 	onMount(() => {
+		const checkScreenSize = () => {
+			if (window.innerWidth <= 768) {
+				sidebarVisable = false;
+			} else {
+				sidebarVisable = true;
+			}
+		};
+
 		const handleMove = (event: MouseEvent) => {
 			if (isPanning) {
 				handleMouseMove(event);
@@ -311,10 +384,27 @@
 
 		window.addEventListener('mousemove', handleMove);
 		window.addEventListener('mouseup', handleUp);
+		if (imageWrapperEl) {
+			imageWrapperEl.addEventListener('touchmove', handleTouchMove);
+			imageWrapperEl.addEventListener('touchstart', handleTouchStart);
+			imageWrapperEl.addEventListener('touchend', handleTouchEnd);
+			imageWrapperEl.addEventListener('touchcancel', handleTouchEnd);
+		}
+
+		checkScreenSize();
+		window.addEventListener('resize', checkScreenSize);
 
 		return () => {
 			window.removeEventListener('mousemove', handleMove);
 			window.removeEventListener('mouseup', handleUp);
+
+			if (imageWrapperEl) {
+				imageWrapperEl.removeEventListener('touchmove', handleTouchMove);
+				imageWrapperEl.removeEventListener('touchstart', handleTouchStart);
+				imageWrapperEl.removeEventListener('touchend', handleTouchEnd);
+				imageWrapperEl.removeEventListener('touchcancel', handleTouchEnd);
+			}
+			window.removeEventListener('resize', checkScreenSize);
 		};
 	});
 </script>
@@ -323,12 +413,24 @@
 <div class="grid grid-cols-1 grid-rows-[auto_1fr] h-dvh">
 	<Header />
 	<!-- Tree -->
-	<div class="grid grid-rows-1 grid-cols-[20rem_1fr] min-h-0">
+	<div
+		class={`grid grid-rows-1 ${sidebarVisable ? 'grid-cols-[20rem_1fr]' : 'grid-cols-1'} min-h-0`}
+	>
 		<!-- Left Sidebar -->
-		<aside class="h-full grid grid-cols-1 grid-rows-[auto_1fr_1fr] gap-2 p-2 bg-[#111] min-h-0">
-			<!-- Toggleable -->
-			<div class="space-y-4">
-				<div>
+		<aside
+			class={`h-full grid grid-cols-1  ${sidebarVisable ? 'bg-[#111]' : 'absolute'} grid-rows-[auto_auto_auto_1fr] gap-2 p-2  min-h-0`}
+		>
+			<!-- Toggle Button for Aside -->
+			<button
+				class="flex md:hidden z-10 p-2 bg-[#333] text-white rounded-md hover:bg-[#444]"
+				onclick={toggleSidebar}
+			>
+				<h2 class="-mt-1 text-2xl">{sidebarVisable ? '<' : '>'}</h2>
+			</button>
+			{#if sidebarVisable}
+				<!-- Toggleable -->
+				<div class="space-y-4">
+					<div>
 					<b class="block underline underline-offset-2">Ascendancy:</b>
 					<div class="flex flex-row flex-wrap text-black">
 						<select class="w-full px-1 h-6" name="ascendancies" id="asc-select" bind:value={selectedAscendancy}>
@@ -348,80 +450,52 @@
 					</div>
 				</div>
 				<div>
-					<b class="block underline underline-offset-2">Highlight:</b>
-					<div class="flex flex-row gap-2 flex-wrap">
-						<label class="whitespace-nowrap">
-							<input type="checkbox" bind:checked={highlightKeystones} />
-							<span>Keystones</span>
-						</label>
-						<label class="whitespace-nowrap">
-							<input type="checkbox" bind:checked={highlightNotables} />
-							<span>Notables</span>
-						</label>
-						<label class="whitespace-nowrap">
-							<input type="checkbox" bind:checked={highlightSmalls} />
-							<span>Smalls</span>
-						</label>
+						<b class="block underline underline-offset-2">Highlight:</b>
+						<div class="flex flex-row gap-2 flex-wrap">
+							<label class="whitespace-nowrap">
+								<input type="checkbox" bind:checked={highlightKeystones} />
+								<span>Keystones</span>
+							</label>
+							<label class="whitespace-nowrap">
+								<input type="checkbox" bind:checked={highlightNotables} />
+								<span>Notables</span>
+							</label>
+							<label class="whitespace-nowrap">
+								<input type="checkbox" bind:checked={highlightSmalls} />
+								<span>Smalls</span>
+							</label>
+						</div>
+					</div>
+					<div>
+						<b class="block underline underline-offset-2">Hide:</b>
+						<div class="flex flex-row gap-2 flex-wrap">
+							<label class="whitespace-nowrap">
+								<input type="checkbox" bind:checked={hideUnidentified} />
+								<span>Unidentified</span>
+							</label>
+							<label class="whitespace-nowrap">
+								<input type="checkbox" bind:checked={hideUnselected} />
+								<span>Unselected</span>
+							</label>
+							<label class="whitespace-nowrap">
+								<input type="checkbox" bind:checked={hideSmall} />
+								<span>Smalls</span>
+							</label>
+						</div>
 					</div>
 				</div>
-				<div>
-					<b class="block underline underline-offset-2">Hide:</b>
-					<div class="flex flex-row gap-2 flex-wrap">
-						<label class="whitespace-nowrap">
-							<input type="checkbox" bind:checked={hideUnidentified} />
-							<span>Unidentified</span>
-						</label>
-						<label class="whitespace-nowrap">
-							<input type="checkbox" bind:checked={hideUnselected} />
-							<span>Unselected</span>
-						</label>
-						<label class="whitespace-nowrap">
-							<input type="checkbox" bind:checked={hideSmall} />
-							<span>Smalls</span>
-						</label>
-					</div>
-				</div>
-			</div>
-			<!-- Search -->
-			<div class="min-h-0 grid grid-cols-1 grid-rows-[auto_auto_auto_1fr]">
-				<b class="block underline underline-offset-2">Search:</b>
-				<input
-					class="block rounded px-2 text-black"
-					type="text"
-					placeholder="Search..."
-					bind:value={searchTerm}
-				/>
-				<span>Found: {searchResults.length}</span>
-				<ul class="block min-h-0 overflow-y-auto">
-					{#each searchResults as nodeId}
-						<li>
-							<strong>{nodes[nodeId].name}</strong>
-							<ul>
-								{#each nodes[nodeId].description as description}
-									<li class="text-sm text-[#7d7aad]">{description}</li>
-								{/each}
-							</ul>
-						</li>
-					{/each}
-				</ul>
-			</div>
-			<!-- Selected -->
-			<div class="min-h-0 grid grid-cols-1 grid-rows-[auto_auto_auto_1fr]">
-				<b class="underline underline-offset-2">Selected:</b>
-				<div class="flex flex-row justify-between">
-					<button class="px-4 border rounded border-white border-solid" onclick={clearSelectedNodes}
-						>Clear
-					</button>
-					<span
-						>Selected:
-						{selectedNodes.length} / {Object.entries(nodes).filter(
-							([_, n]) => n.description.length > 0
-						).length}
-					</span>
-				</div>
-				<ul class="block min-h-0 overflow-y-auto">
-					{#each selectedNodes as nodeId}
-						{#if !nodeId.startsWith('S')}
+				<!-- Search -->
+				<div class="min-h-0 grid grid-cols-1 grid-rows-[auto_auto_auto_1fr]">
+					<b class="block underline underline-offset-2">Search:</b>
+					<input
+						class="block rounded px-2 text-black"
+						type="text"
+						placeholder="Search..."
+						bind:value={searchTerm}
+					/>
+					<span>Found: {searchResults.length}</span>
+					<ul class="block min-h-0 overflow-y-auto">
+						{#each searchResults as nodeId}
 							<li>
 								<strong>{nodes[nodeId].name}</strong>
 								<ul>
@@ -430,10 +504,41 @@
 									{/each}
 								</ul>
 							</li>
-						{/if}
-					{/each}
-				</ul>
-			</div>
+						{/each}
+					</ul>
+				</div>
+				<!-- Selected -->
+				<div class="min-h-0 grid grid-cols-1 grid-rows-[auto_auto_auto_1fr]">
+					<b class="underline underline-offset-2">Selected:</b>
+					<div class="flex flex-row justify-between">
+						<button
+							class="px-4 border rounded border-white border-solid"
+							onclick={clearSelectedNodes}
+							>Clear
+						</button>
+						<span
+							>Selected:
+							{selectedNodes.length} / {Object.entries(nodes).filter(
+								([_, n]) => n.description.length > 0
+							).length}
+						</span>
+					</div>
+					<ul class="block min-h-0 overflow-y-auto">
+						{#each selectedNodes as nodeId}
+							{#if !nodeId.startsWith('S')}
+								<li>
+									<strong>{nodes[nodeId].name}</strong>
+									<ul>
+										{#each nodes[nodeId].description as description}
+											<li class="text-sm text-[#7d7aad]">{description}</li>
+										{/each}
+									</ul>
+								</li>
+							{/if}
+						{/each}
+					</ul>
+				</div>
+			{/if}
 		</aside>
 		<!-- Tree View -->
 		<div class="bg-black">
