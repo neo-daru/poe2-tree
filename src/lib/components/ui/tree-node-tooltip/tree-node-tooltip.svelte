@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { TreeNode } from '$lib';
+	import { base } from '$app/paths';
 
 	let {
 		node
@@ -8,11 +9,9 @@
 	} = $props();
 </script>
 
-<div
-	class="flex flex-col bg-black z-[1000] rounded-xl opacity-90 shadow-2xl"
->
+<div class="flex flex-col bg-black z-[1000] rounded-xl opacity-90 shadow-2xl">
 	<header class="relative text-2xl aspect-[999/131] rounded-xl" style="">
-		<img src="/tooltip-header.png" alt="header" />
+		<img src="{base}/tooltip-header.png" alt="header" />
 		<h1 class="whitespace-nowrap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 			{node.name}
 		</h1>
