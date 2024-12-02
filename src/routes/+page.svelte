@@ -10,6 +10,7 @@
 
 	let containerEl: HTMLDivElement | null = null;
 	let imageEl: HTMLImageElement | null = null;
+	let ascImageEl: HTMLImageElement | null = null;
 	let imageWrapperEl: HTMLDivElement | null = null; // Reference to the image wrapper
 	let tooltipEl: HTMLDivElement | null = null; // Reference to the tooltip element
 	let hasLoaded = false;
@@ -61,6 +62,9 @@
 		localStorage.setItem('selectedSkillNodes', JSON.stringify(selectedNodes));
 	}
 
+	// Ascendancy selection
+	let selectedAscendancy = "bloodmage"
+
 	// State for filters
 	let highlightKeystones = false;
 	let highlightNotables = false;
@@ -85,7 +89,12 @@
 		return !hideUnidentified || node.description.length > 0;
 	}
 
-	const filterFns = [filterSmallNodes, filterUnselectedNodes, filterUnidentifiedNodes];
+	//TODO: move ascandency filter logic to loadData and fix reloading ascendancies on change
+	function filterAscendancyNodes(node: TreeNode) {
+		return !node.class || (node.class === selectedAscendancy)
+	}
+
+	const filterFns = [filterSmallNodes, filterUnselectedNodes, filterUnidentifiedNodes, filterAscendancyNodes];
 
 	// filter nodes using active filters
 	function filterNodes(node: TreeNode) {
@@ -422,6 +431,25 @@
 				<!-- Toggleable -->
 				<div class="space-y-4">
 					<div>
+					<b class="block underline underline-offset-2">Ascendancy:</b>
+					<div class="flex flex-row flex-wrap text-black">
+						<select class="w-full px-1 h-6" name="ascendancies" id="asc-select" bind:value={selectedAscendancy}>
+							<option value="bloodmage" selected>Witch - Bloodmage</option>
+							<option value="infernalist">With - Infernalist</option>
+							<option value="stormweaver">Sorc - Stormweaver</option>
+							<option value="chronomancer">Sorc - Chronomancer</option>
+							<option value="invoker">Monk - Invoker</option>
+							<option value="acolyte">Monk - Acolyte of Chayula</option>
+							<option value="titan">Warrior - Titan</option>
+							<option value="warbringer">Warrior - Warbringer</option>
+							<option value="deadeye" >Ranger - Deadeye</option>
+							<option value="pathfinder">Ranger - Pathfinder</option>
+							<option value="witchhunter">Mercenary - Witchhunter</option>
+							<option value="legionnaire">Mercenary - Gem. Legionnaire</option>
+						</select>
+					</div>
+				</div>
+				<div>
 						<b class="block underline underline-offset-2">Highlight:</b>
 						<div class="flex flex-row gap-2 flex-wrap">
 							<label class="whitespace-nowrap">
@@ -548,6 +576,22 @@
 			  "
 					/>
 
+					<img
+						class="pointer-events-none absolute"
+						bind:this={ascImageEl}
+						src="{base}/ascendancies/{selectedAscendancy}.png"
+						alt="Interactive"
+						draggable="false"
+						style="
+				  width: {320 * scale + 'px'};
+				  top: 50%;
+				  left: 50%;
+				  margin-top: -{(320 * scale * 0.460) + 'px'};
+				  margin-left: -{(320 * scale * 0.487)+ 'px'};
+				  height: {320 * scale + 'px'};
+			  "
+					/>
+
 					<!-- Display hoverable regions with lighter color -->
 					{#if hasLoaded}
 						{#each Object.values(nodes).filter(filterNodes) as node}
@@ -557,6 +601,7 @@
 								class:keystone={node.type === 'keystone'}
 								class:notable={node.type === 'notable'}
 								class:small={node.type === 'small'}
+								class:ascendancy={node.id.startsWith('A')}
 								class:unidentified={node.description.length === 0}
 								class:search-result={searchResults.includes(node.id)}
 								class:selected={selectedNodes.includes(node.id)}
@@ -595,8 +640,11 @@
 </div>
 
 <style lang="postcss">
+
 	.small,
 	.notable,
+
+	.ascendancy,
 	.keystone {
 		position: absolute;
 		border-radius: 50%;
@@ -607,7 +655,7 @@
 		background-color: rgba(255, 255, 0, 0.2);
 	}
 
-	.notable.unidentified {
+	.notable.unidentified, .ascendancy.unidentified {
 		background-color: rgba(255, 100, 100, 0.2);
 		border-color: rgba(255, 100, 100, 1);
 	}
