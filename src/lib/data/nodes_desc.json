@@ -11866,13 +11866,9 @@
     ]
   },
   "AN54": {
-    "name": "Embrace the Darkness",
+    "name": "Waking Dream",
     "stats": [
-      "Removes all Spirit",
-      "Base Maximum Darkness is 100",
-      "For each Life or Energy Shield lost to Damage, reserve 1 Darkness instead if possible",
-      "Darkness Reservation lasts for 10 seconds",
-      "+5 to Maximum Darkness per Level"
+      "Grants Skill: Into the Breach"
     ]
   },
   "AN55": {
