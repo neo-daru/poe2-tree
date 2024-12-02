@@ -6,12 +6,12 @@
 	<div>
 		<h1 class="text-3xl">PoE2 Skill Tree Preview</h1>
 	</div>
-	
+
 	<!-- GitHub -->
 	<nav class="flex flex-row items-center gap-4">
-		<div class="hidden md:flex flex-col items-center ">
+		<div class="hidden md:flex flex-col items-center">
 			<p>Check out the Github repository</p>
-			<p > to see how to contribute to this project</p>
+			<p>to see how to contribute to this project</p>
 		</div>
 		<a href="https://github.com/marcoaaguiar/poe2-tree" target="_blank" rel="noopener noreferrer">
 			<!-- GitHub SVG Icon -->
