@@ -1,1287 +1,1436 @@
 {
-	"K1": {
-		"name": "Whispers of Doom",
-		"stats": ["You can apply an additional Curse", "Double Activation Delay of Curses"]
-	},
-	"K2": {
-		"name": "Necromantic Talisman",
-		"stats": ["All bonuses from an Equipped Amulet apply to your Minions instead of you"]
-	},
-	"K3": {
-		"name": "Eldritch Battery",
-		"stats": ["Converts all Energy Shield to Mana", "Confirmed to not be this in EA"]
-	},
-	"K4": {
-		"name": "Chaos Inoculation",
-		"stats": ["Maximum Life becomes 1, Immune to Chaos Damage"]
-	},
-	"K5": {
-		"name": "Conduit",
-		"stats": ["If you would gain a Charge, Allies in your Presence gain that Charge instead"]
-	},
-	"K6": {
-		"name": "Ancestral Bond",
-		"stats": ["Unlimited number of Summoned Totems", "Totems reserve 100 Spirit each"]
-	},
-	"K7": {
-		"name": "Mind Over Matter",
-		"stats": ["All Damage is taken from Mana before Life", "50% less Mana Recovery Rate"]
-	},
-	"K8": {
-		"name": "Zealot's Oath",
-		"stats": [
-			"Excess Life Recovery from Regeneration is applied to Energy Shield",
-			"Energy Shield does not Recharge"
-		]
-	},
-	"K9": {
-		"name": "Resonance",
-		"stats": [
-			"Gain Power Charges instead of Frenzy Charges",
-			"Gain Frenzy Charges instead of Endurance Charges",
-			"Gain Endurance Charges instead of Power Charges"
-		]
-	},
-	"K10": {
-		"name": "Eternal Youth",
-		"stats": [
-			"Life Recharges instead of Energy Shield",
-			"Life Recovery from Flasks applies to Energy Shield instead"
-		]
-	},
-	"K11": {
-		"name": "Pain Attunement",
-		"stats": [
-			"30% less Critical Damage Bonus when on Full Life",
-			"30% more Critical Damage Bonus when on Low Life"
-		]
-	},
-	"K12": {
-		"name": "Heartstopper",
-		"stats": [
-			"Take 75% less Damage over Time if you've started taking Damage over Time in the past second",
-			"Take 50% more Damage over Time if you've haven't started taking Damage over Time in the past second"
-		]
-	},
-	"K13": {
-		"name": "Bloodmagic",
-		"stats": ["Removes all Mana", "Skills Cost Life instead of Mana"]
-	},
-	"K14": {
-		"name": "Acrobatics",
-		"stats": ["Can Evade all Hits", "50% less Evasion Rating"]
-	},
-	"K15": {
-		"name": "Resolute Technique",
-		"stats": ["Your Hits can´t be Evaded", "Never deal Critical Hits"]
-	},
-	"K16": {
-		"name": "Avatar of Fire",
-		"stats": ["75% of Damage Converted to Fire Damage", "Deal no Non-Fire Damage"]
-	},
-	"K17": {
-		"name": "Oasis",
-		"stats": ["Cannot use Charms", "30% more Recovery from Flasks"]
-	},
-	"K18": {
-		"name": "Elemental Equilibrium",
-		"stats": [
-			"Hits that deal Fire Damage remove Fire Exposure and inflict Lightning Exposure",
-			"Hits that deal Cold Damage remove Cold Exposure and inflict Fire Exposure",
-			"Hits that deal Lightning Damage remove Lightning Exposure and inflict Cold Exposure"
-		]
-	},
-	"K19": {
-		"name": "Unwavering Stance",
-		"stats": ["Your Stun Threshold is doubled", "Cannot Dodge Roll"]
-	},
-	"K20": {
-		"name": "Giant's Blood",
-		"stats": [
-			"You Can wield Two-Handed Axes, Maces and Swords in one hand",
-			"Double Attribute requirements of weapons"
-		]
-	},
-	"K21": {
-		"name": "Glancing Blows",
-		"stats": ["Block Chance is doubled", "You take 50% of Damage from Blocked Hits"]
-	},
-	"K22": {
-		"name": "Vaal Pact",
-		"stats": ["Life Leech is Instant", "Cannot use Life Flasks"]
-	},
-	"K23": {
-		"name": "Iron Reflexes",
-		"stats": ["Converts all Evasion Rating to Armour"]
-	},
-	"K24": {
-		"name": "Bulwark",
-		"stats": [
-			"Dodge Roll cannot Avoid Damage",
-			"Take 30% less Damage from Hits while Dodge Rolling"
-		]
-	},
-	"N1": {
-		"name": "Pure Power",
-		"stats": ["2% increased Lightning Damage per 10 Intelligence"]
-	},
-	"N2": {
-		"name": "N2",
-		"stats": []
-	},
-	"N3": {
-		"name": "Lord of Horrors",
-		"stats": ["Minions have 12% reduced Reservation"]
-	},
-	"N4": {
-		"name": "N4",
-		"stats": []
-	},
-	"N5": {
-		"name": "Endless Blizzard",
-		"stats": ["+1 to Level of all Cold Skills"]
-	},
-	"N6": {
-		"name": "N6",
-		"stats": []
-	},
-	"N7": {
-		"name": "Burnout",
-		"stats": [
-			"Ignites you inflict deal Damage 15% faster"]
-	},
-	"N8": {
-		"name": "N8",
-		"stats": []
-	},
-	"N9": {
-		"name": "N9",
-		"stats": []
-	},
-	"N10": {
-		"name": "N10",
-		"stats": []
-	},
-	"N11": {
-		"name": "N11",
-		"stats": []
-	},
-	"N12": {
-		"name": "Patient Barrier",
-		"stats": ["60% increased maximum Energy Shield", "20% slower start of Energy Shield Recharge"]
-	},
-	"N13": {
-		"name": "Electric Amplification",
-		"stats": [
-			"Damage Penetrates 18% Lightning Resistance",
-			"25% increased Lightning Exposure Effect"]
-	},
-	"N14": {
-		"name": "N14",
-		"stats": []
-	},
-	"N15": {
-		"name": "Enhanced Barrier",
-		"stats": ["25% increased maximum Energy Shield", "+1% to all maximum Elemental Resistances"]
-	},
-	"N16": {
-		"name": "N16",
-		"stats": []
-	},
-	"N17": {
-		"name": "Right Hand of Darkness",
-		"stats": [
-			"Minions have 20% increased Area of Effect",
-			"Minions have 10% chance to inflict Withered on Hit"
-		]
-	},
-	"N18": {
-		"name": "Left Hand of Darkness",
-		"stats": [
-			"Minions have 20% additional Physical Damage Reduction",
-			"Minions have +23% to Chaos Resistance"
-		]
-	},
-	"N19": {
-		"name": "N19",
-		"stats": []
-	},
-	"N20": {
-		"name": "N20",
-		"stats": []
-	},
-	"N21": {
-		"name": "Arcane Intensity",
-		"stats": ["3% increased Spell Damage per 100 maximum Mana"]
-	},
-	"N22": {
-		"name": "Refocus",
-		"stats": [
-			"30% increased Energy Shield Recharge Rate",
-			"10% chance for Energy Shield Recharge to start when you use a Skill"
-		]
-	},
-	"N23": {
-		"name": "N23",
-		"stats": []
-	},
-	"N24": {
-		"name": "Energise",
-		"stats": ["35% chance for Trigger skills to refund half of Energy Spent"]
-	},
-	"N25": {
-		"name": "Eldritch Will",
-		"stats": [
-			"3% increased maximum Life, Mana and Energy Shield",
-			"Gain 20% of maximum Energy Shield as additional Stun Threshold"
-		]
-	},
-	"N26": {
-		"name": "Raw Mana",
-		"stats": ["18% increased maximum Mana", "10% increased Mana Cost of Skills"]
-	},
-	"N27": {
-		"name": "N27",
-		"stats": []
-	},
-	"N28": {
-		"name": "N28",
-		"stats": []
-	},
-	"N29": {
-		"name": "N29",
-		"stats": []
-	},
-	"N30": {
-		"name": "N30",
-		"stats": []
-	},
-	"N31": {
-		"name": "N31",
-		"stats": []
-	},
-	"N32": {
-		"name": "Convalescence",
-		"stats": [
-			"15% reduced Energy Shield Recharge Rate",
-			"40% faster start of Energy Shield Recharge"
-		]
-	},
-	"N33": {
-		"name": "N33",
-		"stats": []
-	},
-	"N34": {
-		"name": "N34",
-		"stats": []
-	},
-	"N35": {
-		"name": "N35",
-		"stats": []
-	},
-	"N36": {
-		"name": "N36",
-		"stats": []
-	},
-	"N37": {
-		"name": "N37",
-		"stats": []
-	},
-	"N38": {
-		"name": "N38",
-		"stats": []
-	},
-	"N39": {
-		"name": "N39",
-		"stats": []
-	},
-	"N40": {
-		"name": "N40",
-		"stats": []
-	},
-	"N41": {
-		"name": "N41",
-		"stats": []
-	},
-	"N42": {
-		"name": "N42",
-		"stats": []
-	},
-	"N43": {
-		"name": "N43",
-		"stats": []
-	},
-	"N44": {
-		"name": "N44",
-		"stats": []
-	},
-	"N45": {
-		"name": "Climate Change",
-		"stats": [
-			"20% increased Freeze Buildup",
-			"Gain 25% of Cold Damage as Extra Fire Damage against Frozen Enemies"
-		]
-	},
-	"N46": {
-		"name": "N46",
-		"stats": []
-	},
-	"N47": {
-		"name": "N47",
-		"stats": []
-	},
-	"N48": {
-		"name": "N48",
-		"stats": []
-	},
-	"N49": {
-		"name": "Crushing Storms",
-		"stats": [
+  "K1": {
+    "name": "Whispers of Doom",
+    "stats": [
+      "You can apply an additional Curse",
+      "Double Activation Delay of Curses"
+    ]
+  },
+  "K2": {
+    "name": "Necromantic Talisman",
+    "stats": [
+      "All bonuses from an Equipped Amulet apply to your Minions instead of you"
+    ]
+  },
+  "K3": {
+    "name": "Eldritch Battery",
+    "stats": [
+      "Converts all Energy Shield to Mana",
+      "Confirmed to not be this in EA"
+    ]
+  },
+  "K4": {
+    "name": "Chaos Inoculation",
+    "stats": [
+      "Maximum Life becomes 1, Immune to Chaos Damage"
+    ]
+  },
+  "K5": {
+    "name": "Conduit",
+    "stats": [
+      "If you would gain a Charge, Allies in your Presence gain that Charge instead"
+    ]
+  },
+  "K6": {
+    "name": "Ancestral Bond",
+    "stats": [
+      "Unlimited number of Summoned Totems",
+      "Totems reserve 100 Spirit each"
+    ]
+  },
+  "K7": {
+    "name": "Mind Over Matter",
+    "stats": [
+      "All Damage is taken from Mana before Life",
+      "50% less Mana Recovery Rate"
+    ]
+  },
+  "K8": {
+    "name": "Zealot's Oath",
+    "stats": [
+      "Excess Life Recovery from Regeneration is applied to Energy Shield",
+      "Energy Shield does not Recharge"
+    ]
+  },
+  "K9": {
+    "name": "Resonance",
+    "stats": [
+      "Gain Power Charges instead of Frenzy Charges",
+      "Gain Frenzy Charges instead of Endurance Charges",
+      "Gain Endurance Charges instead of Power Charges"
+    ]
+  },
+  "K10": {
+    "name": "Eternal Youth",
+    "stats": [
+      "Life Recharges instead of Energy Shield",
+      "Life Recovery from Flasks applies to Energy Shield instead"
+    ]
+  },
+  "K11": {
+    "name": "Pain Attunement",
+    "stats": [
+      "30% less Critical Damage Bonus when on Full Life",
+      "30% more Critical Damage Bonus when on Low Life"
+    ]
+  },
+  "K12": {
+    "name": "Heartstopper",
+    "stats": [
+      "Take 75% less Damage over Time if you've started taking Damage over Time in the past second",
+      "Take 50% more Damage over Time if you've haven't started taking Damage over Time in the past second"
+    ]
+  },
+  "K13": {
+    "name": "Bloodmagic",
+    "stats": [
+      "Removes all Mana",
+      "Skills Cost Life instead of Mana"
+    ]
+  },
+  "K14": {
+    "name": "Acrobatics",
+    "stats": [
+      "Can Evade all Hits",
+      "50% less Evasion Rating"
+    ]
+  },
+  "K15": {
+    "name": "Resolute Technique",
+    "stats": [
+      "Your Hits can´t be Evaded",
+      "Never deal Critical Hits"
+    ]
+  },
+  "K16": {
+    "name": "Avatar of Fire",
+    "stats": [
+      "75% of Damage Converted to Fire Damage",
+      "Deal no Non-Fire Damage"
+    ]
+  },
+  "K17": {
+    "name": "Oasis",
+    "stats": [
+      "Cannot use Charms",
+      "30% more Recovery from Flasks"
+    ]
+  },
+  "K18": {
+    "name": "Elemental Equilibrium",
+    "stats": [
+      "Hits that deal Fire Damage remove Fire Exposure and inflict Lightning Exposure",
+      "Hits that deal Cold Damage remove Cold Exposure and inflict Fire Exposure",
+      "Hits that deal Lightning Damage remove Lightning Exposure and inflict Cold Exposure"
+    ]
+  },
+  "K19": {
+    "name": "Unwavering Stance",
+    "stats": [
+      "Your Stun Threshold is doubled",
+      "Cannot Dodge Roll"
+    ]
+  },
+  "K20": {
+    "name": "Giant's Blood",
+    "stats": [
+      "You Can wield Two-Handed Axes, Maces and Swords in one hand",
+      "Double Attribute requirements of weapons"
+    ]
+  },
+  "K21": {
+    "name": "Glancing Blows",
+    "stats": [
+      "Block Chance is doubled",
+      "You take 50% of Damage from Blocked Hits"
+    ]
+  },
+  "K22": {
+    "name": "Vaal Pact",
+    "stats": [
+      "Life Leech is Instant",
+      "Cannot use Life Flasks"
+    ]
+  },
+  "K23": {
+    "name": "Iron Reflexes",
+    "stats": [
+      "Converts all Evasion Rating to Armour"
+    ]
+  },
+  "K24": {
+    "name": "Bulwark",
+    "stats": [
+      "Dodge Roll cannot Avoid Damage",
+      "Take 30% less Damage from Hits while Dodge Rolling"
+    ]
+  },
+  "N1": {
+    "name": "Pure Power",
+    "stats": [
+      "2% increased Lightning Damage per 10 Intelligence"
+    ]
+  },
+  "N2": {
+    "name": "N2",
+    "stats": []
+  },
+  "N3": {
+    "name": "Lord of Horrors",
+    "stats": [
+      "Minions have 12% reduced Reservation"
+    ]
+  },
+  "N4": {
+    "name": "N4",
+    "stats": []
+  },
+  "N5": {
+    "name": "Endless Blizzard",
+    "stats": [
+      "+1 to Level of all Cold Skills"
+    ]
+  },
+  "N6": {
+    "name": "N6",
+    "stats": []
+  },
+  "N7": {
+    "name": "Burnout",
+    "stats": [
+      "Ignites you inflict deal Damage 15% faster"
+    ]
+  },
+  "N8": {
+    "name": "N8",
+    "stats": []
+  },
+  "N9": {
+    "name": "N9",
+    "stats": []
+  },
+  "N10": {
+    "name": "N10",
+    "stats": []
+  },
+  "N11": {
+    "name": "N11",
+    "stats": []
+  },
+  "N12": {
+    "name": "Patient Barrier",
+    "stats": [
+      "60% increased maximum Energy Shield",
+      "20% slower start of Energy Shield Recharge"
+    ]
+  },
+  "N13": {
+    "name": "Electric Amplification",
+    "stats": [
+      "Damage Penetrates 18% Lightning Resistance",
+      "25% increased Lightning Exposure Effect"
+    ]
+  },
+  "N14": {
+    "name": "N14",
+    "stats": []
+  },
+  "N15": {
+    "name": "Enhanced Barrier",
+    "stats": [
+      "25% increased maximum Energy Shield",
+      "+1% to all maximum Elemental Resistances"
+    ]
+  },
+  "N16": {
+    "name": "N16",
+    "stats": []
+  },
+  "N17": {
+    "name": "Right Hand of Darkness",
+    "stats": [
+      "Minions have 20% increased Area of Effect",
+      "Minions have 10% chance to inflict Withered on Hit"
+    ]
+  },
+  "N18": {
+    "name": "Left Hand of Darkness",
+    "stats": [
+      "Minions have 20% additional Physical Damage Reduction",
+      "Minions have +23% to Chaos Resistance"
+    ]
+  },
+  "N19": {
+    "name": "N19",
+    "stats": []
+  },
+  "N20": {
+    "name": "N20",
+    "stats": []
+  },
+  "N21": {
+    "name": "Arcane Intensity",
+    "stats": [
+      "3% increased Spell Damage per 100 maximum Mana"
+    ]
+  },
+  "N22": {
+    "name": "Refocus",
+    "stats": [
+      "30% increased Energy Shield Recharge Rate",
+      "10% chance for Energy Shield Recharge to start when you use a Skill"
+    ]
+  },
+  "N23": {
+    "name": "N23",
+    "stats": []
+  },
+  "N24": {
+    "name": "Energise",
+    "stats": [
+      "35% chance for Trigger skills to refund half of Energy Spent"
+    ]
+  },
+  "N25": {
+    "name": "Eldritch Will",
+    "stats": [
+      "3% increased maximum Life, Mana and Energy Shield",
+      "Gain 20% of maximum Energy Shield as additional Stun Threshold"
+    ]
+  },
+  "N26": {
+    "name": "Raw Mana",
+    "stats": [
+      "18% increased maximum Mana",
+      "10% increased Mana Cost of Skills"
+    ]
+  },
+  "N27": {
+    "name": "N27",
+    "stats": []
+  },
+  "N28": {
+    "name": "N28",
+    "stats": []
+  },
+  "N29": {
+    "name": "N29",
+    "stats": []
+  },
+  "N30": {
+    "name": "N30",
+    "stats": []
+  },
+  "N31": {
+    "name": "N31",
+    "stats": []
+  },
+  "N32": {
+    "name": "Convalescence",
+    "stats": [
+      "15% reduced Energy Shield Recharge Rate",
+      "40% faster start of Energy Shield Recharge"
+    ]
+  },
+  "N33": {
+    "name": "N33",
+    "stats": []
+  },
+  "N34": {
+    "name": "N34",
+    "stats": []
+  },
+  "N35": {
+    "name": "N35",
+    "stats": []
+  },
+  "N36": {
+    "name": "N36",
+    "stats": []
+  },
+  "N37": {
+    "name": "N37",
+    "stats": []
+  },
+  "N38": {
+    "name": "N38",
+    "stats": []
+  },
+  "N39": {
+    "name": "N39",
+    "stats": []
+  },
+  "N40": {
+    "name": "N40",
+    "stats": []
+  },
+  "N41": {
+    "name": "N41",
+    "stats": []
+  },
+  "N42": {
+    "name": "N42",
+    "stats": []
+  },
+  "N43": {
+    "name": "N43",
+    "stats": []
+  },
+  "N44": {
+    "name": "N44",
+    "stats": []
+  },
+  "N45": {
+    "name": "Climate Change",
+    "stats": [
+      "20% increased Freeze Buildup",
+      "Gain 25% of Cold Damage as Extra Fire Damage against Frozen Enemies"
+    ]
+  },
+  "N46": {
+    "name": "N46",
+    "stats": []
+  },
+  "N47": {
+    "name": "N47",
+    "stats": []
+  },
+  "N48": {
+    "name": "N48",
+    "stats": []
+  },
+  "N49": {
+    "name": "Crushing Storms",
+    "stats": [
       "16% increased Elemental Damage",
       "Damage Penetrates 5% Elemental Resistances"
     ]
-	},
-	"N50": {
-		"name": "N50",
-		"stats": []
-	},
-	"N51": {
-		"name": "N51",
-		"stats": []
-	},
-	"N52": {
-		"name": "N52",
-		"stats": []
-	},
-	"N53": {
-		"name": "N53",
-		"stats": []
-	},
-	"N54": {
-		"name": "Wither Away",
-		"stats": [
-			"Unwithered enemies are Withered for 8 seconds when they enter your Presence",
-			"20% increased Effect of Withered"
-		]
-	},
-	"N55": {
-		"name": "N55",
-		"stats": []
-	},
-	"N56": {
-		"name": "N56",
-		"stats": []
-	},
-	"N57": {
-		"name": "N57",
-		"stats": []
-	},
-	"N58": {
-		"name": "Dependable Ward",
-		"stats": [
-			"25% increased Energy Shield Recharge Rate",
-			"25% faster start of Energy Shield Recharge"
-		]
-	},
-	"N59": {
-		"name": "N59",
-		"stats": []
-	},
-	"N60": {
-		"name": "Ice Walls",
-		"stats": ["200% increased Ice Crystal Life"]
-	},
-	"N61": {
-		"name": "N61",
-		"stats": []
-	},
-	"N62": {
-		"name": "N62",
-		"stats": []
-	},
-	"N63": {
-		"name": "N63",
-		"stats": []
-	},
-	"N64": {
-		"name": "N64",
-		"stats": []
-	},
-	"N65": {
-		"name": "N65",
-		"stats": []
-	},
-	"N66": {
-		"name": "N66",
-		"stats": []
-	},
-	"N67": {
-		"name": "N67",
-		"stats": []
-	},
-	"N68": {
-		"name": "N68",
-		"stats": []
-	},
-	"N69": {
-		"name": "N69",
-		"stats": []
-	},
-	"N70": {
-		"name": "N70",
-		"stats": []
-	},
-	"N71": {
-		"name": "N71",
-		"stats": []
-	},
-	"N72": {
-		"name": "N72",
-		"stats": []
-	},
-	"N73": {
-		"name": "N73",
-		"stats": []
-	},
-	"N74": {
-		"name": "N74",
-		"stats": []
-	},
-	"N75": {
-		"name": "N75",
-		"stats": []
-	},
-	"N76": {
-		"name": "N76",
-		"stats": []
-	},
-	"N77": {
-		"name": "N77",
-		"stats": []
-	},
-	"N78": {
-		"name": "N78",
-		"stats": []
-	},
-	"N79": {
-		"name": "N79",
-		"stats": []
-	},
-	"N80": {
-		"name": "N80",
-		"stats": []
-	},
-	"N81": {
-		"name": "Calibration",
-		"stats": ["30% increased maximum Energy Shield", "5% increased maximum Mana"]
-	},
-	"N82": {
-		"name": "N82",
-		"stats": []
-	},
-	"N83": {
-		"name": "Hallowed",
-		"stats": [
-			"20% increased Stun and Block Recovery",
-			"Gain 20% of maximum Energy Shield as additional Stun Threshold"
-		]
-	},
-	"N84": {
-		"name": "N84",
-		"stats": []
-	},
-	"N85": {
-		"name": "N85",
-		"stats": []
-	},
-	"N86": {
-		"name": "N86",
-		"stats": []
-	},
-	"N87": {
-		"name": "N87",
-		"stats": []
-	},
-	"N88": {
-		"name": "Explosive Impact",
-		"stats": [
+  },
+  "N50": {
+    "name": "N50",
+    "stats": []
+  },
+  "N51": {
+    "name": "N51",
+    "stats": []
+  },
+  "N52": {
+    "name": "N52",
+    "stats": []
+  },
+  "N53": {
+    "name": "N53",
+    "stats": []
+  },
+  "N54": {
+    "name": "Wither Away",
+    "stats": [
+      "Unwithered enemies are Withered for 8 seconds when they enter your Presence",
+      "20% increased Effect of Withered"
+    ]
+  },
+  "N55": {
+    "name": "N55",
+    "stats": []
+  },
+  "N56": {
+    "name": "N56",
+    "stats": []
+  },
+  "N57": {
+    "name": "Shattered Crystal",
+    "stats": [
+      "60% reduced Ice Crystal Life"
+    ]
+  },
+  "N58": {
+    "name": "Dependable Ward",
+    "stats": [
+      "25% increased Energy Shield Recharge Rate",
+      "25% faster start of Energy Shield Recharge"
+    ]
+  },
+  "N59": {
+    "name": "N59",
+    "stats": []
+  },
+  "N60": {
+    "name": "Ice Walls",
+    "stats": [
+      "200% increased Ice Crystal Life"
+    ]
+  },
+  "N61": {
+    "name": "N61",
+    "stats": []
+  },
+  "N62": {
+    "name": "N62",
+    "stats": []
+  },
+  "N63": {
+    "name": "N63",
+    "stats": []
+  },
+  "N64": {
+    "name": "N64",
+    "stats": []
+  },
+  "N65": {
+    "name": "N65",
+    "stats": []
+  },
+  "N66": {
+    "name": "N66",
+    "stats": []
+  },
+  "N67": {
+    "name": "N67",
+    "stats": []
+  },
+  "N68": {
+    "name": "Sudden Escalation",
+    "stats": [
+      "16% increased Critical Hit Chance for Spells",
+      "8% increased Cast Speed if you've dealt a Critical Hit Recently"
+    ]
+  },
+  "N69": {
+    "name": "N69",
+    "stats": []
+  },
+  "N70": {
+    "name": "N70",
+    "stats": []
+  },
+  "N71": {
+    "name": "N71",
+    "stats": []
+  },
+  "N72": {
+    "name": "N72",
+    "stats": []
+  },
+  "N73": {
+    "name": "N73",
+    "stats": []
+  },
+  "N74": {
+    "name": "N74",
+    "stats": []
+  },
+  "N75": {
+    "name": "N75",
+    "stats": []
+  },
+  "N76": {
+    "name": "N76",
+    "stats": []
+  },
+  "N77": {
+    "name": "N77",
+    "stats": []
+  },
+  "N78": {
+    "name": "N78",
+    "stats": []
+  },
+  "N79": {
+    "name": "N79",
+    "stats": []
+  },
+  "N80": {
+    "name": "N80",
+    "stats": []
+  },
+  "N81": {
+    "name": "Calibration",
+    "stats": [
+      "30% increased maximum Energy Shield",
+      "5% increased maximum Mana"
+    ]
+  },
+  "N82": {
+    "name": "N82",
+    "stats": []
+  },
+  "N83": {
+    "name": "Hallowed",
+    "stats": [
+      "20% increased Stun and Block Recovery",
+      "Gain 20% of maximum Energy Shield as additional Stun Threshold"
+    ]
+  },
+  "N84": {
+    "name": "N84",
+    "stats": []
+  },
+  "N85": {
+    "name": "N85",
+    "stats": []
+  },
+  "N86": {
+    "name": "N86",
+    "stats": []
+  },
+  "N87": {
+    "name": "N87",
+    "stats": []
+  },
+  "N88": {
+    "name": "Explosive Impact",
+    "stats": [
       "15% increased Area of Effect",
       "Burning Ennemies you kill have 5% chance to Explode, dealing a tenth of their maximum Life as",
       "Fire Damage"
     ]
-	},
-	"N89": {
-		"name": "N89",
-		"stats": []
-	},
-	"N90": {
-		"name": "N90",
-		"stats": []
-	},
-	"N91": {
-		"name": "N91",
-		"stats": []
-	},
-	"N92": {
-		"name": "N92",
-		"stats": []
-	},
-	"N93": {
-		"name": "N93",
-		"stats": []
-	},
-	"N94": {
-		"name": "N94",
-		"stats": []
-	},
-	"N95": {
-		"name": "N95",
-		"stats": []
-	},
-	"N96": {
-		"name": "N96",
-		"stats": []
-	},
-	"N97": {
-		"name": "N97",
-		"stats": []
-	},
-	"N98": {
-		"name": "N98",
-		"stats": []
-	},
-	"N99": {
-		"name": "Heavy Buffer",
-		"stats": ["40% increased maximum Energy Shield", "10% reduced maximum Life"]
-	},
-	"N100": {
-		"name": "Mana Bloom",
-		"stats": ["25% increased maximum Mana"]
-	},
-	"N101": {
-		"name": "Arcane Blossom",
-		"stats": ["16% increased Mana Recovery rate"]
-	},
-	"N102": {
-		"name": "N102",
-		"stats": []
-	},
-	"N103": {
-		"name": "N103",
-		"stats": []
-	},
-	"N104": {
-		"name": "Psychic Fragmentation",
-		"stats": ["24% chance for Spell Skills to fire 2 additional Projectiles"]
-	},
-	"N105": {
-		"name": "Inner Faith",
-		"stats": [
-			"20% increased Evasion Rating",
-			"20% increased maximum Energy Shield",
-			"25% reduced Effect of Curses on you"
-		]
-	},
-	"N106": {
-		"name": "N106",
-		"stats": []
-	},
-	"N107": {
-		"name": "N107",
-		"stats": []
-	},
-	"N108": {
-		"name": "N108",
-		"stats": []
-	},
-	"N109": {
-		"name": "N109",
-		"stats": []
-	},
-	"N110": {
-		"name": "N110",
-		"stats": []
-	},
-	"N111": {
-		"name": "N111",
-		"stats": []
-	},
-	"N112": {
-		"name": "N112",
-		"stats": []
-	},
-	"N113": {
-		"name": "N113",
-		"stats": []
-	},
-	"N114": {
-		"name": "N114",
-		"stats": []
-	},
-	"N115": {
-		"name": "N115",
-		"stats": []
-	},
-	"N116": {
-		"name": "Breath of Lightning",
-		"stats": [
-			"Damage Penetrates 15% Lightning Resistance",
-			"+10 to Intelligence"
-		]
-	},
-	"N117": {
-		"name": "Spectral Ward",
-		"stats": ["+1 to Maximum Energy Shield per 12 Evasion Rating on Equipped Body Armour"]
-	},
-	"N118": {
-		"name": "Self Mortification",
-		"stats": [
-			"Gain 20% of maximum Energy Shield as additional Stun Threshold",
-			"20% increased Stun Threshold while on full Life"
-		]
-	},
-	"N119": {
-		"name": "N119",
-		"stats": []
-	},
-	"N120": {
-		"name": "N120",
-		"stats": []
-	},
-	"N121": {
-		"name": "Restless Dead",
-		"stats": ["Minions Revive 25% faster"]
-	},
-	"N122": {
-		"name": "N122",
-		"stats": []
-	},
-	"N123": {
-		"name": "N123",
-		"stats": []
-	},
-	"N124": {
-		"name": "N124",
-		"stats": []
-	},
-	"N125": {
-		"name": "N125",
-		"stats": []
-	},
-	"N126": {
-		"name": "N126",
-		"stats": []
-	},
-	"N127": {
-		"name": "Spaghettification",
-		"stats": [
-			"3% increased Movement Speed",
-			"29% increased Chaos Damage",
-			"-13% to Chaos Resistance",
-			"23% reduced Light Radius",
-			"7% increased attributes"
-		]
-	},
-	"N128": {
-		"name": "N128",
-		"stats": []
-	},
-	"N129": {
-		"name": "Breath of Cold",
-		"stats": [
-			"Damage Penetrates 15% Cold Resistance",
-			"+10 to Dexterity"
-		]
-	},
-	"N130": {
-		"name": "N130",
-		"stats": []
-	},
-	"N131": {
-		"name": "Slippery Ice",
-		"stats": ["25% reduced Effect of Chill on you", "Unaffected by Chill during Dodge Roll"]
-	},
-	"N132": {
-		"name": "Exploit the Elements",
-		"stats": ["40% increased Damage with Hits agains Enemies affected by Elemental Ailments"]
-	},
-	"N133": {
-		"name": "N133",
-		"stats": []
-	},
-	"N134": {
-		"name": "N134",
-		"stats": []
-	},
-	"N135": {
-		"name": "N135",
-		"stats": []
-	},
-	"N136": {
-		"name": "Adamant Recovery",
-		"stats": [
-			"Increases and Reductions to Armour also apply to Energy Shield Recharge Rate at 40% of their value"
-		]
-	},
-	"N137": {
-		"name": "Ancient Aegis",
-		"stats": ["Recover Energy Shield equal to 1% of Armour when you Block"]
-	},
-	"N138": {
-		"name": "N138",
-		"stats": []
-	},
-	"N139": {
-		"name": "N139",
-		"stats": []
-	},
-	"N140": {
-		"name": "N140",
-		"stats": []
-	},
-	"N141": {
-		"name": "N141",
-		"stats": []
-	},
-	"N142": {
-		"name": "Breath of Fire",
-		"stats": ["Damage Penetrates 15% Fire Resistance", "+10 to Strength"]
-	},
-	"N143": {
-		"name": "N143",
-		"stats": []
-	},
-	"N144": {
-		"name": "N144",
-		"stats": []
-	},
-	"N145": {
-		"name": "N145",
-		"stats": []
-	},
-	"N146": {
-		"name": "N146",
-		"stats": []
-	},
-	"N147": {
-		"name": "Core of the Guardian",
-		"stats": ["100% increased Defences from Equipped Shield"]
-	},
-	"N148": {
-		"name": "N148",
-		"stats": []
-	},
-	"N149": {
-		"name": "N149",
-		"stats": []
-	},
-	"N150": {
-		"name": "N150",
-		"stats": []
-	},
-	"N151": {
-		"name": "N151",
-		"stats": []
-	},
-	"N152": {
-		"name": "N152",
-		"stats": []
-	},
-	"N153": {
-		"name": "N153",
-		"stats": []
-	},
-	"N154": {
-		"name": "N154",
-		"stats": []
-	},
-	"N155": {
-		"name": "Heart Tissue",
-		"stats": [
-			"6% of Damage taken Recouped as Life",
-			"Regenerate 0.8% of Life per second if you have been Hit Recently"
-		]
-	},
-	"N156": {
-		"name": "Critical Overload",
-		"stats": [
+  },
+  "N89": {
+    "name": "N89",
+    "stats": []
+  },
+  "N90": {
+    "name": "N90",
+    "stats": []
+  },
+  "N91": {
+    "name": "N91",
+    "stats": []
+  },
+  "N92": {
+    "name": "N92",
+    "stats": []
+  },
+  "N93": {
+    "name": "N93",
+    "stats": []
+  },
+  "N94": {
+    "name": "N94",
+    "stats": []
+  },
+  "N95": {
+    "name": "N95",
+    "stats": []
+  },
+  "N96": {
+    "name": "N96",
+    "stats": []
+  },
+  "N97": {
+    "name": "N97",
+    "stats": []
+  },
+  "N98": {
+    "name": "N98",
+    "stats": []
+  },
+  "N99": {
+    "name": "Heavy Buffer",
+    "stats": [
+      "40% increased maximum Energy Shield",
+      "10% reduced maximum Life"
+    ]
+  },
+  "N100": {
+    "name": "Mana Bloom",
+    "stats": [
+      "25% increased maximum Mana"
+    ]
+  },
+  "N101": {
+    "name": "Arcane Blossom",
+    "stats": [
+      "16% increased Mana Recovery rate"
+    ]
+  },
+  "N102": {
+    "name": "N102",
+    "stats": []
+  },
+  "N103": {
+    "name": "N103",
+    "stats": []
+  },
+  "N104": {
+    "name": "Psychic Fragmentation",
+    "stats": [
+      "24% chance for Spell Skills to fire 2 additional Projectiles"
+    ]
+  },
+  "N105": {
+    "name": "Inner Faith",
+    "stats": [
+      "20% increased Evasion Rating",
+      "20% increased maximum Energy Shield",
+      "25% reduced Effect of Curses on you"
+    ]
+  },
+  "N106": {
+    "name": "N106",
+    "stats": []
+  },
+  "N107": {
+    "name": "N107",
+    "stats": []
+  },
+  "N108": {
+    "name": "N108",
+    "stats": []
+  },
+  "N109": {
+    "name": "N109",
+    "stats": []
+  },
+  "N110": {
+    "name": "N110",
+    "stats": []
+  },
+  "N111": {
+    "name": "N111",
+    "stats": []
+  },
+  "N112": {
+    "name": "N112",
+    "stats": []
+  },
+  "N113": {
+    "name": "N113",
+    "stats": []
+  },
+  "N114": {
+    "name": "N114",
+    "stats": []
+  },
+  "N115": {
+    "name": "N115",
+    "stats": []
+  },
+  "N116": {
+    "name": "Breath of Lightning",
+    "stats": [
+      "Damage Penetrates 15% Lightning Resistance",
+      "+10 to Intelligence"
+    ]
+  },
+  "N117": {
+    "name": "Spectral Ward",
+    "stats": [
+      "+1 to Maximum Energy Shield per 12 Evasion Rating on Equipped Body Armour"
+    ]
+  },
+  "N118": {
+    "name": "Self Mortification",
+    "stats": [
+      "Gain 20% of maximum Energy Shield as additional Stun Threshold",
+      "20% increased Stun Threshold while on full Life"
+    ]
+  },
+  "N119": {
+    "name": "N119",
+    "stats": []
+  },
+  "N120": {
+    "name": "N120",
+    "stats": []
+  },
+  "N121": {
+    "name": "Restless Dead",
+    "stats": [
+      "Minions Revive 25% faster"
+    ]
+  },
+  "N122": {
+    "name": "N122",
+    "stats": []
+  },
+  "N123": {
+    "name": "N123",
+    "stats": []
+  },
+  "N124": {
+    "name": "N124",
+    "stats": []
+  },
+  "N125": {
+    "name": "N125",
+    "stats": []
+  },
+  "N126": {
+    "name": "N126",
+    "stats": []
+  },
+  "N127": {
+    "name": "Spaghettification",
+    "stats": [
+      "3% increased Movement Speed",
+      "29% increased Chaos Damage",
+      "-13% to Chaos Resistance",
+      "23% reduced Light Radius",
+      "7% increased attributes"
+    ]
+  },
+  "N128": {
+    "name": "N128",
+    "stats": []
+  },
+  "N129": {
+    "name": "Breath of Cold",
+    "stats": [
+      "Damage Penetrates 15% Cold Resistance",
+      "+10 to Dexterity"
+    ]
+  },
+  "N130": {
+    "name": "N130",
+    "stats": []
+  },
+  "N131": {
+    "name": "Slippery Ice",
+    "stats": [
+      "25% reduced Effect of Chill on you",
+      "Unaffected by Chill during Dodge Roll"
+    ]
+  },
+  "N132": {
+    "name": "Exploit the Elements",
+    "stats": [
+      "40% increased Damage with Hits agains Enemies affected by Elemental Ailments"
+    ]
+  },
+  "N133": {
+    "name": "N133",
+    "stats": []
+  },
+  "N134": {
+    "name": "N134",
+    "stats": []
+  },
+  "N135": {
+    "name": "N135",
+    "stats": []
+  },
+  "N136": {
+    "name": "Adamant Recovery",
+    "stats": [
+      "Increases and Reductions to Armour also apply to Energy Shield Recharge Rate at 40% of their value"
+    ]
+  },
+  "N137": {
+    "name": "Ancient Aegis",
+    "stats": [
+      "Recover Energy Shield equal to 1% of Armour when you Block"
+    ]
+  },
+  "N138": {
+    "name": "N138",
+    "stats": []
+  },
+  "N139": {
+    "name": "N139",
+    "stats": []
+  },
+  "N140": {
+    "name": "N140",
+    "stats": []
+  },
+  "N141": {
+    "name": "N141",
+    "stats": []
+  },
+  "N142": {
+    "name": "Breath of Fire",
+    "stats": [
+      "Damage Penetrates 15% Fire Resistance",
+      "+10 to Strength"
+    ]
+  },
+  "N143": {
+    "name": "N143",
+    "stats": []
+  },
+  "N144": {
+    "name": "N144",
+    "stats": []
+  },
+  "N145": {
+    "name": "N145",
+    "stats": []
+  },
+  "N146": {
+    "name": "N146",
+    "stats": []
+  },
+  "N147": {
+    "name": "Core of the Guardian",
+    "stats": [
+      "100% increased Defences from Equipped Shield"
+    ]
+  },
+  "N148": {
+    "name": "N148",
+    "stats": []
+  },
+  "N149": {
+    "name": "N149",
+    "stats": []
+  },
+  "N150": {
+    "name": "N150",
+    "stats": []
+  },
+  "N151": {
+    "name": "N151",
+    "stats": []
+  },
+  "N152": {
+    "name": "N152",
+    "stats": []
+  },
+  "N153": {
+    "name": "N153",
+    "stats": []
+  },
+  "N154": {
+    "name": "N154",
+    "stats": []
+  },
+  "N155": {
+    "name": "Heart Tissue",
+    "stats": [
+      "6% of Damage taken Recouped as Life",
+      "Regenerate 0.8% of Life per second if you have been Hit Recently"
+    ]
+  },
+  "N156": {
+    "name": "Critical Overload",
+    "stats": [
       "10% increased Critical Hit Chance for Spells",
       "15% increased Spell Damage if you've dealt a Critical Strike Recently"
     ]
-	},
-	"N157": {
-		"name": "Poison Damage Notable",
-		"stats": [
-			"25% increased Effect of Poison"
-		]
-	},
-	"N158": {
-		"name": "Thickened Arteries",
-		"stats": ["5% reduced Movement Speed", "Regenerate 2% of Life per second while stationary"]
-	},
-	"N159": {
-		"name": "N159",
-		"stats": []
-	},
-	"N160": {
-		"name": "N160",
-		"stats": []
-	},
-	"N161": {
-		"name": "Darkness",
-		"stats": [
-			"25% increased Chaos Damage"
-		]
-	},
-	"N162": {
-		"name": "N162",
-		"stats": []
-	},
-	"N163": {
-		"name": "N163",
-		"stats": []
-	},
-	"N164": {
-		"name": "Guttural Roar",
-		"stats": ["30% increased Warcry Speed", "Warcry Skills have 30% increased Area of Effect"]
-	},
-	"N165": {
-		"name": "Essence Infusion",
-		"stats": ["40% increased Energy Shield Recharge Rate", "+10 to Intelligence"]
-	},
-	"N166": {
-		"name": "N166",
-		"stats": []
-	},
-	"N167": {
-		"name": "N167",
-		"stats": []
-	},
-	"N168": {
-		"name": "Deafening Cries",
-		"stats": [
-			"25% increased Warcry Cooldown Recovery Rate",
-			"8% increased Damage for each time you've Warcried Recently"
-		]
-	},
-	"N169": {
-		"name": "N169",
-		"stats": []
-	},
-	"N170": {
-		"name": "N170",
-		"stats": []
-	},
-	"N171": {
-		"name": "Melding",
-		"stats": ["40% increased maximum Energy Shield", "10% reduced maximum Mana"]
-	},
-	"N172": {
-		"name": "Jagged Shards",
-		"stats": [
+  },
+  "N157": {
+    "name": "Poison Damage Notable",
+    "stats": [
+      "25% increased Effect of Poison"
+    ]
+  },
+  "N158": {
+    "name": "Thickened Arteries",
+    "stats": [
+      "5% reduced Movement Speed",
+      "Regenerate 2% of Life per second while stationary"
+    ]
+  },
+  "N159": {
+    "name": "N159",
+    "stats": []
+  },
+  "N160": {
+    "name": "N160",
+    "stats": []
+  },
+  "N161": {
+    "name": "Darkness",
+    "stats": [
+      "25% increased Chaos Damage"
+    ]
+  },
+  "N162": {
+    "name": "N162",
+    "stats": []
+  },
+  "N163": {
+    "name": "N163",
+    "stats": []
+  },
+  "N164": {
+    "name": "Guttural Roar",
+    "stats": [
+      "30% increased Warcry Speed",
+      "Warcry Skills have 30% increased Area of Effect"
+    ]
+  },
+  "N165": {
+    "name": "Essence Infusion",
+    "stats": [
+      "40% increased Energy Shield Recharge Rate",
+      "+10 to Intelligence"
+    ]
+  },
+  "N166": {
+    "name": "N166",
+    "stats": []
+  },
+  "N167": {
+    "name": "N167",
+    "stats": []
+  },
+  "N168": {
+    "name": "Deafening Cries",
+    "stats": [
+      "25% increased Warcry Cooldown Recovery Rate",
+      "8% increased Damage for each time you've Warcried Recently"
+    ]
+  },
+  "N169": {
+    "name": "N169",
+    "stats": []
+  },
+  "N170": {
+    "name": "N170",
+    "stats": []
+  },
+  "N171": {
+    "name": "Melding",
+    "stats": [
+      "40% increased maximum Energy Shield",
+      "10% reduced maximum Mana"
+    ]
+  },
+  "N172": {
+    "name": "Jagged Shards",
+    "stats": [
       "15% increased Critical Hit Chance for Spells",
       "18% increased Physical Damage"
     ]
-	},
-	"N173": {
-		"name": "N173",
-		"stats": []
-	},
-	"N174": {
-		"name": "Dampening Shield",
-		"stats": [
-			"28% increased maximum Energy Shield",
-			"Gain 12% of maximum Energy Shield as additional Stun Threshold"
-		]
-	},
-	"N175": {
-		"name": "Rapid Recharge",
-		"stats": [
-			"25% increased Energy Shield Recharge Rate",
-			"25% faster start of Energy Shield Recharge"
-		]
-	},
-	"N176": {
-		"name": "Power of the Dead",
-		"stats": [
-			"Minions deal 15% increased Damage",
-			"Minions have 3% increased Attack and Cast Speed"
-		]
-	},
-	"N177": {
-		"name": "N177",
-		"stats": []
-	},
-	"N178": {
-		"name": "Spell Haste",
-		"stats": [
-			"10% increased Cast Speed"
-		]
-	},
-	"N179": {
-		"name": "Mana Blessing",
-		"stats": ["+20 to maximum Mana", "6% increased maximum Mana"]
-	},
-	"N180": {
-		"name": "N180",
-		"stats": []
-	},
-	"N181": {
-		"name": "Spellblade",
-		"stats": [
-			"32% increased Spell Damage"
-		]
-	},
-	"N182": {
-		"name": "N182",
-		"stats": []
-	},
-	"N183": {
-		"name": "Wild Storm",
-		"stats": ["15% more Maximum Lightning Damage"]
-	},
-	"N184": {
-		"name": "N184",
-		"stats": []
-	},
-	"N185": {
-		"name": "N185",
-		"stats": []
-	},
-	"N186": {
-		"name": "Spiral into Depression",
-		"stats": [
-			"3% increased Movement Speed",
-			"25% increased Armour",
-			"25% increased maximum Energy Shield"
-		]
-	},
-	"N187": {
-		"name": "Spiral into Mania",
-		"stats": ["10% increased Cast Speed", "+7% to Chaos Resistance"]
-	},
-	"N188": {
-		"name": "N188",
-		"stats": []
-	},
-	"N189": {
-		"name": "Immortal Infamy",
-		"stats": [
-			"Recover 2% of Life on Kill"
-		]
-	},
-	"N190": {
-		"name": "N190",
-		"stats": []
-	},
-	"N191": {
-		"name": "N191",
-		"stats": []
-	},
-	"N192": {
-		"name": "Immortal Thirst",
-		"stats": [
-			"25% increased ammount of Mana Leeched"
-		]
-	},
-	"N193": {
-		"name": "Rattling Ball",
-		"stats": ["25% increased Damage with Flails"]
-	},
-	"N194": {
-		"name": "Spiral into Insanity",
-		"stats": ["29% increased Chaos Damage", "10% increased Global Defences"]
-	},
-	"N195": {
-		"name": "Briny Carapace",
-		"stats": ["60% increased Stun Threshold for each time you've been Stunned Recently"]
-	},
-	"N196": {
-		"name": "N196",
-		"stats": []
-	},
-	"N197": {
-		"name": "N197",
-		"stats": []
-	},
-	"N198": {
-		"name": "N198 - Title Missing",
-		"stats": [
-			"6% of Damage taken Recouped as Life"
-		]
-	},
-	"N199": {
-		"name": "Moment of Truth",
-		"stats": [
-            "25% increased Critical Damage Bonus if you've dealt a Non-Critical Hit Recently",
-            "20% increased Critical Hit Chance"
-        ]
-	},
-	"N200": {
-		"name": "N200",
-		"stats": []
-	},
-	"N201": {
-		"name": "N201",
-		"stats": []
-	},
-	"N202": {
-		"name": "N202",
-		"stats": []
-	},
-	"N203": {
-		"name": "Spiked Whip",
-		"stats": ["25% increased Damage with Flails"]
-	},
-	"N204": {
-		"name": "Reinforced Barrier",
-		"stats": [
-			"20% increased maximum Energy Shield",
-			"Defend with 120% of Armour while not on Low Energy Shield"
-		]
-	},
-	"N205": {
-		"name": "Morning Star",
-		"stats": [
-			"30% increased Critical Hit Chance with Flails",
-			"20% increased Critical Damage Bonus with Flails"
-		]
-	},
-	"N206": {
-		"name": "Raw Destruction",
-		"stats": [
-            "16% increased Spell Damage",
-            "Minions deal 16% increased Damage",
-            "+10 to Intelligence"
-        ]
-	},
-	"N207": {
-		"name": "N207",
-		"stats": []
-	},
-	"N208": {
-		"name": "Killer Instinct",
-		"stats": [
-			"25% increased Attack Damage"
-		]
-	},
-	"N209": {
-		"name": "N209",
-		"stats": []
-	},
-	"N210": {
-		"name": "Fleshcrafting",
-		"stats": ["Minions gain 15% of their Maximum Life as Extra Maximum Energy Shield"]
-	},
-	"N211": {
-		"name": "Open Mind",
-		"stats": ["25% increase Mana Regeneration Rate"]
-	},
-	"N212": {
-		"name": "Covering Ward",
-		"stats": [
-			"25% increased Energy Shield Recharge Rate",
-			"10% chance for Energy Shield Recharge to start when you Block"
-		]
-	},
-	"N213": {
-		"name": "N213",
-		"stats": []
-	},
-	"N214": {
-		"name": "Tenfold Attack",
-		"stats": [
-			"10% increased Attack speed"
-		]
-	},
-	"N215": {
-		"name": "N215",
-		"stats": []
-	},
-	"N216": {
-		"name": "Resonating Impact",
-		"stats": [
-			"15% increased Area of Effect for Staff Attacks"
-		]
-	},
-	"N217": {
-		"name": "Finesse",
-		"stats": [
-            "10% increased Global Accuracy Rating",
-            "Gain Accuracy Rating equal to your Intelligence"
-        ]
-	},
-	"N218": {
-		"name": "N218",
-		"stats": []
-	},
+  },
+  "N173": {
+    "name": "Entropy",
+    "stats": [
+      "18% increased Chaos Damage",
+      "15% increased Skill Effect Duration"
+    ]
+  },
+  "N174": {
+    "name": "Dampening Shield",
+    "stats": [
+      "28% increased maximum Energy Shield",
+      "Gain 12% of maximum Energy Shield as additional Stun Threshold"
+    ]
+  },
+  "N175": {
+    "name": "Rapid Recharge",
+    "stats": [
+      "25% increased Energy Shield Recharge Rate",
+      "25% faster start of Energy Shield Recharge"
+    ]
+  },
+  "N176": {
+    "name": "Power of the Dead",
+    "stats": [
+      "Minions deal 15% increased Damage",
+      "Minions have 3% increased Attack and Cast Speed"
+    ]
+  },
+  "N177": {
+    "name": "N177",
+    "stats": []
+  },
+  "N178": {
+    "name": "Spell Haste",
+    "stats": [
+      "10% increased Cast Speed"
+    ]
+  },
+  "N179": {
+    "name": "Mana Blessing",
+    "stats": [
+      "+20 to maximum Mana",
+      "6% increased maximum Mana"
+    ]
+  },
+  "N180": {
+    "name": "N180",
+    "stats": []
+  },
+  "N181": {
+    "name": "Spellblade",
+    "stats": [
+      "32% increased Spell Damage"
+    ]
+  },
+  "N182": {
+    "name": "N182",
+    "stats": []
+  },
+  "N183": {
+    "name": "Wild Storm",
+    "stats": [
+      "15% more Maximum Lightning Damage"
+    ]
+  },
+  "N184": {
+    "name": "N184",
+    "stats": []
+  },
+  "N185": {
+    "name": "N185",
+    "stats": []
+  },
+  "N186": {
+    "name": "Spiral into Depression",
+    "stats": [
+      "3% increased Movement Speed",
+      "25% increased Armour",
+      "25% increased maximum Energy Shield"
+    ]
+  },
+  "N187": {
+    "name": "Spiral into Mania",
+    "stats": [
+      "10% increased Cast Speed",
+      "+7% to Chaos Resistance"
+    ]
+  },
+  "N188": {
+    "name": "N188",
+    "stats": []
+  },
+  "N189": {
+    "name": "Immortal Infamy",
+    "stats": [
+      "Recover 2% of Life on Kill"
+    ]
+  },
+  "N190": {
+    "name": "N190",
+    "stats": []
+  },
+  "N191": {
+    "name": "N191",
+    "stats": []
+  },
+  "N192": {
+    "name": "Immortal Thirst",
+    "stats": [
+      "25% increased ammount of Mana Leeched"
+    ]
+  },
+  "N193": {
+    "name": "Rattling Ball",
+    "stats": [
+      "25% increased Damage with Flails"
+    ]
+  },
+  "N194": {
+    "name": "Spiral into Insanity",
+    "stats": [
+      "29% increased Chaos Damage",
+      "10% increased Global Defences"
+    ]
+  },
+  "N195": {
+    "name": "Briny Carapace",
+    "stats": [
+      "60% increased Stun Threshold for each time you've been Stunned Recently"
+    ]
+  },
+  "N196": {
+    "name": "N196",
+    "stats": []
+  },
+  "N197": {
+    "name": "N197",
+    "stats": []
+  },
+  "N198": {
+    "name": "N198 - Title Missing",
+    "stats": [
+      "6% of Damage taken Recouped as Life"
+    ]
+  },
+  "N199": {
+    "name": "Moment of Truth",
+    "stats": [
+      "25% increased Critical Damage Bonus if you've dealt a Non-Critical Hit Recently",
+      "20% increased Critical Hit Chance"
+    ]
+  },
+  "N200": {
+    "name": "N200",
+    "stats": []
+  },
+  "N201": {
+    "name": "N201",
+    "stats": []
+  },
+  "N202": {
+    "name": "N202",
+    "stats": []
+  },
+  "N203": {
+    "name": "Spiked Whip",
+    "stats": [
+      "25% increased Damage with Flails"
+    ]
+  },
+  "N204": {
+    "name": "Reinforced Barrier",
+    "stats": [
+      "20% increased maximum Energy Shield",
+      "Defend with 120% of Armour while not on Low Energy Shield"
+    ]
+  },
+  "N205": {
+    "name": "Morning Star",
+    "stats": [
+      "30% increased Critical Hit Chance with Flails",
+      "20% increased Critical Damage Bonus with Flails"
+    ]
+  },
+  "N206": {
+    "name": "Raw Destruction",
+    "stats": [
+      "16% increased Spell Damage",
+      "Minions deal 16% increased Damage",
+      "+10 to Intelligence"
+    ]
+  },
+  "N207": {
+    "name": "N207",
+    "stats": []
+  },
+  "N208": {
+    "name": "Killer Instinct",
+    "stats": [
+      "25% increased Attack Damage"
+    ]
+  },
+  "N209": {
+    "name": "N209",
+    "stats": []
+  },
+  "N210": {
+    "name": "Fleshcrafting",
+    "stats": [
+      "Minions gain 15% of their Maximum Life as Extra Maximum Energy Shield"
+    ]
+  },
+  "N211": {
+    "name": "Open Mind",
+    "stats": [
+      "25% increase Mana Regeneration Rate"
+    ]
+  },
+  "N212": {
+    "name": "Covering Ward",
+    "stats": [
+      "25% increased Energy Shield Recharge Rate",
+      "10% chance for Energy Shield Recharge to start when you Block"
+    ]
+  },
+  "N213": {
+    "name": "N213",
+    "stats": []
+  },
+  "N214": {
+    "name": "Tenfold Attack",
+    "stats": [
+      "10% increased Attack speed"
+    ]
+  },
+  "N215": {
+    "name": "N215",
+    "stats": []
+  },
+  "N216": {
+    "name": "Resonating Impact",
+    "stats": [
+      "15% increased Area of Effect for Staff Attacks"
+    ]
+  },
+  "N217": {
+    "name": "Finesse",
+    "stats": [
+      "10% increased Global Accuracy Rating",
+      "Gain Accuracy Rating equal to your Intelligence"
+    ]
+  },
+  "N218": {
+    "name": "N218",
+    "stats": []
+  },
   "N219": {
     "name": "First Strike",
     "stats": [
       "50% increased Damage with Daggers against Enemies that are on Full Life"
     ]
   },
-	"N220": {
-		"name": "N220",
-		"stats": []
-	},
-	"N221": {
-		"name": "N221",
-		"stats": []
-	},
-	"N222": {
-		"name": "Flow State",
-		"stats": [
-			"15% increased Mana Regeneration Rate",
-			"5% increased Attack and Cast Speed"
-		]
-	},
-	"N223": {
-		"name": "N223",
-		"stats": []
-	},
-	"N224": {
-		"name": "N224",
-		"stats": []
-	},
-	"N225": {
-		"name": "Bolstering Presence",
-		"stats": ["20% increased effect of Auras from your Skills"]
-	},
-	"N226": {
-		"name": "Harmonic Generator",
-		"stats": ["20% chance to gain a Power Charge when you Shock a Chilled enemy"]
-	},
-	"N227": {
-		"name": "Immolation",
-		"stats": ["25% increased Effect of Ignite", "+10 to Strength"]
-	},
-	"N228": {
-		"name": "Leeching Toxins",
-		"stats": [
-			"30% increased Effect of Poison",
-			"Recover 2% of Life on Killing a Poisoned Enemy"
-		]
-	},
+  "N220": {
+    "name": "N220",
+    "stats": []
+  },
+  "N221": {
+    "name": "N221",
+    "stats": []
+  },
+  "N222": {
+    "name": "Flow State",
+    "stats": [
+      "15% increased Mana Regeneration Rate",
+      "5% increased Attack and Cast Speed"
+    ]
+  },
+  "N223": {
+    "name": "N223",
+    "stats": []
+  },
+  "N224": {
+    "name": "N224",
+    "stats": []
+  },
+  "N225": {
+    "name": "Bolstering Presence",
+    "stats": [
+      "20% increased effect of Auras from your Skills"
+    ]
+  },
+  "N226": {
+    "name": "Harmonic Generator",
+    "stats": [
+      "20% chance to gain a Power Charge when you Shock a Chilled enemy"
+    ]
+  },
+  "N227": {
+    "name": "Immolation",
+    "stats": [
+      "25% increased Effect of Ignite",
+      "+10 to Strength"
+    ]
+  },
+  "N228": {
+    "name": "Leeching Toxins",
+    "stats": [
+      "30% increased Effect of Poison",
+      "Recover 2% of Life on Killing a Poisoned Enemy"
+    ]
+  },
   "N229": {
     "name": "Life from Death",
     "stats": [
       "Recover 3% of Life on Kill"
     ]
   },
-	"N230": {
-		"name": "N230",
-		"stats": []
-	},
+  "N230": {
+    "name": "N230",
+    "stats": []
+  },
   "N231": {
     "name": "Unbroken Concentration",
     "stats": [
       "40% increased Stun Threshold if you haven't been stunned recently"
     ]
   },
-	"N232": {
-		"name": "Immaterial",
-		"stats": [
-            "50% increased Evasion Rating if Energy Shield Recharge has started in the past 2 seconds",
-            "30% increased Evasion Rating while you have Energy Shield"
-        ]
-	},
-	"N233": {
-		"name": "N233",
-		"stats": []
-	},
-	"N234": {
-		"name": "N234",
-		"stats": []
-	},
-	"N235": {
-		"name": "Resolution",
-		"stats": ["10% increased Global Defences", "25% increased Stun Threshold"]
-	},
-	"N236": {
-		"name": "N236",
-		"stats": []
-	},
-	"N237": {
-		"name": "N237",
-		"stats": []
-	},
-	"N238": {
-		"name": "N238",
-		"stats": []
-	},
-	"N239": {
-		"name": "N239",
-		"stats": []
-	},
-	"N240": {
-		"name": "Shimmering",
-		"stats": [
-            "20% increased Energy Shield Recovery Rate if you haven't been Hit Recently",
-            "5% increased Movement Speed while you have Energy Shield"
-        ]
-	},
-	"N241": {
-		"name": "N241",
-		"stats": []
-	},
-	"N242": {
-		"name": "N242",
-		"stats": []
-	},
-	"N243": {
-		"name": "N243",
-		"stats": []
-	},
-	"N244": {
-		"name": "N244",
-		"stats": []
-	},
-	"N245": {
-		"name": "Flow Like Water",
-		"stats": [
-			"8% increased Attack and Cast Speed",
-			"+5 to Dexterity and Intelligence"
-		]
-	},
-	"N246": {
-		"name": "Primal Growth",
-		"stats": [
-			"20% increased Area of Effect if you've Killed Recently",
-			"10% increased Area of Effect for Attacks"
-		]
-	},
-	"N247": {
-		"name": "Supportive Ancestors",
-		"stats": [
-			"25% increased Damage while you have a Totem",
-			"Totems have 2% increased Cast Speed per Summoned Totem",
-			"Totems have 2% increased Attack Speed per Summoned Totem"
-		]
-	},
-	"N248": {
-		"name": "Cold Nature",
-		"stats": ["25% increased Cold Damage", "25% increased Chill Duration on Enemies"]
-	},
-	"N249": {
-		"name": "N249",
-		"stats": []
-	},
-	"N250": {
-		"name": "Mystic Stance",
-		"stats": [
-            "30% faster start of Energy Shield Recharge",
-            "30% increased Stun Threshold while on full Life"
-        ]
-	},
-	"N251": {
-		"name": "N251",
-		"stats": []
-	},
-	"N252": {
-		"name": "N252",
-		"stats": []
-	},
+  "N232": {
+    "name": "Immaterial",
+    "stats": [
+      "50% increased Evasion Rating if Energy Shield Recharge has started in the past 2 seconds",
+      "30% increased Evasion Rating while you have Energy Shield"
+    ]
+  },
+  "N233": {
+    "name": "N233",
+    "stats": []
+  },
+  "N234": {
+    "name": "N234",
+    "stats": []
+  },
+  "N235": {
+    "name": "Resolution",
+    "stats": [
+      "10% increased Global Defences",
+      "25% increased Stun Threshold"
+    ]
+  },
+  "N236": {
+    "name": "N236",
+    "stats": []
+  },
+  "N237": {
+    "name": "N237",
+    "stats": []
+  },
+  "N238": {
+    "name": "N238",
+    "stats": []
+  },
+  "N239": {
+    "name": "N239",
+    "stats": []
+  },
+  "N240": {
+    "name": "Shimmering",
+    "stats": [
+      "20% increased Energy Shield Recovery Rate if you haven't been Hit Recently",
+      "5% increased Movement Speed while you have Energy Shield"
+    ]
+  },
+  "N241": {
+    "name": "N241",
+    "stats": []
+  },
+  "N242": {
+    "name": "N242",
+    "stats": []
+  },
+  "N243": {
+    "name": "N243",
+    "stats": []
+  },
+  "N244": {
+    "name": "N244",
+    "stats": []
+  },
+  "N245": {
+    "name": "Flow Like Water",
+    "stats": [
+      "8% increased Attack and Cast Speed",
+      "+5 to Dexterity and Intelligence"
+    ]
+  },
+  "N246": {
+    "name": "Primal Growth",
+    "stats": [
+      "20% increased Area of Effect if you've Killed Recently",
+      "10% increased Area of Effect for Attacks"
+    ]
+  },
+  "N247": {
+    "name": "Supportive Ancestors",
+    "stats": [
+      "25% increased Damage while you have a Totem",
+      "Totems have 2% increased Cast Speed per Summoned Totem",
+      "Totems have 2% increased Attack Speed per Summoned Totem"
+    ]
+  },
+  "N248": {
+    "name": "Cold Nature",
+    "stats": [
+      "25% increased Cold Damage",
+      "25% increased Chill Duration on Enemies"
+    ]
+  },
+  "N249": {
+    "name": "N249",
+    "stats": []
+  },
+  "N250": {
+    "name": "Mystic Stance",
+    "stats": [
+      "30% faster start of Energy Shield Recharge",
+      "30% increased Stun Threshold while on full Life"
+    ]
+  },
+  "N251": {
+    "name": "N251",
+    "stats": []
+  },
+  "N252": {
+    "name": "N252",
+    "stats": []
+  },
   "N253": {
     "name": "Step Like Mist",
     "stats": [
@@ -1291,1480 +1440,1794 @@
       "+5 to Dexterity and Intelligence"
     ]
   },
-	"N254": {
-		"name": "Lust for Power",
-		"stats": [
-            "10% chance that if you would gain Power Charges, you instead gain up to your maximum number of Power Charges",
-            "+1 to Maximum Power Charges"
-        ]
-	},
-	"N255": {
-		"name": "Projectile Bulwark",
-		"stats": ["30% increased Armour", "Defend with 120% of Armour against Projectile Attacks"]
-	},
-	"N256": {
-		"name": "N256",
-		"stats": []
-	},
-	"N257": {
-		"name": "Unbound Forces",
-		"stats": ["50% increased Duration of Elemental Ailments on Enemies","50% increased Effect of Chill","15% increased Effect of Shock"]
-	},
-	"N258": {
-		"name": "N258",
-		"stats": []
-	},
-	"N259": {
-		"name": "N259",
-		"stats": []
-	},
-	"N260": {
-		"name": "Sigil of Fire",
-		"stats": ["30% increased Damage with Hits against Ignited Enemies"]
-	},
-	"N261": {
-		"name": "Essence of the Mountain",
-		"stats": [
-            "20% increased Freeze Buildup",
-            "Gain 5% of Damage as Extra Cold Damage"
-        ]
-	},
-	"N262": {
-		"name": "In Your Face",
-		"stats": ["40% increased Melee Damage with Hits at Close Range"]
-	},
-	"N263": {
-		"name": "Accuracy",
-		"stats": [
-			"10% increased Global Accuracy Rating"
-		]
-	},
-	"N264": {
-		"name": "Serrated Edges",
-		"stats": ["30% increased Attack Damage"]
-	},
-	"N265": {
-		"name": "N265",
-		"stats": []
-	},
-	"N266": {
-		"name": "N266",
-		"stats": []
-	},
-	"N267": {
-		"name": "N267",
-		"stats": []
-	},
-	"N268": {
-		"name": "Martial Artistry",
-		"stats": [
-			"+25% to Critical Strike Multiplier with Staves"
-		]
-	},
-	"N269": {
-		"name": "N269",
-		"stats": []
-	},
-	"N270": {
-		"name": "Cold Penetration",
-		"stats": ["Damage Penetrates 10% Cold Resistance"]
-	},
-	"N271": {
-		"name": "N271",
-		"stats": []
-	},
-	"N272": {
-		"name": "N272",
-		"stats": []
-	},
-	"N273": {
-		"name": "N273",
-		"stats": []
-	},
-	"N274": {
-		"name": "N274",
-		"stats": []
-	},
-	"N275": {
-		"name": "N275",
-		"stats": []
-	},
-	"N276": {
-		"name": "N276",
-		"stats": []
-	},
-	"N277": {
-		"name": "Siphon",
-		"stats": [
-			"Recover 2% of Mana on Kill",
-			"25% increased amount of Mana Leeched"
-		]
-	},
-	"N278": {
-		"name": "N278",
-		"stats": []
-	},
-	"N279": {
-		"name": "N279",
-		"stats": []
-	},
-	"N280": {
-		"name": "N280",
-		"stats": []
-	},
-	"N281": {
-		"name": "Defensive Reflexes",
-		"stats": ["12% increased Chance to Block", "2 Mana gained when you Block"]
-	},
-	"N282": {
-		"name": "Manifold Method",
-		"stats": [
-			"50% increased amount of Mana Leeched",
-			"30% increased chance to inflict Ailments against Rare or Unique Enemies"
-		]
-	},
-	"N283": {
-		"name": "N283",
-		"stats": []
-	},
-	"N284": {
-		"name": "One with the Storm",
-		"stats": [
-			"Querterstaff Skills that consume Power Charges count as consuming an additional Power Charge"]
-	},
-	"N285": {
-		"name": "N285",
-		"stats": []
-	},
-	"N286": {
-		"name": "Life on Kill Notable",
-		"stats": ["Gain 20 Life per Enemy Killed"]
-	},
-	"N287": {
-		"name": "Critical Damage Bonus Notable",
-		"stats": ["15% increased Critical Damage Bonus"]
-	},
-	"N288": {
-		"name": "N288",
-		"stats": []
-	},
-	"N289": {
-		"name": "N289",
-		"stats": []
-	},
-	"N290": {
-		"name": "Heartstopper",
-		"stats": [
-			"Take 75% less Damage over Time if you've started taking Damage over Time in the past second",
-			"Take 50% more Damage over Time if you haven't started taking Damage over Time in the past second"
-		]
-	},
-	"N291": {
-		"name": "Stand Ground",
-		"stats": [
-			"Regenerate 2% of Life per second while affected by any Damaging Ailment",
-			"Regenerate 2% of Life per second while stationary"
-		]
-	},
-	"N292": {
-		"name": "Armor Break",
-		"stats": ["Overwhelm 10% Physical Damage Reduction"]
-	},
-	"N293": {
-		"name": "N293",
-		"stats": []
-	},
-	"N294": {
-		"name": "N294",
-		"stats": []
-	},
-	"N295": {
-		"name": "N295",
-		"stats": []
-	},
-	"N296": {
-		"name": "N296",
-		"stats": []
-	},
-	"N297": {
-		"name": "N297",
-		"stats": []
-	},
-	"N298": {
-		"name": "Evasion and Energy Shield",
-		"stats": ["15% increased Evasion Rating", "15% increased maximum Energy Shield"]
-	},
-	"N299": {
-		"name": "Blinding Strike",
-		"stats": [
-			"24% increased Attack Damage",
-			"10% chance to Blind Enemies on Hit with Attacks"]
-	},
-	"N300": {
-		"name": "N300",
-		"stats": []
-	},
-	"N301": {
-		"name": "Prism Guard",
-		"stats": ["+1% to all maximum Elemental Resistances", "+5% to all Elemental Resistances"]
-	},
-	"N302": {
-		"name": "Low Tolerance",
-		"stats": ["60% increased Effect of Poison against Enemies that are not Poisoned"]
-	},
-	"N303": {
-		"name": "N303",
-		"stats": []
-	},
-	"N304": {
-		"name": "N304",
-		"stats": []
-	},
-	"N305": {
-		"name": "N305",
-		"stats": []
-	},
-	"N306": {
-		"name": "N306",
-		"stats": []
-	},
-	"N307": {
-		"name": "Honed Instincts",
-		"stats": [
+  "N254": {
+    "name": "Lust for Power",
+    "stats": [
+      "10% chance that if you would gain Power Charges, you instead gain up to your maximum number of Power Charges",
+      "+1 to Maximum Power Charges"
+    ]
+  },
+  "N255": {
+    "name": "Projectile Bulwark",
+    "stats": [
+      "30% increased Armour",
+      "Defend with 120% of Armour against Projectile Attacks"
+    ]
+  },
+  "N256": {
+    "name": "N256",
+    "stats": []
+  },
+  "N257": {
+    "name": "Unbound Forces",
+    "stats": [
+      "50% increased Duration of Elemental Ailments on Enemies",
+      "50% increased Effect of Chill",
+      "15% increased Effect of Shock"
+    ]
+  },
+  "N258": {
+    "name": "N258",
+    "stats": []
+  },
+  "N259": {
+    "name": "N259",
+    "stats": []
+  },
+  "N260": {
+    "name": "Sigil of Fire",
+    "stats": [
+      "30% increased Damage with Hits against Ignited Enemies"
+    ]
+  },
+  "N261": {
+    "name": "Essence of the Mountain",
+    "stats": [
+      "20% increased Freeze Buildup",
+      "Gain 5% of Damage as Extra Cold Damage"
+    ]
+  },
+  "N262": {
+    "name": "In Your Face",
+    "stats": [
+      "40% increased Melee Damage with Hits at Close Range"
+    ]
+  },
+  "N263": {
+    "name": "Accuracy",
+    "stats": [
+      "10% increased Global Accuracy Rating"
+    ]
+  },
+  "N264": {
+    "name": "Serrated Edges",
+    "stats": [
+      "30% increased Attack Damage"
+    ]
+  },
+  "N265": {
+    "name": "N265",
+    "stats": []
+  },
+  "N266": {
+    "name": "N266",
+    "stats": []
+  },
+  "N267": {
+    "name": "N267",
+    "stats": []
+  },
+  "N268": {
+    "name": "Martial Artistry",
+    "stats": [
+      "+25% to Critical Strike Multiplier with Staves"
+    ]
+  },
+  "N269": {
+    "name": "N269",
+    "stats": []
+  },
+  "N270": {
+    "name": "Cold Penetration",
+    "stats": [
+      "Damage Penetrates 10% Cold Resistance"
+    ]
+  },
+  "N271": {
+    "name": "N271",
+    "stats": []
+  },
+  "N272": {
+    "name": "N272",
+    "stats": []
+  },
+  "N273": {
+    "name": "N273",
+    "stats": []
+  },
+  "N274": {
+    "name": "N274",
+    "stats": []
+  },
+  "N275": {
+    "name": "N275",
+    "stats": []
+  },
+  "N276": {
+    "name": "N276",
+    "stats": []
+  },
+  "N277": {
+    "name": "Siphon",
+    "stats": [
+      "Recover 2% of Mana on Kill",
+      "25% increased amount of Mana Leeched"
+    ]
+  },
+  "N278": {
+    "name": "N278",
+    "stats": []
+  },
+  "N279": {
+    "name": "N279",
+    "stats": []
+  },
+  "N280": {
+    "name": "N280",
+    "stats": []
+  },
+  "N281": {
+    "name": "Defensive Reflexes",
+    "stats": [
+      "12% increased Chance to Block",
+      "2 Mana gained when you Block"
+    ]
+  },
+  "N282": {
+    "name": "Manifold Method",
+    "stats": [
+      "50% increased amount of Mana Leeched",
+      "30% increased chance to inflict Ailments against Rare or Unique Enemies"
+    ]
+  },
+  "N283": {
+    "name": "N283",
+    "stats": []
+  },
+  "N284": {
+    "name": "One with the Storm",
+    "stats": [
+      "Querterstaff Skills that consume Power Charges count as consuming an additional Power Charge"
+    ]
+  },
+  "N285": {
+    "name": "N285",
+    "stats": []
+  },
+  "N286": {
+    "name": "Life on Kill Notable",
+    "stats": [
+      "Gain 20 Life per Enemy Killed"
+    ]
+  },
+  "N287": {
+    "name": "Critical Damage Bonus Notable",
+    "stats": [
+      "15% increased Critical Damage Bonus"
+    ]
+  },
+  "N288": {
+    "name": "N288",
+    "stats": []
+  },
+  "N289": {
+    "name": "N289",
+    "stats": []
+  },
+  "N290": {
+    "name": "Heartstopper",
+    "stats": [
+      "Take 75% less Damage over Time if you've started taking Damage over Time in the past second",
+      "Take 50% more Damage over Time if you haven't started taking Damage over Time in the past second"
+    ]
+  },
+  "N291": {
+    "name": "Stand Ground",
+    "stats": [
+      "Regenerate 2% of Life per second while affected by any Damaging Ailment",
+      "Regenerate 2% of Life per second while stationary"
+    ]
+  },
+  "N292": {
+    "name": "Armor Break",
+    "stats": [
+      "Overwhelm 10% Physical Damage Reduction"
+    ]
+  },
+  "N293": {
+    "name": "N293",
+    "stats": []
+  },
+  "N294": {
+    "name": "N294",
+    "stats": []
+  },
+  "N295": {
+    "name": "N295",
+    "stats": []
+  },
+  "N296": {
+    "name": "N296",
+    "stats": []
+  },
+  "N297": {
+    "name": "N297",
+    "stats": []
+  },
+  "N298": {
+    "name": "Evasion and Energy Shield",
+    "stats": [
+      "15% increased Evasion Rating",
+      "15% increased maximum Energy Shield"
+    ]
+  },
+  "N299": {
+    "name": "Blinding Strike",
+    "stats": [
+      "24% increased Attack Damage",
+      "10% chance to Blind Enemies on Hit with Attacks"
+    ]
+  },
+  "N300": {
+    "name": "N300",
+    "stats": []
+  },
+  "N301": {
+    "name": "Prism Guard",
+    "stats": [
+      "+1% to all maximum Elemental Resistances",
+      "+5% to all Elemental Resistances"
+    ]
+  },
+  "N302": {
+    "name": "Low Tolerance",
+    "stats": [
+      "60% increased Effect of Poison against Enemies that are not Poisoned"
+    ]
+  },
+  "N303": {
+    "name": "N303",
+    "stats": []
+  },
+  "N304": {
+    "name": "N304",
+    "stats": []
+  },
+  "N305": {
+    "name": "N305",
+    "stats": []
+  },
+  "N306": {
+    "name": "N306",
+    "stats": []
+  },
+  "N307": {
+    "name": "Honed Instincts",
+    "stats": [
       "8% increased Projectile Seed",
       "8% increased Attack Speed",
-      "+10 to Dexterity"]
-	},
-	"N308": {
-		"name": "Smash",
-		"stats": ["20% increased Melee Damage", "40% increased Melee Damage against Heavy Stunned ennemies"]
-	},
-	"N309": {
-		"name": "N309",
-		"stats": []
-	},
-	"N310": {
-		"name": "Impact Force",
-		"stats": ["20% increased Stun Buildup", "25% increased Attack Area Damage"]
-	},
-	"N311": {
-		"name": "N311",
-		"stats": []
-	},
-	"N312": {
-		"name": "Brutal",
-		"stats": ["10% increased Stun Buildup", "10% increased Melee Damage", "+10 to Strength"]
-	},
-	"N313": {
-		"name": "Clean Shot",
-		"stats": ["15% chance to Pierce an Enemy","15% increased Projectile Damage"]
-	},
-	"N314": {
-		"name": "Shattering Blow",
-		"stats": ["Break 50% of Armour on Heavy Stunning an Enemy"]
-	},
-	"N315": {
-		"name": "N315",
-		"stats": []
-	},
-	"N316": {
-		"name": "Elemental Notable",
-		"stats": ["25% increased Elemental Damage"]
-	},
-	"N317": {
-		"name": "Falcon Technique",
-		"stats": ["1% increased Attack Speed per 15 Dexterity"]
-	},
-	"N318": {
-		"name": "Wellspring",
-		"stats": ["25% increased Mana Recovery from Flasks"]
-	},
-	"N319": {
-		"name": "Bolstering Yell",
-		"stats": ["Empowered Attacks deal 30% increased Damage" ,"Warcry Skills have 30% increased Area of Effect"]
-	},
-	"N320": {
-		"name": "N320",
-		"stats": []
-	},
-	"N321": {
-		"name": "Flip the Script",
-		"stats": ["Recover 50% of Life when you Heavy Stun a Rare of Unique Enemy"]
-	},
-	"N322": {
-		"name": "Sweep and Slice",
-		"stats": ["12% increased Damage with One Handed Weapons","12% increased Area of Effect for Attacks"]
-	},
-	"N323": {
-		"name": "No Escape",
-		"stats": ["30% increased Skill Effect Duration"]
-	},
-	"N324": {
-		"name": "Blur",
-		"stats": ["4% increased Movement Speed","16% increased Evasion Rating","+10 to Dexterity"]
-	},
-	"N325": {
-		"name": "Hale Traveller",
-		"stats": ["25% increased Life Recovery from Flasks"]
-	},
-	"N326": {
-		"name": "Admonisher",
-		"stats": ["25% increased Warcry Speed", "25% increased Warcry Cooldown Recovery Rate"]
-	},
-	"N327": {
-		"name": "Reverberating Impact",
-		"stats": ["Break 25% increased Armour", "16% increased Area of Effect for Attacks"]
-	},
-	"N328": {
-		"name": "N328",
-		"stats": []
-	},
-	"N329": {
-		"name": "Sturdy Metal",
-		"stats": ["80% increased Armour from Equipped Body Armour"]
-	},
-	"N330": {
-		"name": "N330",
-		"stats": []
-	},
-	"N331": {
-		"name": "Ranged",
-		"stats": ["40% increased Projectile Damage"]
-	},
-	"N332": {
-		"name": "N332",
-		"stats": []
-	},
-	"N333": {
-		"name": "N333",
-		"stats": []
-	},
-	"N334": {
-		"name": "Mark Cast Speed",
-		"stats": ["Mark Skills have 10% increased Cast Speed"]
-	},
-	"N335": {
-		"name": "N335",
-		"stats": []
-	},
-	"N336": {
-		"name": "Outmanouver",
-		"stats": ["20% increased Stun buildup","20% increased Freeze Buildup"]
-	},
-	"N337": {
-		"name": "Relentless",
-		"stats": ["15% increased Armour" ,"Regenerate 1% of life per second" ,"+10 to Strength"]
-	},
-	"N338": {
-		"name": "N338",
-		"stats": []
-	},
-	"N339": {
-		"name": "N339",
-		"stats": []
-	},
-	"N340": {
-		"name": "Break Focus",
-		"stats": ["Enemies you Mark have 15% reduced Accuracy Rating"]
-	},
-	"N341": {
-		"name": "N341",
-		"stats": []
-	},
-	"N342": {
-		"name": "Hunker Down",
-		"stats": ["Recover 20 Life when you Block", "80% less Knockback Distance for Blocked Hits"]
-	},
-	"N343": {
-		"name": "Aftershocks",
-		"stats": ["40% increased Aftershock Area of Effect"]
-	},
-	"N344": {
-		"name": "N344",
-		"stats": []
-	},
-	"N345": {
-		"name": "N345",
-		"stats": []
-	},
-	"N346": {
-		"name": "Defender's Resolve",
-		"stats": ["12% increased Chance to Block" ,"Stagger empties 50% faster while your Shield is lowered"]
-	},
-	"N347": {
-		"name": "N347",
-		"stats": []
-	},
-	"N348": {
-		"name": "N348",
-		"stats": []
-	},
-	"N349": {
-		"name": "N349",
-		"stats": []
-	},
-	"N350": {
-		"name": "N350",
-		"stats": []
-	},
-	"N351": {
-		"name": "N351",
-		"stats": []
-	},
-	"N352": {
-		"name": "Stacking Toxins",
-		"stats": ["Can Poison enemies an additional time", "20% reduced Effect of Poison"]
-	},
-	"N353": {
-		"name": "Impair",
-		"stats": [
-			"25% increased Damage with One Handed Weapons",
-			"Attacks have 10% chance to Maim on Hit"
-		]
-	},
-	"N354": {
-		"name": "N354",
-		"stats": []
-	},
-	"N355": {
-		"name": "Guts",
-		"stats": [
-			"Recovery 5% of Life for each Endurance Charge consumed",
-			"+1 to Maximum Endurance Charges"
-		]
-	},
-	"N356": {
-		"name": "N356",
-		"stats": []
-	},
-	"N357": {
-		"name": "N357",
-		"stats": []
-	},
-	"N358": {
-		"name": "Reaving",
-		"stats": ["8% increased Attack Speed with One Handed Weapons", "+15 to Dexterity"]
-	},
-	"N359": {
-		"name": "N359",
-		"stats": []
-	},
-	"N360": {
-		"name": "Titan's Determination",
-		"stats": ["25% increased Stun Threshold" ,"Regenerate 1,5% of Life per second while moving"]
-	},
-	"N361": {
-		"name": "Battle-hardened",
-		"stats": [
-			"Hits against you have 20% reduced Critical Damage Bonus",
-			"20% increased Armour and Evasion Rating",
-			"+5 to Strength and Dexterity"
-		]
-	},
-	"N362": {
-		"name": "Remorseless",
-		"stats": [
-			"15% increased Projectile Damage",
-			"30% increased Stun Buildup against enemies within 2 metres",
-			"+5 Strength and Dexterity"
-		]
-	},
-	"N363": {
-		"name": "Flashy Deflection",
-		"stats": ["Prevent +3% of Deflected Attack Damage", "20% increased chance to Deflect"]
-	},
-	"N364": {
-		"name": "N364",
-		"stats": []
-	},
-	"N365": {
-		"name": "N365",
-		"stats": []
-	},
-	"N366": {
-		"name": "Mass Rejuvenation",
-		"stats": ["Regenarate 1% of Life per second" ,"Allies in your Presence Regenerate 2% of your Maximum Life per second"]
-	},
-	"N367": {
-		"name": "Honourless",
-		"stats": [
-			"25% increased Armour if you've Hit an Enemy with a Melee Attack Recently",
-			"50% increased Melee Damage against Immobilised Enemies"
-		]
-	},
-	"N368": {
-		"name": "Feel No Pain",
-		"stats": ["20% increased Armour and Evasion Rating", "20% increased Stun Threshold"]
-	},
-	"N369": {
-		"name": "N369",
-		"stats": []
-	},
-	"N370": {
-		"name": "Careful Aim",
-		"stats": ["16% increased Projectile Damage", "+5 to Dexterity"]
-	},
-	"N371": {
-		"name": "Unbending",
-		"stats": ["3% increased Maximum Life", "30% increased Stun Threshold"]
-	},
-	"N372": {
-		"name": "Polished Iron",
-		"stats": [
-			"25% increased Armour",
-			"50% of Base Armour from Equipment also added to Stun Threshold"
-		]
-	},
-	"N373": {
-		"name": "Heavy Ammunition",
-		"stats": ["15% increased Stun Buildup"]
-	},
-	"N374": {
-		"name": "N374",
-		"stats": []
-	},
-	"N375": {
-		"name": "Unforgiving",
-		"stats": ["+4 to Maximum Rage", "Inherent Rage Loss starts 1 second later"]
-	},
-	"N376": {
-		"name": "Evasion Notable",
-		"stats": ["25% increased Evasion Rating"]
-	},
-	"N377": {
-		"name": "Breaking Blows",
-		"stats": [
-			"30% increased Stun Buildup",
-			"15% increased Area of Effect if you have Stunned an Enemy Recently"
-		]
-	},
-	"N378": {
-		"name": "N378",
-		"stats": []
-	},
-	"N379": {
-		"name": "N379",
-		"stats": []
-	},
-	"N380": {
-		"name": "Lasting Concoctions",
-		"stats": ["25% increased Flask Effect Duration", "25% increased Flask Charges gained"]
-	},
-	"N381": {
-		"name": "N381",
-		"stats": []
-	},
-	"N382": {
-		"name": "N382",
-		"stats": []
-	},
-	"N383": {
-		"name": "N383",
-		"stats": []
-	},
-	"N384": {
-		"name": "N384",
-		"stats": []
-	},
-	"N385": {
-		"name": "N385",
-		"stats": []
-	},
-	"N386": {
-		"name": "Unerring Impact",
-		"stats": [
-			"10% increased Accuracy Rating with One Handed Melee Weapons",
-			"10% increased Accuracy Rating with Two Handed Melee Weapons",
-			"+2 to Melee Strike Range"
-		]
-	},
-	"N387": {
-		"name": "Blade Catcher",
-		"stats": ["Defend with 200% of Armour against Critical Hits", "+15 to Strength"]
-	},
-	"N388": {
-		"name": "N388",
-		"stats": []
-	},
-	"N389": {
-		"name": "N389",
-		"stats": []
-	},
-	"N390": {
-		"name": "Cacophony",
-		"stats": ["5% chance to deal Double Damage if you've Warcried in the past 8 seconds" ,"40% increased Damage with Warcry"]
-	},
-	"N391": {
-		"name": "Singular Purpose",
-		"stats": ["5% reduced Attack Speed" ,"20% increased Stun Buildup" ,"40% increased Damage with Two Handed Weapons"]
-	},
-	"N392": {
-		"name": "Shockwaves",
-		"stats": ["30% increased Area of Effect if you've Stunned an enemy with a Two Handed Melee Weapon Recently"]
-	},
-	"N393": {
-		"name": "Devastation",
-		"stats": ["15% increased Attack Area Damage" ,"15% increased Area of Effect for Attacks"]
-	},
-	"N394": {
-		"name": "N394",
-		"stats": []
-	},
-	"N395": {
-		"name": "Heavy Weaponry",
-		"stats": [
-			"15% increased Melee Damage",
-			"15% increased Stun Buildup with Melee Damage",
-			"+15 to Strength"
-		]
-	},
-	"N396": {
-		"name": "Exposed Wounds",
-		"stats": [
-			"32% increased chance to inflict Ailments",
-			"Break 30% increased Armour on enemies affected by Ailments"
-		]
-	},
-	"N397": {
-		"name": "Hard to Kill",
-		"stats": ["40% increased Flask Life Recovery rate", "Regenerate 1.5% of Life per second"]
-	},
-	"N398": {
-		"name": "Volatile Catalyst",
-		"stats": ["10% increased Area of Effect", "10% increased Cooldown Recovery Rate"]
-	},
-	"N399": {
-		"name": "Ricochet",
-		"stats": ["20% increased Projectile Damage", "Projectiles have 20% chance to Chain an additional time from terrain"]
-	},
-	"N400": {
-		"name": "Vocal Empowerment",
-		"stats": ["Warcries Empower an additional Attack"]
-	},
-	"N401": {
-		"name": "N401",
-		"stats": []
-	},
-	"N402": {
-		"name": "N402",
-		"stats": []
-	},
-	"N403": {
-		"name": "Bloodletting",
-		"stats": ["40% increased Bleeding Duration", "20% chance to inflict Bleeding on Hit"]
-	},
-	"N404": {
-		"name": "Evasion Notable",
-		"stats": ["25% increased Evasion Rating"]
-	},
-	"N405": {
-		"name": "Grit",
-		"stats": ["5% chance that if you would gain Endurance Charges, you instead gain up to maximum Endurance Charges" ,"+1 to Maximum Endurance Charges"]
-	},
-	"N406": {
-		"name": "Fortifying Blood",
-		"stats": [
-			"20% increased amount of Life Leeched",
-			"40% increased Armour and Evasion Rating while Leeching"
-		]
-	},
-	"N407": {
-		"name": "Heavy Armour",
-		"stats": ["100% of Strength Requirements from Boots, Gloves and Helmets also added to Armour"]
-	},
-	"N408": {
-		"name": "Carved Earth",
-		"stats": ["20 increased Totem Damage" ,"6% increased Attack and Cast Speed if you've summoned a Totem Recently"]
-	},
-	"N409": {
-		"name": "N409",
-		"stats": []
-	},
-	"N410": {
-		"name": "Skullcrusher",
-		"stats": ["20% more Damage against Heavy Stunned Enemies with Maces"]
-	},
-	"N411": {
-		"name": "Death from Afar",
-		"stats": [
-			"Projectiles have 25% increased Critical Hit Chance against Enemies further then 6m",
-			"Projectiles deal 25% increased Damage with Hits against Enemies further then 6m"]
-	},
-	"N412": {
-		"name": "Vigilance",
-		"stats": ["12% increased Chance to Block", "10 Life gained when you Block"]
-	},
-	"N413": {
-		"name": "N413",
-		"stats": []
-	},
-	"N414": {
-		"name": "N414",
-		"stats": []
-	},
-	"N415": {
-		"name": "N415",
-		"stats": []
-	},
-	"N416": {
-		"name": "Desperate Times",
-		"stats": ["Regenerate 3% of Life per second while on Low Life" ,"40% increased Life Recovery from Flasks used when on Low Life"]
-	},
-	"N417": {
-		"name": "N417",
-		"stats": []
-	},
-	"N418": {
-		"name": "Prolonged Fury",
-		"stats": ["Inherent loss of Rage is 25% slower"]
-	},
-	"N419": {
-		"name": "N419",
-		"stats": []
-	},
-	"N420": {
-		"name": "Heavy Draught",
-		"stats": [
-			"5% reduced Movement Speed during any Flask Effect",
-			"Guard Flasks applied to you have 40% increased Effect"
-		]
-	},
-	"N421": {
-		"name": "Made to Last",
-		"stats": [
-			"0.5% of Physical Damage prevented from Hits in the past",
-			"10 seconds is Regenerated as Life per second"
-		]
-	},
-	"N422": {
-		"name": "N422",
-		"stats": []
-	},
-	"N423": {
-		"name": "N423",
-		"stats": []
-	},
-	"N424": {
-		"name": "N424",
-		"stats": []
-	},
-	"N425": {
-		"name": "Stand and Deliver",
-		"stats": [
-			"Projectiles have 40% increased Critical Damage Bonus against Enemies within 2m",
-			"Projectiles deal 25% increased Damage with Hits against Enemies within 2m"]
-	},
-	"N426": {
-		"name": "Back in Action",
-		"stats": ["80% increased Stun and Block Recovery"]
-	},
-	"N427": {
-		"name": "Catalysis",
-		"stats": [
-			"20% increased Elemental Damage with Attack Skills",
-			"5% of Physical Damage from Hits taken as Damage of a Random Element"
-		]
-	},
-	"N428": {
-		"name": "Voracious",
-		"stats": ["20% of Leech is Instant"]
-	},
-	"N429": {
-		"name": "Internal Bleeding",
-		"stats": ["25% chance to Aggravate Bleedind on targets you Hit with Empowered Attacks" ,"Empowered Attacks deal 35% increased Damage"]
-	},
-	"N430": {
-		"name": "N430",
-		"stats": []
-	},
-	"N431": {
-		"name": "Colossal Weapon",
-		"stats": [
-			"20% increased Area of Effect while wielding a Two Handed Melee Weapon",
-			"+10 to Strength"
-		]
-	},
-	"N432": {
-		"name": "N432",
-		"stats": []
-	},
-	"N433": {
-		"name": "Split the Earth",
-		"stats": [
-			"15% chance to Aftershock for Slam Skills you use with Maces",
-			"15% chance to Aftershock for Strike Skills you use with Maces"
-		]
-	},
-	"N434": {
-		"name": "N434",
-		"stats": []
-	},
-	"N435": {
-		"name": "N435",
-		"stats": []
-	},
-	"N436": {
-		"name": "N436",
-		"stats": []
-	},
-	"N437": {
-		"name": "N437",
-		"stats": []
-	},
-	"N438": {
-		"name": "N438",
-		"stats": []
-	},
-	"N439": {
-		"name": "N439",
-		"stats": []
-	},
-	"N440": {
-		"name": "N440",
-		"stats": []
-	},
-	"N441": {
-		"name": "Blade Flurry",
-		"stats": [
-			"6% increased Attack Speed while Dual Wielding",
-			"15% increased Attack Critical Hit Chance while Dual Wielding"
-		]
-	},
-	"N442": {
-		"name": "Cross Strike",
-		"stats": [
-			"20% increased Accuracy Rating while Dual Wielding",
-			"3% increased Movement Speed while Dual Wielding"
-		]
-	},
-	"N443": {
-		"name": "Irreparable",
-		"stats": ["100% increased Armour Break Duration"]
-	},
-	"N444": {
-		"name": "Curved Weapon",
-		"stats": ["20% increased Accuracy Rating with Two Handed Melee Weapons", "+10 to Dexterity"]
-	},
-	"N445": {
-		"name": "N445",
-		"stats": []
-	},
-	"N446": {
-		"name": "N446",
-		"stats": []
-	},
-	"N447": {
-		"name": "N447",
-		"stats": []
-	},
-	"N448": {
-		"name": "N448",
-		"stats": []
-	},
-	"N449": {
-		"name": "Overwhelm",
-		"stats": [
-			"5% reduced Attack Speed",
-			"20% increased Stun Buildup",
-			"40% increased Damage with Two Handed Weapons"
-		]
-	},
-	"N450": {
-		"name": "N450",
-		"stats": []
-	},
-	"N451": {
-		"name": "Lay Siege",
-		"stats": ["1% increased Damage per 1% Chance to Block"]
-	},
-	"N452": {
-		"name": "N452",
-		"stats": []
-	},
-	"N453": {
-		"name": "N453",
-		"stats": []
-	},
-	"N454": {
-		"name": "Heatproofing",
-		"stats": ["25% of Armour also applies to Fire Damage taken from Hits"]
-	},
-	"N455": {
-		"name": "Quick-change Act",
-		"stats": ["50% increased Weapon Swap Speed"]
-	},
-	"N456": {
-		"name": "Clear Space",
-		"stats": [
-			"20% increased Knockback Distance",
-			"20% chance to Knock Enemies Back with Hits at Close Range"
-		]
-	},
-	"N457": {
-		"name": "N457",
-		"stats": []
-	},
-	"N458": {
-		"name": "Pile On",
-		"stats": ["60% increased Damage against Enemies with Fully Broken Armour"]
-	},
-	"N459": {
-		"name": "N459",
-		"stats": []
-	},
-	"N460": {
-		"name": "N460",
-		"stats": []
-	},
-	"N461": {
-		"name": "N461",
-		"stats": []
-	},
-	"N462": {
-		"name": "N462",
-		"stats": []
-	},
-	"N463": {
-		"name": "N463",
-		"stats": []
-	},
-	"N464": {
-		"name": "N464",
-		"stats": []
-	},
-	"N465": {
-		"name": "N465",
-		"stats": []
-	},
-	"N466": {
-		"name": "N466",
-		"stats": []
-	},
-	"N467": {
-		"name": "N467",
-		"stats": []
-	},
-	"N468": {
-		"name": "N468",
-		"stats": []
-	},
-	"N469": {
-		"name": "N469",
-		"stats": []
-	},
-	"N470": {
-		"name": "Coated Arms",
-		"stats": [
-			"25% increased Damage with One Handed Weapons",
-			"25% increased Chance to apply Ailments with One-Handed Attacks"
-		]
-	},
-	"N471": {
-		"name": "Grenadier",
-		"stats": ["Grenade Skills have +1 Cooldown Use"]
-	},
-	"N472": {
-		"name": "Cluster Bombs",
-		"stats": ["50% increased Grenade Duration", "Grenade Skills Fire an additional Projectile"]
-	},
-	"N473": {
-		"name": "N473",
-		"stats": []
-	},
-	"N474": {
-		"name": "Falcon Dive",
-		"stats": ["1% increased Attack Speed per 250 Accuracy Rating"]
-	},
-	"N475": {
-		"name": "N475",
-		"stats": []
-	},
-	"N476": {
-		"name": "N476",
-		"stats": []
-	},
-	"N477": {
-		"name": "Spike Pit",
-		"stats": ["Jagged Ground you create applies 10% increased Damage taken to Enemies"]
-	},
-	"N478": {
-		"name": "Whirling Onslaught",
-		"stats": ["50% chance to gain Onslaught on Killing Blow with Axes"]
-	},
-	"N479": {
-		"name": "N479",
-		"stats": []
-	},
-	"N480": {
-		"name": "N480",
-		"stats": []
-	},
-	"N481": {
-		"name": "N481",
-		"stats": []
-	},
-	"N482": {
-		"name": "Close Confines",
-		"stats": ["25% chance for Projectiles to Pierce Enemies within 3m distance of you"]
-	},
-	"N483": {
-		"name": "Unexpected Finesse",
-		"stats": ["10% increased Attack Damage", "Gain Accuracy Rating equal to your Strength"]
-	},
-	"N484": {
-		"name": "N484",
-		"stats": []
-	},
-	"N485": {
-		"name": "N485",
-		"stats": []
-	},
-	"N486": {
-		"name": "N486",
-		"stats": []
-	},
-	"N487": {
-		"name": "Initiative",
-		"stats": [
-			"30% increased Melee Damage when on Full Life",
-			"16% increased Attack Speed if you haven't Attacked Recently"
-		]
-	},
-	"N488": {
-		"name": "Presence Present",
-		"stats": [
-			"Allies in your PResence have +100 to Accuracy Rating",
-			"35% increased Attack Damage while you have an Ally in your Presence"
-		]
-	},
-	"N489": {
-		"name": "N489",
-		"stats": []
-	},
-	"N490": {
-		"name": "N490",
-		"stats": []
-	},
-	"N491": {
-		"name": "Hale Heart",
-		"stats": ["15% increased Life Recovery rate"]
-	},
-	"N492": {
-		"name": "Enraged Reaver",
-		"stats": ["+10 to Maximum Rage while wielding an Axe"]
-	},
-	"N493": {
-		"name": "N493",
-		"stats": []
-	},
-	"N494": {
-		"name": "N494",
-		"stats": []
-	},
-	"N495": {
-		"name": "N495",
-		"stats": []
-	},
-	"N496": {
-		"name": "N496",
-		"stats": []
-	},
-	"N497": {
-		"name": "N497",
-		"stats": []
-	},
-	"N498": {
-		"name": "Deadly Flourish",
-		"stats": ["20% increased Melee Critical Hit Chance"]
-	},
-	"N499": {
-		"name": "N499",
-		"stats": []
-	},
-	"N500": {
-		"name": "N500",
-		"stats": []
-	},
-	"N501": {
-		"name": "N501",
-		"stats": []
-	},
-	"N502": {
-		"name": "Multitasking",
-		"stats": ["15% increased Skill Effect Duration", "12% increased Cooldown Recovery Rate"]
-	},
-	"N503": {
-		"name": "Bloodthirsty",
-		"stats": ["25% increased amount of Life Leeched", "Leech Life 25% faster"]
-	},
-	"N504": {
-		"name": "N504",
-		"stats": []
-	},
-	"N505": {
-		"name": "Adrenaline Rush",
-		"stats": [
-			"4% increased Movement Speed if you've killed Recently",
-			"8% increased Attack Speed if you've Killed Recently"
-		]
-	},
-	"N506": {
-		"name": "N506",
-		"stats": []
-	},
-	"N507": {
-		"name": "Volatile Grenades",
-		"stats": [
+      "+10 to Dexterity"
+    ]
+  },
+  "N308": {
+    "name": "Smash",
+    "stats": [
+      "20% increased Melee Damage",
+      "40% increased Melee Damage against Heavy Stunned ennemies"
+    ]
+  },
+  "N309": {
+    "name": "N309",
+    "stats": []
+  },
+  "N310": {
+    "name": "Impact Force",
+    "stats": [
+      "20% increased Stun Buildup",
+      "25% increased Attack Area Damage"
+    ]
+  },
+  "N311": {
+    "name": "N311",
+    "stats": []
+  },
+  "N312": {
+    "name": "Brutal",
+    "stats": [
+      "10% increased Stun Buildup",
+      "10% increased Melee Damage",
+      "+10 to Strength"
+    ]
+  },
+  "N313": {
+    "name": "Clean Shot",
+    "stats": [
+      "15% chance to Pierce an Enemy",
+      "15% increased Projectile Damage"
+    ]
+  },
+  "N314": {
+    "name": "Shattering Blow",
+    "stats": [
+      "Break 50% of Armour on Heavy Stunning an Enemy"
+    ]
+  },
+  "N315": {
+    "name": "N315",
+    "stats": []
+  },
+  "N316": {
+    "name": "Elemental Notable",
+    "stats": [
+      "25% increased Elemental Damage"
+    ]
+  },
+  "N317": {
+    "name": "Falcon Technique",
+    "stats": [
+      "1% increased Attack Speed per 15 Dexterity"
+    ]
+  },
+  "N318": {
+    "name": "Wellspring",
+    "stats": [
+      "25% increased Mana Recovery from Flasks"
+    ]
+  },
+  "N319": {
+    "name": "Bolstering Yell",
+    "stats": [
+      "Empowered Attacks deal 30% increased Damage",
+      "Warcry Skills have 30% increased Area of Effect"
+    ]
+  },
+  "N320": {
+    "name": "Retaliation",
+    "stats": [
+      "75% of Damage taken reflected to Melee Attackers"
+    ]
+  },
+  "N321": {
+    "name": "Flip the Script",
+    "stats": [
+      "Recover 50% of Life when you Heavy Stun a Rare of Unique Enemy"
+    ]
+  },
+  "N322": {
+    "name": "Sweep and Slice",
+    "stats": [
+      "12% increased Damage with One Handed Weapons",
+      "12% increased Area of Effect for Attacks"
+    ]
+  },
+  "N323": {
+    "name": "No Escape",
+    "stats": [
+      "30% increased Skill Effect Duration"
+    ]
+  },
+  "N324": {
+    "name": "Blur",
+    "stats": [
+      "4% increased Movement Speed",
+      "16% increased Evasion Rating",
+      "+10 to Dexterity"
+    ]
+  },
+  "N325": {
+    "name": "Hale Traveller",
+    "stats": [
+      "25% increased Life Recovery from Flasks"
+    ]
+  },
+  "N326": {
+    "name": "Admonisher",
+    "stats": [
+      "25% increased Warcry Speed",
+      "25% increased Warcry Cooldown Recovery Rate"
+    ]
+  },
+  "N327": {
+    "name": "Reverberating Impact",
+    "stats": [
+      "Break 25% increased Armour",
+      "16% increased Area of Effect for Attacks"
+    ]
+  },
+  "N328": {
+    "name": "N328",
+    "stats": []
+  },
+  "N329": {
+    "name": "Sturdy Metal",
+    "stats": [
+      "80% increased Armour from Equipped Body Armour"
+    ]
+  },
+  "N330": {
+    "name": "N330",
+    "stats": []
+  },
+  "N331": {
+    "name": "Ranged",
+    "stats": [
+      "40% increased Projectile Damage"
+    ]
+  },
+  "N332": {
+    "name": "N332",
+    "stats": []
+  },
+  "N333": {
+    "name": "N333",
+    "stats": []
+  },
+  "N334": {
+    "name": "Mark Cast Speed",
+    "stats": [
+      "Mark Skills have 10% increased Cast Speed"
+    ]
+  },
+  "N335": {
+    "name": "N335",
+    "stats": []
+  },
+  "N336": {
+    "name": "Outmanouver",
+    "stats": [
+      "20% increased Stun buildup",
+      "20% increased Freeze Buildup"
+    ]
+  },
+  "N337": {
+    "name": "Relentless",
+    "stats": [
+      "15% increased Armour",
+      "Regenerate 1% of life per second",
+      "+10 to Strength"
+    ]
+  },
+  "N338": {
+    "name": "N338",
+    "stats": []
+  },
+  "N339": {
+    "name": "N339",
+    "stats": []
+  },
+  "N340": {
+    "name": "Break Focus",
+    "stats": [
+      "Enemies you Mark have 15% reduced Accuracy Rating"
+    ]
+  },
+  "N341": {
+    "name": "N341",
+    "stats": []
+  },
+  "N342": {
+    "name": "Hunker Down",
+    "stats": [
+      "Recover 20 Life when you Block",
+      "80% less Knockback Distance for Blocked Hits"
+    ]
+  },
+  "N343": {
+    "name": "Aftershocks",
+    "stats": [
+      "40% increased Aftershock Area of Effect"
+    ]
+  },
+  "N344": {
+    "name": "N344",
+    "stats": []
+  },
+  "N345": {
+    "name": "N345",
+    "stats": []
+  },
+  "N346": {
+    "name": "Defender's Resolve",
+    "stats": [
+      "12% increased Chance to Block",
+      "Stagger empties 50% faster while your Shield is lowered"
+    ]
+  },
+  "N347": {
+    "name": "N347",
+    "stats": []
+  },
+  "N348": {
+    "name": "N348",
+    "stats": []
+  },
+  "N349": {
+    "name": "N349",
+    "stats": []
+  },
+  "N350": {
+    "name": "N350",
+    "stats": []
+  },
+  "N351": {
+    "name": "N351",
+    "stats": []
+  },
+  "N352": {
+    "name": "Stacking Toxins",
+    "stats": [
+      "Can Poison enemies an additional time",
+      "20% reduced Effect of Poison"
+    ]
+  },
+  "N353": {
+    "name": "Impair",
+    "stats": [
+      "25% increased Damage with One Handed Weapons",
+      "Attacks have 10% chance to Maim on Hit"
+    ]
+  },
+  "N354": {
+    "name": "N354",
+    "stats": []
+  },
+  "N355": {
+    "name": "Guts",
+    "stats": [
+      "Recovery 5% of Life for each Endurance Charge consumed",
+      "+1 to Maximum Endurance Charges"
+    ]
+  },
+  "N356": {
+    "name": "N356",
+    "stats": []
+  },
+  "N357": {
+    "name": "N357",
+    "stats": []
+  },
+  "N358": {
+    "name": "Reaving",
+    "stats": [
+      "8% increased Attack Speed with One Handed Weapons",
+      "+15 to Dexterity"
+    ]
+  },
+  "N359": {
+    "name": "N359",
+    "stats": []
+  },
+  "N360": {
+    "name": "Titan's Determination",
+    "stats": [
+      "25% increased Stun Threshold",
+      "Regenerate 1,5% of Life per second while moving"
+    ]
+  },
+  "N361": {
+    "name": "Battle-hardened",
+    "stats": [
+      "Hits against you have 20% reduced Critical Damage Bonus",
+      "20% increased Armour and Evasion Rating",
+      "+5 to Strength and Dexterity"
+    ]
+  },
+  "N362": {
+    "name": "Remorseless",
+    "stats": [
+      "15% increased Projectile Damage",
+      "30% increased Stun Buildup against enemies within 2 metres",
+      "+5 Strength and Dexterity"
+    ]
+  },
+  "N363": {
+    "name": "Flashy Deflection",
+    "stats": [
+      "Prevent +3% of Deflected Attack Damage",
+      "20% increased chance to Deflect"
+    ]
+  },
+  "N364": {
+    "name": "N364",
+    "stats": []
+  },
+  "N365": {
+    "name": "N365",
+    "stats": []
+  },
+  "N366": {
+    "name": "Mass Rejuvenation",
+    "stats": [
+      "Regenarate 1% of Life per second",
+      "Allies in your Presence Regenerate 2% of your Maximum Life per second"
+    ]
+  },
+  "N367": {
+    "name": "Honourless",
+    "stats": [
+      "25% increased Armour if you've Hit an Enemy with a Melee Attack Recently",
+      "50% increased Melee Damage against Immobilised Enemies"
+    ]
+  },
+  "N368": {
+    "name": "Feel No Pain",
+    "stats": [
+      "20% increased Armour and Evasion Rating",
+      "20% increased Stun Threshold"
+    ]
+  },
+  "N369": {
+    "name": "N369",
+    "stats": []
+  },
+  "N370": {
+    "name": "Careful Aim",
+    "stats": [
+      "16% increased Projectile Damage",
+      "+5 to Dexterity"
+    ]
+  },
+  "N371": {
+    "name": "Unbending",
+    "stats": [
+      "3% increased Maximum Life",
+      "30% increased Stun Threshold"
+    ]
+  },
+  "N372": {
+    "name": "Polished Iron",
+    "stats": [
+      "25% increased Armour",
+      "50% of Base Armour from Equipment also added to Stun Threshold"
+    ]
+  },
+  "N373": {
+    "name": "Heavy Ammunition",
+    "stats": [
+      "15% increased Stun Buildup"
+    ]
+  },
+  "N374": {
+    "name": "Mass Hysteria",
+    "stats": [
+      "Allies in your Presence have 6% increased Attack Speed"
+    ]
+  },
+  "N375": {
+    "name": "Unforgiving",
+    "stats": [
+      "+4 to Maximum Rage",
+      "Inherent Rage Loss starts 1 second later"
+    ]
+  },
+  "N376": {
+    "name": "Evasion Notable",
+    "stats": [
+      "25% increased Evasion Rating"
+    ]
+  },
+  "N377": {
+    "name": "Breaking Blows",
+    "stats": [
+      "30% increased Stun Buildup",
+      "15% increased Area of Effect if you have Stunned an Enemy Recently"
+    ]
+  },
+  "N378": {
+    "name": "N378",
+    "stats": []
+  },
+  "N379": {
+    "name": "N379",
+    "stats": []
+  },
+  "N380": {
+    "name": "Lasting Concoctions",
+    "stats": [
+      "25% increased Flask Effect Duration",
+      "25% increased Flask Charges gained"
+    ]
+  },
+  "N381": {
+    "name": "N381",
+    "stats": []
+  },
+  "N382": {
+    "name": "N382",
+    "stats": []
+  },
+  "N383": {
+    "name": "N383",
+    "stats": []
+  },
+  "N384": {
+    "name": "N384",
+    "stats": []
+  },
+  "N385": {
+    "name": "N385",
+    "stats": []
+  },
+  "N386": {
+    "name": "Unerring Impact",
+    "stats": [
+      "10% increased Accuracy Rating with One Handed Melee Weapons",
+      "10% increased Accuracy Rating with Two Handed Melee Weapons",
+      "+2 to Melee Strike Range"
+    ]
+  },
+  "N387": {
+    "name": "Blade Catcher",
+    "stats": [
+      "Defend with 200% of Armour against Critical Hits",
+      "+15 to Strength"
+    ]
+  },
+  "N388": {
+    "name": "N388",
+    "stats": []
+  },
+  "N389": {
+    "name": "N389",
+    "stats": []
+  },
+  "N390": {
+    "name": "Cacophony",
+    "stats": [
+      "5% chance to deal Double Damage if you've Warcried in the past 8 seconds",
+      "40% increased Damage with Warcry"
+    ]
+  },
+  "N391": {
+    "name": "Singular Purpose",
+    "stats": [
+      "5% reduced Attack Speed",
+      "20% increased Stun Buildup",
+      "40% increased Damage with Two Handed Weapons"
+    ]
+  },
+  "N392": {
+    "name": "Shockwaves",
+    "stats": [
+      "30% increased Area of Effect if you've Stunned an enemy with a Two Handed Melee Weapon Recently"
+    ]
+  },
+  "N393": {
+    "name": "Devastation",
+    "stats": [
+      "15% increased Attack Area Damage",
+      "15% increased Area of Effect for Attacks"
+    ]
+  },
+  "N394": {
+    "name": "N394",
+    "stats": []
+  },
+  "N395": {
+    "name": "Heavy Weaponry",
+    "stats": [
+      "15% increased Melee Damage",
+      "15% increased Stun Buildup with Melee Damage",
+      "+15 to Strength"
+    ]
+  },
+  "N396": {
+    "name": "Exposed Wounds",
+    "stats": [
+      "32% increased chance to inflict Ailments",
+      "Break 30% increased Armour on enemies affected by Ailments"
+    ]
+  },
+  "N397": {
+    "name": "Hard to Kill",
+    "stats": [
+      "40% increased Flask Life Recovery rate",
+      "Regenerate 1.5% of Life per second"
+    ]
+  },
+  "N398": {
+    "name": "Volatile Catalyst",
+    "stats": [
+      "10% increased Area of Effect",
+      "10% increased Cooldown Recovery Rate"
+    ]
+  },
+  "N399": {
+    "name": "Ricochet",
+    "stats": [
+      "20% increased Projectile Damage",
+      "Projectiles have 20% chance to Chain an additional time from terrain"
+    ]
+  },
+  "N400": {
+    "name": "Vocal Empowerment",
+    "stats": [
+      "Warcries Empower an additional Attack"
+    ]
+  },
+  "N401": {
+    "name": "N401",
+    "stats": []
+  },
+  "N402": {
+    "name": "N402",
+    "stats": []
+  },
+  "N403": {
+    "name": "Bloodletting",
+    "stats": [
+      "40% increased Bleeding Duration",
+      "20% chance to inflict Bleeding on Hit"
+    ]
+  },
+  "N404": {
+    "name": "Evasion Notable",
+    "stats": [
+      "25% increased Evasion Rating"
+    ]
+  },
+  "N405": {
+    "name": "Grit",
+    "stats": [
+      "5% chance that if you would gain Endurance Charges, you instead gain up to maximum Endurance Charges",
+      "+1 to Maximum Endurance Charges"
+    ]
+  },
+  "N406": {
+    "name": "Fortifying Blood",
+    "stats": [
+      "20% increased amount of Life Leeched",
+      "40% increased Armour and Evasion Rating while Leeching"
+    ]
+  },
+  "N407": {
+    "name": "Heavy Armour",
+    "stats": [
+      "100% of Strength Requirements from Boots, Gloves and Helmets also added to Armour"
+    ]
+  },
+  "N408": {
+    "name": "Carved Earth",
+    "stats": [
+      "20 increased Totem Damage",
+      "6% increased Attack and Cast Speed if you've summoned a Totem Recently"
+    ]
+  },
+  "N409": {
+    "name": "N409",
+    "stats": []
+  },
+  "N410": {
+    "name": "Skullcrusher",
+    "stats": [
+      "20% more Damage against Heavy Stunned Enemies with Maces"
+    ]
+  },
+  "N411": {
+    "name": "Death from Afar",
+    "stats": [
+      "Projectiles have 25% increased Critical Hit Chance against Enemies further then 6m",
+      "Projectiles deal 25% increased Damage with Hits against Enemies further then 6m"
+    ]
+  },
+  "N412": {
+    "name": "Vigilance",
+    "stats": [
+      "12% increased Chance to Block",
+      "10 Life gained when you Block"
+    ]
+  },
+  "N413": {
+    "name": "N413",
+    "stats": []
+  },
+  "N414": {
+    "name": "N414",
+    "stats": []
+  },
+  "N415": {
+    "name": "N415",
+    "stats": []
+  },
+  "N416": {
+    "name": "Desperate Times",
+    "stats": [
+      "Regenerate 3% of Life per second while on Low Life",
+      "40% increased Life Recovery from Flasks used when on Low Life"
+    ]
+  },
+  "N417": {
+    "name": "N417",
+    "stats": []
+  },
+  "N418": {
+    "name": "Prolonged Fury",
+    "stats": [
+      "Inherent loss of Rage is 25% slower"
+    ]
+  },
+  "N419": {
+    "name": "N419",
+    "stats": []
+  },
+  "N420": {
+    "name": "Heavy Draught",
+    "stats": [
+      "5% reduced Movement Speed during any Flask Effect",
+      "Guard Flasks applied to you have 40% increased Effect"
+    ]
+  },
+  "N421": {
+    "name": "Made to Last",
+    "stats": [
+      "0.5% of Physical Damage prevented from Hits in the past",
+      "10 seconds is Regenerated as Life per second"
+    ]
+  },
+  "N422": {
+    "name": "N422",
+    "stats": []
+  },
+  "N423": {
+    "name": "N423",
+    "stats": []
+  },
+  "N424": {
+    "name": "N424",
+    "stats": []
+  },
+  "N425": {
+    "name": "Stand and Deliver",
+    "stats": [
+      "Projectiles have 40% increased Critical Damage Bonus against Enemies within 2m",
+      "Projectiles deal 25% increased Damage with Hits against Enemies within 2m"
+    ]
+  },
+  "N426": {
+    "name": "Back in Action",
+    "stats": [
+      "80% increased Stun and Block Recovery"
+    ]
+  },
+  "N427": {
+    "name": "Catalysis",
+    "stats": [
+      "20% increased Elemental Damage with Attack Skills",
+      "5% of Physical Damage from Hits taken as Damage of a Random Element"
+    ]
+  },
+  "N428": {
+    "name": "Voracious",
+    "stats": [
+      "20% of Leech is Instant"
+    ]
+  },
+  "N429": {
+    "name": "Internal Bleeding",
+    "stats": [
+      "25% chance to Aggravate Bleedind on targets you Hit with Empowered Attacks",
+      "Empowered Attacks deal 35% increased Damage"
+    ]
+  },
+  "N430": {
+    "name": "N430",
+    "stats": []
+  },
+  "N431": {
+    "name": "Colossal Weapon",
+    "stats": [
+      "20% increased Area of Effect while wielding a Two Handed Melee Weapon",
+      "+10 to Strength"
+    ]
+  },
+  "N432": {
+    "name": "N432",
+    "stats": []
+  },
+  "N433": {
+    "name": "Split the Earth",
+    "stats": [
+      "15% chance to Aftershock for Slam Skills you use with Maces",
+      "15% chance to Aftershock for Strike Skills you use with Maces"
+    ]
+  },
+  "N434": {
+    "name": "N434",
+    "stats": []
+  },
+  "N435": {
+    "name": "N435",
+    "stats": []
+  },
+  "N436": {
+    "name": "N436",
+    "stats": []
+  },
+  "N437": {
+    "name": "N437",
+    "stats": []
+  },
+  "N438": {
+    "name": "N438",
+    "stats": []
+  },
+  "N439": {
+    "name": "N439",
+    "stats": []
+  },
+  "N440": {
+    "name": "N440",
+    "stats": []
+  },
+  "N441": {
+    "name": "Blade Flurry",
+    "stats": [
+      "6% increased Attack Speed while Dual Wielding",
+      "15% increased Attack Critical Hit Chance while Dual Wielding"
+    ]
+  },
+  "N442": {
+    "name": "Cross Strike",
+    "stats": [
+      "20% increased Accuracy Rating while Dual Wielding",
+      "3% increased Movement Speed while Dual Wielding"
+    ]
+  },
+  "N443": {
+    "name": "Irreparable",
+    "stats": [
+      "100% increased Armour Break Duration"
+    ]
+  },
+  "N444": {
+    "name": "Curved Weapon",
+    "stats": [
+      "20% increased Accuracy Rating with Two Handed Melee Weapons",
+      "+10 to Dexterity"
+    ]
+  },
+  "N445": {
+    "name": "N445",
+    "stats": []
+  },
+  "N446": {
+    "name": "N446",
+    "stats": []
+  },
+  "N447": {
+    "name": "N447",
+    "stats": []
+  },
+  "N448": {
+    "name": "N448",
+    "stats": []
+  },
+  "N449": {
+    "name": "Overwhelm",
+    "stats": [
+      "5% reduced Attack Speed",
+      "20% increased Stun Buildup",
+      "40% increased Damage with Two Handed Weapons"
+    ]
+  },
+  "N450": {
+    "name": "N450",
+    "stats": []
+  },
+  "N451": {
+    "name": "Lay Siege",
+    "stats": [
+      "1% increased Damage per 1% Chance to Block"
+    ]
+  },
+  "N452": {
+    "name": "N452",
+    "stats": []
+  },
+  "N453": {
+    "name": "N453",
+    "stats": []
+  },
+  "N454": {
+    "name": "Heatproofing",
+    "stats": [
+      "25% of Armour also applies to Fire Damage taken from Hits"
+    ]
+  },
+  "N455": {
+    "name": "Quick-change Act",
+    "stats": [
+      "50% increased Weapon Swap Speed"
+    ]
+  },
+  "N456": {
+    "name": "Clear Space",
+    "stats": [
+      "20% increased Knockback Distance",
+      "20% chance to Knock Enemies Back with Hits at Close Range"
+    ]
+  },
+  "N457": {
+    "name": "N457",
+    "stats": []
+  },
+  "N458": {
+    "name": "Pile On",
+    "stats": [
+      "60% increased Damage against Enemies with Fully Broken Armour"
+    ]
+  },
+  "N459": {
+    "name": "N459",
+    "stats": []
+  },
+  "N460": {
+    "name": "N460",
+    "stats": []
+  },
+  "N461": {
+    "name": "N461",
+    "stats": []
+  },
+  "N462": {
+    "name": "N462",
+    "stats": []
+  },
+  "N463": {
+    "name": "Vengeance",
+    "stats": [
+      "60% of Damage taken reflected to Melee Attackers"
+    ]
+  },
+  "N464": {
+    "name": "N464",
+    "stats": []
+  },
+  "N465": {
+    "name": "N465",
+    "stats": []
+  },
+  "N466": {
+    "name": "N466",
+    "stats": []
+  },
+  "N467": {
+    "name": "N467",
+    "stats": []
+  },
+  "N468": {
+    "name": "N468",
+    "stats": []
+  },
+  "N469": {
+    "name": "N469",
+    "stats": []
+  },
+  "N470": {
+    "name": "Coated Arms",
+    "stats": [
+      "25% increased Damage with One Handed Weapons",
+      "25% increased Chance to apply Ailments with One-Handed Attacks"
+    ]
+  },
+  "N471": {
+    "name": "Grenadier",
+    "stats": [
+      "Grenade Skills have +1 Cooldown Use"
+    ]
+  },
+  "N472": {
+    "name": "Cluster Bombs",
+    "stats": [
+      "50% increased Grenade Duration",
+      "Grenade Skills Fire an additional Projectile"
+    ]
+  },
+  "N473": {
+    "name": "N473",
+    "stats": []
+  },
+  "N474": {
+    "name": "Falcon Dive",
+    "stats": [
+      "1% increased Attack Speed per 250 Accuracy Rating"
+    ]
+  },
+  "N475": {
+    "name": "N475",
+    "stats": []
+  },
+  "N476": {
+    "name": "N476",
+    "stats": []
+  },
+  "N477": {
+    "name": "Spike Pit",
+    "stats": [
+      "Jagged Ground you create applies 10% increased Damage taken to Enemies"
+    ]
+  },
+  "N478": {
+    "name": "Whirling Onslaught",
+    "stats": [
+      "50% chance to gain Onslaught on Killing Blow with Axes"
+    ]
+  },
+  "N479": {
+    "name": "N479",
+    "stats": []
+  },
+  "N480": {
+    "name": "N480",
+    "stats": []
+  },
+  "N481": {
+    "name": "N481",
+    "stats": []
+  },
+  "N482": {
+    "name": "Close Confines",
+    "stats": [
+      "25% chance for Projectiles to Pierce Enemies within 3m distance of you"
+    ]
+  },
+  "N483": {
+    "name": "Unexpected Finesse",
+    "stats": [
+      "10% increased Attack Damage",
+      "Gain Accuracy Rating equal to your Strength"
+    ]
+  },
+  "N484": {
+    "name": "N484",
+    "stats": []
+  },
+  "N485": {
+    "name": "N485",
+    "stats": []
+  },
+  "N486": {
+    "name": "N486",
+    "stats": []
+  },
+  "N487": {
+    "name": "Initiative",
+    "stats": [
+      "30% increased Melee Damage when on Full Life",
+      "16% increased Attack Speed if you haven't Attacked Recently"
+    ]
+  },
+  "N488": {
+    "name": "Presence Present",
+    "stats": [
+      "Allies in your PResence have +100 to Accuracy Rating",
+      "35% increased Attack Damage while you have an Ally in your Presence"
+    ]
+  },
+  "N489": {
+    "name": "N489",
+    "stats": []
+  },
+  "N490": {
+    "name": "N490",
+    "stats": []
+  },
+  "N491": {
+    "name": "Hale Heart",
+    "stats": [
+      "15% increased Life Recovery rate"
+    ]
+  },
+  "N492": {
+    "name": "Enraged Reaver",
+    "stats": [
+      "+10 to Maximum Rage while wielding an Axe"
+    ]
+  },
+  "N493": {
+    "name": "N493",
+    "stats": []
+  },
+  "N494": {
+    "name": "N494",
+    "stats": []
+  },
+  "N495": {
+    "name": "N495",
+    "stats": []
+  },
+  "N496": {
+    "name": "N496",
+    "stats": []
+  },
+  "N497": {
+    "name": "N497",
+    "stats": []
+  },
+  "N498": {
+    "name": "Deadly Flourish",
+    "stats": [
+      "20% increased Melee Critical Hit Chance"
+    ]
+  },
+  "N499": {
+    "name": "N499",
+    "stats": []
+  },
+  "N500": {
+    "name": "N500",
+    "stats": []
+  },
+  "N501": {
+    "name": "N501",
+    "stats": []
+  },
+  "N502": {
+    "name": "Multitasking",
+    "stats": [
+      "15% increased Skill Effect Duration",
+      "12% increased Cooldown Recovery Rate"
+    ]
+  },
+  "N503": {
+    "name": "Bloodthirsty",
+    "stats": [
+      "25% increased amount of Life Leeched",
+      "Leech Life 25% faster"
+    ]
+  },
+  "N504": {
+    "name": "Natural Immunity",
+    "stats": [
+      "+4 to Ailment Threshold per Dexterity"
+    ]
+  },
+  "N505": {
+    "name": "Adrenaline Rush",
+    "stats": [
+      "4% increased Movement Speed if you've killed Recently",
+      "8% increased Attack Speed if you've Killed Recently"
+    ]
+  },
+  "N506": {
+    "name": "N506",
+    "stats": []
+  },
+  "N507": {
+    "name": "Volatile Grenades",
+    "stats": [
       "25% reduced Grenade Duration"
     ]
-	},
-	"N508": {
-		"name": "N508",
-		"stats": []
-	},
-	"N509": {
-		"name": "N509",
-		"stats": []
-	},
-	"N510": {
-		"name": "N510",
-		"stats": []
-	},
-	"N511": {
-		"name": "Versatile Arms",
-		"stats": [
-			"6% increased Attack Speed with One Handed Melee Weapons",
-			"15% increased Accuracy Rating with One Handed Melee Weapons",
-			"+10 to Strength and Dexterity"
-		]
-	},
-	"N512": {
-		"name": "Hefty Unit",
-		"stats": ["+3 to Stun Threshold per Strength"]
-	},
-	"N513": {
-		"name": "N513",
-		"stats": []
-	},
-	"N514": {
-		"name": "Emboldened Avatar",
-		"stats": [
-			"30% increased chance to Ignite",
-			"30% increased Freeze Buildup",
-			"30% increased chance to Shock",
-			"20% increased Electrocute Buildup"
-		]
-	},
-	"N515": {
-		"name": "N515",
-		"stats": []
-	},
-	"N516": {
-		"name": "N516",
-		"stats": []
-	},
-	"N517": {
-		"name": "Unnatural Resilience",
-		"stats": ["2% to Maximum fire Resistance for each 40% Uncapped Fire Resistance"]
-	},
-	"N518": {
-		"name": "Crystal Elixir",
-		"stats": ["40% increased Elemental Damage with Attack Skills during any Flask Effect"]
-	},
-	"N519": {
-		"name": "Distracting Presence",
-		"stats": [
-			"10% increased Cooldown Recovery Rate",
-			"Enemies in your Presence have 10% reduced Cooldown Recovery Rate"
-		]
-	},
-	"N520": {
-		"name": "N520",
-		"stats": []
-	},
-	"N521": {
-		"name": "Forces of Nature",
-		"stats": ["Attack Damage Penetrates 15% of Enemy Elemental Resistances"]
-	},
-	"N522": {
-		"name": "Perfect Opportunity",
-		"stats": [
-			"30% increased Stun Buildup",
-			"Damage with Hits is Lucky against Heavy Stunned Enemies"
-		]
-	},
-	"N523": {
-		"name": "N523",
-		"stats": []
-	},
-	"N524": {
-		"name": "N524",
-		"stats": []
-	},
-	"N525": {
-		"name": "N525",
-		"stats": []
-	},
-	"N526": {
-		"name": "N526",
-		"stats": []
-	},
-	"N527": {
-		"name": "N527",
-		"stats": []
-	},
-	"N528": {
-		"name": "N528",
-		"stats": []
-	},
-	"N529": {
-		"name": "Strong Chin",
-		"stats": ["Gain Stun Threshold equal to the lowest of Evasion and Armour on your Helmet"]
-	},
-	"N530": {
-		"name": "N530",
-		"stats": []
-	},
-	"N531": {
-		"name": "N531",
-		"stats": []
-	},
-	"N532": {
-		"name": "N532",
-		"stats": []
-	},
-	"N533": {
-		"name": "Insulated Treads",
-		"stats": ["Gain Ailment Threshold equal to the lowest of Evasion and Armour on your Boots"]
-	},
-	"N534": {
-		"name": "Shrapnel",
-		"stats": [
-			"30% chance to Pierce an Enemy",
-			"Projectiles have 30% chance to Chain an additional time from terrain"
-		]
-	},
-	"N535": {
-		"name": "Spiked Shield",
-		"stats": [
-			"50% increased Defences from Equipped Shield",
-			"1% increased Attack Damge per 75 Armour or Evasion Rating on Shield"
-		]
-	},
-	"N536": {
-		"name": "Shield Expertise",
-		"stats": ["12% increased Chance to Block", "40% increased Block Recovery"]
-	},
-	"N537": {
-		"name": "Urgent Call",
-		"stats": [
-			"Recover 3% of Life and Mana when you use a Warcry",
-			"24% increased Warcry Speed",
-			"18% increased Warcry Cooldown Recovery Rate"
-		]
-	},
-	"N538": {
-		"name": "N538",
-		"stats": []
-	},
-	"N539": {
-		"name": "Advanced Munitions",
-		"stats": [
-			"25% increased chance to inflict Ailments with Projectiles"]
-	},
-	"N540": {
-		"name": "N540",
-		"stats": []
-	},
-	"N541": {
-		"name": "N541",
-		"stats": []
-	},
-	"N542": {
-		"name": "N542",
-		"stats": []
-	},
-	"N543": {
-		"name": "Crushing Judgement",
-		"stats": ["25% increased Armour Break Duration", "25% increased Attack Area Damage"]
-	},
-	"N544": {
-		"name": "N544",
-		"stats": []
-	},
-	"N545": {
-		"name": "N545",
-		"stats": []
-	},
-	"N546": {
-		"name": "N546",
-		"stats": []
-	},
-	"N547": {
-		"name": "N547",
-		"stats": []
-	},
-	"N548": {
-		"name": "Authority",
-		"stats": ["20% increased Area of Effect for Attacks", "10% increased Cooldown Recovery Rate"]
-	},
-	"N549": {
-		"name": "Blinding Flash",
-		"stats": ["20% increased Blind Effect", "Blind Enemies when they Stun you"]
-	},
-	"N550": {
-		"name": "Levitation",
-		"stats": ["Unaffected by Enemy Ground Effects for 1 second after stepping on them"]
-	},
-	"N551": {
-		"name": "N551",
-		"stats": []
-	},
-	"N552": {
-		"name": "Against All Odds",
-		"stats": ["2% increased Attack Speed per Enemy in Close Range"]
-	},
-	"N553": {
-		"name": "Refills",
-		"stats": ["Life Flasks gain 0.4 charges per Second"]
-	},
-	"N554": {
-		"name": "Bleeding Out",
-		"stats": [
-			"+250 to Accuracy against Bleeding Enemies",
-			"Bleeding you inflict deals Damage 10% faster"
-		]
-	},
-	"N555": {
-		"name": "Pinpoint Shot",
-		"stats": ["Attacks gain increased Accuracy Rating equal to their Critical Hit Chance"]
-	},
-	"N556": {
-		"name": "Goring",
-		"stats": [
-			"5% reduced maximum Life",
-			"50% increased amount of Life Leeched",
-			"50% increased Physical Damage"
-		]
-	},
-	"N557": {
-		"name": "Fast Metabolism",
-		"stats": ["Life Leech effects are not removed when Unreserved Life is Filled"]
-	},
-	"N558": {
-		"name": "Full Salvo",
-		"stats": [
+  },
+  "N508": {
+    "name": "Two-Pronged Attack",
+    "stats": [
+      "Minions deal 25% increased Damage"
+    ]
+  },
+  "N509": {
+    "name": "N509",
+    "stats": []
+  },
+  "N510": {
+    "name": "N510",
+    "stats": []
+  },
+  "N511": {
+    "name": "Versatile Arms",
+    "stats": [
+      "6% increased Attack Speed with One Handed Melee Weapons",
+      "15% increased Accuracy Rating with One Handed Melee Weapons",
+      "+10 to Strength and Dexterity"
+    ]
+  },
+  "N512": {
+    "name": "Hefty Unit",
+    "stats": [
+      "+3 to Stun Threshold per Strength"
+    ]
+  },
+  "N513": {
+    "name": "N513",
+    "stats": []
+  },
+  "N514": {
+    "name": "Emboldened Avatar",
+    "stats": [
+      "30% increased chance to Ignite",
+      "30% increased Freeze Buildup",
+      "30% increased chance to Shock",
+      "20% increased Electrocute Buildup"
+    ]
+  },
+  "N515": {
+    "name": "N515",
+    "stats": []
+  },
+  "N516": {
+    "name": "N516",
+    "stats": []
+  },
+  "N517": {
+    "name": "Unnatural Resilience",
+    "stats": [
+      "2% to Maximum fire Resistance for each 40% Uncapped Fire Resistance"
+    ]
+  },
+  "N518": {
+    "name": "Crystal Elixir",
+    "stats": [
+      "40% increased Elemental Damage with Attack Skills during any Flask Effect"
+    ]
+  },
+  "N519": {
+    "name": "Distracting Presence",
+    "stats": [
+      "10% increased Cooldown Recovery Rate",
+      "Enemies in your Presence have 10% reduced Cooldown Recovery Rate"
+    ]
+  },
+  "N520": {
+    "name": "N520",
+    "stats": []
+  },
+  "N521": {
+    "name": "Forces of Nature",
+    "stats": [
+      "Attack Damage Penetrates 15% of Enemy Elemental Resistances"
+    ]
+  },
+  "N522": {
+    "name": "Perfect Opportunity",
+    "stats": [
+      "30% increased Stun Buildup",
+      "Damage with Hits is Lucky against Heavy Stunned Enemies"
+    ]
+  },
+  "N523": {
+    "name": "N523",
+    "stats": []
+  },
+  "N524": {
+    "name": "N524",
+    "stats": []
+  },
+  "N525": {
+    "name": "N525",
+    "stats": []
+  },
+  "N526": {
+    "name": "N526",
+    "stats": []
+  },
+  "N527": {
+    "name": "N527",
+    "stats": []
+  },
+  "N528": {
+    "name": "N528",
+    "stats": []
+  },
+  "N529": {
+    "name": "Strong Chin",
+    "stats": [
+      "Gain Stun Threshold equal to the lowest of Evasion and Armour on your Helmet"
+    ]
+  },
+  "N530": {
+    "name": "N530",
+    "stats": []
+  },
+  "N531": {
+    "name": "N531",
+    "stats": []
+  },
+  "N532": {
+    "name": "N532",
+    "stats": []
+  },
+  "N533": {
+    "name": "Insulated Treads",
+    "stats": [
+      "Gain Ailment Threshold equal to the lowest of Evasion and Armour on your Boots"
+    ]
+  },
+  "N534": {
+    "name": "Shrapnel",
+    "stats": [
+      "30% chance to Pierce an Enemy",
+      "Projectiles have 30% chance to Chain an additional time from terrain"
+    ]
+  },
+  "N535": {
+    "name": "Spiked Shield",
+    "stats": [
+      "50% increased Defences from Equipped Shield",
+      "1% increased Attack Damge per 75 Armour or Evasion Rating on Shield"
+    ]
+  },
+  "N536": {
+    "name": "Shield Expertise",
+    "stats": [
+      "12% increased Chance to Block",
+      "40% increased Block Recovery"
+    ]
+  },
+  "N537": {
+    "name": "Urgent Call",
+    "stats": [
+      "Recover 3% of Life and Mana when you use a Warcry",
+      "24% increased Warcry Speed",
+      "18% increased Warcry Cooldown Recovery Rate"
+    ]
+  },
+  "N538": {
+    "name": "N538",
+    "stats": []
+  },
+  "N539": {
+    "name": "Advanced Munitions",
+    "stats": [
+      "25% increased chance to inflict Ailments with Projectiles"
+    ]
+  },
+  "N540": {
+    "name": "N540",
+    "stats": []
+  },
+  "N541": {
+    "name": "N541",
+    "stats": []
+  },
+  "N542": {
+    "name": "N542",
+    "stats": []
+  },
+  "N543": {
+    "name": "Crushing Judgement",
+    "stats": [
+      "25% increased Armour Break Duration",
+      "25% increased Attack Area Damage"
+    ]
+  },
+  "N544": {
+    "name": "N544",
+    "stats": []
+  },
+  "N545": {
+    "name": "N545",
+    "stats": []
+  },
+  "N546": {
+    "name": "N546",
+    "stats": []
+  },
+  "N547": {
+    "name": "N547",
+    "stats": []
+  },
+  "N548": {
+    "name": "Authority",
+    "stats": [
+      "20% increased Area of Effect for Attacks",
+      "10% increased Cooldown Recovery Rate"
+    ]
+  },
+  "N549": {
+    "name": "Blinding Flash",
+    "stats": [
+      "20% increased Blind Effect",
+      "Blind Enemies when they Stun you"
+    ]
+  },
+  "N550": {
+    "name": "Levitation",
+    "stats": [
+      "Unaffected by Enemy Ground Effects for 1 second after stepping on them"
+    ]
+  },
+  "N551": {
+    "name": "N551",
+    "stats": []
+  },
+  "N552": {
+    "name": "Against All Odds",
+    "stats": [
+      "2% increased Attack Speed per Enemy in Close Range"
+    ]
+  },
+  "N553": {
+    "name": "Refills",
+    "stats": [
+      "Life Flasks gain 0.4 charges per Second"
+    ]
+  },
+  "N554": {
+    "name": "Bleeding Out",
+    "stats": [
+      "+250 to Accuracy against Bleeding Enemies",
+      "Bleeding you inflict deals Damage 10% faster"
+    ]
+  },
+  "N555": {
+    "name": "Pinpoint Shot",
+    "stats": [
+      "Attacks gain increased Accuracy Rating equal to their Critical Hit Chance"
+    ]
+  },
+  "N556": {
+    "name": "Goring",
+    "stats": [
+      "5% reduced maximum Life",
+      "50% increased amount of Life Leeched",
+      "50% increased Physical Damage"
+    ]
+  },
+  "N557": {
+    "name": "Fast Metabolism",
+    "stats": [
+      "Life Leech effects are not removed when Unreserved Life is Filled"
+    ]
+  },
+  "N558": {
+    "name": "Full Salvo",
+    "stats": [
       "25% Increased Damage with Crossbows for each type of Ammunition fired in the past 10",
       "secondes"
     ]
-	},
-	"N559": {
-		"name": "Apocalypse",
-		"stats": ["40% reduced Damage", "Herald Skills deal 200% increased Damage"]
-	},
-	"N560": {
-		"name": "Fate Finding",
-		"stats": ["15% reduced Reservation of Herald Skills"]
-	},
-	"N561": {
-		"name": "Repeating Explosives",
-		"stats": ["Grenades have 15% change to activate a second time"]
-	},
-	"N562": {
-		"name": "Reusable Ammunition",
-		"stats": ["25% chance for Crossbow Attacks to not consume a bolt"]
-	},
-	"N563": {
-		"name": "Giantslayer",
-		"stats": [
-			"25% increased Damage with Hits against Rare and Unique Enemies",
-			"20% increased Accuracy Rating against Rare or Unique Enemies",
-			"20% increased chance to inflict Ailments against Rare or Unique Enemies"
-		]
-	},
-	"N564": {
-		"name": "N564",
-		"stats": []
-	},
-	"N565": {
-		"name": "Cull the Hordes",
-		"stats": ["25% increased Culling Strike Threshold"]
-	},
-	"N566": {
-		"name": "Titan Bindings",
-		"stats": ["Gain 15% of Maximum Life as Armour"]
-	},
-	"N567": {
-		"name": "Leather Bound Gauntlets",
-		"stats": ["+1 to Evasion Rating per 1 Armour on Equipped Gloves"]
-	},
-	"N568": {
-		"name": "Power Shots",
-		"stats": [
-			"10% reduced Attack Speed with Crossbows",
-			"80% increased Critical Damage Bonus with Crossbows"
-		]
-	},
-	"N569": {
-		"name": "Heavy Blade",
-		"stats": ["25% increased Damage with Swords"]
-	},
-	"N570": {
-		"name": "Polymathy",
-		"stats": ["10% increased Attributes"]
-	},
-	"N571": {
-		"name": "Jack of All Trades",
-		"stats": ["2% increased Damage per 5 of your lowest Attribute"]
-	},
-	"N572": {
-		"name": "Ripping Blade",
-		"stats": ["25% increased Damage with Swords"]
-	},
-	"N573": {
-		"name": "Stance Breaker",
-		"stats": ["50% reduced Enemy Chance to Block Sword Attacks"]
-	},
-	"N574": {
-		"name": "Dark Entries",
-		"stats": ["+1 to Level of all Chaos Skills"]
-	},
-	"N575": {
-		"name": "Building Toxins",
-		"stats": ["25% reduced Poison Duration", "Can Poison enemies an additional time"]
-	},
-	"N576": {
-		"name": "Escalating Toxins",
-		"stats": ["10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"]
-	},
-	"N577": {
-		"name": "Quaterstaff Speed Notable",
-		"stats": [
-			"10% increased Attack Speed with Staves"
-		]
-	},
-	"N578": {
-		"name": "Quarterstaff Damage Notable",
-		"stats": [
-			"25% increased Damage with Staves"
-		]
-	},
-	"N579": {
-		"name": "N579",
-		"stats": []
-	},
-	"N580": {
-		"name": "N580",
-		"stats": []
-	},
-	"N581": {
-		"name": "N581",
-		"stats": []
-	},
-	"N582": {
-		"name": "Savoured Blood",
-		"stats": ["50% increased amount of Life Leeched", "Leech Life 20% slower"]
-	},
+  },
+  "N559": {
+    "name": "Apocalypse",
+    "stats": [
+      "40% reduced Damage",
+      "Herald Skills deal 200% increased Damage"
+    ]
+  },
+  "N560": {
+    "name": "Fate Finding",
+    "stats": [
+      "15% reduced Reservation of Herald Skills"
+    ]
+  },
+  "N561": {
+    "name": "Repeating Explosives",
+    "stats": [
+      "Grenades have 15% change to activate a second time"
+    ]
+  },
+  "N562": {
+    "name": "Reusable Ammunition",
+    "stats": [
+      "25% chance for Crossbow Attacks to not consume a bolt"
+    ]
+  },
+  "N563": {
+    "name": "Giantslayer",
+    "stats": [
+      "25% increased Damage with Hits against Rare and Unique Enemies",
+      "20% increased Accuracy Rating against Rare or Unique Enemies",
+      "20% increased chance to inflict Ailments against Rare or Unique Enemies"
+    ]
+  },
+  "N564": {
+    "name": "N564",
+    "stats": []
+  },
+  "N565": {
+    "name": "Cull the Hordes",
+    "stats": [
+      "25% increased Culling Strike Threshold"
+    ]
+  },
+  "N566": {
+    "name": "Titan Bindings",
+    "stats": [
+      "Gain 15% of Maximum Life as Armour"
+    ]
+  },
+  "N567": {
+    "name": "Leather Bound Gauntlets",
+    "stats": [
+      "+1 to Evasion Rating per 1 Armour on Equipped Gloves"
+    ]
+  },
+  "N568": {
+    "name": "Power Shots",
+    "stats": [
+      "10% reduced Attack Speed with Crossbows",
+      "80% increased Critical Damage Bonus with Crossbows"
+    ]
+  },
+  "N569": {
+    "name": "Heavy Blade",
+    "stats": [
+      "25% increased Damage with Swords"
+    ]
+  },
+  "N570": {
+    "name": "Polymathy",
+    "stats": [
+      "10% increased Attributes"
+    ]
+  },
+  "N571": {
+    "name": "Jack of All Trades",
+    "stats": [
+      "2% increased Damage per 5 of your lowest Attribute"
+    ]
+  },
+  "N572": {
+    "name": "Ripping Blade",
+    "stats": [
+      "25% increased Damage with Swords"
+    ]
+  },
+  "N573": {
+    "name": "Stance Breaker",
+    "stats": [
+      "50% reduced Enemy Chance to Block Sword Attacks"
+    ]
+  },
+  "N574": {
+    "name": "Dark Entries",
+    "stats": [
+      "+1 to Level of all Chaos Skills"
+    ]
+  },
+  "N575": {
+    "name": "Building Toxins",
+    "stats": [
+      "25% reduced Poison Duration",
+      "Can Poison enemies an additional time"
+    ]
+  },
+  "N576": {
+    "name": "Escalating Toxins",
+    "stats": [
+      "10% increased Poison Duration for each Poison you have inflicted Recently, up to a maximum of 100%"
+    ]
+  },
+  "N577": {
+    "name": "Quaterstaff Speed Notable",
+    "stats": [
+      "10% increased Attack Speed with Staves"
+    ]
+  },
+  "N578": {
+    "name": "Quarterstaff Damage Notable",
+    "stats": [
+      "25% increased Damage with Staves"
+    ]
+  },
+  "N579": {
+    "name": "N579",
+    "stats": []
+  },
+  "N580": {
+    "name": "N580",
+    "stats": []
+  },
+  "N581": {
+    "name": "N581",
+    "stats": []
+  },
+  "N582": {
+    "name": "Savoured Blood",
+    "stats": [
+      "50% increased amount of Life Leeched",
+      "Leech Life 20% slower"
+    ]
+  },
   "S1": {
     "name": "Lightning Damage",
     "stats": [
@@ -2796,8 +3259,10 @@
     "stats": []
   },
   "S7": {
-    "name": "S7",
-    "stats": []
+    "name": "Cold Damage",
+    "stats": [
+      "12% increased Cold Damage"
+    ]
   },
   "S8": {
     "name": "S8",
@@ -2834,8 +3299,10 @@
     ]
   },
   "S16": {
-    "name": "S16",
-    "stats": []
+    "name": "Cold Damage",
+    "stats": [
+      "12% increased Cold Damage"
+    ]
   },
   "S17": {
     "name": "Lightning Damage",
@@ -2934,8 +3401,10 @@
     ]
   },
   "S38": {
-    "name": "S38",
-    "stats": []
+    "name": "Cold Damage",
+    "stats": [
+      "12% increased Cold Damage"
+    ]
   },
   "S39": {
     "name": "S39",
@@ -3011,27 +3480,39 @@
   },
   "S57": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S58": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S59": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S60": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S61": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S62": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S63": {
     "name": "S63",
@@ -3091,7 +3572,9 @@
   },
   "S77": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S78": {
     "name": "S78",
@@ -3103,7 +3586,9 @@
   },
   "S80": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S81": {
     "name": "S81",
@@ -3147,7 +3632,9 @@
   },
   "S91": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S92": {
     "name": "S92",
@@ -3163,7 +3650,9 @@
   },
   "S95": {
     "name": "Physical Damage",
-    "stats": ["10% increased Physical Damage"]
+    "stats": [
+      "10% increased Physical Damage"
+    ]
   },
   "S96": {
     "name": "S96",
@@ -3179,7 +3668,9 @@
   },
   "S99": {
     "name": "Overwhelm Physical",
-    "stats": ["Overwhelm 5% Physical Damage Reduction"]
+    "stats": [
+      "Overwhelm 5% Physical Damage Reduction"
+    ]
   },
   "S100": {
     "name": "S100",
@@ -3235,11 +3726,15 @@
   },
   "S113": {
     "name": "Physical Damage",
-    "stats": ["10% increased Physical Damage"]
+    "stats": [
+      "10% increased Physical Damage"
+    ]
   },
   "S114": {
-    "name": "S114",
-    "stats": []
+    "name": "Curse Effect",
+    "stats": [
+      "6% increased Effect of your Curses"
+    ]
   },
   "S115": {
     "name": "S115",
@@ -3251,7 +3746,9 @@
   },
   "S117": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S118": {
     "name": "S118",
@@ -3259,7 +3756,9 @@
   },
   "S119": {
     "name": "Physical Damage",
-    "stats": ["10% increased Physical Damage"]
+    "stats": [
+      "10% increased Physical Damage"
+    ]
   },
   "S120": {
     "name": "S120",
@@ -3275,7 +3774,9 @@
   },
   "S123": {
     "name": "Physical Damage",
-    "stats": ["10% increased Physical Damage"]
+    "stats": [
+      "10% increased Physical Damage"
+    ]
   },
   "S124": {
     "name": "S124",
@@ -3327,7 +3828,9 @@
   },
   "S136": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S137": {
     "name": "S137",
@@ -3335,7 +3838,9 @@
   },
   "S138": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S139": {
     "name": "S139",
@@ -3343,11 +3848,15 @@
   },
   "S140": {
     "name": "Elemental Damage",
-    "stats": ["10% increased Elemental Damage"]
+    "stats": [
+      "10% increased Elemental Damage"
+    ]
   },
   "S141": {
     "name": "Elemental Damage",
-    "stats": ["10% increased Elemental Damage"]
+    "stats": [
+      "10% increased Elemental Damage"
+    ]
   },
   "S142": {
     "name": "S142",
@@ -3359,7 +3868,9 @@
   },
   "S144": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S145": {
     "name": "S145",
@@ -3399,7 +3910,9 @@
   },
   "S154": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S155": {
     "name": "S155",
@@ -3411,7 +3924,9 @@
   },
   "S157": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S158": {
     "name": "S158",
@@ -3431,7 +3946,9 @@
   },
   "S162": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S163": {
     "name": "S163",
@@ -3479,7 +3996,9 @@
   },
   "S174": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S175": {
     "name": "S175",
@@ -3499,7 +4018,9 @@
   },
   "S179": {
     "name": "Elemental Damage",
-    "stats": ["10% increased Elemental Damage"]
+    "stats": [
+      "10% increased Elemental Damage"
+    ]
   },
   "S180": {
     "name": "S180",
@@ -3591,19 +4112,27 @@
   },
   "S202": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S203": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S204": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S205": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S206": {
     "name": "S206",
@@ -3615,35 +4144,51 @@
   },
   "S208": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S209": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S210": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S211": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S212": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S213": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S214": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S215": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S216": {
     "name": "S216",
@@ -3659,7 +4204,9 @@
   },
   "S219": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S220": {
     "name": "S220",
@@ -3726,12 +4273,16 @@
     "stats": []
   },
   "S236": {
-    "name": "S236",
-    "stats": []
+    "name": "Physical Damage",
+    "stats": [
+      "10% increased Physical Damage"
+    ]
   },
   "S237": {
     "name": "Chaos Damage",
-    "stats": ["10% increased Chaos Damage"]
+    "stats": [
+      "10% increased Chaos Damage"
+    ]
   },
   "S238": {
     "name": "S238",
@@ -3803,7 +4354,9 @@
   },
   "S255": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S256": {
     "name": "S256",
@@ -3823,7 +4376,9 @@
   },
   "S260": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S261": {
     "name": "S261",
@@ -3835,7 +4390,9 @@
   },
   "S263": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S264": {
     "name": "S264",
@@ -3923,7 +4480,9 @@
   },
   "S285": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S286": {
     "name": "S286",
@@ -3967,7 +4526,9 @@
   },
   "S296": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S297": {
     "name": "S297",
@@ -3995,7 +4556,9 @@
   },
   "S303": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S304": {
     "name": "S304",
@@ -4011,7 +4574,9 @@
   },
   "S307": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S308": {
     "name": "S308",
@@ -4027,7 +4592,9 @@
   },
   "S311": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S312": {
     "name": "S312",
@@ -4071,7 +4638,9 @@
   },
   "S322": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S323": {
     "name": "S323",
@@ -4107,7 +4676,9 @@
   },
   "S331": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S332": {
     "name": "S332",
@@ -4143,7 +4714,9 @@
   },
   "S340": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S341": {
     "name": "S341",
@@ -4175,7 +4748,9 @@
   },
   "S348": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S349": {
     "name": "S349",
@@ -4191,7 +4766,9 @@
   },
   "S352": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S353": {
     "name": "S353",
@@ -4199,7 +4776,9 @@
   },
   "S354": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S355": {
     "name": "S355",
@@ -4231,11 +4810,15 @@
   },
   "S362": {
     "name": "Minion Attack and Cast Speed",
-    "stats": ["Minions have 4% increased Attack and Cast Speed"]
+    "stats": [
+      "Minions have 4% increased Attack and Cast Speed"
+    ]
   },
   "S363": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S364": {
     "name": "S364",
@@ -4259,11 +4842,15 @@
   },
   "S369": {
     "name": "Minion Attack and Cast Speed",
-    "stats": ["Minions have 4% increased Attack and Cast Speed"]
+    "stats": [
+      "Minions have 4% increased Attack and Cast Speed"
+    ]
   },
   "S370": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S371": {
     "name": "S371",
@@ -4279,7 +4866,9 @@
   },
   "S374": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S375": {
     "name": "S375",
@@ -4323,7 +4912,9 @@
   },
   "S385": {
     "name": "Minion Attack and Cast Speed",
-    "stats": ["Minions have 4% increased Attack and Cast Speed"]
+    "stats": [
+      "Minions have 4% increased Attack and Cast Speed"
+    ]
   },
   "S386": {
     "name": "S386",
@@ -4334,8 +4925,10 @@
     "stats": []
   },
   "S388": {
-    "name": "S388",
-    "stats": []
+    "name": "Lightning Penetration",
+    "stats": [
+      "Damage Penetrates 6% Lightning Resistance"
+    ]
   },
   "S389": {
     "name": "S389",
@@ -4370,8 +4963,10 @@
     "stats": []
   },
   "S397": {
-    "name": "S397",
-    "stats": []
+    "name": "Lightning Penetration",
+    "stats": [
+      "Damage Penetrates 6% Lightning Resistance"
+    ]
   },
   "S398": {
     "name": "S398",
@@ -4423,23 +5018,33 @@
   },
   "S410": {
     "name": "Cold Penetration",
-    "stats": ["Damage Penetrates 4% Cold Resistance"]
+    "stats": [
+      "Damage Penetrates 6% Cold Resistance"
+    ]
   },
   "S411": {
-    "name": "S411",
-    "stats": []
+    "name": "Cold Penetration",
+    "stats": [
+      "Damage Penetrates 6% Cold Resistance"
+    ]
   },
   "S412": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S413": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S414": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S415": {
     "name": "S415",
@@ -4495,7 +5100,9 @@
   },
   "S428": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S429": {
     "name": "S429",
@@ -4503,15 +5110,21 @@
   },
   "S430": {
     "name": "Fire Penetration",
-    "stats": ["Damage Penetrates 4% Fire Resistance"]
+    "stats": [
+      "Damage Penetrates 6% Fire Resistance"
+    ]
   },
   "S431": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S432": {
     "name": "Damage against Ailments",
-    "stats": ["10% increased Damage with Hits against Enemies affected by Elemental Ailments"]
+    "stats": [
+      "10% increased Damage with Hits against Enemies affected by Elemental Ailments"
+    ]
   },
   "S433": {
     "name": "S433",
@@ -4534,8 +5147,10 @@
     "stats": []
   },
   "S438": {
-    "name": "S438",
-    "stats": []
+    "name": "Fire Penetration",
+    "stats": [
+      "Damage Penetrates 6% Fire Resistance"
+    ]
   },
   "S439": {
     "name": "S439",
@@ -4571,11 +5186,15 @@
   },
   "S447": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S448": {
     "name": "Damage against Ailments",
-    "stats": ["10% increased Damage with Hits against Enemies affected by Elemental Ailments"]
+    "stats": [
+      "10% increased Damage with Hits against Enemies affected by Elemental Ailments"
+    ]
   },
   "S449": {
     "name": "S449",
@@ -4607,7 +5226,9 @@
   },
   "S456": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S457": {
     "name": "S457",
@@ -4627,7 +5248,9 @@
   },
   "S461": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S462": {
     "name": "S462",
@@ -4671,15 +5294,21 @@
   },
   "S472": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S473": {
     "name": "Spell Critical Damage",
-    "stats": ["10% increased Critical Spell Damage Bonus"]
+    "stats": [
+      "10% increased Critical Spell Damage Bonus"
+    ]
   },
   "S474": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S475": {
     "name": "S475",
@@ -4695,11 +5324,15 @@
   },
   "S478": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S479": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S480": {
     "name": "S480",
@@ -4707,7 +5340,9 @@
   },
   "S481": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S482": {
     "name": "S482",
@@ -4715,23 +5350,33 @@
   },
   "S483": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S484": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S485": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S486": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S487": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S488": {
     "name": "S488",
@@ -4739,7 +5384,9 @@
   },
   "S489": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S490": {
     "name": "S490",
@@ -4783,7 +5430,9 @@
   },
   "S500": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S501": {
     "name": "S501",
@@ -4798,8 +5447,10 @@
     "stats": []
   },
   "S504": {
-    "name": "S504",
-    "stats": []
+    "name": "Link Cast Speed",
+    "stats": [
+      "Link Skills have 8% increased Cast Speed"
+    ]
   },
   "S505": {
     "name": "S505",
@@ -4807,15 +5458,21 @@
   },
   "S506": {
     "name": "Spell Critical Chance",
-    "stats": ["8% increased Critical Hit Chance for Spells"]
+    "stats": [
+      "8% increased Critical Hit Chance for Spells"
+    ]
   },
   "S507": {
     "name": "Spell Critical Damage",
-    "stats": ["10% increased Critical Spell Damage Bonus"]
+    "stats": [
+      "10% increased Critical Spell Damage Bonus"
+    ]
   },
   "S508": {
     "name": "Energy Shield",
-    "stats": ["10% increased Energy Shield"]
+    "stats": [
+      "10% increased Energy Shield"
+    ]
   },
   "S509": {
     "name": "S509",
@@ -4838,7 +5495,9 @@
   },
   "S513": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S514": {
     "name": "S514",
@@ -4874,7 +5533,9 @@
   },
   "S522": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S523": {
     "name": "S523",
@@ -4898,7 +5559,9 @@
   },
   "S528": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S529": {
     "name": "S529",
@@ -4910,11 +5573,15 @@
   },
   "S531": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S532": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S533": {
     "name": "S533",
@@ -4970,7 +5637,9 @@
   },
   "S546": {
     "name": "Energy Shield",
-    "stats": ["10% increased Energy Shield"]
+    "stats": [
+      "10% increased Energy Shield"
+    ]
   },
   "S547": {
     "name": "S547",
@@ -4998,7 +5667,9 @@
   },
   "S553": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S554": {
     "name": "S554",
@@ -5034,7 +5705,9 @@
   },
   "S562": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S563": {
     "name": "S563",
@@ -5050,7 +5723,9 @@
   },
   "S566": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S567": {
     "name": "S567",
@@ -5074,7 +5749,9 @@
   },
   "S572": {
     "name": "Physical Damage",
-    "stats": ["10% increased Physical Damage"]
+    "stats": [
+      "10% increased Physical Damage"
+    ]
   },
   "S573": {
     "name": "S573",
@@ -5106,7 +5783,9 @@
   },
   "S580": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S581": {
     "name": "S581",
@@ -5151,13 +5830,15 @@
   "S591": {
     "name": "EnergyShield and Armour",
     "stats": [
-        "8% increased Armour",
-        "8% increased maximum Energy Shield"
+      "8% increased Armour",
+      "8% increased maximum Energy Shield"
     ]
   },
   "S592": {
-    "name": "S592",
-    "stats": []
+    "name": "Minion Damage",
+    "stats": [
+      "Minions deal 10% increased Damage"
+    ]
   },
   "S593": {
     "name": "S593",
@@ -5165,7 +5846,9 @@
   },
   "S594": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S595": {
     "name": "S595",
@@ -5182,7 +5865,7 @@
   "S598": {
     "name": "Life on Kill",
     "stats": [
-	    "Recpver 1% Life on Kill"
+      "Recpver 1% Life on Kill"
     ]
   },
   "S599": {
@@ -5191,7 +5874,9 @@
   },
   "S600": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S601": {
     "name": "S601",
@@ -5199,7 +5884,9 @@
   },
   "S602": {
     "name": "Chaos Damage",
-    "stats": ["10% increased Chaos Damage"]
+    "stats": [
+      "10% increased Chaos Damage"
+    ]
   },
   "S603": {
     "name": "S603",
@@ -5207,7 +5894,9 @@
   },
   "S604": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S605": {
     "name": "S605",
@@ -5231,7 +5920,9 @@
   },
   "S610": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S611": {
     "name": "S611",
@@ -5239,7 +5930,9 @@
   },
   "S612": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S613": {
     "name": "S613",
@@ -5252,8 +5945,8 @@
   "S615": {
     "name": "Spell and Minion Damage",
     "stats": [
-        "8% increased Spell Damage",
-        "Minions deal 8% increased Damage"
+      "8% increased Spell Damage",
+      "Minions deal 8% increased Damage"
     ]
   },
   "S616": {
@@ -5266,15 +5959,21 @@
   },
   "S618": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S619": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S620": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S621": {
     "name": "S621",
@@ -5294,7 +5993,9 @@
   },
   "S625": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S626": {
     "name": "S626",
@@ -5330,7 +6031,9 @@
   },
   "S634": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S635": {
     "name": "S635",
@@ -5398,19 +6101,27 @@
   },
   "S651": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S652": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S653": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S654": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S655": {
     "name": "S655",
@@ -5418,7 +6129,9 @@
   },
   "S656": {
     "name": "Mana Regeneration",
-    "stats": ["10% increased Mana Regeneration Rate"]
+    "stats": [
+      "10% increased Mana Regeneration Rate"
+    ]
   },
   "S657": {
     "name": "S657",
@@ -5426,7 +6139,9 @@
   },
   "S658": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S659": {
     "name": "S659",
@@ -5446,7 +6161,9 @@
   },
   "S663": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S664": {
     "name": "S664",
@@ -5458,11 +6175,15 @@
   },
   "S666": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S667": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S668": {
     "name": "S668",
@@ -5474,7 +6195,9 @@
   },
   "S670": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S671": {
     "name": "S671",
@@ -5482,20 +6205,26 @@
   },
   "S672": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S673": {
-    "name": "S673",
-    "stats": []
+    "name": "Mana Regeneration",
+    "stats": [
+      "10% increased Mana Regeneration Rate"
+    ]
   },
   "S674": {
     "name": "Mana",
-    "stats": ["8% increased maximum Mana"]
+    "stats": [
+      "8% increased maximum Mana"
+    ]
   },
   "S675": {
     "name": "Attack Damage",
     "stats": [
-	    "10% increased Attack Damage"
+      "10% increased Attack Damage"
     ]
   },
   "S676": {
@@ -5504,27 +6233,37 @@
   },
   "S677": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S678": {
     "name": "Energy Shield Delay",
-    "stats": ["10% faster start of Energy Shield recharge"]
+    "stats": [
+      "10% faster start of Energy Shield recharge"
+    ]
   },
   "S679": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S680": {
     "name": "S680",
     "stats": []
   },
   "S681": {
-    "name": "S681",
-    "stats": []
+    "name": "Spell Damage",
+    "stats": [
+      "8% increased Spell Damage"
+    ]
   },
   "S682": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S683": {
     "name": "S683",
@@ -5536,11 +6275,16 @@
   },
   "S685": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S686": {
-    "name": "Minion Life",
-    "stats": ["Minions have 10% increased maximum Life"]
+    "name": "Mana Regeneration/Minion Life",
+    "stats": [
+      "10% increased Mana Regeneration Rate (Sorceress)",
+      "Minions have 10% increased maximum Life (Witch)"
+    ]
   },
   "S687": {
     "name": "S687",
@@ -5560,19 +6304,29 @@
   },
   "S691": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S692": {
-    "name": "S692",
-    "stats": []
+    "name": "Spell Damage/Spell and Minion Damage",
+    "stats": [
+      "8% increased Spell Damage (Sorceress)",
+      "5% increased Spell Damage (Witch)",
+      "Minions deal 5% increased Damage (Witch)"
+    ]
   },
   "S693": {
     "name": "Energy Shield Delay",
-    "stats": ["10% faster start of Energy Shield Recharge"]
+    "stats": [
+      "10% faster start of Energy Shield Recharge"
+    ]
   },
   "S694": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S695": {
     "name": "S695",
@@ -5596,7 +6350,9 @@
   },
   "S700": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S701": {
     "name": "S701",
@@ -5612,11 +6368,15 @@
   },
   "S704": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S705": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S706": {
     "name": "S706",
@@ -5629,20 +6389,28 @@
   "S708": {
     "name": "Attack Speed",
     "stats": [
-	    "3% increased Attack speed"
+      "3% increased Attack speed"
     ]
   },
   "S709": {
-    "name": "S709",
-    "stats": []
+    "name": "Spell Damage/Spell and Minion Damage",
+    "stats": [
+      "8% increased Spell Damage (Sorceress)",
+      "5% increased Spell Damage (Witch)",
+      "Minions deal 5% increased Damage (Witch)"
+    ]
   },
   "S710": {
     "name": "Energy Shield",
-    "stats": ["+10 to maximum Energy Shield"]
+    "stats": [
+      "+10 to maximum Energy Shield"
+    ]
   },
   "S711": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S712": {
     "name": "S712",
@@ -5650,7 +6418,9 @@
   },
   "S713": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S714": {
     "name": "S714",
@@ -5658,7 +6428,9 @@
   },
   "S715": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S716": {
     "name": "S716",
@@ -5686,7 +6458,9 @@
   },
   "S722": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S723": {
     "name": "S723",
@@ -5706,7 +6480,9 @@
   },
   "S727": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S728": {
     "name": "S728",
@@ -5726,19 +6502,25 @@
   },
   "S732": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S733": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S734": {
     "name": "S734",
     "stats": []
   },
   "S735": {
-    "name": "S735",
-    "stats": []
+    "name": "Attack Speed",
+    "stats": [
+      "3% increased Attack and Cast Speed"
+    ]
   },
   "S736": {
     "name": "S736",
@@ -5773,8 +6555,10 @@
     "stats": []
   },
   "S744": {
-    "name": "S744",
-    "stats": []
+    "name": "Attack Speed",
+    "stats": [
+      "3% increased Attack and Cast Speed"
+    ]
   },
   "S745": {
     "name": "S745",
@@ -5810,7 +6594,9 @@
   },
   "S753": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S754": {
     "name": "S754",
@@ -5818,7 +6604,9 @@
   },
   "S755": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S756": {
     "name": "S756",
@@ -5873,12 +6661,18 @@
     "stats": []
   },
   "S769": {
-    "name": "S769",
-    "stats": []
+    "name": "Spell Damage/Spell and Minion Damage",
+    "stats": [
+      "8% increased Spell Damage (Sorceress)",
+      "5% increased Spell Damage (Witch)",
+      "Minions deal 5% increased Damage (Witch)"
+    ]
   },
   "S770": {
     "name": "Energy Shield",
-    "stats": ["+10 to maximum Energy Shield"]
+    "stats": [
+      "+10 to maximum Energy Shield"
+    ]
   },
   "S771": {
     "name": "S771",
@@ -5894,7 +6688,9 @@
   },
   "S774": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S775": {
     "name": "S775",
@@ -5914,7 +6710,9 @@
   },
   "S779": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S780": {
     "name": "S780",
@@ -5938,7 +6736,9 @@
   },
   "S785": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S786": {
     "name": "S786",
@@ -5954,7 +6754,9 @@
   },
   "S789": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S790": {
     "name": "S790",
@@ -6029,8 +6831,10 @@
     "stats": []
   },
   "S808": {
-    "name": "S808",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+      "+10% increased Attack Damage"
+    ]
   },
   "S809": {
     "name": "S809",
@@ -6061,8 +6865,10 @@
     "stats": []
   },
   "S816": {
-    "name": "S816",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+      "+10% increased Attack Damage"
+    ]
   },
   "S817": {
     "name": "S817",
@@ -6070,7 +6876,9 @@
   },
   "S818": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S819": {
     "name": "S819",
@@ -6078,7 +6886,9 @@
   },
   "S820": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S821": {
     "name": "S821",
@@ -6106,11 +6916,15 @@
   },
   "S827": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S828": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S829": {
     "name": "S829",
@@ -6121,8 +6935,10 @@
     "stats": []
   },
   "S831": {
-    "name": "S831",
-    "stats": []
+    "name": "Skill Speed",
+    "stats": [
+      "3% increased Attack and Cast Speed"
+    ]
   },
   "S832": {
     "name": "S832",
@@ -6150,12 +6966,14 @@
   },
   "S838": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S839": {
     "name": "Quarterstaff Speed",
     "stats": [
-	    "4% increased Attack Speed with Staves"
+      "4% increased Attack Speed with Staves"
     ]
   },
   "S840": {
@@ -6176,11 +6994,15 @@
   },
   "S844": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S845": {
-    "name": "S845",
-    "stats": []
+    "name": "Skill Speed",
+    "stats": [
+      "3% increased Attack and Cast Speed"
+    ]
   },
   "S846": {
     "name": "S846",
@@ -6215,8 +7037,11 @@
     "stats": []
   },
   "S854": {
-    "name": "S854",
-    "stats": []
+    "name": "Evasion and Energy Shield",
+    "stats": [
+      "+8 to Evasion Rating",
+      "+5 to maximum Energy Shield"
+    ]
   },
   "S855": {
     "name": "S855",
@@ -6247,8 +7072,11 @@
     "stats": []
   },
   "S862": {
-    "name": "S862",
-    "stats": []
+    "name": "Evasion and Energy Shield",
+    "stats": [
+      "+8 to Evasion Rating",
+      "+5 to maximum Energy Shield"
+    ]
   },
   "S863": {
     "name": "S863",
@@ -6263,8 +7091,11 @@
     "stats": []
   },
   "S866": {
-    "name": "S866",
-    "stats": []
+    "name": "Evasion and Energy Shield",
+    "stats": [
+      "+8 to Evasion Rating",
+      "+5 to maximum Energy Shield"
+    ]
   },
   "S867": {
     "name": "S867",
@@ -6276,25 +7107,32 @@
   },
   "S869": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S870": {
     "name": "S870",
     "stats": []
   },
   "S871": {
-    "name": "S871",
-    "stats": []
+    "name": "Evasion and Energy Shield",
+    "stats": [
+      "+8 to Evasion Rating",
+      "+5 to maximum Energy Shield"
+    ]
   },
   "S872": {
     "name": "Attack Damage",
     "stats": [
-	    "10% increased Attack Damage"
+      "10% increased Attack Damage"
     ]
   },
   "S873": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S874": {
     "name": "S874",
@@ -6306,12 +7144,14 @@
   },
   "S876": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S877": {
     "name": "Attack Damage",
     "stats": [
-	    "10% increased Attack Damage"
+      "10% increased Attack Damage"
     ]
   },
   "S878": {
@@ -6324,7 +7164,9 @@
   },
   "S880": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S881": {
     "name": "S881",
@@ -6332,11 +7174,15 @@
   },
   "S882": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S883": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S884": {
     "name": "S884",
@@ -6356,7 +7202,9 @@
   },
   "S888": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S889": {
     "name": "S889",
@@ -6368,7 +7216,9 @@
   },
   "S891": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S892": {
     "name": "S892",
@@ -6389,7 +7239,7 @@
   "S896": {
     "name": "Mana Leech",
     "stats": [
-	    "10% increased amount of Mana Leeched"
+      "10% increased amount of Mana Leeched"
     ]
   },
   "S897": {
@@ -6419,7 +7269,7 @@
   "S903": {
     "name": "Mana Leech",
     "stats": [
-	    "10% increased amount of Mana Leeched"
+      "10% increased amount of Mana Leeched"
     ]
   },
   "S904": {
@@ -6436,11 +7286,15 @@
   },
   "S907": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S908": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S909": {
     "name": "S909",
@@ -6473,7 +7327,7 @@
   "S916": {
     "name": "Attack Damage",
     "stats": [
-	    "10% increased Attack Damage"
+      "10% increased Attack Damage"
     ]
   },
   "S917": {
@@ -6494,11 +7348,15 @@
   },
   "S921": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S922": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S923": {
     "name": "S923",
@@ -6534,7 +7392,9 @@
   },
   "S931": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S932": {
     "name": "S932",
@@ -6566,75 +7426,111 @@
   },
   "S939": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S940": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S941": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S942": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S943": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S944": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S945": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S946": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S947": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S948": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S949": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S950": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S951": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S952": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S953": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S954": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S955": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S956": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S957": {
     "name": "S957",
@@ -6645,8 +7541,10 @@
     "stats": []
   },
   "S959": {
-    "name": "S959",
-    "stats": []
+    "name": "Attack Damage",
+    "stats": [
+      "10% increased Attack Damage"
+    ]
   },
   "S960": {
     "name": "S960",
@@ -6658,7 +7556,9 @@
   },
   "S962": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S963": {
     "name": "S963",
@@ -6674,7 +7574,9 @@
   },
   "S966": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S967": {
     "name": "S967",
@@ -6714,7 +7616,9 @@
   },
   "S976": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S977": {
     "name": "S977",
@@ -6746,23 +7650,33 @@
   },
   "S984": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S985": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S986": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S987": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S988": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S989": {
     "name": "S989",
@@ -6770,7 +7684,9 @@
   },
   "S990": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S991": {
     "name": "S991",
@@ -6790,7 +7706,9 @@
   },
   "S995": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S996": {
     "name": "S996",
@@ -6826,7 +7744,9 @@
   },
   "S1004": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1005": {
     "name": "S1005",
@@ -6834,7 +7754,9 @@
   },
   "S1006": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1007": {
     "name": "S1007",
@@ -6846,7 +7768,9 @@
   },
   "S1009": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1010": {
     "name": "S1010",
@@ -6924,7 +7848,9 @@
   },
   "S1028": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1029": {
     "name": "S1029",
@@ -6932,19 +7858,25 @@
   },
   "S1030": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1031": {
     "name": "S1031",
     "stats": []
   },
   "S1032": {
-    "name": "S1032",
-    "stats": []
+    "name": "Armour",
+    "stats": [
+      "+20 to Armour"
+    ]
   },
   "S1033": {
     "name": "Evasion",
-    "stats": ["+16 to Evasion Rating"]
+    "stats": [
+      "+16 to Evasion Rating"
+    ]
   },
   "S1034": {
     "name": "S1034",
@@ -6960,7 +7892,9 @@
   },
   "S1037": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1038": {
     "name": "S1038",
@@ -7015,8 +7949,10 @@
     "stats": []
   },
   "S1051": {
-    "name": "S1051",
-    "stats": []
+    "name": "Melee Damage",
+    "stats": [
+      "10% increased Melee Damage"
+    ]
   },
   "S1052": {
     "name": "S1052",
@@ -7048,7 +7984,9 @@
   },
   "S1059": {
     "name": "Projectile Damage",
-    "stats": ["10% increased Projectile Damage"]
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1060": {
     "name": "S1060",
@@ -7056,7 +7994,9 @@
   },
   "S1061": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1062": {
     "name": "S1062",
@@ -7068,7 +8008,9 @@
   },
   "S1064": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1065": {
     "name": "S1065",
@@ -7083,8 +8025,10 @@
     "stats": []
   },
   "S1068": {
-    "name": "S1068",
-    "stats": []
+    "name": "Melee Damage",
+    "stats": [
+      "10% increased Melee Damage"
+    ]
   },
   "S1069": {
     "name": "S1069",
@@ -7123,8 +8067,10 @@
     "stats": []
   },
   "S1078": {
-    "name": "S1078",
-    "stats": []
+    "name": "Life Regeneration",
+    "stats": [
+      "Regenerate 0.4% of Life per second"
+    ]
   },
   "S1079": {
     "name": "S1079",
@@ -7156,7 +8102,9 @@
   },
   "S1086": {
     "name": "Projectile Damage",
-    "stats": ["10% increased Projectile Damage"]
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1087": {
     "name": "S1087",
@@ -7216,7 +8164,9 @@
   },
   "S1101": {
     "name": "Melee Damage",
-    "stats": ["6% increased Melee Damage"]
+    "stats": [
+      "6% increased Melee Damage"
+    ]
   },
   "S1102": {
     "name": "S1102",
@@ -7224,11 +8174,15 @@
   },
   "S1103": {
     "name": "Movement Speed",
-    "stats": ["2% increased Movement Speed"]
+    "stats": [
+      "2% increased Movement Speed"
+    ]
   },
   "S1104": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1105": {
     "name": "S1105",
@@ -7244,7 +8198,9 @@
   },
   "S1108": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1109": {
     "name": "S1109",
@@ -7260,7 +8216,9 @@
   },
   "S1112": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1113": {
     "name": "S1113",
@@ -7280,23 +8238,30 @@
   },
   "S1117": {
     "name": "Axe Damage",
-    "stats": ["10% increased Damage with Axes"]
+    "stats": [
+      "10% increased Damage with Axes"
+    ]
   },
   "S1118": {
     "name": "S1118",
     "stats": []
   },
   "S1119": {
-    "name": "S1119",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1120": {
     "name": "S1120",
     "stats": []
   },
   "S1121": {
-    "name": "S1121",
-    "stats": []
+    "name": "Armour and Evasion",
+    "stats": [
+      "+10 to Armour",
+      "+8 to Evasion Rating"
+    ]
   },
   "S1122": {
     "name": "S1122",
@@ -7320,7 +8285,9 @@
   },
   "S1127": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1128": {
     "name": "S1128",
@@ -7336,11 +8303,16 @@
   },
   "S1131": {
     "name": "Immobilise Buildup",
-    "stats": ["8% increased Stun Build","8% increased Freeze Buildup"]
+    "stats": [
+      "8% increased Stun Build",
+      "8% increased Freeze Buildup"
+    ]
   },
   "S1132": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1133": {
     "name": "S1133",
@@ -7375,12 +8347,17 @@
     "stats": []
   },
   "S1141": {
-    "name": "S1141",
-    "stats": []
+    "name": "Attack Area Damage and Area",
+    "stats": [
+      "8% increased Attack Area Damage",
+      "5% increased Area of Effect for Attacks"
+    ]
   },
   "S1142": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1143": {
     "name": "S1143",
@@ -7400,15 +8377,22 @@
   },
   "S1147": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1148": {
     "name": "Immobilise Buildup",
-    "stats": ["8% increased Stun Buildup","8% increased Freeze Buildup"]
+    "stats": [
+      "8% increased Stun Buildup",
+      "8% increased Freeze Buildup"
+    ]
   },
   "S1149": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1150": {
     "name": "S1150",
@@ -7420,7 +8404,9 @@
   },
   "S1152": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1153": {
     "name": "S1153",
@@ -7451,8 +8437,11 @@
     "stats": []
   },
   "S1160": {
-    "name": "S1160",
-    "stats": []
+    "name": "Attack Area Damage and Area",
+    "stats": [
+      "8% increased Attack Area Damage",
+      "5% increased Area of Effect for Attacks"
+    ]
   },
   "S1161": {
     "name": "S1161",
@@ -7508,7 +8497,9 @@
   },
   "S1174": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1175": {
     "name": "S1175",
@@ -7516,7 +8507,9 @@
   },
   "S1176": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1177": {
     "name": "S1177",
@@ -7527,16 +8520,22 @@
     "stats": []
   },
   "S1179": {
-    "name": "S1179",
-    "stats": []
+    "name": "One Handed Damage",
+    "stats": [
+      "10% increased Damage with One Handed Weapons"
+    ]
   },
   "S1180": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1181": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1182": {
     "name": "S1182",
@@ -7544,19 +8543,27 @@
   },
   "S1183": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1184": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1185": {
-    "name": "S1185",
-    "stats": []
+    "name": "Attack Speed",
+    "stats": [
+      "3% increased Attack Speed with One Handed Weapons"
+    ]
   },
   "S1186": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1187": {
     "name": "S1187",
@@ -7564,7 +8571,9 @@
   },
   "S1188": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1189": {
     "name": "S1189",
@@ -7584,7 +8593,9 @@
   },
   "S1193": {
     "name": "Projectile Damage",
-    "stats": ["10% increased Projectile Damage"]
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1194": {
     "name": "S1194",
@@ -7600,7 +8611,9 @@
   },
   "S1197": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1198": {
     "name": "S1198",
@@ -7616,11 +8629,15 @@
   },
   "S1201": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1202": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1203": {
     "name": "S1203",
@@ -7635,8 +8652,10 @@
     "stats": []
   },
   "S1206": {
-    "name": "S1206",
-    "stats": []
+    "name": "One Handed Damage",
+    "stats": [
+      "10% increased Damage with One Handed Weapons"
+    ]
   },
   "S1207": {
     "name": "S1207",
@@ -7668,7 +8687,9 @@
   },
   "S1214": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1215": {
     "name": "S1215",
@@ -7707,8 +8728,10 @@
     "stats": []
   },
   "S1224": {
-    "name": "S1224",
-    "stats": []
+    "name": "One Handed Damage",
+    "stats": [
+      "10% increased Damage with One Handed Weapons"
+    ]
   },
   "S1225": {
     "name": "S1225",
@@ -7724,7 +8747,9 @@
   },
   "S1228": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1229": {
     "name": "S1229",
@@ -7763,12 +8788,16 @@
     "stats": []
   },
   "S1238": {
-    "name": "S1238",
-    "stats": []
+    "name": "Armour",
+    "stats": [
+      "15% increased Armour"
+    ]
   },
   "S1239": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1240": {
     "name": "S1240",
@@ -7776,7 +8805,9 @@
   },
   "S1241": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1242": {
     "name": "S1242",
@@ -7784,11 +8815,15 @@
   },
   "S1243": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1244": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1245": {
     "name": "S1245",
@@ -7800,7 +8835,9 @@
   },
   "S1247": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1248": {
     "name": "S1248",
@@ -7828,15 +8865,21 @@
   },
   "S1254": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1255": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1256": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1257": {
     "name": "S1257",
@@ -7848,7 +8891,9 @@
   },
   "S1259": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1260": {
     "name": "S1260",
@@ -7864,7 +8909,9 @@
   },
   "S1263": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1264": {
     "name": "S1264",
@@ -7904,11 +8951,15 @@
   },
   "S1273": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1274": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1275": {
     "name": "S1275",
@@ -7931,8 +8982,10 @@
     "stats": []
   },
   "S1280": {
-    "name": "S1280",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1281": {
     "name": "S1281",
@@ -7944,7 +8997,9 @@
   },
   "S1283": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1284": {
     "name": "S1284",
@@ -7964,7 +9019,9 @@
   },
   "S1288": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1289": {
     "name": "S1289",
@@ -7996,15 +9053,19 @@
   },
   "S1296": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1297": {
     "name": "S1297",
     "stats": []
   },
   "S1298": {
-    "name": "S1298",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1299": {
     "name": "S1299",
@@ -8019,8 +9080,10 @@
     "stats": []
   },
   "S1302": {
-    "name": "S1302",
-    "stats": []
+    "name": "Slower Rage Decay",
+    "stats": [
+      "Inherent loss of Rage is 10% slower"
+    ]
   },
   "S1303": {
     "name": "S1303",
@@ -8036,7 +9099,9 @@
   },
   "S1306": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1307": {
     "name": "S1307",
@@ -8044,7 +9109,9 @@
   },
   "S1308": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1309": {
     "name": "S1309",
@@ -8056,23 +9123,29 @@
   },
   "S1311": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1312": {
     "name": "S1312",
     "stats": []
   },
   "S1313": {
-    "name": "S1313",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1314": {
     "name": "S1314",
     "stats": []
   },
   "S1315": {
-    "name": "S1315",
-    "stats": []
+    "name": "Melee Damage",
+    "stats": [
+      "10% increased Melee Damage"
+    ]
   },
   "S1316": {
     "name": "S1316",
@@ -8108,7 +9181,9 @@
   },
   "S1324": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1325": {
     "name": "S1325",
@@ -8131,12 +9206,16 @@
     "stats": []
   },
   "S1330": {
-    "name": "S1330",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1331": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1332": {
     "name": "S1332",
@@ -8159,8 +9238,10 @@
     "stats": []
   },
   "S1337": {
-    "name": "S1337",
-    "stats": []
+    "name": "Melee Damage against Immobilised",
+    "stats": [
+      "20% increased Melee Damage against Immobilised Enemies"
+    ]
   },
   "S1338": {
     "name": "S1338",
@@ -8171,32 +9252,42 @@
     "stats": []
   },
   "S1340": {
-    "name": "S1340",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1341": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1342": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1343": {
     "name": "S1343",
     "stats": []
   },
   "S1344": {
-    "name": "S1344",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1345": {
     "name": "S1345",
     "stats": []
   },
   "S1346": {
-    "name": "S1346",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1347": {
     "name": "S1347",
@@ -8227,12 +9318,16 @@
     "stats": []
   },
   "S1354": {
-    "name": "S1354",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1355": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1356": {
     "name": "S1356",
@@ -8244,7 +9339,9 @@
   },
   "S1358": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1359": {
     "name": "S1359",
@@ -8260,7 +9357,9 @@
   },
   "S1362": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1363": {
     "name": "S1363",
@@ -8280,7 +9379,9 @@
   },
   "S1367": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1368": {
     "name": "S1368",
@@ -8292,7 +9393,9 @@
   },
   "S1370": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1371": {
     "name": "S1371",
@@ -8303,8 +9406,10 @@
     "stats": []
   },
   "S1373": {
-    "name": "S1373",
-    "stats": []
+    "name": "Life Leech",
+    "stats": [
+      "10% increased amount of Life Leeched"
+    ]
   },
   "S1374": {
     "name": "S1374",
@@ -8328,15 +9433,21 @@
   },
   "S1379": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1380": {
-    "name": "S1380",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "Projectiles deal 12% increased Damage with Hits against Enemies further than 6m"
+    ]
   },
   "S1381": {
-    "name": "S1381",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "Projectiles deal 12% increased Damage with Hits against Enemies further than 6m"
+    ]
   },
   "S1382": {
     "name": "S1382",
@@ -8344,7 +9455,9 @@
   },
   "S1383": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1384": {
     "name": "S1384",
@@ -8363,8 +9476,10 @@
     "stats": []
   },
   "S1388": {
-    "name": "S1388",
-    "stats": []
+    "name": "Totem Placement Speed",
+    "stats": [
+      "20% increased Totem Placement Speed"
+    ]
   },
   "S1389": {
     "name": "S1389",
@@ -8380,7 +9495,9 @@
   },
   "S1392": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1393": {
     "name": "S1393",
@@ -8404,7 +9521,9 @@
   },
   "S1398": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1399": {
     "name": "S1399",
@@ -8419,8 +9538,10 @@
     "stats": []
   },
   "S1402": {
-    "name": "S1402",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "Projectiles deal 12% increased Damage with Hits against Enemies within 2m"
+    ]
   },
   "S1403": {
     "name": "S1403",
@@ -8428,7 +9549,9 @@
   },
   "S1404": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1405": {
     "name": "S1405",
@@ -8448,15 +9571,21 @@
   },
   "S1409": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1410": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1411": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1412": {
     "name": "S1412",
@@ -8480,7 +9609,9 @@
   },
   "S1417": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1418": {
     "name": "S1418",
@@ -8488,7 +9619,9 @@
   },
   "S1419": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1420": {
     "name": "S1420",
@@ -8511,8 +9644,10 @@
     "stats": []
   },
   "S1425": {
-    "name": "S1425",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "Projectiles deal 12% increased Damage with Hits against Enemies within 2m"
+    ]
   },
   "S1426": {
     "name": "S1426",
@@ -8536,19 +9671,27 @@
   },
   "S1431": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1432": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1433": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1434": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1435": {
     "name": "S1435",
@@ -8640,11 +9783,15 @@
   },
   "S1457": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1458": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1459": {
     "name": "S1459",
@@ -8704,7 +9851,9 @@
   },
   "S1473": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1474": {
     "name": "S1474",
@@ -8723,8 +9872,10 @@
     "stats": []
   },
   "S1478": {
-    "name": "S1478",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1479": {
     "name": "S1479",
@@ -8764,7 +9915,9 @@
   },
   "S1488": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1489": {
     "name": "S1489",
@@ -8783,8 +9936,10 @@
     "stats": []
   },
   "S1493": {
-    "name": "S1493",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1494": {
     "name": "S1494",
@@ -8792,7 +9947,9 @@
   },
   "S1495": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1496": {
     "name": "S1496",
@@ -8820,11 +9977,15 @@
   },
   "S1502": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1503": {
-    "name": "S1503",
-    "stats": []
+    "name": "Two Handed Damage",
+    "stats": [
+      "12% increased Damage with Two Handed Weapons"
+    ]
   },
   "S1504": {
     "name": "S1504",
@@ -8856,7 +10017,9 @@
   },
   "S1511": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1512": {
     "name": "S1512",
@@ -8948,7 +10111,9 @@
   },
   "S1534": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1535": {
     "name": "S1535",
@@ -9044,7 +10209,9 @@
   },
   "S1558": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1559": {
     "name": "S1559",
@@ -9068,7 +10235,9 @@
   },
   "S1564": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1565": {
     "name": "S1565",
@@ -9079,12 +10248,16 @@
     "stats": []
   },
   "S1567": {
-    "name": "S1567",
-    "stats": []
+    "name": "Grenade Area",
+    "stats": [
+      "12% increased Grenade Area of Effect"
+    ]
   },
   "S1568": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1569": {
     "name": "S1569",
@@ -9096,11 +10269,15 @@
   },
   "S1571": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1572": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1573": {
     "name": "S1573",
@@ -9144,7 +10321,9 @@
   },
   "S1583": {
     "name": "Grenade Cooldown Recovery Rate",
-    "stats": ["15% increased Cooldown Recovery Rate for Grenade Skills"]
+    "stats": [
+      "15% increased Cooldown Recovery Rate for Grenade Skills"
+    ]
   },
   "S1584": {
     "name": "S1584",
@@ -9172,7 +10351,9 @@
   },
   "S1590": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1591": {
     "name": "S1591",
@@ -9180,7 +10361,9 @@
   },
   "S1592": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1593": {
     "name": "S1593",
@@ -9215,8 +10398,10 @@
     "stats": []
   },
   "S1601": {
-    "name": "S1601",
-    "stats": []
+    "name": "Grenade Area",
+    "stats": [
+      "12% increased Grenade Area of Effect"
+    ]
   },
   "S1602": {
     "name": "S1602",
@@ -9292,7 +10477,9 @@
   },
   "S1620": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1621": {
     "name": "S1621",
@@ -9332,7 +10519,9 @@
   },
   "S1630": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1631": {
     "name": "S1631",
@@ -9348,7 +10537,9 @@
   },
   "S1634": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1635": {
     "name": "S1635",
@@ -9380,7 +10571,9 @@
   },
   "S1642": {
     "name": "Life Regeneration",
-    "stats": ["Regenerate 0.4% of Life per second"]
+    "stats": [
+      "Regenerate 0.4% of Life per second"
+    ]
   },
   "S1643": {
     "name": "S1643",
@@ -9392,7 +10585,9 @@
   },
   "S1645": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1646": {
     "name": "S1646",
@@ -9404,11 +10599,15 @@
   },
   "S1648": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1649": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1650": {
     "name": "S1650",
@@ -9536,11 +10735,15 @@
   },
   "S1681": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1682": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1683": {
     "name": "S1683",
@@ -9568,7 +10771,9 @@
   },
   "S1689": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1690": {
     "name": "S1690",
@@ -9604,7 +10809,9 @@
   },
   "S1698": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1699": {
     "name": "S1699",
@@ -9620,7 +10827,9 @@
   },
   "S1702": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1703": {
     "name": "S1703",
@@ -9640,7 +10849,9 @@
   },
   "S1707": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1708": {
     "name": "S1708",
@@ -9664,7 +10875,9 @@
   },
   "S1713": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1714": {
     "name": "S1714",
@@ -9676,7 +10889,9 @@
   },
   "S1716": {
     "name": "Stun Threshold",
-    "stats": ["12% increased Stun Threshold"]
+    "stats": [
+      "12% increased Stun Threshold"
+    ]
   },
   "S1717": {
     "name": "S1717",
@@ -9748,23 +10963,33 @@
   },
   "S1734": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1735": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1736": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1737": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1738": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1739": {
     "name": "S1739",
@@ -9780,15 +11005,21 @@
   },
   "S1742": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1743": {
     "name": "Stun Buildup",
-    "stats": ["15% increased Stun Buildup"]
+    "stats": [
+      "15% increased Stun Buildup"
+    ]
   },
   "S1744": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1745": {
     "name": "S1745",
@@ -9808,7 +11039,9 @@
   },
   "S1749": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1750": {
     "name": "S1750",
@@ -9912,7 +11145,9 @@
   },
   "S1775": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1776": {
     "name": "S1776",
@@ -9964,7 +11199,9 @@
   },
   "S1788": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1789": {
     "name": "S1789",
@@ -10024,7 +11261,9 @@
   },
   "S1803": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1804": {
     "name": "S1804",
@@ -10107,12 +11346,16 @@
     "stats": []
   },
   "S1824": {
-    "name": "S1824",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1825": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1826": {
     "name": "S1826",
@@ -10127,8 +11370,10 @@
     "stats": []
   },
   "S1829": {
-    "name": "S1829",
-    "stats": []
+    "name": "Projectile Damage",
+    "stats": [
+      "10% increased Projectile Damage"
+    ]
   },
   "S1830": {
     "name": "S1830",
@@ -10160,11 +11405,15 @@
   },
   "S1837": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1838": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1839": {
     "name": "S1839",
@@ -10183,12 +11432,16 @@
     "stats": []
   },
   "S1843": {
-    "name": "S1843",
-    "stats": []
+    "name": "Bleeding Chance",
+    "stats": [
+      "5% chance to inflict Bleeding on Hit"
+    ]
   },
   "S1844": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1845": {
     "name": "S1845",
@@ -10232,7 +11485,9 @@
   },
   "S1855": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1856": {
     "name": "S1856",
@@ -10280,19 +11535,27 @@
   },
   "S1867": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1868": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1869": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1870": {
     "name": "Attribute",
-    "stats": ["+5 to any Attribute"]
+    "stats": [
+      "+5 to any Attribute"
+    ]
   },
   "S1871": {
     "name": "S1871",
@@ -10473,8 +11736,8 @@
   "S1915": {
     "name": "Quarterstaff Stun and Knockback",
     "stats": [
-	    "20% increased Stun Buildup",
-	    "20% increased Knockback Distance"
+      "20% increased Stun Buildup",
+      "20% increased Knockback Distance"
     ]
   },
   "S1916": {
