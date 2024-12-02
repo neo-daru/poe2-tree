@@ -6,7 +6,10 @@
 	<div>
 		<h1 class="text-3xl">PoE2 Skill Tree Preview</h1>
 	</div>
-
+	<!-- Middle Part -->
+	<nav class="hidden md:flex flex-row items-center gap-4 flex-1">
+		<!-- Something here? -->
+	</nav>
 	<!-- GitHub -->
 	<nav class="flex flex-row items-center gap-4">
 		<div class="hidden md:flex flex-col items-center">
