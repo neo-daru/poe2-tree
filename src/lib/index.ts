@@ -36,8 +36,8 @@ export function loadData(): TreeData {
 	const flattenedNodePositions = [
 		...nodePositions.keystones,
 		...nodePositions.notables,
-		...nodePositions.ascendancies,
-		...nodePositions.smalls
+		...nodePositions.smalls,
+		...nodePositions.ascendancies
 	];
 
 	const nodes = flattenedNodePositions.reduce((acc, node) => {
