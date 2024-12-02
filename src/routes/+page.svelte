@@ -255,7 +255,7 @@
 			clampPanOffsets();
 		}
 		if (isZooming && event.touches.length === 2) {
-			const zoomIntensity = 0.08;
+			const zoomIntensity = 0.1;
 			const oldScale = scale;
 			const distance = Math.hypot(
 				event.touches[0].clientX - event.touches[1].clientX,
