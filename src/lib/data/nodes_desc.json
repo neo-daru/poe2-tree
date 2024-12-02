@@ -11807,9 +11807,36 @@
     ]
   },
   "AN41": {
-    "name": "AN41",
+    "name": "Faith is a Choice",
     "stats": [
-      "Invoker notable"
+      "Grants Skill: Meditate"
+    ]
+  },
+  "AN42": {
+    "name": "I am the Blizzard...",
+    "stats": [
+      "Gain 10% of Damage as Extra Cold Damage",
+      "On Freezing Enemies create Chilled Ground"
+    ]
+  },
+  "AN43": {
+    "name": "I am the Thunder...",
+    "stats": [
+      "Gain 10% of Damage as Extra Lightning Damage",
+      "25% chance on Shocking Enemies to create Shocked Ground"
+    ]
+  },
+  "AN44": {
+    "name": "...and I Shall Rage",
+    "stats": [
+      "Grants Skill: Unbound Avatar"
+    ]
+  },
+  "AN45": {
+    "name": "...and Scatter Them to the Winds",
+    "stats": [
+      "Grants Skill: Elemental Expression",
+      "Trigger Elemental Expression on Meele Critical Hit"
     ]
   },
   "AS51": {
@@ -11819,9 +11846,39 @@
     ]
   },
   "AN51": {
-    "name": "AN51",
+    "name": "Chayula´s Gift",
     "stats": [
-      "Acolyte notable"
+      "+10% to Maximum Chaos Resistance",
+      "Chaos Resistance is doubled"
+    ]
+  },
+  "AN52": {
+    "name": "Ravenous Doubts",
+    "stats": [
+      "Mana Leech is instant"
+    ]
+  },
+  "AN53": {
+    "name": "Consuming Questions",
+    "stats": [
+      "You cannot Recharge Energy Shield",
+      "Mana Leech effects also Recover Energy Shield"
+    ]
+  },
+  "AN54": {
+    "name": "Embrace the Darkness",
+    "stats": [
+      "Removes all Spirit",
+      "Base Maximum Darkness is 100",
+      "For each Life or Energy Shield lost to Damage, reserve 1 Darkness instead if possible",
+      "Darkness Reservation lasts for 10 seconds",
+      "+5 to Maximum Darkness per Level"
+    ]
+  },
+  "AN55": {
+    "name": "Grasp of the Void",
+    "stats": [
+      "Gain 1% of Damage as Extra Chaos Damage per 20 Unreserved Darkness"
     ]
   },
   "AS61": {
