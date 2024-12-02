@@ -7220,16 +7220,16 @@
 		"stats": []
 	},
 	"S1119": {
-		"name": "S1119",
-		"stats": []
+		"name": "Projectile Damage",
+		"stats": ["10% increased Projectile Damage"]
 	},
 	"S1120": {
 		"name": "S1120",
 		"stats": []
 	},
 	"S1121": {
-		"name": "S1121",
-		"stats": []
+		"name": "Armour and Evasion",
+		"stats": ["+10 to Armour", "+8 to Evasion Rating"]
 	},
 	"S1122": {
 		"name": "S1122",
