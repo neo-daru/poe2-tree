@@ -326,10 +326,10 @@
 		<aside class="h-full grid grid-cols-1 grid-rows-[auto_1fr_1fr] gap-2 p-2 bg-[#111] min-h-0">
 			<!-- Toggleable -->
 			<div class="space-y-4">
-				<div class="ascendancy-dropdown">
-					<b class="block underline underline-offset-2">Highlight:</b>
-					<div class="flex flex-row gap-2 flex-wrap">
-						<select name="ascendancies" id="asc-select" bind:value={selectedAscendancy}>
+				<div>
+					<b class="block underline underline-offset-2">Ascendancy:</b>
+					<div class="flex flex-row flex-wrap text-black">
+						<select class="w-full px-1 h-6" name="ascendancies" id="asc-select" bind:value={selectedAscendancy}>
 							<option value="bloodmage" selected>Witch - Bloodmage</option>
 							<option value="infernalist">With - Infernalist</option>
 							<option value="stormweaver">Sorc - Stormweaver</option>
