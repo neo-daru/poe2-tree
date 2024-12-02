@@ -10,6 +10,7 @@
 
 	let containerEl: HTMLDivElement | null = null;
 	let imageEl: HTMLImageElement | null = null;
+	let ascImageEl: HTMLImageElement | null = null;
 	let imageWrapperEl: HTMLDivElement | null = null; // Reference to the image wrapper
 	let tooltipEl: HTMLDivElement | null = null; // Reference to the tooltip element
 	let hasLoaded = false;
@@ -58,6 +59,9 @@
 		localStorage.setItem('selectedSkillNodes', JSON.stringify(selectedNodes));
 	}
 
+	// Ascendancy selection
+	let selectedAscendancy = "bloodmage"
+
 	// State for filters
 	let highlightKeystones = false;
 	let highlightNotables = false;
@@ -65,9 +69,6 @@
 	let hideUnidentified = false;
 	let hideUnselected = false;
 	let hideSmall = false;
-
-	// Ascendancy selection
-	let selectedAscendancy = "bloodmage"
 
 	// Reactive statement for search
 	$: handleSearch(searchTerm);
@@ -461,12 +462,28 @@
 						class="pointer-events-none max-w-none"
 						bind:this={imageEl}
 						onload={handleImageLoad}
-						src="{base}/trees/{selectedAscendancy}.png"
+						src="{base}/skill-tree.png"
 						alt="Interactive"
 						draggable="false"
 						style="
 				  width: {imageEl ? imageEl.naturalWidth * scale + 'px' : 'auto'};
 				  height: {imageEl ? imageEl.naturalHeight * scale + 'px' : 'auto'};
+			  "
+					/>
+
+					<img
+						class="pointer-events-none absolute"
+						bind:this={ascImageEl}
+						src="{base}/ascendancies/{selectedAscendancy}.png"
+						alt="Interactive"
+						draggable="false"
+						style="
+				  width: {320 * scale + 'px'};
+				  top: 50%;
+				  left: 50%;
+				  margin-top: -{(320 * scale * 0.460) + 'px'};
+				  margin-left: -{(320 * scale * 0.487)+ 'px'};
+				  height: {320 * scale + 'px'};
 			  "
 					/>
 
@@ -518,6 +535,16 @@
 </div>
 
 <style lang="postcss">
+	.skilltree:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 45%;
+		top: 45%;
+		width: 300px;
+		height: 300px;
+		background: url("./trees/bloodmage_overlay.png") left top no-repeat;
+	}
 	.small,
 	.notable,
 
