@@ -535,16 +535,7 @@
 </div>
 
 <style lang="postcss">
-	.skilltree:after {
-		content: '';
-		display: block;
-		position: absolute;
-		left: 45%;
-		top: 45%;
-		width: 300px;
-		height: 300px;
-		background: url("./trees/bloodmage_overlay.png") left top no-repeat;
-	}
+
 	.small,
 	.notable,
 
